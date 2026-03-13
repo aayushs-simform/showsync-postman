@@ -3352,6 +3352,24 @@
 			"id": "49347587-e25b011a-753c-4ef1-b9f7-b5bfd7ca3af7"
 		},
 		{
+			"name": "My People",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "49347587-9e8d7fd2-c449-4636-888d-4558b68ee899",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "49347587-8054f1f1-2ebb-4608-b9fe-307de307d0ed"
+		},
+		{
 			"name": "Health",
 			"id": "49347587-70a53602-842a-4c9b-9613-58b255520668",
 			"protocolProfileBehavior": {
