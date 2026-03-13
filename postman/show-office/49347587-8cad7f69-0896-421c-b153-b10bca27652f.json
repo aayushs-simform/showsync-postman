@@ -12559,6 +12559,11 @@
 			"id": "49347587-2a9bd9b0-6591-4f89-9487-4983bf70fdb3"
 		},
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "49347587-c6929347-6779-411c-ba72-7ace3e97fc91"
+		},
+		{
 			"name": "Health",
 			"id": "49347587-07138f25-65ff-4358-b5a5-9140ec0d2adb",
 			"protocolProfileBehavior": {
