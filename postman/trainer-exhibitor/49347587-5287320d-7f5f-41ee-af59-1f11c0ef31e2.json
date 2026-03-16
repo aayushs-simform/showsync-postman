@@ -3388,14 +3388,44 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Add New People",
 					"id": "49347587-e2095b05-d3e9-48a7-8c37-43b7e27b84a5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_app}}/people",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"people"
+							],
+							"query": [
+								{
+									"key": "venue_id",
+									"value": "d9978052-b80f-4721-8ed2-d4046286948b",
+									"disabled": true
+								},
+								{
+									"key": "tab",
+									"value": "archived",
+									"disabled": true
+								}
+							]
+						}
 					},
 					"response": []
 				}
