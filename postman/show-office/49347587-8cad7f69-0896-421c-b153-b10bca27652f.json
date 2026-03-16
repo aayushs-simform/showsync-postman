@@ -1515,12 +1515,18 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows",
+									"raw": "{{base_org}}/shows?venue_id=d9978052-b80f-4721-8ed2-d4046286948b",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows"
+									],
+									"query": [
+										{
+											"key": "venue_id",
+											"value": "d9978052-b80f-4721-8ed2-d4046286948b"
+										}
 									]
 								}
 							},
