@@ -3362,7 +3362,28 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{base_app}}/people",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"people"
+							],
+							"query": [
+								{
+									"key": "venue_id",
+									"value": "d9978052-b80f-4721-8ed2-d4046286948b",
+									"disabled": true
+								},
+								{
+									"key": "tab",
+									"value": "archived",
+									"disabled": true
+								}
+							]
+						}
 					},
 					"response": []
 				}
