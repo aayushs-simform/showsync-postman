@@ -1105,7 +1105,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6IjI3MWQzNzlkLTBjY2YtNDQzZC04YTYzLTViYmZkMzExYTUyOCIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI4MzcsImV4cCI6MTc3MzI5MzczN30.Pt4Jp6CvF3yZZu1ybM_fCSTm8mAI9Mql3nAHrhAtjvo\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simform@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"5555550100\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"12345678\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6Ijc0MjVlMGQxLWRlNTQtNGM5ZS1hMDczLTc3ZWZiMGRiNjc4YiIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzM2MzI3NzEsImV4cCI6MTc3MzYzMzY3MX0.KUb7Ltu2fRXv9GyWxAg2IkVr0ZDRBhZ54DCR0zJH2aM\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simform@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"5555550100\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"12345678\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2663,7 +2663,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
+							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366,\n    \"document_type\": \"COGGINS\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
