@@ -2663,7 +2663,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366,\n    \"document_type\": \"COGGINS\"\n}",
+							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
 							"options": {
 								"raw": {
 									"language": "json"
