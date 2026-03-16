@@ -2237,6 +2237,34 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show deleted successfully\"\n}"
 								}
 							]
+						},
+						{
+							"name": "Show Statuses",
+							"id": "49347587-5a243845-1a65-4d88-ad83-4a23bc0c5561",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:id",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "f31f5b38-b01a-4978-a454-d038feaea794"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-91f94e2e-eea9-462c-989c-3166ea08c91c"
