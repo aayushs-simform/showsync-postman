@@ -330,7 +330,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"email\": \"aayushs.simform@gmail.com\"\n}",
+									"raw": "{\n    \"email\": \"aayushs.simforms@gmail.com\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -786,7 +786,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"identifier\": \"aayushs.simform@gmail.com\",\n    // \"phone_country_code\": \"+1\",\n    // \"phone_number\": \"125656456\",\n    \"password\": \"Strong@1!\"\n}",
+							"raw": "{\n    \"identifier\": \"aayushs.simforms@gmail.com\",\n    // \"phone_country_code\": \"+1\",\n    // \"phone_number\": \"125656456\",\n    \"password\": \"Strong@1!\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
