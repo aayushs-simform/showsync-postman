@@ -3398,7 +3398,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\n    \"full_name\": \"Aayush Solanki\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
