@@ -1515,7 +1515,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows?start_date=2026-07-10",
+									"raw": "{{base_org}}/shows?start_date=2026-07-10&end_date=2026-07-16",
 									"host": [
 										"{{base_org}}"
 									],
@@ -1531,6 +1531,10 @@
 										{
 											"key": "start_date",
 											"value": "2026-07-10"
+										},
+										{
+											"key": "end_date",
+											"value": "2026-07-16"
 										}
 									]
 								}
@@ -1654,7 +1658,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_org}}/shows?start_date=2026-07-10",
+											"raw": "{{base_org}}/shows?start_date=2026-07-10&end_date",
 											"host": [
 												"{{base_org}}"
 											],
@@ -1670,13 +1674,18 @@
 												{
 													"key": "start_date",
 													"value": "2026-07-10"
+												},
+												{
+													"key": "end_date",
+													"value": null,
+													"type": "text"
 												}
 											]
 										}
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -1759,7 +1768,13 @@
 											"value": "timeout=5"
 										}
 									],
-									"cookie": [],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Shows fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 20,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"f31f5b38-b01a-4978-a454-d038feaea794\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"status\": \"DRAFT\",\n            \"creation_step\": 1,\n            \"venue_id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"created_at\": \"2026-03-16T05:42:49.898Z\",\n            \"display_status\": \"PENDING\"\n        }\n    ]\n}"
 								}
