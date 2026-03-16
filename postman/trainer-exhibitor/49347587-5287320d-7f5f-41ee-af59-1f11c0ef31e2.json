@@ -3834,7 +3834,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"full_name\": \"Aayush Solanki\",\n    \"category\": \"CO_OWNER\",\n    \"membership_type\": \"USEF\",\n    \"is_usef_verified\": \"\",\n    \"city\": \"California\",\n    \"state\": \"TX\",\n    \"country\": \"USA\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"phone_number\": \"9399400758\"\n}",
+							"raw": "{\n    \"full_name\": \"Aayush Solanki\",\n    \"category\": \"CO_OWNER\",\n    \"membership_type\": \"USEF\",\n    \"city\": \"California\",\n    \"state\": \"TX\",\n    \"country\": \"USA\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"phone_number\": \"9399400758\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
