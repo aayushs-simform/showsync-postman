@@ -3398,7 +3398,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"full_name\": \"Aayush Solanki\",\n    \"category\": \"CO_OWNER\",\n    \"membership_type\": \"USEF\",\n    \"usef_member_id\": \"\",\n    \"usef_membership_status\": \"\"\n}",
+							"raw": "{\n    \"full_name\": \"Aayush Solanki\",\n    \"category\": \"CO_OWNER\",\n    \"membership_type\": \"USEF\",\n    \"usef_member_id\": \"\",\n    \"usef_membership_status\": \"\",\n    \"is_usef_verified\": \"\",\n    \"city\": \"California\",\n    \"state\": \"TX\",\n    \"country\": \"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
