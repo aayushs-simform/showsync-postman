@@ -1515,7 +1515,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows?tab=archived",
+									"raw": "{{base_org}}/shows?start_date=2026-07-10&end_date=2026-07-14",
 									"host": [
 										"{{base_org}}"
 									],
@@ -1530,17 +1530,16 @@
 										},
 										{
 											"key": "start_date",
-											"value": "2026-07-10",
-											"disabled": true
+											"value": "2026-07-10"
 										},
 										{
 											"key": "end_date",
-											"value": "2026-07-16",
-											"disabled": true
+											"value": "2026-07-14"
 										},
 										{
 											"key": "tab",
-											"value": "archived"
+											"value": "archived",
+											"disabled": true
 										}
 									]
 								}
