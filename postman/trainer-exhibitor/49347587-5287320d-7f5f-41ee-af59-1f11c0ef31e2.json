@@ -3651,8 +3651,53 @@
 					]
 				},
 				{
-					"name": "USEF lookup",
+					"name": "*USEF lookup",
 					"id": "49347587-3f27b372-e0fc-4b14-86c3-6977c6758691",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\": \"Aayush Solanki\",\n    \"category\": \"CO_OWNER\",\n    \"membership_type\": \"USEF\",\n    \"usef_member_id\": \"\",\n    \"usef_membership_status\": \"\",\n    \"is_usef_verified\": \"\",\n    \"city\": \"California\",\n    \"state\": \"TX\",\n    \"country\": \"USA\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"phone_number\": \"9399400758\"\n}"
+						},
+						"url": {
+							"raw": "{{base_app}}/people/usef-lookup/:usef_member_id",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"people",
+								"usef-lookup",
+								":usef_member_id"
+							],
+							"query": [
+								{
+									"key": "venue_id",
+									"value": "d9978052-b80f-4721-8ed2-d4046286948b",
+									"disabled": true
+								},
+								{
+									"key": "tab",
+									"value": "archived",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "usef_member_id",
+									"value": "ASDSF"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "49347587-b8eb76a1-157f-4d37-898f-6f9bff518c53",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
