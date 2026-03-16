@@ -170,7 +170,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"token\": \"532f069566970b199f4983bfadf98a1a7a0397904e29f393a184e7407e4b33f0\",\n    \"password\": \"Strong@1!\",\n    \"confirm_password\": \"Strong@1!\"\n}",
+							"raw": "{\n    \"token\": \"4b682c8779b11ba245d95b9940a28bb4c595ae85f5dee216f1cd7e0439f0ca30\",\n    \"password\": \"Strong@1!\",\n    \"confirm_password\": \"Strong@1!\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
