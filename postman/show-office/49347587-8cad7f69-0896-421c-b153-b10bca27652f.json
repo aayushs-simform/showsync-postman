@@ -5779,7 +5779,122 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-4f764687-2173-45c8-8840-39a46c464941",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/divisions/grouped",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"divisions",
+												"grouped"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "2085"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"825-crx2B2EzfqwH1Wn91YekcRei6ek\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 17 Mar 2026 04:07:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Divisions grouped by date fetched successfully\",\n    \"data\": [\n        {\n            \"date\": \"2026-03-17\",\n            \"divisions\": [\n                {\n                    \"id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                    \"division_type\": \"JUMPER\",\n                    \"division_name\": \"Adult High Jump 2\",\n                    \"classes\": [\n                        {\n                            \"id\": \"91e70419-a92b-49e7-bf43-69fe004e6591\",\n                            \"created_at\": \"2026-03-17T04:04:34.795Z\",\n                            \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                            \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                            \"class_id\": \"101\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"fee\": \"300.00\",\n                            \"prize_money\": \"500.00\",\n                            \"class_date\": \"2026-03-17T04:04:34.794Z\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\",\n                            \"apply_nomination_fee\": false,\n                            \"course_map_url\": null,\n                            \"table_type\": null,\n                            \"score_required\": null,\n                            \"add_back_money\": null,\n                            \"first_place_percentage\": null,\n                            \"second_place_percentage\": null,\n                            \"third_place_percentage\": null\n                        },\n                        {\n                            \"id\": \"035d19d5-9e74-415c-81d0-791d4c93d5b8\",\n                            \"created_at\": \"2026-03-17T04:04:38.041Z\",\n                            \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                            \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                            \"class_id\": \"102\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"fee\": \"300.00\",\n                            \"prize_money\": \"500.00\",\n                            \"class_date\": \"2026-03-17T04:04:38.041Z\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\",\n                            \"apply_nomination_fee\": false,\n                            \"course_map_url\": null,\n                            \"table_type\": null,\n                            \"score_required\": null,\n                            \"add_back_money\": null,\n                            \"first_place_percentage\": null,\n                            \"second_place_percentage\": null,\n                            \"third_place_percentage\": null\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"date\": \"2026-07-10\",\n            \"divisions\": [\n                {\n                    \"id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                    \"division_type\": \"JUMPER\",\n                    \"division_name\": \"Adult High Jump 2\",\n                    \"classes\": [\n                        {\n                            \"id\": \"05eb9f3a-9877-426e-aea7-a0dab8739746\",\n                            \"created_at\": \"2026-03-17T04:05:59.945Z\",\n                            \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                            \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                            \"class_id\": \"103\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"fee\": \"300.00\",\n                            \"prize_money\": \"500.00\",\n                            \"class_date\": \"2026-07-10T00:00:00.000Z\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\",\n                            \"apply_nomination_fee\": false,\n                            \"course_map_url\": null,\n                            \"table_type\": null,\n                            \"score_required\": null,\n                            \"add_back_money\": null,\n                            \"first_place_percentage\": null,\n                            \"second_place_percentage\": null,\n                            \"third_place_percentage\": null\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "49347587-780acc93-5e9e-4f6a-8f3e-16306d8ef7ce"
