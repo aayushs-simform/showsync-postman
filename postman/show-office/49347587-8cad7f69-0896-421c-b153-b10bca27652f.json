@@ -5823,8 +5823,26 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/divisions/bulk",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"divisions",
+										"bulk"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										}
+									]
+								}
 							},
 							"response": []
 						}
