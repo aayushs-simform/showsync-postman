@@ -5757,7 +5757,25 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/divisions/grouped",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"divisions",
+										"grouped"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": ""
+										}
+									]
+								}
 							},
 							"response": []
 						}
