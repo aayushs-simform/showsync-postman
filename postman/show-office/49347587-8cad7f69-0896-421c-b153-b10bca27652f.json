@@ -5827,7 +5827,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"divisions\": [\n    {\n      \"division_type\": \"JUMPER\",\n      \"division_name\": \"Open Jumper\",\n      \"display_order\": 1,\n      \"classes\": [\n        { \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\", \"class_id\": \"J101\", \"class_name\": \"1.0m Open\", \"fee\": \"50.00\", \"class_date\": \"2026-03-15T08:00:00Z\" }\n      ]\n    },\n    {\n      \"division_type\": \"DRESSAGE\",\n      \"division_name\": \"Training Level\"\n    }\n  ]\n}",
+									"raw": "{\n  \"divisions\": [\n    {\n      \"division_type\": \"JUMPER\",\n      \"division_name\": \"Open Jumper\",\n      \"display_order\": 1,\n      \"classes\": [\n        { \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\", \"class_id\": \"J101\", \"class_name\": \"1.0m Open\", \"fee\": \"50.00\", \"class_date\": \"2026-03-15T08:00:00Z\" }\n      ]\n    },\n    {\n      \"division_type\": \"HUNTER\",\n      \"division_name\": \"Training Level\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5853,7 +5853,131 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-4d9b435f-b983-438f-9cee-86e74ab328bd",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"divisions\": [\n    {\n      \"division_type\": \"JUMPER\",\n      \"division_name\": \"Open Jumper\",\n      \"display_order\": 1,\n      \"classes\": [\n        { \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\", \"class_id\": \"J101\", \"class_name\": \"1.0m Open\", \"fee\": \"50.00\", \"class_date\": \"2026-03-15T08:00:00Z\" }\n      ]\n    },\n    {\n      \"division_type\": \"HUNTER\",\n      \"division_name\": \"Training Level\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/divisions/bulk",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"divisions",
+												"bulk"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "278"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"116-I47xeF8c81Fq8ty+yVYtR4jfLV8\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 17 Mar 2026 04:20:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Divisions and classes created successfully\",\n    \"data\": {\n        \"created\": [\n            {\n                \"index\": 0,\n                \"id\": \"baa2854b-7d12-4d92-9ea8-c9919deec4b5\",\n                \"division_name\": \"Open Jumper\"\n            },\n            {\n                \"index\": 1,\n                \"id\": \"917162ef-0f8f-4446-b49f-04796a78d6cd\",\n                \"division_name\": \"Training Level\"\n            }\n        ],\n        \"errors\": []\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "49347587-780acc93-5e9e-4f6a-8f3e-16306d8ef7ce"
