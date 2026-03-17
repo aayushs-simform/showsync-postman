@@ -4874,7 +4874,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"102\",\n    \"class_name\": \"0.80m Jumper\",\n    \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n    \"fee\": \"300\",\n    \"prize_money\": \"500.00\"\n    // \"score_required\": \"ONE\", //(optional) ONE, TWO\n    // \"table_type\": \"TABLE_A\", //(Optional) TABLE_A, TABLE_B, TABLE_C, TWO_PHASE, POWER_AND_SPEED, OTHER\n    // \"apply_nomination_fee\": true //(optional)\n    // \"course_map_url\": \"\"  //(optional)\n}",
+									"raw": "{\n    \"class_id\": \"102\",\n    \"class_name\": \"0.80m Jumper\",\n    \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n    \"fee\": \"300\",\n    \"prize_money\": \"500.00\",\n    \"class_date\": \"2026-07-10\"\n    // \"score_required\": \"ONE\", //(optional) ONE, TWO\n    // \"table_type\": \"TABLE_A\", //(Optional) TABLE_A, TABLE_B, TABLE_C, TWO_PHASE, POWER_AND_SPEED, OTHER\n    // \"apply_nomination_fee\": true //(optional)\n    // \"course_map_url\": \"\"  //(optional)\n}",
 									"options": {
 										"raw": {
 											"language": "json"
