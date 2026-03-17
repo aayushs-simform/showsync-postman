@@ -1515,7 +1515,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows",
+									"raw": "{{base_org}}/shows?tab=active",
 									"host": [
 										"{{base_org}}"
 									],
@@ -1540,8 +1540,7 @@
 										},
 										{
 											"key": "tab",
-											"value": "archived",
-											"disabled": true
+											"value": "active"
 										}
 									]
 								}
