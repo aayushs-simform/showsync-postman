@@ -510,7 +510,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"identifier\": \"aayushs.simform@gmail.coms\",\n  \"password\": \"P@ssword123\"\n//   \"fcm_token\": \"fcm_token_example_1234\",\n//   \"device_fingerprint\": \"abc123fingerprint\"\n}"
+							"raw": "{\n  \"identifier\": \"aayushs.simform@gmail.com\",\n  \"password\": \"P@ssword123\"\n//   \"fcm_token\": \"fcm_token_example_1234\",\n//   \"device_fingerprint\": \"abc123fingerprint\"\n}"
 						},
 						"url": {
 							"raw": "{{base_app}}/auth/login",
