@@ -4228,6 +4228,29 @@
 			"id": "49347587-8054f1f1-2ebb-4608-b9fe-307de307d0ed"
 		},
 		{
+			"name": "Shows",
+			"item": [
+				{
+					"name": "New Folder",
+					"item": [],
+					"id": "49347587-3e66d5bf-e6cf-4add-8886-b7ef8f9fd6cb"
+				},
+				{
+					"name": "Enroll Show",
+					"id": "49347587-2bc8e977-d563-41f2-8ef7-40aadadb433d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "49347587-08f0c5ca-6d00-496b-a94e-a46d862de17e"
+		},
+		{
 			"name": "Health",
 			"id": "49347587-70a53602-842a-4c9b-9613-58b255520668",
 			"protocolProfileBehavior": {
