@@ -4874,7 +4874,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"101\",\n    \"class_name\": \"0.80m Jumper\",\n    \"arena_id\": \"5dfc3470-4571-4de6-89d8-059e6711f11b\",\n    \"fee\": \"300\",\n    \"prize_money\": \"500.00\"\n    // \"score_required\": \"ONE\", //(optional) ONE, TWO\n    // \"table_type\": \"TABLE_A\", //(Optional) TABLE_A, TABLE_B, TABLE_C, TWO_PHASE, POWER_AND_SPEED, OTHER\n    // \"apply_nomination_fee\": true //(optional)\n    // \"course_map_url\": \"\"  //(optional)\n}",
+									"raw": "{\n    \"class_id\": \"102\",\n    \"class_name\": \"0.80m Jumper\",\n    \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n    \"fee\": \"300\",\n    \"prize_money\": \"500.00\"\n    // \"score_required\": \"ONE\", //(optional) ONE, TWO\n    // \"table_type\": \"TABLE_A\", //(Optional) TABLE_A, TABLE_B, TABLE_C, TWO_PHASE, POWER_AND_SPEED, OTHER\n    // \"apply_nomination_fee\": true //(optional)\n    // \"course_map_url\": \"\"  //(optional)\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -8447,7 +8447,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "bf307249-0821-40c5-ac1c-124680163ad8"
+									"value": "d9978052-b80f-4721-8ed2-d4046286948b"
 								}
 							]
 						}
