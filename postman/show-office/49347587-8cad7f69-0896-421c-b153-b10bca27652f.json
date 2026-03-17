@@ -5825,6 +5825,15 @@
 							"request": {
 								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"divisions\": [\n    {\n      \"division_type\": \"JUMPER\",\n      \"division_name\": \"Open Jumper\",\n      \"display_order\": 1,\n      \"classes\": [\n        { \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\", \"class_id\": \"J101\", \"class_name\": \"1.0m Open\", \"fee\": \"50.00\", \"class_date\": \"2026-03-15T08:00:00Z\" }\n      ]\n    },\n    {\n      \"division_type\": \"DRESSAGE\",\n      \"division_name\": \"Training Level\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/divisions/bulk",
 									"host": [
