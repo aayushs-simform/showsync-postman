@@ -4231,11 +4231,6 @@
 			"name": "Shows",
 			"item": [
 				{
-					"name": "New Folder",
-					"item": [],
-					"id": "49347587-3e66d5bf-e6cf-4add-8886-b7ef8f9fd6cb"
-				},
-				{
 					"name": "Enroll Show",
 					"id": "49347587-2bc8e977-d563-41f2-8ef7-40aadadb433d",
 					"protocolProfileBehavior": {
@@ -4243,7 +4238,28 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+						},
+						"url": {
+							"raw": "{{base_app}}/people/usef-lookup/:usef_member_id",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"people",
+								"usef-lookup",
+								":usef_member_id"
+							],
+							"variable": [
+								{
+									"key": "usef_member_id",
+									"value": ""
+								}
+							]
+						}
 					},
 					"response": []
 				}
