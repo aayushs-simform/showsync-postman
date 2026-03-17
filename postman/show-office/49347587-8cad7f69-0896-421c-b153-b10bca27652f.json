@@ -5748,6 +5748,18 @@
 									"body": "\"division_name\",\"division_type\",\"class_id\",\"class_name\",\"arena_id\",\"fee\",\"class_date\"\n\"Jumpers\",\"JUMPERS\",\"J101\",\"0.80m Open Jumper\",\"arena-uuid-1\",\"50.00\",\"2026-03-15\"\n\"Jumpers\",\"JUMPERS\",\"J102\",\"1.0m Open Jumper\",\"arena-uuid-1\",\"75.00\",\"2026-03-15\"\n\"Jumpers\",\"JUMPERS\",\"J103\",\"1.20m Open Jumper\",\"arena-uuid-1\",\"100.00\",\"2026-03-15\"\n\"Dressage\",\"DRESSAGE\",\"D201\",\"Training Level Test 1\",\"arena-uuid-2\",\"60.00\",\"2026-03-16\"\n\"Dressage\",\"DRESSAGE\",\"D202\",\"First Level Test 1\",\"arena-uuid-2\",\"75.00\",\"2026-03-16\""
 								}
 							]
+						},
+						{
+							"name": "Grouped Division",
+							"id": "49347587-a55cefc8-705f-4419-ae29-87441e0b7be5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-780acc93-5e9e-4f6a-8f3e-16306d8ef7ce"
