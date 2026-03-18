@@ -4317,14 +4317,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/fees",
+									"raw": "{{base_org}}/shows/:showId/fees/bulk",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows",
 										":showId",
-										"fees"
+										"fees",
+										"bulk"
 									],
 									"variable": [
 										{
