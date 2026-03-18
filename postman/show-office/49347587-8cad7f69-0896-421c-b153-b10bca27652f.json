@@ -3618,6 +3618,15 @@
 							"request": {
 								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"document_type\": \"VACCINATION\",\n        \"issued_within_days\": 120\n    }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/divisions/health-requirements/bulk",
 									"host": [
@@ -3633,7 +3642,7 @@
 									"variable": [
 										{
 											"key": "showId",
-											"value": "{{base_org}}"
+											"value": "{{showId}}"
 										}
 									]
 								}
