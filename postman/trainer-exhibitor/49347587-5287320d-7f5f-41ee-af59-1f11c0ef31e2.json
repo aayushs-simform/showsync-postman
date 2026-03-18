@@ -4444,6 +4444,29 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "dropdowns/horses",
+					"id": "49347587-665b9f55-a1ff-47bc-b2c1-983838c51192",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_org}}/shows/dropdowns/horses",
+							"host": [
+								"{{base_org}}"
+							],
+							"path": [
+								"shows",
+								"dropdowns",
+								"horses"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "49347587-08f0c5ca-6d00-496b-a94e-a46d862de17e"
