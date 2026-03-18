@@ -4420,14 +4420,28 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Upcoming Shows",
 					"id": "49347587-add42abf-0e5f-48e2-858b-4aa719a6e640",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+						},
+						"url": {
+							"raw": "{{base_app}}/shows/upcoming",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"shows",
+								"upcoming"
+							]
+						}
 					},
 					"response": []
 				}
