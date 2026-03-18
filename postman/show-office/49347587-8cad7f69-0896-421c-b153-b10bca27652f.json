@@ -3608,6 +3608,18 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Health document types fetched successfully\",\n    \"data\": [\n        {\n            \"value\": \"COGGINS\",\n            \"label\": \"COGGINS\"\n        },\n        {\n            \"value\": \"VACCINATION\",\n            \"label\": \"VACCINATION\"\n        },\n        {\n            \"value\": \"RABIES\",\n            \"label\": \"RABIES\"\n        },\n        {\n            \"value\": \"HEALTH_CERTIFICATE\",\n            \"label\": \"HEALTH CERTIFICATE\"\n        },\n        {\n            \"value\": \"OTHER\",\n            \"label\": \"OTHER\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "New Request",
+							"id": "49347587-e260dd8f-5d4a-4c52-af94-eb53573d9934",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-11cd2385-bd1d-4967-8662-f66d735c3bc9"
