@@ -6498,7 +6498,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"document_name\": \"My Document\",\n    \"document_url\": \"https://cdn.example.com/waivers/standard-waiver-2025.pdf\"\n}",
+									"raw": "{\n    \"document_name\": \"My Document\",\n    \"blob_name\": \"show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6649,6 +6649,128 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Liability document added successfully\",\n    \"data\": {\n        \"id\": \"117d2ae7-746f-4a36-a0ed-61c27e352c2b\"\n    }\n}"
+								},
+								{
+									"id": "49347587-056d4517-e652-4bee-a246-b209ee950be2",
+									"name": "Upload New Liablity Document",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"document_name\": \"My Document\",\n    \"blob_name\": \"show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/liability-documents",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"liability-documents"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "398"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"18e-9mLNKD9Ur/q4HSj+eHOIJLvLr9k\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 18 Mar 2026 10:13:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Liability document added successfully\",\n    \"data\": {\n        \"id\": \"ef9a9bad-f677-4661-bf81-859ddc2cb9bb\",\n        \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7?sv=2026-02-06&spr=https&st=2026-03-18T10%3A13%3A14Z&se=2026-03-18T11%3A13%3A14Z&sr=b&sp=r&sig=UU9qmbZvFq%2BGxfiqro3K7r2S2TALVnJouewylJzcxV8%3D\"\n    }\n}"
 								}
 							]
 						},
@@ -13666,7 +13788,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/8a6936a9-248d-44d6-865b-d2f50d879224?sv=2026-02-06&spr=https&st=2026-03-18T09%3A45%3A30Z&se=2026-03-18T09%3A55%3A30Z&sr=b&sp=w&sig=A6mndmL0JUNzq2o2REDcTRQXryPy221dqLl7PkRlTX0%3D&rsct=application%2Fpdf",
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7?sv=2026-02-06&spr=https&st=2026-03-18T10%3A12%3A29Z&se=2026-03-18T10%3A22%3A29Z&sr=b&sp=w&sig=RIzgH67VhEEx4Yg%2B1t%2BvtJO2K%2FsG%2FVygoy6BS2jtXLU%3D&rsct=application%2Fpdf",
 					"protocol": "https",
 					"host": [
 						"devshowsyncstorage",
@@ -13677,8 +13799,8 @@
 					],
 					"path": [
 						"showsync",
-						"show-prize-documents",
-						"8a6936a9-248d-44d6-865b-d2f50d879224"
+						"show-liability-documents",
+						"9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7"
 					],
 					"query": [
 						{
@@ -13691,11 +13813,11 @@
 						},
 						{
 							"key": "st",
-							"value": "2026-03-18T09%3A45%3A30Z"
+							"value": "2026-03-18T10%3A12%3A29Z"
 						},
 						{
 							"key": "se",
-							"value": "2026-03-18T09%3A55%3A30Z"
+							"value": "2026-03-18T10%3A22%3A29Z"
 						},
 						{
 							"key": "sr",
@@ -13707,7 +13829,7 @@
 						},
 						{
 							"key": "sig",
-							"value": "A6mndmL0JUNzq2o2REDcTRQXryPy221dqLl7PkRlTX0%3D"
+							"value": "RIzgH67VhEEx4Yg%2B1t%2BvtJO2K%2FsG%2FVygoy6BS2jtXLU%3D"
 						},
 						{
 							"key": "rsct",
