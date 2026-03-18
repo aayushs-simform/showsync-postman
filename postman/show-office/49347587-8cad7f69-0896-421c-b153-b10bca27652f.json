@@ -5971,6 +5971,18 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Divisions and classes created successfully\",\n    \"data\": {\n        \"created\": [\n            {\n                \"index\": 0,\n                \"id\": \"baa2854b-7d12-4d92-9ea8-c9919deec4b5\",\n                \"division_name\": \"Open Jumper\"\n            },\n            {\n                \"index\": 1,\n                \"id\": \"917162ef-0f8f-4446-b49f-04796a78d6cd\",\n                \"division_name\": \"Training Level\"\n            }\n        ],\n        \"errors\": []\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "New Request",
+							"id": "49347587-3faafe2a-b886-490b-ac54-780e0152038d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-780acc93-5e9e-4f6a-8f3e-16306d8ef7ce"
