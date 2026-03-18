@@ -4305,7 +4305,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -4315,6 +4315,23 @@
 											"language": "json"
 										}
 									}
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/fees",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"fees"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": ""
+										}
+									]
 								}
 							},
 							"response": []
