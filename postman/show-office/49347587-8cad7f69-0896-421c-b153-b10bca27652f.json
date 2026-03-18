@@ -4329,7 +4329,7 @@
 									"variable": [
 										{
 											"key": "showId",
-											"value": ""
+											"value": "{{showId}}"
 										}
 									]
 								}
