@@ -4231,6 +4231,11 @@
 			"name": "Shows",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "49347587-9b7ee349-29c9-4705-be3b-01cf85f6df5c"
+				},
+				{
 					"name": "Welcome",
 					"id": "49347587-2bc8e977-d563-41f2-8ef7-40aadadb433d",
 					"protocolProfileBehavior": {
