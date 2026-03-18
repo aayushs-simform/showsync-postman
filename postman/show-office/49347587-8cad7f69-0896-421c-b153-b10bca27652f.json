@@ -3620,7 +3620,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"divisions\": {\n        \"document_type\": \"VACCINATION\",\n        \"issued_within_days\": 120\n    }\n}",
+									"raw": "{\n    \"requirements\": {\n        \"document_type\": \"VACCINATION\",\n        \"issued_within_days\": 120\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
