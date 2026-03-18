@@ -4455,14 +4455,37 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/shows/dropdowns/horses",
+							"raw": "{{base_app}}/shows/dropdowns/horses",
 							"host": [
-								"{{base_org}}"
+								"{{base_app}}"
 							],
 							"path": [
 								"shows",
 								"dropdowns",
 								"horses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dropdown Venues",
+					"id": "49347587-62f4d712-9df3-4b8c-9d55-43d081ca92e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_app}}/shows/dropdowns/venues",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"shows",
+								"dropdowns",
+								"venues"
 							]
 						}
 					},
