@@ -4446,7 +4446,7 @@
 					"response": []
 				},
 				{
-					"name": "dropdowns/horses",
+					"name": "Dropdown Horses",
 					"id": "49347587-665b9f55-a1ff-47bc-b2c1-983838c51192",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
