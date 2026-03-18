@@ -2068,7 +2068,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"venue_id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n  \"show_name\": \"Summer Classic 2026\",\n  \"circuit_name\": \"USEF Circuit\",\n  \"start_date\": \"2026-07-10\",\n  \"end_date\": \"2026-07-15\",\n  \"registration_opening_date\": \"2026-05-01\",\n  \"registration_closing_date\": \"2026-06-30\",\n  \"is_usef_required\": true,\n  \"total_stalls_allowed\": 200,\n  \"stall_fee\": \"150.00\",\n  \"total_rv_space_allowed\": 50,\n  \"rv_fee\": \"75.00\",\n  \"pump_out_fee\": \"75.00\",\n  \"total_paddock_allowed\": 20,\n  \"paddock_fee\": \"120.00\",\n  \"require_advance_payment\": false,\n  \"enable_late_fee\": true,\n  \"late_fee_amount\": \"50.00\",\n  \"entry_number_assignment\": \"AUTO\",\n  \"entry_number_start\": 100,\n  \"prize_document_blob_name\": \"show-prize-documents/fa78cd94-6b5a-4ff1-abbd-cbfe7327b5e5\"\n}",
+									"raw": "{\n  \"venue_id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n  \"show_name\": \"Summer Classic 2026\",\n  \"circuit_name\": \"USEF Circuit\",\n  \"start_date\": \"2026-07-10\",\n  \"end_date\": \"2026-07-15\",\n  \"registration_opening_date\": \"2026-05-01\",\n  \"registration_closing_date\": \"2026-06-30\",\n  \"is_usef_required\": true,\n  \"total_stalls_allowed\": 200,\n  \"stall_fee\": \"150.00\",\n  \"total_rv_space_allowed\": 50,\n  \"rv_fee\": \"75.00\",\n  \"pump_out_fee\": \"75.00\",\n  \"total_paddock_allowed\": 20,\n  \"paddock_fee\": \"120.00\",\n  \"require_advance_payment\": false,\n  \"enable_late_fee\": true,\n  \"late_fee_amount\": \"50.00\",\n  \"entry_number_assignment\": \"AUTO\",\n  \"entry_number_start\": 100,\n  \"prize_document_blob_name\": \"show-prize-documents/8a6936a9-248d-44d6-865b-d2f50d879224\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13503,11 +13503,11 @@
 				"body": {
 					"mode": "file",
 					"file": {
-						"src": ""
+						"src": "/home/aayush/Downloads/AI_Prompts_Productivity_Guide.pdf"
 					}
 				},
 				"url": {
-					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/fa78cd94-6b5a-4ff1-abbd-cbfe7327b5e5?sv=2026-02-06&spr=https&st=2026-03-18T09%3A20%3A33Z&se=2026-03-18T09%3A30%3A33Z&sr=b&sp=w&sig=1hvbC8F3fKyVDAwrjow9cjJlcat9G7%2FKXMVUL9z%2FjXk%3D&rsct=application%2Fpdf",
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/8a6936a9-248d-44d6-865b-d2f50d879224?sv=2026-02-06&spr=https&st=2026-03-18T09%3A45%3A30Z&se=2026-03-18T09%3A55%3A30Z&sr=b&sp=w&sig=A6mndmL0JUNzq2o2REDcTRQXryPy221dqLl7PkRlTX0%3D&rsct=application%2Fpdf",
 					"protocol": "https",
 					"host": [
 						"devshowsyncstorage",
@@ -13519,7 +13519,7 @@
 					"path": [
 						"showsync",
 						"show-prize-documents",
-						"fa78cd94-6b5a-4ff1-abbd-cbfe7327b5e5"
+						"8a6936a9-248d-44d6-865b-d2f50d879224"
 					],
 					"query": [
 						{
@@ -13532,11 +13532,11 @@
 						},
 						{
 							"key": "st",
-							"value": "2026-03-18T09%3A20%3A33Z"
+							"value": "2026-03-18T09%3A45%3A30Z"
 						},
 						{
 							"key": "se",
-							"value": "2026-03-18T09%3A30%3A33Z"
+							"value": "2026-03-18T09%3A55%3A30Z"
 						},
 						{
 							"key": "sr",
@@ -13548,7 +13548,7 @@
 						},
 						{
 							"key": "sig",
-							"value": "1hvbC8F3fKyVDAwrjow9cjJlcat9G7%2FKXMVUL9z%2FjXk%3D"
+							"value": "A6mndmL0JUNzq2o2REDcTRQXryPy221dqLl7PkRlTX0%3D"
 						},
 						{
 							"key": "rsct",
