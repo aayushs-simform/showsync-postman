@@ -1880,6 +1880,28 @@
 					]
 				},
 				{
+					"name": "Dropdown Horses",
+					"id": "49347587-665b9f55-a1ff-47bc-b2c1-983838c51192",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_app}}/horses/dropdown",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"horses",
+								"dropdown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "View Horse",
 					"id": "49347587-62391039-5db3-4641-acd3-c420f3989e1e",
 					"protocolProfileBehavior": {
@@ -2609,28 +2631,6 @@
 							"body": "{\n    \"status\": true,\n    \"message\": \"Horse activated successfully.\"\n}"
 						}
 					]
-				},
-				{
-					"name": "Dropdown Horses",
-					"id": "49347587-665b9f55-a1ff-47bc-b2c1-983838c51192",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_app}}/horses/dropdown",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"horses",
-								"dropdown"
-							]
-						}
-					},
-					"response": []
 				},
 				{
 					"name": "*USEF Lookup",
