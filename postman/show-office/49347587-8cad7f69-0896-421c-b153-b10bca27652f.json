@@ -2654,7 +2654,12 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"file_name\": \"VACCINATION\",\n}"
+									"raw": "{\n    \"file_name\": \"AI Goals 2.json\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
 								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/prize-document/upload-url",
