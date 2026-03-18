@@ -5982,7 +5982,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/divisions/course-map/upload-url",
+									"raw": "{{base_org}}/shows/:showId/divisions/classes/course-map/upload-url",
 									"host": [
 										"{{base_org}}"
 									],
@@ -5990,6 +5990,7 @@
 										"shows",
 										":showId",
 										"divisions",
+										"classes",
 										"course-map",
 										"upload-url"
 									],
