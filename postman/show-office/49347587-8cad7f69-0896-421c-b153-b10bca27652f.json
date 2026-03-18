@@ -5973,14 +5973,32 @@
 							]
 						},
 						{
-							"name": "New Request",
+							"name": "Course Map - Get Upload URL",
 							"id": "49347587-3faafe2a-b886-490b-ac54-780e0152038d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/divisions/bulk",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"divisions",
+										"bulk"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": ""
+										}
+									]
+								}
 							},
 							"response": []
 						}
