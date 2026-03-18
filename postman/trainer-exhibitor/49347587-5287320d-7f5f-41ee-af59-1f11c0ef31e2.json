@@ -4321,13 +4321,14 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_app}}/horses/dropdown",
+									"raw": "{{base_app}}/shows/dropdowns/horses",
 									"host": [
 										"{{base_app}}"
 									],
 									"path": [
-										"horses",
-										"dropdown"
+										"shows",
+										"dropdowns",
+										"horses"
 									]
 								}
 							},
