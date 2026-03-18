@@ -4492,14 +4492,30 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Show Details",
 					"id": "49347587-ee58cdda-40dc-47b1-b1f7-aecf3da6cc63",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{base_app}}/shows/:showId",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"shows",
+								":showId"
+							],
+							"variable": [
+								{
+									"key": "showId",
+									"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+								}
+							]
+						}
 					},
 					"response": []
 				}
