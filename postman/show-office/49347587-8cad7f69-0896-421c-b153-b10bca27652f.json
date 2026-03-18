@@ -7021,7 +7021,131 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-74e670e5-7f9b-4ea8-ac1e-d5f854258d93",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/liability-documents/upload-url",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"liability-documents",
+												"upload-url"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "512"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"200-gKdh2NWbu2NLkOZCsefIcih/u7U\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 18 Mar 2026 10:12:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Liability document upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7?sv=2026-02-06&spr=https&st=2026-03-18T10%3A12%3A29Z&se=2026-03-18T10%3A22%3A29Z&sr=b&sp=w&sig=RIzgH67VhEEx4Yg%2B1t%2BvtJO2K%2FsG%2FVygoy6BS2jtXLU%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7\",\n        \"expires_at\": \"2026-03-18T10:21:29.077Z\"\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "49347587-2780d031-b324-4adc-82bb-6eb6b0e3e244"
