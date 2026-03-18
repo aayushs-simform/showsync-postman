@@ -2654,7 +2654,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"file_name\": \"AI Goals 2.json\"\n}",
+									"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2680,7 +2680,131 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-87db45ad-f334-445b-84e0-74e9179ea8a5",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/prize-document/upload-url",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"prize-document",
+												"upload-url"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "492"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1ec-rGmyXCaUP/ehM5VE4+mMjZQOHRQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 18 Mar 2026 08:47:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Prize document upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/dc8f4fa6-6998-4e5e-b234-c5225c7a4e49?sv=2026-02-06&spr=https&st=2026-03-18T08%3A47%3A57Z&se=2026-03-18T08%3A57%3A57Z&sr=b&sp=w&sig=Pq9JLmTH9QpZtkkomb6cjxzocRHHAEVj3wrxiVo7G1A%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"show-prize-documents/dc8f4fa6-6998-4e5e-b234-c5225c7a4e49\",\n        \"expires_at\": \"2026-03-18T08:56:57.433Z\"\n    }\n}"
+								}
+							]
 						}
 					],
 					"id": "49347587-91f94e2e-eea9-462c-989c-3166ea08c91c"
