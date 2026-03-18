@@ -3556,7 +3556,7 @@
 			]
 		},
 		{
-			"name": "Health Document - Upload File Copy",
+			"name": "Azure - Upload File",
 			"id": "49347587-084d809c-1f22-4361-8c65-09f0f625a828",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -3627,131 +3627,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "49347587-8a05513c-bea1-4a20-b050-1f8e7838388c",
-					"name": "New Request",
-					"originalRequest": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-ms-blob-type",
-								"value": "BlockBlob",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "file",
-							"file": {
-								"src": "/home/aayush/Downloads/AI_Prompts_Productivity_Guide.pdf"
-							},
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/0ec9ffb0-2e4d-4855-b733-0d770abbfab6?sv=2026-02-06&spr=https&st=2026-03-13T07%3A05%3A53Z&se=2026-03-13T07%3A15%3A53Z&sr=b&sp=w&sig=X1W79UwvYfKzVG8HHUuYexodKBik46QyeosB4aRPbKU%3D&rsct=application%2Fpdf",
-							"protocol": "https",
-							"host": [
-								"devshowsyncstorage",
-								"blob",
-								"core",
-								"windows",
-								"net"
-							],
-							"path": [
-								"showsync",
-								"horse-documents",
-								"0ec9ffb0-2e4d-4855-b733-0d770abbfab6"
-							],
-							"query": [
-								{
-									"key": "sv",
-									"value": "2026-02-06"
-								},
-								{
-									"key": "spr",
-									"value": "https"
-								},
-								{
-									"key": "st",
-									"value": "2026-03-13T07%3A05%3A53Z"
-								},
-								{
-									"key": "se",
-									"value": "2026-03-13T07%3A15%3A53Z"
-								},
-								{
-									"key": "sr",
-									"value": "b"
-								},
-								{
-									"key": "sp",
-									"value": "w"
-								},
-								{
-									"key": "sig",
-									"value": "X1W79UwvYfKzVG8HHUuYexodKBik46QyeosB4aRPbKU%3D"
-								},
-								{
-									"key": "rsct",
-									"value": "application%2Fpdf"
-								}
-							]
-						}
-					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": null,
-					"header": [
-						{
-							"key": "Content-Length",
-							"value": "0"
-						},
-						{
-							"key": "Content-MD5",
-							"value": "avBfXkVD2eGwvpOQcBEh5g=="
-						},
-						{
-							"key": "Last-Modified",
-							"value": "Fri, 13 Mar 2026 07:06:06 GMT"
-						},
-						{
-							"key": "ETag",
-							"value": "\"0x8DE80CEFF25D2D7\""
-						},
-						{
-							"key": "Server",
-							"value": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0"
-						},
-						{
-							"key": "x-ms-request-id",
-							"value": "978de104-b01e-005f-71b7-b2d8fd000000"
-						},
-						{
-							"key": "x-ms-version",
-							"value": "2026-02-06"
-						},
-						{
-							"key": "x-ms-content-crc64",
-							"value": "a0ykc+Uq34A="
-						},
-						{
-							"key": "x-ms-request-server-encrypted",
-							"value": "true"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 13 Mar 2026 07:06:05 GMT"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": null
-				}
-			]
+			"response": []
 		}
 	],
 	"event": [
