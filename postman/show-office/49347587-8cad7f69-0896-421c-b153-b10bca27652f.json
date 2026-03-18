@@ -5979,10 +5979,10 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/divisions/bulk",
+									"raw": "{{base_org}}/shows/:showId/divisions/course-map/upload-url",
 									"host": [
 										"{{base_org}}"
 									],
@@ -5990,7 +5990,8 @@
 										"shows",
 										":showId",
 										"divisions",
-										"bulk"
+										"course-map",
+										"upload-url"
 									],
 									"variable": [
 										{
