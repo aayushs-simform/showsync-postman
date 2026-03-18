@@ -478,7 +478,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"identifier\": \"superadmin@showsync.com\",\n    \"password\": \"Admin@123\" //\"Strong@1!\"\n}\n// {\n//     \"identifier\": \"aayushs.simform@gmail.com\",\n//     \"password\": \"%e$rtk^Z7TZ9\" //\"Strong@1!\"\n// }",
+							"raw": "{\n    \"identifier\": \"superadmin@showsync.com\",\n    \"password\": \"Strong@1!\" //\"Strong@1!\"\n}\n// {\n//     \"identifier\": \"aayushs.simform@gmail.com\",\n//     \"password\": \"%e$rtk^Z7TZ9\" //\"Strong@1!\"\n// }",
 							"options": {
 								"raw": {
 									"language": "json"
