@@ -4231,9 +4231,167 @@
 			"name": "Shows",
 			"item": [
 				{
-					"name": "New Folder",
-					"item": [],
+					"name": "Shows Lists",
+					"item": [
+						{
+							"name": "Today's Shows",
+							"id": "49347587-f0f3e415-aec4-45b9-a607-d7058d04b480",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+								},
+								"url": {
+									"raw": "{{base_app}}/shows/today",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										"today"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Enrolled Shows",
+							"id": "49347587-e5baca2d-4fa3-4142-9f11-9734230d90cf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+								},
+								"url": {
+									"raw": "{{base_app}}/shows/enrolled",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										"enrolled"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upcoming Shows",
+							"id": "49347587-add42abf-0e5f-48e2-858b-4aa719a6e640",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+								},
+								"url": {
+									"raw": "{{base_app}}/shows/upcoming",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										"upcoming"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dropdown Horses",
+							"id": "49347587-665b9f55-a1ff-47bc-b2c1-983838c51192",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/horses/dropdown",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"horses",
+										"dropdown"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dropdown Venues",
+							"id": "49347587-62f4d712-9df3-4b8c-9d55-43d081ca92e3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/shows/dropdowns/venues",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										"dropdowns",
+										"venues"
+									]
+								}
+							},
+							"response": []
+						}
+					],
 					"id": "49347587-9b7ee349-29c9-4705-be3b-01cf85f6df5c"
+				},
+				{
+					"name": "Show Details",
+					"item": [
+						{
+							"name": "Show Details",
+							"id": "49347587-ee58cdda-40dc-47b1-b1f7-aecf3da6cc63",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/shows/:showId",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										":showId"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "49347587-0086f03e-219e-4308-95d7-29f3b260ffea"
 				},
 				{
 					"name": "Welcome",
@@ -4371,157 +4529,6 @@
 							"body": "{\n    \"status\": true,\n    \"message\": \"Welcome summary fetched successfully.\",\n    \"data\": {\n        \"today_shows_count\": 0,\n        \"enrolled_shows_count\": 0,\n        \"upcoming_shows_count\": 1\n    }\n}"
 						}
 					]
-				},
-				{
-					"name": "Today's Shows",
-					"id": "49347587-f0f3e415-aec4-45b9-a607-d7058d04b480",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
-						},
-						"url": {
-							"raw": "{{base_app}}/shows/today",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"shows",
-								"today"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Enrolled Shows",
-					"id": "49347587-e5baca2d-4fa3-4142-9f11-9734230d90cf",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
-						},
-						"url": {
-							"raw": "{{base_app}}/shows/enrolled",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"shows",
-								"enrolled"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Upcoming Shows",
-					"id": "49347587-add42abf-0e5f-48e2-858b-4aa719a6e640",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
-						},
-						"url": {
-							"raw": "{{base_app}}/shows/upcoming",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"shows",
-								"upcoming"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Dropdown Horses",
-					"id": "49347587-665b9f55-a1ff-47bc-b2c1-983838c51192",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_app}}/horses/dropdown",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"horses",
-								"dropdown"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Dropdown Venues",
-					"id": "49347587-62f4d712-9df3-4b8c-9d55-43d081ca92e3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_app}}/shows/dropdowns/venues",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"shows",
-								"dropdowns",
-								"venues"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Show Details",
-					"id": "49347587-ee58cdda-40dc-47b1-b1f7-aecf3da6cc63",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_app}}/shows/:showId",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"shows",
-								":showId"
-							],
-							"variable": [
-								{
-									"key": "showId",
-									"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "49347587-08f0c5ca-6d00-496b-a94e-a46d862de17e"
