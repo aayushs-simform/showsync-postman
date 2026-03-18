@@ -3619,19 +3619,20 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/health-requirements",
+									"raw": "{{base_org}}/shows/:showId/health-requirements/bulk",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows",
 										":showId",
-										"health-requirements"
+										"health-requirements",
+										"bulk"
 									],
 									"variable": [
 										{
 											"key": "showId",
-											"value": ""
+											"value": "{{base_org}}"
 										}
 									]
 								}
