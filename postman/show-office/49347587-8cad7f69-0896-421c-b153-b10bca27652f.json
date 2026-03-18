@@ -1944,7 +1944,7 @@
 							},
 							"response": [
 								{
-									"id": "49347587-9665bc9d-efe2-4a6c-a908-7372427f375a",
+									"id": "49347587-e7dbfbab-d076-4d22-921f-f48b81694e7a",
 									"name": "View Show",
 									"originalRequest": {
 										"method": "GET",
@@ -1961,7 +1961,7 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": "f31f5b38-b01a-4978-a454-d038feaea794"
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
 												}
 											]
 										}
@@ -2032,15 +2032,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "1525"
+											"value": "1016"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"5f5-IkJtaVOlnsNGuFRKYP6Nh5Hsi4s\""
+											"value": "W/\"3f8-hm7tq5YLoruiI8ap/SYgE90Kx0M\""
 										},
 										{
 											"key": "Date",
-											"value": "Tue, 17 Mar 2026 07:30:59 GMT"
+											"value": "Wed, 18 Mar 2026 06:02:41 GMT"
 										},
 										{
 											"key": "Connection",
@@ -2053,7 +2053,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"status\": true,\n    \"message\": \"Show fetched successfully\",\n    \"data\": {\n        \"id\": \"f31f5b38-b01a-4978-a454-d038feaea794\",\n        \"created_at\": \"2026-03-16T05:42:49.898Z\",\n        \"updated_at\": \"2026-03-17T07:30:56.031Z\",\n        \"deleted_at\": null,\n        \"organization_id\": \"fd9986c1-4c74-4e45-95ca-15dce5faa4a4\",\n        \"venue_id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n        \"status\": \"DRAFT\",\n        \"creation_step\": 3,\n        \"show_name\": \"Summer Classic 2026\",\n        \"circuit_name\": \"USEF Circuit\",\n        \"start_date\": \"2026-07-10T00:00:00.000Z\",\n        \"end_date\": \"2026-07-15T00:00:00.000Z\",\n        \"registration_opening_date\": \"2026-05-01T00:00:00.000Z\",\n        \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n        \"is_usef_required\": true,\n        \"total_stalls_allowed\": 200,\n        \"total_paddock_allowed\": 20,\n        \"total_rv_space_allowed\": 50,\n        \"require_advance_payment\": false,\n        \"entry_number_assignment\": \"AUTO\",\n        \"entry_number_start\": 100,\n        \"prize_document_url\": null,\n        \"is_active\": true,\n        \"health_requirements\": [\n            {\n                \"id\": \"1dbcef81-c469-4d1d-9f6b-cee7235308ed\",\n                \"created_at\": \"2026-03-17T07:30:56.025Z\",\n                \"show_id\": \"f31f5b38-b01a-4978-a454-d038feaea794\",\n                \"document_type\": \"VACCINATION\",\n                \"issued_within_days\": 120,\n                \"is_required\": true\n            }\n        ],\n        \"show_fees\": [\n            {\n                \"id\": \"ad8c6c39-17ab-4c38-a595-91940fc55c6d\",\n                \"created_at\": \"2026-03-17T07:30:45.119Z\",\n                \"show_id\": \"f31f5b38-b01a-4978-a454-d038feaea794\",\n                \"fee_category\": \"FEED_BEDDING\",\n                \"fee_name\": \"Feed 1\",\n                \"amount\": \"300.00\",\n                \"fee_label\": \"REFUNDABLE\",\n                \"is_mandatory\": true,\n                \"threshold\": \"0.90\"\n            }\n        ],\n        \"fees\": {\n            \"facility\": {\n                \"stall_fee\": \"150.00\",\n                \"paddock_fee\": \"120.00\",\n                \"rv_fee\": \"75.00\",\n                \"pump_out_fee\": \"75.00\"\n            },\n            \"platform_fee\": \"10.00\",\n            \"late_fee\": {\n                \"amount\": \"50.00\",\n                \"enabled\": true\n            }\n        }\n    }\n}"
+									"body": "{\n    \"status\": true,\n    \"message\": \"Show fetched successfully\",\n    \"data\": {\n        \"id\": \"277a2a1f-bff4-4034-a4a9-e4bc0d9a067e\",\n        \"created_at\": \"2026-03-17T04:03:15.303Z\",\n        \"organization_id\": \"fd9986c1-4c74-4e45-95ca-15dce5faa4a4\",\n        \"status\": \"PUBLISHED\",\n        \"creation_step\": 4,\n        \"show_name\": \"Summer Classic 2026\",\n        \"circuit_name\": \"USEF Circuit\",\n        \"start_date\": \"2026-07-10T00:00:00.000Z\",\n        \"end_date\": \"2026-07-15T00:00:00.000Z\",\n        \"registration_opening_date\": \"2026-05-01T00:00:00.000Z\",\n        \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n        \"is_usef_required\": true,\n        \"total_stalls_allowed\": 200,\n        \"total_paddock_allowed\": 20,\n        \"total_rv_space_allowed\": 50,\n        \"require_advance_payment\": false,\n        \"entry_number_assignment\": \"AUTO\",\n        \"entry_number_start\": 100,\n        \"prize_document_url\": null,\n        \"is_active\": true,\n        \"venue\": {\n            \"id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"fees\": {\n            \"facility\": {\n                \"stall_fee\": 150,\n                \"paddock_fee\": 120,\n                \"rv_fee\": 75,\n                \"pump_out_fee\": 75\n            },\n            \"platform_fee\": 10,\n            \"late_fee\": {\n                \"enabled\": true,\n                \"amount\": 50\n            }\n        },\n        \"health_requirements\": [],\n        \"show_fees\": []\n    }\n}"
 								}
 							]
 						},
