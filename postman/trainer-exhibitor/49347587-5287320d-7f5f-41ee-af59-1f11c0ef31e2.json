@@ -4368,8 +4368,60 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Today's Shows",
 					"id": "49347587-f0f3e415-aec4-45b9-a607-d7058d04b480",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+						},
+						"url": {
+							"raw": "{{base_app}}/shows/today",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"shows",
+								"today"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Enrolled Shows",
+					"id": "49347587-e5baca2d-4fa3-4142-9f11-9734230d90cf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+						},
+						"url": {
+							"raw": "{{base_app}}/shows/enrolled",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"shows",
+								"enrolled"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "49347587-add42abf-0e5f-48e2-858b-4aa719a6e640",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
