@@ -3683,7 +3683,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "json",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -3743,7 +3743,9 @@
 										},
 										{
 											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
+											"value": "application/json",
+											"description": "",
+											"type": "text"
 										},
 										{
 											"key": "Content-Length",
@@ -3766,7 +3768,13 @@
 											"value": "timeout=5"
 										}
 									],
-									"cookie": [],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Health requirements added successfully\",\n    \"data\": [\n        {\n            \"id\": \"edeae6aa-a2ee-4687-a474-8189a3cbbbc1\"\n        }\n    ]\n}"
 								}
