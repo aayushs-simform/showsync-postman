@@ -13484,6 +13484,80 @@
 					"body": "{\n    \"status\": \"ok\",\n    \"service\": \"organisation\",\n    \"uptime\": 71,\n    \"timestamp\": \"2026-02-25T12:18:32.252Z\"\n}"
 				}
 			]
+		},
+		{
+			"name": "Azure - Upload File Copy",
+			"id": "49347587-a821376f-a941-40c9-b2d9-3d9ccc2d6d0b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-ms-blob-type",
+						"value": "BlockBlob",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/home/aayush/projects/Project Estimator/templates/task_estimation_template.xlsx"
+					}
+				},
+				"url": {
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/dc8f4fa6-6998-4e5e-b234-c5225c7a4e49?sv=2026-02-06&spr=https&st=2026-03-18T08%3A47%3A57Z&se=2026-03-18T08%3A57%3A57Z&sr=b&sp=w&sig=Pq9JLmTH9QpZtkkomb6cjxzocRHHAEVj3wrxiVo7G1A%3D&rsct=application%2Fpdf",
+					"protocol": "https",
+					"host": [
+						"devshowsyncstorage",
+						"blob",
+						"core",
+						"windows",
+						"net"
+					],
+					"path": [
+						"showsync",
+						"show-prize-documents",
+						"dc8f4fa6-6998-4e5e-b234-c5225c7a4e49"
+					],
+					"query": [
+						{
+							"key": "sv",
+							"value": "2026-02-06"
+						},
+						{
+							"key": "spr",
+							"value": "https"
+						},
+						{
+							"key": "st",
+							"value": "2026-03-18T08%3A47%3A57Z"
+						},
+						{
+							"key": "se",
+							"value": "2026-03-18T08%3A57%3A57Z"
+						},
+						{
+							"key": "sr",
+							"value": "b"
+						},
+						{
+							"key": "sp",
+							"value": "w"
+						},
+						{
+							"key": "sig",
+							"value": "Pq9JLmTH9QpZtkkomb6cjxzocRHHAEVj3wrxiVo7G1A%3D"
+						},
+						{
+							"key": "rsct",
+							"value": "application%2Fpdf"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
