@@ -2611,6 +2611,29 @@
 					]
 				},
 				{
+					"name": "Dropdown Horses",
+					"id": "49347587-665b9f55-a1ff-47bc-b2c1-983838c51192",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_app}}/shows/dropdowns/horses",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"shows",
+								"dropdowns",
+								"horses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "*USEF Lookup",
 					"id": "49347587-c0853a65-0442-4122-beaf-25fe3dc584af",
 					"protocolProfileBehavior": {
@@ -4440,29 +4463,6 @@
 							"path": [
 								"shows",
 								"upcoming"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Dropdown Horses",
-					"id": "49347587-665b9f55-a1ff-47bc-b2c1-983838c51192",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{base_app}}/shows/dropdowns/horses",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"shows",
-								"dropdowns",
-								"horses"
 							]
 						}
 					},
