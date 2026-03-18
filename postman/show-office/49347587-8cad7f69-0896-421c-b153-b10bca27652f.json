@@ -5820,7 +5820,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"divisions\": [\n    {\n      \"division_type\": \"JUMPER\",\n      \"division_name\": \"Open Jumpers\",\n      \"display_order\": 1,\n      \"classes\": [\n        { \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\", \"class_id\": \"J101\", \"class_name\": \"1.0m Open\", \"fee\": \"50.00\", \"class_date\": \"2026-03-15T08:00:00Z\", \"course_map_blob_name\": \"\" }\n      ]\n    },\n    {\n      \"division_type\": \"HUNTER\",\n      \"division_name\": \"Training Levels\"\n    }\n  ]\n}",
+									"raw": "{\n  \"divisions\": [\n    {\n      \"division_type\": \"JUMPER\",\n      \"division_name\": \"Open Jumpers\",\n      \"display_order\": 1,\n      \"classes\": [\n        { \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\", \"class_id\": \"J101\", \"class_name\": \"1.0m Open\", \"fee\": \"50.00\", \"class_date\": \"2026-03-15T08:00:00Z\", \"course_map_blob_name\": \"show-course-maps/16c0a9f4-0d2e-4967-b4ec-efca062b6e10\" }\n      ]\n    },\n    {\n      \"division_type\": \"HUNTER\",\n      \"division_name\": \"Training Levels\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13666,7 +13666,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-course-maps/265146bb-d432-44e2-bf71-158a7144fc7b?sv=2026-02-06&spr=https&st=2026-03-18T11%3A21%3A47Z&se=2026-03-18T11%3A31%3A47Z&sr=b&sp=w&sig=E8mbzulTUCJAPBcWXfzdadm7xa1GrpveQnHFOj0q%2FLI%3D&rsct=application%2Fpdf",
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-course-maps/16c0a9f4-0d2e-4967-b4ec-efca062b6e10?sv=2026-02-06&spr=https&st=2026-03-18T11%3A40%3A12Z&se=2026-03-18T11%3A50%3A12Z&sr=b&sp=w&sig=R1NZ6kQGNssI6rfl1IkHAlvC51vWJBzYevDPOXw8eLc%3D&rsct=application%2Fpdf",
 					"protocol": "https",
 					"host": [
 						"devshowsyncstorage",
@@ -13678,7 +13678,7 @@
 					"path": [
 						"showsync",
 						"show-course-maps",
-						"265146bb-d432-44e2-bf71-158a7144fc7b"
+						"16c0a9f4-0d2e-4967-b4ec-efca062b6e10"
 					],
 					"query": [
 						{
@@ -13691,11 +13691,11 @@
 						},
 						{
 							"key": "st",
-							"value": "2026-03-18T11%3A21%3A47Z"
+							"value": "2026-03-18T11%3A40%3A12Z"
 						},
 						{
 							"key": "se",
-							"value": "2026-03-18T11%3A31%3A47Z"
+							"value": "2026-03-18T11%3A50%3A12Z"
 						},
 						{
 							"key": "sr",
@@ -13707,7 +13707,7 @@
 						},
 						{
 							"key": "sig",
-							"value": "E8mbzulTUCJAPBcWXfzdadm7xa1GrpveQnHFOj0q%2FLI%3D"
+							"value": "R1NZ6kQGNssI6rfl1IkHAlvC51vWJBzYevDPOXw8eLc%3D"
 						},
 						{
 							"key": "rsct",
