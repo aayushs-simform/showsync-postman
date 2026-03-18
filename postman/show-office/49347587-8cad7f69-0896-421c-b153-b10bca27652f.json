@@ -66,7 +66,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -217,7 +217,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -377,7 +377,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -528,7 +528,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -679,7 +679,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -833,7 +833,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -960,7 +960,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -1105,7 +1105,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -1246,7 +1246,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -1395,7 +1395,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -1693,7 +1693,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": "",
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -1968,7 +1968,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -2113,7 +2113,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -2272,7 +2272,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -2417,7 +2417,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -2550,7 +2550,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -2713,7 +2713,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -2862,7 +2862,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -3027,7 +3027,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -3202,7 +3202,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -3359,7 +3359,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -3516,7 +3516,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -3669,7 +3669,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -3834,7 +3834,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -4009,7 +4009,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -4166,7 +4166,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -4319,7 +4319,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -4484,7 +4484,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -4610,7 +4610,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -4767,7 +4767,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -4924,7 +4924,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -5101,7 +5101,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -5233,7 +5233,7 @@
 									},
 									"status": "Internal Server Error",
 									"code": 500,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -5402,7 +5402,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -5571,7 +5571,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -5728,7 +5728,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -5881,7 +5881,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6044,7 +6044,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6233,7 +6233,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6394,7 +6394,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6559,7 +6559,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6726,7 +6726,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6891,7 +6891,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6983,6 +6983,18 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Liability document deleted successfully\"\n}"
 								}
 							]
+						},
+						{
+							"name": "Get Upload Document URL",
+							"id": "49347587-0cf65ca8-5638-4ebb-aa68-d8c2f57c4e0b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-2780d031-b324-4adc-82bb-6eb6b0e3e244"
@@ -7288,7 +7300,7 @@
 											},
 											"status": "Created",
 											"code": 201,
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "Text",
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -7437,7 +7449,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "Text",
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -7596,7 +7608,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "Text",
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -7769,7 +7781,7 @@
 											},
 											"status": "Created",
 											"code": 201,
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "Text",
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -7918,7 +7930,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "Text",
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -8077,7 +8089,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "Text",
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -8381,7 +8393,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -8526,7 +8538,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -8675,7 +8687,7 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -8840,7 +8852,7 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -9003,7 +9015,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -9160,7 +9172,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -9305,7 +9317,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -9450,7 +9462,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -9599,7 +9611,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -9744,7 +9756,7 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -9903,7 +9915,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -10052,7 +10064,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -10189,7 +10201,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -10326,7 +10338,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -10455,7 +10467,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -10604,7 +10616,7 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -10763,7 +10775,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -10896,7 +10908,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -11025,7 +11037,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -11174,7 +11186,7 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -11333,7 +11345,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -11482,7 +11494,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -11623,7 +11635,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -11772,7 +11784,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -11917,7 +11929,7 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -12076,7 +12088,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -12225,7 +12237,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -12362,7 +12374,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -12507,7 +12519,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -12656,7 +12668,7 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -12797,7 +12809,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -12960,7 +12972,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -13113,7 +13125,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -13388,7 +13400,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": null,
+					"_postman_previewlanguage": "Text",
 					"header": [
 						{
 							"key": "Content-Security-Policy",
