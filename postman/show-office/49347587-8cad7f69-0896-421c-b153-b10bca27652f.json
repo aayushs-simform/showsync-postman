@@ -4297,6 +4297,27 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Fee deleted successfully\"\n}"
 								}
 							]
+						},
+						{
+							"name": "Bulk Add Show Fees",
+							"id": "49347587-2c32d961-7bdb-47c1-ab47-ec3436eaa7d8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"fees\": [\n    {\n      \"fee_category\": \"ADMIN_CHARGES\",\n      \"fee_name\": \"Office Administration Fee\",\n      \"amount\": \"25.00\",\n      \"fee_label\": \"NON_REFUNDABLE\",\n      \"is_mandatory\": true\n    },\n    {\n      \"fee_category\": \"NOMINATION_FEE\",\n      \"fee_name\": \"Nomination Fee (Senior)\",\n      \"amount\": \"15.50\",\n      \"is_mandatory\": false,\n      \"threshold\": \"0.90\"\n    },\n    {\n      \"fee_category\": \"ADMIN_CHARGES\",\n      \"fee_name\": \"Grounds Levy\",\n      \"amount\": \"10.00\",\n      \"is_mandatory\": false\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-6f1019ee-51e9-4048-8b2c-8956419cc3d1"
