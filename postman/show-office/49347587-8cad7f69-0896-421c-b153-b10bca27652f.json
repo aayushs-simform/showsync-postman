@@ -2642,6 +2642,40 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show statuses fetched successfully\",\n    \"data\": [\n        {\n            \"label\": \"Draft\",\n            \"value\": \"DRAFT\"\n        },\n        {\n            \"label\": \"Published\",\n            \"value\": \"PUBLISHED\"\n        },\n        {\n            \"label\": \"In progress\",\n            \"value\": \"IN_PROGRESS\"\n        },\n        {\n            \"label\": \"Completed\",\n            \"value\": \"COMPLETED\"\n        },\n        {\n            \"label\": \"Cancelled\",\n            \"value\": \"CANCELLED\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "Get Upload Prize money URl",
+							"id": "49347587-c3be01b2-33ad-43db-8908-14c9b629cb8e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"file_name\": \"VACCINATION\",\n}"
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/prize-document/upload-url",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"prize-document",
+										"upload-url"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-91f94e2e-eea9-462c-989c-3166ea08c91c"
