@@ -4905,14 +4905,14 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/shows/:showId/master-schedule",
+											"raw": "{{base_app}}/shows/:showId/health-documents",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
 												":showId",
-												"master-schedule"
+												"health-documents"
 											],
 											"query": [
 												{
@@ -4938,6 +4938,70 @@
 												}
 											]
 										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Hourse's Docuemnts",
+									"id": "49347587-94867e9b-8139-41df-8bdc-333236d9580e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/health-documents/horses/:horseId",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"health-documents",
+												"horses",
+												":horseId"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "80m Jumper",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": null,
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-0c52534e-100b-4225-a8f4-a4c02706a356",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
 									},
 									"response": []
 								}
