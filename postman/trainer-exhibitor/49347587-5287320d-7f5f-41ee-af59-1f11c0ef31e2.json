@@ -4880,6 +4880,80 @@
 					"body": "{\n    \"status\": \"ok\",\n    \"service\": \"app\",\n    \"uptime\": 1543,\n    \"timestamp\": \"2026-03-09T12:34:53.301Z\"\n}"
 				}
 			]
+		},
+		{
+			"name": "Azure - Upload File",
+			"id": "49347587-44bd0580-195f-479d-9c94-d5b69075d21a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-ms-blob-type",
+						"value": "BlockBlob",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "postman-cloud:///1f12355d-f86e-4cf0-a721-8998a1e067c5"
+					}
+				},
+				"url": {
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-course-maps/95802461-9d14-46b0-a987-6a1cbeea6b8f?sv=2026-02-06&spr=https&st=2026-03-19T05%3A40%3A29Z&se=2026-03-19T05%3A50%3A29Z&sr=b&sp=w&sig=MqtyxCccauquQPgwEaLSNlsP6Qgnnf979JlluUG4ez0%3D&rsct=application%2Fpdf",
+					"protocol": "https",
+					"host": [
+						"devshowsyncstorage",
+						"blob",
+						"core",
+						"windows",
+						"net"
+					],
+					"path": [
+						"showsync",
+						"show-course-maps",
+						"95802461-9d14-46b0-a987-6a1cbeea6b8f"
+					],
+					"query": [
+						{
+							"key": "sv",
+							"value": "2026-02-06"
+						},
+						{
+							"key": "spr",
+							"value": "https"
+						},
+						{
+							"key": "st",
+							"value": "2026-03-19T05%3A40%3A29Z"
+						},
+						{
+							"key": "se",
+							"value": "2026-03-19T05%3A50%3A29Z"
+						},
+						{
+							"key": "sr",
+							"value": "b"
+						},
+						{
+							"key": "sp",
+							"value": "w"
+						},
+						{
+							"key": "sig",
+							"value": "MqtyxCccauquQPgwEaLSNlsP6Qgnnf979JlluUG4ez0%3D"
+						},
+						{
+							"key": "rsct",
+							"value": "application%2Fpdf"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
