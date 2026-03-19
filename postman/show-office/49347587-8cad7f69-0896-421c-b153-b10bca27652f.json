@@ -2834,6 +2834,18 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "List Creation Steps",
+							"id": "49347587-2fab8485-0d46-4195-bb92-692fb4a391bd",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-91f94e2e-eea9-462c-989c-3166ea08c91c"
