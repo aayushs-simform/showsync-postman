@@ -1105,7 +1105,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6IjUxYzk5MTkzLTQzNDktNGNlMy05MWUzLTdlNGJkZTgyZTBmNCIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzM5MTYwOTksImV4cCI6MTc3MzkxNjk5OX0.pDbGyeUpVS0_tVLFZKc8mSVWwevGyCP0-UHqBGOJvBg\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simform@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"5555550100\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"12345678\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6IjUxYzk5MTkzLTQzNDktNGNlMy05MWUzLTdlNGJkZTgyZTBmNCIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzM5MTYwOTksImV4cCI6MTc3MzkxNjk5OX0.pDbGyeUpVS0_tVLFZKc8mSVWwevGyCP0-UHqBGOJvBg\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simform@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3454354543\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"12345678\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
