@@ -4654,7 +4654,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_app}}/shows/:showId/master-schedule?search&from_date&to_date",
+									"raw": "{{base_app}}/shows/:showId/master-schedule",
 									"host": [
 										"{{base_app}}"
 									],
@@ -4666,18 +4666,18 @@
 									"query": [
 										{
 											"key": "search",
-											"value": null,
-											"type": "text"
+											"value": "80m Jumper",
+											"disabled": true
 										},
 										{
 											"key": "from_date",
 											"value": null,
-											"type": "text"
+											"disabled": true
 										},
 										{
 											"key": "to_date",
 											"value": null,
-											"type": "text"
+											"disabled": true
 										}
 									],
 									"variable": [
