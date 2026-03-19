@@ -4654,7 +4654,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_app}}/shows/:showId/master-schedule",
+									"raw": "{{base_app}}/shows/:showId/master-schedule?search&from_date&to_date",
 									"host": [
 										"{{base_app}}"
 									],
@@ -4662,6 +4662,23 @@
 										"shows",
 										":showId",
 										"master-schedule"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": null,
+											"type": "text"
+										},
+										{
+											"key": "from_date",
+											"value": null,
+											"type": "text"
+										},
+										{
+											"key": "to_date",
+											"value": null,
+											"type": "text"
+										}
 									],
 									"variable": [
 										{
