@@ -4411,7 +4411,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\n    {\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 3\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                \"class_id\": \"J101\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"50.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"score_required\": \"ONE\",\n                \"table_type\": \"TABLE_A\",\n                \"apply_nomination_fee\": true,\n                \"course_map_blob_name\": \"show-course-maps/e099f831-efe7-4df8-992c-a09047717dc6\"\n            }\n        ]\n    },\n    {\n        \"division_type\": \"HUNTER\",\n        \"division_name\": \"Training Levels 3\"\n    }\n]",
+									"raw": "[\n    {\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 4\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                \"class_id\": \"J101\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"50.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"score_required\": \"ONE\",//ONE, TWO\n                \"table_type\": \"TABLE_A\",\n                \"apply_nomination_fee\": true,\n                \"course_map_blob_name\": \"show-course-maps/e099f831-efe7-4df8-992c-a09047717dc6\"\n            }\n        ]\n    },\n    {\n        \"division_type\": \"HUNTER\",\n        \"division_name\": \"Training Levels 4\"\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13361,7 +13361,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-course-maps/e099f831-efe7-4df8-992c-a09047717dc6?sv=2026-02-06&spr=https&st=2026-03-19T05%3A38%3A18Z&se=2026-03-19T05%3A48%3A18Z&sr=b&sp=w&sig=4qzBrQM5gv5H5mSg4Gvu%2FUNfJ6kLUAtqvxM8kW88sHU%3D&rsct=application%2Fpdf",
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-course-maps/95802461-9d14-46b0-a987-6a1cbeea6b8f?sv=2026-02-06&spr=https&st=2026-03-19T05%3A40%3A29Z&se=2026-03-19T05%3A50%3A29Z&sr=b&sp=w&sig=MqtyxCccauquQPgwEaLSNlsP6Qgnnf979JlluUG4ez0%3D&rsct=application%2Fpdf",
 					"protocol": "https",
 					"host": [
 						"devshowsyncstorage",
@@ -13373,7 +13373,7 @@
 					"path": [
 						"showsync",
 						"show-course-maps",
-						"e099f831-efe7-4df8-992c-a09047717dc6"
+						"95802461-9d14-46b0-a987-6a1cbeea6b8f"
 					],
 					"query": [
 						{
@@ -13386,11 +13386,11 @@
 						},
 						{
 							"key": "st",
-							"value": "2026-03-19T05%3A38%3A18Z"
+							"value": "2026-03-19T05%3A40%3A29Z"
 						},
 						{
 							"key": "se",
-							"value": "2026-03-19T05%3A48%3A18Z"
+							"value": "2026-03-19T05%3A50%3A29Z"
 						},
 						{
 							"key": "sr",
@@ -13402,7 +13402,7 @@
 						},
 						{
 							"key": "sig",
-							"value": "4qzBrQM5gv5H5mSg4Gvu%2FUNfJ6kLUAtqvxM8kW88sHU%3D"
+							"value": "MqtyxCccauquQPgwEaLSNlsP6Qgnnf979JlluUG4ez0%3D"
 						},
 						{
 							"key": "rsct",
