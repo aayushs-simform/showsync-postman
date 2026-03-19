@@ -4616,14 +4616,31 @@
 							]
 						},
 						{
-							"name": "New Request",
+							"name": "Show Enrollments",
 							"id": "49347587-1449488f-ce4d-4499-aeaf-1c138f5794d1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/shows/:showId/my-schedule",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"my-schedule"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+										}
+									]
+								}
 							},
 							"response": []
 						}
