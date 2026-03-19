@@ -4652,7 +4652,24 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/shows/:showId/master-schedule",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"master-schedule"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+										}
+									]
+								}
 							},
 							"response": []
 						}
