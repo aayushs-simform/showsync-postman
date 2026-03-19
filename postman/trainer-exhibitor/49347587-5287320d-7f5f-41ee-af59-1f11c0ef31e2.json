@@ -4994,14 +4994,55 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Get Upload Url for Horse's Health Document",
 									"id": "49347587-0c52534e-100b-4225-a8f4-a4c02706a356",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/health-documents/horses/:horseId/upload-url",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"health-documents",
+												"horses",
+												":horseId",
+												"upload-url"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "80m Jumper",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": null,
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												},
+												{
+													"key": "horseId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												}
+											]
+										}
 									},
 									"response": []
 								}
