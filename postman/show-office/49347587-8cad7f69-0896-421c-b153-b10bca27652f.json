@@ -13336,7 +13336,7 @@
 			]
 		},
 		{
-			"name": "Azure - Upload File Copy",
+			"name": "Azure - Upload File",
 			"id": "49347587-a821376f-a941-40c9-b2d9-3d9ccc2d6d0b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
