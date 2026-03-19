@@ -2683,7 +2683,7 @@
 									"variable": [
 										{
 											"key": "showId",
-											"value": "0174773f-8c09-47e3-9f43-d7e724ea02a1"
+											"value": "{{showId}}"
 										}
 									]
 								}
