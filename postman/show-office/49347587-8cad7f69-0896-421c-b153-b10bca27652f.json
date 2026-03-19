@@ -13532,7 +13532,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/86aa57f3-eaa6-4b88-87d3-506c85594e5a?sv=2026-02-06&spr=https&st=2026-03-19T12%3A22%3A23Z&se=2026-03-19T12%3A32%3A23Z&sr=b&sp=w&sig=mEbQpXqSSeJQ8WnTXer1kCGuCPQ02wuHSelgoSONxDs%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"show-prize-documents/86aa57f3-eaa6-4b88-87d3-506c85594e5a",
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/86aa57f3-eaa6-4b88-87d3-506c85594e5a?sv=2026-02-06&spr=https&st=2026-03-19T12%3A22%3A23Z&se=2026-03-19T12%3A32%3A23Z&sr=b&sp=w&sig=mEbQpXqSSeJQ8WnTXer1kCGuCPQ02wuHSelgoSONxDs%3D&rsct=application%2Fpdf",
 					"protocol": "https",
 					"host": [
 						"devshowsyncstorage",
@@ -13577,7 +13577,7 @@
 						},
 						{
 							"key": "rsct",
-							"value": "application%2Fpdf\",\n        \"blob_name\": \"show-prize-documents/86aa57f3-eaa6-4b88-87d3-506c85594e5a"
+							"value": "application%2Fpdf"
 						}
 					]
 				}
