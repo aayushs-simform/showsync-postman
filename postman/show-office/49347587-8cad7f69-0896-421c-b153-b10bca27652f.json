@@ -4411,7 +4411,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\n    {\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 3\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                \"class_id\": \"J101\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"50.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"course_map_blob_name\": \"show-course-maps/9f107a80-7914-4dc8-9673-da30fab70761\"\n            }\n        ]\n    },\n    {\n        \"division_type\": \"HUNTER\",\n        \"division_name\": \"Training Levels 3\"\n    }\n]",
+									"raw": "[\n    {\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 3\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                \"class_id\": \"J101\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"50.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"course_map_blob_name\": \"show-course-maps/e099f831-efe7-4df8-992c-a09047717dc6\"\n            }\n        ]\n    },\n    {\n        \"division_type\": \"HUNTER\",\n        \"division_name\": \"Training Levels 3\"\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4436,7 +4436,130 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-635a6c7f-856b-4c73-b4d2-3519e8ff5af5",
+									"name": "Add New Divisions",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "[\n    {\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 3\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                \"class_id\": \"J101\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"50.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"course_map_blob_name\": \"show-course-maps/e099f831-efe7-4df8-992c-a09047717dc6\"\n            }\n        ]\n    },\n    {\n        \"division_type\": \"HUNTER\",\n        \"division_name\": \"Training Levels 3\"\n    }\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/divisions",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"divisions"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "70"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"46-nTOamoyEeSOVM8/nlTB8dqV9gDA\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 19 Mar 2026 05:38:53 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Divisions and classes created successfully\"\n}"
+								}
+							]
 						},
 						{
 							"name": "Update Division",
@@ -13234,11 +13357,11 @@
 				"body": {
 					"mode": "file",
 					"file": {
-						"src": "/home/aayush/Downloads/AI_Prompts_Productivity_Guide.pdf"
+						"src": "postman-cloud:///1f12355d-f86e-4cf0-a721-8998a1e067c5"
 					}
 				},
 				"url": {
-					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-course-maps/9f107a80-7914-4dc8-9673-da30fab70761?sv=2026-02-06&spr=https&st=2026-03-19T05%3A37%3A41Z&se=2026-03-19T05%3A47%3A41Z&sr=b&sp=w&sig=Jcaom9pFeoJzKOWy%2B1WbCsZ4dfUgECTCbmTLM31ro0I%3D&rsct=application%2Fpdf",
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-course-maps/e099f831-efe7-4df8-992c-a09047717dc6?sv=2026-02-06&spr=https&st=2026-03-19T05%3A38%3A18Z&se=2026-03-19T05%3A48%3A18Z&sr=b&sp=w&sig=4qzBrQM5gv5H5mSg4Gvu%2FUNfJ6kLUAtqvxM8kW88sHU%3D&rsct=application%2Fpdf",
 					"protocol": "https",
 					"host": [
 						"devshowsyncstorage",
@@ -13250,7 +13373,7 @@
 					"path": [
 						"showsync",
 						"show-course-maps",
-						"9f107a80-7914-4dc8-9673-da30fab70761"
+						"e099f831-efe7-4df8-992c-a09047717dc6"
 					],
 					"query": [
 						{
@@ -13263,11 +13386,11 @@
 						},
 						{
 							"key": "st",
-							"value": "2026-03-19T05%3A37%3A41Z"
+							"value": "2026-03-19T05%3A38%3A18Z"
 						},
 						{
 							"key": "se",
-							"value": "2026-03-19T05%3A47%3A41Z"
+							"value": "2026-03-19T05%3A48%3A18Z"
 						},
 						{
 							"key": "sr",
@@ -13279,7 +13402,7 @@
 						},
 						{
 							"key": "sig",
-							"value": "Jcaom9pFeoJzKOWy%2B1WbCsZ4dfUgECTCbmTLM31ro0I%3D"
+							"value": "4qzBrQM5gv5H5mSg4Gvu%2FUNfJ6kLUAtqvxM8kW88sHU%3D"
 						},
 						{
 							"key": "rsct",
