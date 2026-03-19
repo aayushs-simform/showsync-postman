@@ -1515,7 +1515,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows?tab=active&page=1&limit=10",
+									"raw": "{{base_org}}/shows?tab=active&page=1&limit=10&sort=created_at:desc",
 									"host": [
 										"{{base_org}}"
 									],
@@ -1549,6 +1549,10 @@
 										{
 											"key": "limit",
 											"value": "10"
+										},
+										{
+											"key": "sort",
+											"value": "created_at:desc"
 										}
 									]
 								}
