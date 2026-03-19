@@ -2848,7 +2848,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "// {\n//     \"document_type\": \"VACCINATION\",\n//     \"issued_within\": \"2026-01-01\",\n//     \"valid_until\": \"2026-08-01\"\n// }\n[\n    {\n        \"document_type\": \"COGGINS\",\n        \"issued_within\": \"2026-01-01\",\n        \"valid_until\": \"2026-08-01\"\n    },\n    {\n        \"document_type\": \"RABIES\",\n        \"issued_within\": \"2026-01-01\",\n        \"valid_until\": \"2026-08-01\"\n    }\n]",
+									"raw": "// {\n//     \"document_type\": \"VACCINATION\",\n//     \"issued_within\": \"2026-01-01\",\n//     \"valid_until\": \"2026-08-01\"\n// }\n[\n    {\n        \"document_type\": \"VACCINATION\",\n        \"issued_within\": \"2026-01-01\",\n        \"valid_until\": \"2026-08-01\"\n    },\n    {\n        \"document_type\": \"RABIES\",\n        \"issued_within\": \"2026-01-01\",\n        \"valid_until\": \"2026-08-01\"\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
