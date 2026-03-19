@@ -3761,7 +3761,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"fee_category\": \"FEED_BEDDING\",\n    \"fee_name\": \"Feed 1\",\n    \"amount\": \"300\",\n    \"fee_label\": \"REFUNDABLE\", //REFUNDABLE, NON_REFUNDABLE, PRE_ENTRY\n    \"is_mandatory\": true,\n    \"threshold\": \"0.90\" //NOMINATION_FEE category\n}",
+									"raw": "[\n    {\n        \"fee_category\": \"FEED_BEDDING\",\n        \"fee_name\": \"Feed 1\",\n        \"amount\": \"300\",\n        \"fee_label\": \"REFUNDABLE\", //REFUNDABLE, NON_REFUNDABLE, PRE_ENTRY\n        \"is_mandatory\": true,\n        \"threshold\": \"0.90\" //NOMINATION_FEE category\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3912,6 +3912,128 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Fee created successfully\",\n    \"data\": {\n        \"id\": \"000d990e-7a2c-439a-be39-81c97720030e\"\n    }\n}"
+								},
+								{
+									"id": "49347587-ec107264-384f-4564-8034-f3984d019291",
+									"name": "Add New Show Fees",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "[\n    {\n        \"fee_category\": \"FEED_BEDDING\",\n        \"fee_name\": \"Feed 1\",\n        \"amount\": \"300\",\n        \"fee_label\": \"REFUNDABLE\", //REFUNDABLE, NON_REFUNDABLE, PRE_ENTRY\n        \"is_mandatory\": true,\n        \"threshold\": \"0.90\" //NOMINATION_FEE category\n    }\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/fees",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"fees"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "108"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"6c-XZpvWxouK2+HA0ecJGYV3TIiuCY\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 19 Mar 2026 05:41:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Fees created successfully\",\n    \"data\": [\n        {\n            \"id\": \"d8ebdb79-76fd-46e3-83c1-d10ecee721cf\"\n        }\n    ]\n}"
 								}
 							]
 						},
