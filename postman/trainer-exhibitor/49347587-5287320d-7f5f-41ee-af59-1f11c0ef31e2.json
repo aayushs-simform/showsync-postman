@@ -4616,7 +4616,7 @@
 							]
 						},
 						{
-							"name": "Show Enrollments",
+							"name": "My Schedule",
 							"id": "49347587-1449488f-ce4d-4499-aeaf-1c138f5794d1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4641,6 +4641,18 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "Master Schedule",
+							"id": "49347587-f48ad323-4636-4788-84b7-bc226fc7ada0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
