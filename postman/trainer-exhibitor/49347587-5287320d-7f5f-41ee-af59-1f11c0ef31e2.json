@@ -4614,6 +4614,18 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show details fetched successfully.\",\n    \"data\": {\n        \"id\": \"277a2a1f-bff4-4034-a4a9-e4bc0d9a067e\",\n        \"show_name\": \"Summer Classic 2026\",\n        \"start_date\": \"2026-07-10T00:00:00.000Z\",\n        \"end_date\": \"2026-07-15T00:00:00.000Z\",\n        \"organization_name\": \"News Brideg Stables2\",\n        \"venue_name\": \"Golden Gate Equestrian Center\",\n        \"division_types\": [\n            \"JUMPER\",\n            \"HUNTER\"\n        ],\n        \"is_enrolled\": false\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "New Request",
+							"id": "49347587-1449488f-ce4d-4499-aeaf-1c138f5794d1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-0086f03e-219e-4308-95d7-29f3b260ffea"
