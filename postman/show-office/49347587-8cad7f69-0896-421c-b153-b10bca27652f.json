@@ -2966,7 +2966,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"document_type\": \"VACCINATION\",\n    \"issued_within_days\": 120\n}",
+									"raw": "{\n    \"document_type\": \"VACCINATION\",\n    \"issued_within\": 120\n}",
 									"options": {
 										"raw": {
 											"language": "json"
