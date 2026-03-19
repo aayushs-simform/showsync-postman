@@ -1937,7 +1937,7 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+											"value": "{{showId}}"
 										}
 									]
 								}
