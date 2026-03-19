@@ -2803,7 +2803,7 @@
 							]
 						},
 						{
-							"name": "Publish Show",
+							"name": "Finish Show",
 							"id": "49347587-9ab97371-0ee4-4eae-94b4-1cc473c65951",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
