@@ -4840,16 +4840,56 @@
 							"id": "49347587-d85cbf8c-f920-45f4-a410-36e7f4e7f62a"
 						},
 						{
-							"name": "New Request",
-							"id": "49347587-57347309-9510-4f34-8886-b359e9351090",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
+							"name": "Health Documents",
+							"item": [
+								{
+									"name": "Get Horses _ Documents",
+									"id": "49347587-57347309-9510-4f34-8886-b359e9351090",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/master-schedule",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"master-schedule"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "80m Jumper",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": null,
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "49347587-6cf610f2-0cac-4bea-9a49-bc6e413e9605"
 						}
 					],
 					"id": "49347587-0086f03e-219e-4308-95d7-29f3b260ffea"
