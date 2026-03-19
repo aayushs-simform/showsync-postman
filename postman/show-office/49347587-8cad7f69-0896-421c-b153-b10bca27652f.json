@@ -2670,21 +2670,14 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/prize-document/upload-url",
+									"raw": "{{base_org}}/shows/prize-document/upload-url",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows",
-										":showId",
 										"prize-document",
 										"upload-url"
-									],
-									"variable": [
-										{
-											"key": "showId",
-											"value": "{{showId}}"
-										}
 									]
 								}
 							},
