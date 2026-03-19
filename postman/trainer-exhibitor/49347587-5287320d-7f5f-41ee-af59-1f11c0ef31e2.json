@@ -4623,82 +4623,49 @@
 						},
 						{
 							"name": "My Schedule",
-							"id": "49347587-1449488f-ce4d-4499-aeaf-1c138f5794d1",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{base_app}}/shows/:showId/my-schedule",
-									"host": [
-										"{{base_app}}"
-									],
-									"path": [
-										"shows",
-										":showId",
-										"my-schedule"
-									],
-									"variable": [
-										{
-											"key": "showId",
-											"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+							"item": [
+								{
+									"name": "My Schedule",
+									"id": "49347587-1449488f-ce4d-4499-aeaf-1c138f5794d1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-schedule",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-schedule"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												}
+											]
 										}
-									]
+									},
+									"response": []
 								}
-							},
-							"response": []
+							],
+							"id": "49347587-779f3d46-5d66-44db-85ec-1c2e727e5cd6"
 						},
 						{
 							"name": "Master Schedule",
-							"id": "49347587-f48ad323-4636-4788-84b7-bc226fc7ada0",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{base_app}}/shows/:showId/master-schedule",
-									"host": [
-										"{{base_app}}"
-									],
-									"path": [
-										"shows",
-										":showId",
-										"master-schedule"
-									],
-									"query": [
-										{
-											"key": "search",
-											"value": "80m Jumper",
-											"disabled": true
-										},
-										{
-											"key": "from_date",
-											"value": null,
-											"disabled": true
-										},
-										{
-											"key": "to_date",
-											"value": null,
-											"disabled": true
-										}
-									],
-									"variable": [
-										{
-											"key": "showId",
-											"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
-										}
-									]
-								}
-							},
-							"response": [
+							"item": [
 								{
-									"id": "49347587-2f650807-f490-4416-a1f3-a3301aa2751b",
-									"name": "New Request",
-									"originalRequest": {
+									"name": "Master Schedule",
+									"id": "49347587-f48ad323-4636-4788-84b7-bc226fc7ada0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
 										"method": "GET",
 										"header": [],
 										"url": {
@@ -4736,96 +4703,141 @@
 											]
 										}
 									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": null,
-									"header": [
+									"response": [
 										{
-											"key": "Content-Security-Policy",
-											"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-										},
-										{
-											"key": "Cross-Origin-Opener-Policy",
-											"value": "same-origin"
-										},
-										{
-											"key": "Cross-Origin-Resource-Policy",
-											"value": "same-origin"
-										},
-										{
-											"key": "Origin-Agent-Cluster",
-											"value": "?1"
-										},
-										{
-											"key": "Referrer-Policy",
-											"value": "no-referrer"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-DNS-Prefetch-Control",
-											"value": "off"
-										},
-										{
-											"key": "X-Download-Options",
-											"value": "noopen"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "SAMEORIGIN"
-										},
-										{
-											"key": "X-Permitted-Cross-Domain-Policies",
-											"value": "none"
-										},
-										{
-											"key": "X-XSS-Protection",
-											"value": "0"
-										},
-										{
-											"key": "Vary",
-											"value": "Origin"
-										},
-										{
-											"key": "Access-Control-Allow-Credentials",
-											"value": "true"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "1496"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"5d8-7TKbgwg2wzTp4GuE0qbM0aOWTG0\""
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 19 Mar 2026 13:48:33 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
+											"id": "49347587-2f650807-f490-4416-a1f3-a3301aa2751b",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_app}}/shows/:showId/master-schedule",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														":showId",
+														"master-schedule"
+													],
+													"query": [
+														{
+															"key": "search",
+															"value": "80m Jumper",
+															"disabled": true
+														},
+														{
+															"key": "from_date",
+															"value": null,
+															"disabled": true
+														},
+														{
+															"key": "to_date",
+															"value": null,
+															"disabled": true
+														}
+													],
+													"variable": [
+														{
+															"key": "showId",
+															"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "1496"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"5d8-7TKbgwg2wzTp4GuE0qbM0aOWTG0\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 19 Mar 2026 13:48:33 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Master schedule fetched successfully.\",\n    \"data\": [\n        {\n            \"date\": \"2026-03-15\",\n            \"divisions\": [\n                {\n                    \"division_id\": \"baa2854b-7d12-4d92-9ea8-c9919deec4b5\",\n                    \"division_name\": \"Open Jumper\",\n                    \"division_type\": \"JUMPER\",\n                    \"display_order\": 1,\n                    \"classes\": [\n                        {\n                            \"class_id\": \"f9c72951-958f-46b3-be03-f382a4f3577a\",\n                            \"class_number\": \"J101\",\n                            \"class_name\": \"1.0m Open\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        }\n                    ]\n                },\n                {\n                    \"division_id\": \"4d85a5c0-922a-4f0b-84c3-587d2db5b7d7\",\n                    \"division_name\": \"Open Jumpers\",\n                    \"division_type\": \"JUMPER\",\n                    \"display_order\": 1,\n                    \"classes\": [\n                        {\n                            \"class_id\": \"cdc0ae51-5a76-464c-8c71-4e7fa0566a74\",\n                            \"class_number\": \"J101\",\n                            \"class_name\": \"1.0m Open\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"date\": \"2026-03-17\",\n            \"divisions\": [\n                {\n                    \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                    \"division_name\": \"Adult High Jump 2\",\n                    \"division_type\": \"JUMPER\",\n                    \"display_order\": 0,\n                    \"classes\": [\n                        {\n                            \"class_id\": \"91e70419-a92b-49e7-bf43-69fe004e6591\",\n                            \"class_number\": \"101\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        },\n                        {\n                            \"class_id\": \"035d19d5-9e74-415c-81d0-791d4c93d5b8\",\n                            \"class_number\": \"102\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"date\": \"2026-07-10\",\n            \"divisions\": [\n                {\n                    \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                    \"division_name\": \"Adult High Jump 2\",\n                    \"division_type\": \"JUMPER\",\n                    \"display_order\": 0,\n                    \"classes\": [\n                        {\n                            \"class_id\": \"05eb9f3a-9877-426e-aea7-a0dab8739746\",\n                            \"class_number\": \"103\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
 										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"status\": true,\n    \"message\": \"Master schedule fetched successfully.\",\n    \"data\": [\n        {\n            \"date\": \"2026-03-15\",\n            \"divisions\": [\n                {\n                    \"division_id\": \"baa2854b-7d12-4d92-9ea8-c9919deec4b5\",\n                    \"division_name\": \"Open Jumper\",\n                    \"division_type\": \"JUMPER\",\n                    \"display_order\": 1,\n                    \"classes\": [\n                        {\n                            \"class_id\": \"f9c72951-958f-46b3-be03-f382a4f3577a\",\n                            \"class_number\": \"J101\",\n                            \"class_name\": \"1.0m Open\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        }\n                    ]\n                },\n                {\n                    \"division_id\": \"4d85a5c0-922a-4f0b-84c3-587d2db5b7d7\",\n                    \"division_name\": \"Open Jumpers\",\n                    \"division_type\": \"JUMPER\",\n                    \"display_order\": 1,\n                    \"classes\": [\n                        {\n                            \"class_id\": \"cdc0ae51-5a76-464c-8c71-4e7fa0566a74\",\n                            \"class_number\": \"J101\",\n                            \"class_name\": \"1.0m Open\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"date\": \"2026-03-17\",\n            \"divisions\": [\n                {\n                    \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                    \"division_name\": \"Adult High Jump 2\",\n                    \"division_type\": \"JUMPER\",\n                    \"display_order\": 0,\n                    \"classes\": [\n                        {\n                            \"class_id\": \"91e70419-a92b-49e7-bf43-69fe004e6591\",\n                            \"class_number\": \"101\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        },\n                        {\n                            \"class_id\": \"035d19d5-9e74-415c-81d0-791d4c93d5b8\",\n                            \"class_number\": \"102\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"date\": \"2026-07-10\",\n            \"divisions\": [\n                {\n                    \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                    \"division_name\": \"Adult High Jump 2\",\n                    \"division_type\": \"JUMPER\",\n                    \"display_order\": 0,\n                    \"classes\": [\n                        {\n                            \"class_id\": \"05eb9f3a-9877-426e-aea7-a0dab8739746\",\n                            \"class_number\": \"103\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\"\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+									]
 								}
-							]
+							],
+							"id": "49347587-d85cbf8c-f920-45f4-a410-36e7f4e7f62a"
 						},
 						{
 							"name": "New Request",
