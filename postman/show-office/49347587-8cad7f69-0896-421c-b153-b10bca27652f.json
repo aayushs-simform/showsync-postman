@@ -2976,6 +2976,18 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show creation steps fetched successfully\",\n    \"data\": [\n        {\n            \"step\": 1,\n            \"value\": \"show_information\",\n            \"label\": \"Show Information\"\n        },\n        {\n            \"step\": 2,\n            \"value\": \"health_requirements\",\n            \"label\": \"Health Requirements\"\n        },\n        {\n            \"step\": 3,\n            \"value\": \"show_fees\",\n            \"label\": \"Show Fees\"\n        },\n        {\n            \"step\": 4,\n            \"value\": \"divisions_and_classes\",\n            \"label\": \"Divisions & Classes\"\n        },\n        {\n            \"step\": 5,\n            \"value\": \"prize_money\",\n            \"label\": \"Prize Money\"\n        },\n        {\n            \"step\": 6,\n            \"value\": \"liability_waivers\",\n            \"label\": \"Liability Waivers\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "Update Creation Steps",
+							"id": "49347587-8a16a854-afaf-415f-b631-6658d137f901",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-91f94e2e-eea9-462c-989c-3166ea08c91c"
