@@ -5904,8 +5904,41 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "List horses in the show",
 									"id": "49347587-b875e014-383e-425e-9844-5b4bc740148d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-1cbabf44-8922-45a3-8be4-1d758894be76",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
