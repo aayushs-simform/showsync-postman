@@ -5317,6 +5317,58 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Get Horse's Assistant Trainer",
+									"id": "49347587-3593b42e-82ec-4bf8-8451-8a7708e43c3f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/assistant-trainer",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses",
+												":horseId",
+												"assistant-trainer"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "80m Jumper",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": null,
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-5b14e14d-0391-448a-8e03-395e48aa8a3b"
