@@ -6103,17 +6103,21 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": ""
+											"raw": "{\n    \"horse_ids\": [\n        \n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/entryId/horses",
+											"raw": "{{base_app}}/entries/:entryId/horses",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"entries",
 												":entryId",
-												"entryId",
 												"horses"
 											],
 											"variable": [
