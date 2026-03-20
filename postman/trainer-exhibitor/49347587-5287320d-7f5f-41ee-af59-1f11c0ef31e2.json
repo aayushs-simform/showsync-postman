@@ -5392,11 +5392,12 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/shows/:showId/preflight",
+											"raw": "{{base_app}}/entries/shows/:showId/preflight",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"entries",
 												"shows",
 												":showId",
 												"preflight"
