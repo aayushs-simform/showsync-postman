@@ -5110,6 +5110,24 @@
 								}
 							],
 							"id": "49347587-6cf610f2-0cac-4bea-9a49-bc6e413e9605"
+						},
+						{
+							"name": "My Registered Horses",
+							"item": [
+								{
+									"name": "My Registered Horses",
+									"id": "49347587-49cbf4b2-af9a-4e30-81fd-62e5622d3cdb",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
+							"id": "49347587-5b14e14d-0391-448a-8e03-395e48aa8a3b"
 						}
 					],
 					"id": "49347587-0086f03e-219e-4308-95d7-29f3b260ffea"
