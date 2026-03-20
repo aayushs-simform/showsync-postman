@@ -5259,6 +5259,64 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "See Class Result",
+									"id": "49347587-6a4c7d62-647f-47ba-871f-0a1ab0d04e6d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/classes/:classId/result",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses",
+												":horseId",
+												"classes",
+												":classId",
+												"result"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "80m Jumper",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": null,
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												},
+												{
+													"key": "classId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-5b14e14d-0391-448a-8e03-395e48aa8a3b"
