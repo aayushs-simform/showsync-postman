@@ -6091,6 +6091,40 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Add horse to entry",
+									"id": "49347587-5016b0e0-9282-48e7-abb1-7a587884b9a0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/entryId/horses",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"entryId",
+												"horses"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-2415b577-f7f9-4e24-8811-cbdbed75dc58"
