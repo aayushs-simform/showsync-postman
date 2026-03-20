@@ -5422,7 +5422,7 @@
 											"variable": [
 												{
 													"key": "showId",
-													"value": "c38389e9-dae1-4e42-8f62-06492edede51"
+													"value": "{{showId}}"
 												}
 											]
 										}
@@ -5936,6 +5936,11 @@
 		{
 			"key": "accessTokenRefreshed",
 			"value": ""
+		},
+		{
+			"key": "showId",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
