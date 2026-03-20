@@ -5388,6 +5388,21 @@
 							"name": "Show Assignments",
 							"item": [],
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
+						},
+						{
+							"name": "Show Division",
+							"item": [],
+							"id": "49347587-2415b577-f7f9-4e24-8811-cbdbed75dc58"
+						},
+						{
+							"name": "Show Entry",
+							"item": [],
+							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
+						},
+						{
+							"name": "Show Fees",
+							"item": [],
+							"id": "49347587-1b329d3c-b9fc-477e-9124-bb289795683c"
 						}
 					],
 					"id": "49347587-681f98c2-fc95-44e9-b77e-5c7c6638b446"
