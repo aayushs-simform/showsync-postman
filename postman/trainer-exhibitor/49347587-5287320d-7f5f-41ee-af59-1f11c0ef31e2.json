@@ -5381,7 +5381,20 @@
 					"item": [
 						{
 							"name": "Show",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "49347587-bc37ef48-9c38-4423-8456-dc1517bb7a7c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "49347587-4960c1ca-901b-48d4-a05f-e6ca6b076117"
 						},
 						{
@@ -5420,9 +5433,14 @@
 							"id": "49347587-fbe9cbd0-effb-417a-938a-ded274bd4271"
 						},
 						{
-							"name": "New Folder",
+							"name": "Show Schedule",
 							"item": [],
 							"id": "49347587-df8616bf-8b96-4e10-b7a3-f8d4c2e0cc9a"
+						},
+						{
+							"name": "Show Staff Assignements",
+							"item": [],
+							"id": "49347587-e6ea438b-b7f6-4063-a013-62cf533bb89d"
 						}
 					],
 					"id": "49347587-681f98c2-fc95-44e9-b77e-5c7c6638b446"
