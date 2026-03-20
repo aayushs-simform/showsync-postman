@@ -5168,7 +5168,43 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses/dropdowns/trainers",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses",
+												"dropdowns",
+												"trainers"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "80m Jumper",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": null,
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												}
+											]
+										}
 									},
 									"response": []
 								}
