@@ -5159,6 +5159,18 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "List Trainers",
+									"id": "49347587-5df7bd75-e4d6-4a98-8e02-fc87e6ee29f7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-5b14e14d-0391-448a-8e03-395e48aa8a3b"
