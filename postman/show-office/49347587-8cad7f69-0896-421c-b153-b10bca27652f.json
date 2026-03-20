@@ -2988,7 +2988,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"creation_step\": \"prize_money\" //health_requirements, show_fees, divisions_and_classes, prize_money, liability_waivers\n}",
+									"raw": "{\n    \"creation_step\": \"liability_waivers\" //health_requirements, show_fees, divisions_and_classes, prize_money, liability_waivers\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6220,7 +6220,7 @@
 										},
 										{
 											"key": "divisionId",
-											"value": "a2a9f145-44b2-4bdf-a530-11e99397ccf9"
+											"value": "11e121db-79e6-4d23-b619-d7b8ef429eff"
 										},
 										{
 											"key": "classId",
