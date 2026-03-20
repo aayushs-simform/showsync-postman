@@ -6099,7 +6099,7 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
+										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
@@ -6119,7 +6119,7 @@
 											"variable": [
 												{
 													"key": "entryId",
-													"value": ""
+													"value": "{{entryId}}"
 												}
 											]
 										}
@@ -6631,6 +6631,11 @@
 		},
 		{
 			"key": "showId",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "entryId",
 			"value": "",
 			"type": "default"
 		}
