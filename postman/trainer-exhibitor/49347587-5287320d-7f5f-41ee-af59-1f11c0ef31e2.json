@@ -5937,14 +5937,86 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "List all classes horses registered on",
 									"id": "49347587-1cbabf44-8922-45a3-8be4-1d758894be76",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/classes",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses",
+												":horseId",
+												"classes"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Result of Horse in an Class",
+									"id": "49347587-59f3f2a1-f351-40d6-834e-d75b39a7c980",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/classes/:classId/result",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses",
+												":horseId",
+												"classes",
+												":classId",
+												"result"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												},
+												{
+													"key": "classId",
+													"value": ""
+												}
+											]
+										}
 									},
 									"response": []
 								}
