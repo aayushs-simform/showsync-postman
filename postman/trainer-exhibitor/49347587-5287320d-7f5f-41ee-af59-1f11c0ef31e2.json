@@ -6031,7 +6031,12 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": ""
+											"raw": "{\n    \"person_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
 										"url": {
 											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/assistant-trainer",
