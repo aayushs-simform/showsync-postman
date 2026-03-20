@@ -2988,7 +2988,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"creation_step\": \"show_fees\" //show_information, health_requirements, show_fees, divisions_and_classes, prize_money, liability_waivers\n}",
+									"raw": "{\n    \"creation_step\": \"liability_waivers\" //show_information, health_requirements, show_fees, divisions_and_classes, prize_money, liability_waivers\n}",
 									"options": {
 										"raw": {
 											"language": "json"
