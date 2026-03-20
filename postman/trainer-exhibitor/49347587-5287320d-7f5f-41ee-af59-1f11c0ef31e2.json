@@ -5713,6 +5713,36 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Entry started successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"created_at\": \"2026-03-20T13:35:46.837Z\",\n        \"owner_id\": \"40ab009c-13fb-4f59-a9d3-00b9129934eb\",\n        \"show_id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n        \"trainer_id\": null,\n        \"payer_id\": null,\n        \"wizard_step\": \"HORSE_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\",\n        \"tax_document_id\": null,\n        \"status\": \"ENTERED\"\n    }\n}"
 										}
 									]
+								},
+								{
+									"name": "View Entry",
+									"id": "49347587-4bc0dd90-684a-4f95-9bca-7ed08faf5f09",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/entries/shows/:showId/start",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												"shows",
+												":showId",
+												"start"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-4960c1ca-901b-48d4-a05f-e6ca6b076117"
