@@ -2988,7 +2988,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"creation_step\": \"divisions_and_classes\" //health_requirements, show_fees, divisions_and_classes, prize_money, liability_waivers\n}",
+									"raw": "{\n    \"creation_step\": \"prize_money\" //health_requirements, show_fees, divisions_and_classes, prize_money, liability_waivers\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4755,7 +4755,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\n    {\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 4\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                \"class_id\": \"J101\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"50.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"score_required\": \"ONE\",//ONE, TWO\n                \"table_type\": \"TABLE_A\",\n                \"apply_nomination_fee\": true,\n                \"course_map_blob_name\": \"show-course-maps/95802461-9d14-46b0-a987-6a1cbeea6b8f\"\n            }\n        ]\n    },\n    {\n        \"division_type\": \"HUNTER\",\n        \"division_name\": \"Training Levels 4\"\n    }\n]",
+									"raw": "[\n    {\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 4\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                \"class_id\": \"J101\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"50.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"score_required\": \"ONE\",//ONE, TWO\n                \"table_type\": \"TABLE_A\",\n                \"apply_nomination_fee\": true\n                // \"course_map_blob_name\": \"show-course-maps/95802461-9d14-46b0-a987-6a1cbeea6b8f\"\n            }\n        ]\n    },\n    {\n        \"division_type\": \"HUNTER\",\n        \"division_name\": \"Training Levels 4\"\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
