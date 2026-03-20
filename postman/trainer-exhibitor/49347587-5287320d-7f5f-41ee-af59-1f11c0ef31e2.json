@@ -5380,7 +5380,7 @@
 					"name": "Shows",
 					"item": [
 						{
-							"name": "Show",
+							"name": "Show Entires",
 							"item": [
 								{
 									"name": "New Request",
@@ -5424,7 +5424,7 @@
 							"id": "49347587-4960c1ca-901b-48d4-a05f-e6ca6b076117"
 						},
 						{
-							"name": "Show Assignments",
+							"name": "Show Health",
 							"item": [],
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
 						},
