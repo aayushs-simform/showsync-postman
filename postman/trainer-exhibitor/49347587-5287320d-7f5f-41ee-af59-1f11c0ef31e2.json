@@ -5209,14 +5209,54 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "List classes of my horse",
 									"id": "49347587-ae5f3aa6-5860-4612-b2e8-af9a9ba2466d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/classes",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses",
+												":horseId",
+												"classes"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "80m Jumper",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": null,
+													"disabled": true
+												}
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "277a2a1f-bff4-4034-a4a9-e4bc0d9a067e"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												}
+											]
+										}
 									},
 									"response": []
 								}
