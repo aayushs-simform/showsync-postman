@@ -6067,7 +6067,28 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/horses",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"horses"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": ""
+												}
+											]
+										}
 									},
 									"response": []
 								}
