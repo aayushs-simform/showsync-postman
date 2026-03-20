@@ -5383,7 +5383,7 @@
 							"name": "Preflight",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "Pre Check Details",
 									"id": "49347587-bc37ef48-9c38-4423-8456-dc1517bb7a7c",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -5560,6 +5560,40 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Entry preflight fetched successfully.\",\n    \"data\": {\n        \"show\": {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n            \"total_stalls_allowed\": 200,\n            \"stall_fee\": \"150.00\",\n            \"total_rv_space_allowed\": 50,\n            \"rv_fee\": \"75.00\",\n            \"platform_fee\": \"10.00\",\n            \"enable_late_fee\": true,\n            \"late_fee_amount\": \"50.00\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"is_usef_verified\": false,\n        \"existing_entry\": null\n    }\n}"
 										}
 									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-11362e02-7aa6-418d-90f5-ab840d64eb2b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/shows/:showId/start",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												"shows",
+												":showId",
+												"start"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-4960c1ca-901b-48d4-a05f-e6ca6b076117"
