@@ -5427,7 +5427,139 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-a15d1b5a-e803-4cf0-97c3-74e4f78b6e89",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_app}}/entries/shows/:showId/preflight",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"entries",
+														"shows",
+														":showId",
+														"preflight"
+													],
+													"query": [
+														{
+															"key": "search",
+															"value": "80m Jumper",
+															"disabled": true
+														},
+														{
+															"key": "from_date",
+															"value": null,
+															"disabled": true
+														},
+														{
+															"key": "to_date",
+															"value": null,
+															"disabled": true
+														}
+													],
+													"variable": [
+														{
+															"key": "showId",
+															"value": "{{showId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "551"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"227-wIj/OiL/FSKL4VAP1u7VgNZktLU\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 20 Mar 2026 13:02:53 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Entry preflight fetched successfully.\",\n    \"data\": {\n        \"show\": {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n            \"total_stalls_allowed\": 200,\n            \"stall_fee\": \"150.00\",\n            \"total_rv_space_allowed\": 50,\n            \"rv_fee\": \"75.00\",\n            \"platform_fee\": \"10.00\",\n            \"enable_late_fee\": true,\n            \"late_fee_amount\": \"50.00\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"is_usef_verified\": false,\n        \"existing_entry\": null\n    }\n}"
+										}
+									]
 								}
 							],
 							"id": "49347587-4960c1ca-901b-48d4-a05f-e6ca6b076117"
