@@ -5377,6 +5377,22 @@
 					"id": "49347587-0086f03e-219e-4308-95d7-29f3b260ffea"
 				},
 				{
+					"name": "Shows",
+					"item": [
+						{
+							"name": "Show",
+							"item": [],
+							"id": "49347587-4960c1ca-901b-48d4-a05f-e6ca6b076117"
+						},
+						{
+							"name": "Show Assignments",
+							"item": [],
+							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
+						}
+					],
+					"id": "49347587-681f98c2-fc95-44e9-b77e-5c7c6638b446"
+				},
+				{
 					"name": "Welcome",
 					"id": "49347587-2bc8e977-d563-41f2-8ef7-40aadadb433d",
 					"protocolProfileBehavior": {
