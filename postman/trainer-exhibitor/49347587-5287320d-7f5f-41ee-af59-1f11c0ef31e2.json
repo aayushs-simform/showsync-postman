@@ -5055,6 +5055,15 @@
 									"request": {
 										"method": "GET",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{base_app}}/shows/:showId/health-documents/horses/:horseId/confirm-upload",
 											"host": [
