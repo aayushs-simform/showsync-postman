@@ -2996,14 +2996,14 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/:id/creation-steps",
+									"raw": "{{base_org}}/shows/:id/creation-step",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows",
 										":id",
-										"creation-steps"
+										"creation-step"
 									],
 									"variable": [
 										{
