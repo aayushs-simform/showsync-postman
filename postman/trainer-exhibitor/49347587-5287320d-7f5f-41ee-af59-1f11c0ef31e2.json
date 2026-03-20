@@ -5746,11 +5746,6 @@
 							"id": "49347587-4960c1ca-901b-48d4-a05f-e6ca6b076117"
 						},
 						{
-							"name": "Show Health",
-							"item": [],
-							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
-						},
-						{
 							"name": "Show Horses",
 							"item": [
 								{
@@ -5761,12 +5756,41 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId//my-horses/dropdowns/trainers",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"",
+												"my-horses",
+												"dropdowns",
+												"trainers"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
 									},
 									"response": []
 								}
 							],
 							"id": "49347587-2415b577-f7f9-4e24-8811-cbdbed75dc58"
+						},
+						{
+							"name": "Show Health",
+							"item": [],
+							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
 						},
 						{
 							"name": "Show Info",
