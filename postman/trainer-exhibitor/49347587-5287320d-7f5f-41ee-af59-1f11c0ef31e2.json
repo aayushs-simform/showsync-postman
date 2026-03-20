@@ -5389,8 +5389,34 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows"
+											],
+											"query": [
+												{
+													"key": "search",
+													"value": "80m Jumper",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
 									},
 									"response": []
 								}
