@@ -6021,8 +6021,47 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Add Trainer to Horse",
 									"id": "49347587-e82716f7-b4aa-4cf6-8eef-168547c77f23",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/assistant-trainer",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses",
+												":horseId",
+												"assistant-trainer"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-d6aeb8a7-5a02-49a4-a886-c23fa25dea35",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
