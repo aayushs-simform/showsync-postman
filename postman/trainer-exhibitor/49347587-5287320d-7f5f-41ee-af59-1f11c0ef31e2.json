@@ -5752,7 +5752,20 @@
 						},
 						{
 							"name": "Show Horses",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "49347587-cfff17d6-8e0a-48f8-ba75-dc3b1007dd0c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "49347587-2415b577-f7f9-4e24-8811-cbdbed75dc58"
 						},
 						{
