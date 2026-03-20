@@ -6060,7 +6060,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "List horse in the entry",
 									"id": "49347587-d6aeb8a7-5a02-49a4-a886-c23fa25dea35",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
