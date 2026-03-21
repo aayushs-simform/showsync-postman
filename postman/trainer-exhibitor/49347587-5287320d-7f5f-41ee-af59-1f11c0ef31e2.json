@@ -8035,7 +8035,7 @@
 							"name": "Show Invoice",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "Get Entry invoice",
 									"id": "49347587-705ceaee-44ef-4505-94e2-c01510fe4654",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -8064,6 +8064,136 @@
 												}
 											]
 										}
+									},
+									"response": [
+										{
+											"id": "49347587-180d86ea-aff4-46d1-a80f-3c2b2f499dd7",
+											"name": "Get invoice",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/entries/:entryId/payment-summary",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"entries",
+														":entryId",
+														"payment-summary"
+													],
+													"variable": [
+														{
+															"key": "entryId",
+															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "349"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"15d-di4JNLo5VdRjLJpCxjbVGikJ3A0\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 15:08:12 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Payment summary fetched successfully.\",\n    \"data\": {\n        \"horse_breakdowns\": [\n            {\n                \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                \"entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                \"line_items\": [\n                    {\n                        \"description\": \"Platform fee\",\n                        \"quantity\": 1,\n                        \"unit_price\": \"10\",\n                        \"subtotal\": \"10\"\n                    }\n                ],\n                \"subtotal\": 10\n            }\n        ],\n        \"grand_total\": 10,\n        \"is_late_fee_applied\": false\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-31534e63-0182-4b95-bd03-80c51bf1b5e7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
 									},
 									"response": []
 								}
