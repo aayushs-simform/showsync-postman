@@ -9042,7 +9042,125 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-720e536f-eb26-4ff7-895e-a67c21d08e96",
+											"name": "My Schedule",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": ""
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/:showId/my-schedule",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														":showId",
+														"my-schedule"
+													],
+													"variable": [
+														{
+															"key": "showId",
+															"value": "{{showId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "274"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"112-V8DfMzZZX2Ie3UnejRANOOb3PdM\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 18:35:19 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"My schedule fetched successfully.\",\n    \"data\": [\n        {\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"2026-03-15T08:00:00.000Z\",\n            \"class_time\": null,\n            \"horse_name\": \"Thunder's Lightning\",\n            \"rider_name\": \" \",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"course_map_url\": null\n        }\n    ]\n}"
+										}
+									]
 								},
 								{
 									"name": "Master Schedule",
@@ -9430,7 +9548,7 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "Remove horse from class",
 									"id": "49347587-71ca62ee-d04a-4a14-b0df-ea80325c0e8a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9465,7 +9583,130 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-f450a0bd-63d4-4843-8f3b-f546e69da097",
+											"name": "Remove horse from class",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_app}}/entries/:entryId/classes",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"entries",
+														":entryId",
+														"classes"
+													],
+													"variable": [
+														{
+															"key": "entryId",
+															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "69"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"45-jl60W1iG76td81faQn3TrwTC84I\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 18:35:00 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Horse unenrolled from class successfully.\"\n}"
+										}
+									]
 								}
 							],
 							"id": "49347587-62f82113-c36e-41c1-bfa2-cb309c554111"
