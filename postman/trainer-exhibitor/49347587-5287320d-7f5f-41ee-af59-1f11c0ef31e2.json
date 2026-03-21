@@ -9131,19 +9131,19 @@
 											"raw": ""
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:showId/class-overview",
+											"raw": "{{base_app}}/entries/:entryId/class-overview",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"entries",
-												":showId",
+												":entryId",
 												"class-overview"
 											],
 											"variable": [
 												{
-													"key": "showId",
-													"value": "{{showId}}"
+													"key": "entryId",
+													"value": ""
 												}
 											]
 										}
