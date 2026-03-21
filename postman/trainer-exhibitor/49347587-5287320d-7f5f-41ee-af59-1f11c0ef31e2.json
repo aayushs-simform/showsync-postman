@@ -5720,7 +5720,7 @@
 							"name": "Show Health",
 							"item": [
 								{
-									"name": "Health Document - Horses",
+									"name": "(show) Health Document - Horses",
 									"id": "49347587-f8d53eb2-324a-4af3-aadc-026d93a973ed",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -6034,7 +6034,7 @@
 									]
 								},
 								{
-									"name": "Get Upload Document URL",
+									"name": "(show) Get Upload Document URL",
 									"id": "49347587-eb00e538-86ba-423e-ba03-29753b2bcbd4",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -6209,7 +6209,7 @@
 									]
 								},
 								{
-									"name": "Confirm Upload",
+									"name": "(show) Confirm Upload",
 									"id": "49347587-30c96cf1-b280-4643-ad2c-ad77b245128b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -6384,14 +6384,31 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "(entries)",
 									"id": "49347587-7cb57269-314b-4a79-9085-2a1a9c681fd5",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/docs",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"docs"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": ""
+												}
+											]
+										}
 									},
 									"response": []
 								}
