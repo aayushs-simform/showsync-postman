@@ -8186,14 +8186,35 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "Complete Step",
 									"id": "49347587-31534e63-0182-4b95-bd03-80c51bf1b5e7",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/complete",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"complete"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												}
+											]
+										}
 									},
 									"response": []
 								}
