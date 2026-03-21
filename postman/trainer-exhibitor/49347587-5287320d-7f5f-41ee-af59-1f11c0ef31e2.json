@@ -9165,7 +9165,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_stalls\": [\n       {\n         \"horse_id\": \"\",\n         \"stall_count\": \"\"\n       }\n    ]\n}",
+											"raw": "{\n    \"horse_stalls\": [\n       {\n         \"horse_id\": \"\",\n         \"stall_count\": \"\",\n         \"rv_count\": \"\"\n       }\n    ]\n}",
 											"options": {
 												"raw": {
 													"language": "json"
