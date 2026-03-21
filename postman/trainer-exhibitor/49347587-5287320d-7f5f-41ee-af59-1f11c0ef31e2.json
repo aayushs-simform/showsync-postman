@@ -5157,7 +5157,136 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-c6847b48-a499-49b7-a4aa-a9f9132ae303",
+											"name": "Add Trainer to Horse",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"person_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/assistant-trainer",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														":showId",
+														"my-horses",
+														":horseId",
+														"assistant-trainer"
+													],
+													"variable": [
+														{
+															"key": "showId",
+															"value": "{{showId}}"
+														},
+														{
+															"key": "horseId",
+															"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "68"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"44-lbdMGQmVy5Z6SLwSfLREsQZzfq4\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 13:50:18 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Assistant trainer assigned successfully.\"\n}"
+										}
+									]
 								},
 								{
 									"name": "List horse in the entry",
