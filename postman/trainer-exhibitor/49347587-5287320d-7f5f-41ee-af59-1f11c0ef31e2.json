@@ -7590,13 +7590,15 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/:id",
+											"raw": "{{base_app}}/entries/shows/:id/preflight",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"entries",
 												"shows",
-												":id"
+												":id",
+												"preflight"
 											],
 											"variable": [
 												{
