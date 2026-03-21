@@ -9165,7 +9165,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_stalls\": [\n       {\n         \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n         \"stall_count\": 1,\n         \"rv_count\": 1\n       }\n    ]\n}",
+											"raw": "{\n    \"horse_stalls\": [\n       {\n         \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n         \"stall_count\": 2\n        //  \"rv_count\": 1\n       }\n    ]\n}",
 											"options": {
 												"raw": {
 													"language": "json"
