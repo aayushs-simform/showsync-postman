@@ -5607,7 +5607,7 @@
 							"name": "Show Health",
 							"item": [
 								{
-									"name": "Li",
+									"name": "Health Document - Horses",
 									"id": "49347587-f8d53eb2-324a-4af3-aadc-026d93a973ed",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -5637,7 +5637,125 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-2235f3db-f28e-4df3-94d9-b03e71bee197",
+											"name": "Health Document - Horses",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": ""
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/:showId/health-documents",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														":showId",
+														"health-documents"
+													],
+													"variable": [
+														{
+															"key": "showId",
+															"value": "{{showId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "210"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"d2-4cTQyZDtywdy/X/F9+5bQNJ4bYk\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 13:53:57 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Health documents fetched successfully.\",\n    \"data\": [\n        {\n            \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"total_documents\": 0,\n            \"document_status\": \"PENDING\"\n        }\n    ]\n}"
+										}
+									]
 								}
 							],
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
