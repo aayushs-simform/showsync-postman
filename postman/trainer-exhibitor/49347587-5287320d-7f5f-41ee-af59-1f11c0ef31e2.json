@@ -8739,7 +8739,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/9fcab88d-d234-40fb-aa92-ccc90764070d\"\n}",
+											"raw": "{\n    \"blob_name\": \"horse-documents/96af4801-b15e-4997-8a10-e569d51bfd80\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -8765,7 +8765,131 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-affcbb7f-c13a-40b6-91d0-c65bd3f657c6",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/96af4801-b15e-4997-8a10-e569d51bfd80\"\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_app}}/entries/:entryId/w9/confirm-upload",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"entries",
+														":entryId",
+														"w9",
+														"confirm-upload"
+													],
+													"variable": [
+														{
+															"key": "entryId",
+															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "64"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"40-XCwHxZD2hLWmUKGQQpYlMb7W3Oo\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 17:06:14 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"W9 uploaded and linked successfully.\"\n}"
+										}
+									]
 								}
 							],
 							"id": "49347587-5e5da3f8-9a8a-47dc-b4fe-e1f965b7365c"
