@@ -8537,7 +8537,7 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "W9 - Get upload Url",
 									"id": "49347587-48f6332e-0023-4fd6-ac72-b751085fa9e2",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -8547,7 +8547,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": ""
+											"raw": "{\n    \"document_type\": \"COGGINS\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}"
 										},
 										"url": {
 											"raw": "{{base_app}}/entries/:entryId/w9/upload-url",
