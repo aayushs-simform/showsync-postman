@@ -7575,6 +7575,38 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Show details fetched successfully.\",\n    \"data\": {\n        \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n        \"show_name\": \"Summer Classic 2026\",\n        \"start_date\": \"2026-07-10T00:00:00.000Z\",\n        \"end_date\": \"2026-07-15T00:00:00.000Z\",\n        \"organization_name\": \"News Brideg Stables2\",\n        \"venue_name\": \"Golden Gate Equestrian Center\",\n        \"division_types\": [\n            \"JUMPER\",\n            \"HUNTER\"\n        ],\n        \"is_enrolled\": true\n    }\n}"
 										}
 									]
+								},
+								{
+									"name": "Entry - Preflight",
+									"id": "49347587-bc1177bf-190f-47f0-9d12-38c6e40e240e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:id",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
