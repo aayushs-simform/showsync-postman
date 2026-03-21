@@ -9267,6 +9267,18 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Class overview fetched successfully.\",\n    \"data\": {\n        \"horses\": [\n            {\n                \"horse_entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                \"horse_name\": \"Thunder's Lightning\",\n                \"divisions\": [\n                    {\n                        \"division_id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n                        \"division_name\": \"Open Jumpers 4\",\n                        \"classes\": [\n                            {\n                                \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                                \"class_name\": \"1.0m Open\",\n                                \"class_date\": \"2026-03-15T08:00:00.000Z\",\n                                \"class_time\": null,\n                                \"fee\": \"50.00\",\n                                \"is_entered\": false\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}"
 										}
 									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-974e18b2-c809-4c1d-ad0c-dd3df768629b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-62f82113-c36e-41c1-bfa2-cb309c554111"
