@@ -9190,7 +9190,130 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-c415d437-4913-48de-88cd-5cf8a907894f",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"horse_stalls\": [\n       {\n         \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n         \"stall_count\": 1,\n         \"rv_count\": 1\n       }\n    ]\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_app}}/entries/:entryId/stalls",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"entries",
+														":entryId",
+														"stalls"
+													],
+													"variable": [
+														{
+															"key": "entryId",
+															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "61"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"3d-PmbM5wiyammLxM5RT9fgLGCi4qM\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 17:37:42 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Stall booking saved successfully.\"\n}"
+										}
+									]
 								}
 							],
 							"id": "49347587-62f82113-c36e-41c1-bfa2-cb309c554111"
