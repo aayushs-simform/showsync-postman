@@ -8535,6 +8535,18 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Prize distribution saved successfully.\"\n}"
 										}
 									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-48f6332e-0023-4fd6-ac72-b751085fa9e2",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-5e5da3f8-9a8a-47dc-b4fe-e1f965b7365c"
