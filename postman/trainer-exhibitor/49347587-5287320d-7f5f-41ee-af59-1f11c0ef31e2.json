@@ -5797,14 +5797,47 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Get Upload Document URL",
 									"id": "49347587-eb00e538-86ba-423e-ba03-29753b2bcbd4",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"document_type\": \"COGGINS\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/health-documents/horses/:horseId/upload-url",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"health-documents",
+												"horses",
+												":horseId",
+												"upload-url"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "horseId",
+													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+												}
+											]
+										}
 									},
 									"response": []
 								}
