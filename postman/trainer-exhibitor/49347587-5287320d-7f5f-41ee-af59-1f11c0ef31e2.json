@@ -8223,7 +8223,20 @@
 						},
 						{
 							"name": "Show Prize Distribution",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "49347587-986f0217-f645-4149-87c4-38b7b71d4f07",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "49347587-5e5da3f8-9a8a-47dc-b4fe-e1f965b7365c"
 						},
 						{
