@@ -8386,7 +8386,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"rider_payout_percent\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\",\n    \"trainer_payout_percent\": \"\"\n}",
+											"raw": "{\n    \"rider_payout_percent\": \"30\",\n    \"trainer_payout_percent\": \"30\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
