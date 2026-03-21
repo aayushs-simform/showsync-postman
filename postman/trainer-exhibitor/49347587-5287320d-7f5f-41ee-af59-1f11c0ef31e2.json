@@ -7611,7 +7611,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Entry - Start the Entry",
 									"id": "49347587-29aac908-733f-4479-a663-c5859416ae7f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
