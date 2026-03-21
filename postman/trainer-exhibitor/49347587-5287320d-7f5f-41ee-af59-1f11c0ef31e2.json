@@ -6586,6 +6586,18 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Upload URL generated successfully.\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/24bca2b9-ef76-4b4b-9f10-05ee97264e73?sv=2026-02-06&spr=https&st=2026-03-21T14%3A34%3A33Z&se=2026-03-21T14%3A44%3A33Z&sr=b&sp=w&sig=5OQb3iUPOrh%2BtQ8y6s9VUU19qsHeEiWgSu7Mjy2Lz%2FY%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"horse-documents/24bca2b9-ef76-4b4b-9f10-05ee97264e73\",\n        \"expires_at\": \"2026-03-21T14:43:33.540Z\"\n    }\n}"
 										}
 									]
+								},
+								{
+									"name": "(entries) Confirm upload",
+									"id": "49347587-bfcfa7d3-847b-448f-a494-f69c2e899de8",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
