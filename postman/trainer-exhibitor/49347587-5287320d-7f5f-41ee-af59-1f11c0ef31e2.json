@@ -7426,6 +7426,18 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Venue options fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        }\n    ]\n}"
 										}
 									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-25e4eb02-65a5-464a-80ad-9e0b990c5079",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
