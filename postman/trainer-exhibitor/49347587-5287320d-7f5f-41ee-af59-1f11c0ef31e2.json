@@ -8382,11 +8382,16 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
+										"method": "PATCH",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+											"raw": "{\n    \"rider_payout_percent\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\",\n    \"trainer_payout_percent\": \"\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
 										"url": {
 											"raw": "{{base_app}}/entries/:entryId/prize-distribution",
