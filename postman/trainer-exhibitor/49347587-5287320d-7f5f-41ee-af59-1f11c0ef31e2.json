@@ -5978,8 +5978,36 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/health-documents/horses/:horseId/confirm-upload",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"health-documents",
+												"horses",
+												":horseId",
+												"confirm-upload"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "horseId",
+													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+												}
+											]
+										}
 									},
 									"response": []
 								}
