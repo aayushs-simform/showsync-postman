@@ -5907,7 +5907,131 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-6843f2fb-4000-446d-aece-ab247e551fa3",
+											"name": "List Documents",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": ""
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/:showId/health-documents/horses/:horseId",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														":showId",
+														"health-documents",
+														"horses",
+														":horseId"
+													],
+													"variable": [
+														{
+															"key": "showId",
+															"value": "{{showId}}"
+														},
+														{
+															"key": "horseId",
+															"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "488"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"1e8-rVsvoMm0KjUifoOVE5tlYxCteOo\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 14:18:23 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Horse documents fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"01e00aaa-666c-4536-a7c2-4fc2f08eaf9d\",\n            \"document_name\": \"COGGINS\",\n            \"uploaded_at\": \"2026-03-21T14:02:09.010Z\",\n            \"verification_status\": \"PENDING\",\n            \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a?sv=2026-02-06&spr=https&st=2026-03-21T14%3A18%3A23Z&se=2026-03-21T15%3A18%3A23Z&sr=b&sp=r&sig=7Rk%2BxrJJ%2FnfXeRkpMk7yDBerKhx4ye6JosfhQn32QoE%3D\"\n        }\n    ]\n}"
+										}
+									]
 								},
 								{
 									"name": "Get Upload Document URL",
@@ -6258,39 +6382,6 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Document upload confirmed successfully.\",\n    \"data\": {\n        \"id\": \"01e00aaa-666c-4536-a7c2-4fc2f08eaf9d\",\n        \"document_type\": \"COGGINS\",\n        \"verification_status\": \"PENDING\",\n        \"created_at\": \"2026-03-21T14:02:09.010Z\"\n    }\n}"
 										}
 									]
-								},
-								{
-									"name": "List docs of the entry",
-									"id": "49347587-dd4b6b85-2141-465c-95e6-3162e4489c62",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/entries/:entryId/docs",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"entries",
-												":entryId",
-												"docs"
-											],
-											"variable": [
-												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
-												}
-											]
-										}
-									},
-									"response": []
 								}
 							],
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
