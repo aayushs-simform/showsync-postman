@@ -5758,7 +5758,7 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "List Documents",
 									"id": "49347587-c64315f3-f3dc-4e40-ae42-602b1f8b8a36",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -5789,10 +5789,22 @@
 												},
 												{
 													"key": "horseId",
-													"value": ""
+													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
 												}
 											]
 										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-eb00e538-86ba-423e-ba03-29753b2bcbd4",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
 									},
 									"response": []
 								}
