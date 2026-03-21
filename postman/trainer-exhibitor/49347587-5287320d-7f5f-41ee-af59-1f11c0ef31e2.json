@@ -6413,14 +6413,38 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "(entries) Get Upload URL",
 									"id": "49347587-e8407661-8f0b-40f3-b50b-63e317d400a6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/docs/upload-url",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"horses",
+												":horseId",
+												"docs",
+												"upload-url"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												}
+											]
+										}
 									},
 									"response": []
 								}
