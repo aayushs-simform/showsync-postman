@@ -5299,7 +5299,131 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-8402165c-b1c4-4032-80cb-47b7deb99ec4",
+											"name": "List all classes horses registered on",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": ""
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/classes",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														":showId",
+														"my-horses",
+														":horseId",
+														"classes"
+													],
+													"variable": [
+														{
+															"key": "showId",
+															"value": "{{showId}}"
+														},
+														{
+															"key": "horseId",
+															"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "311"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"137-fef6/bUld4fMaP4Mr3fyLlRhqFU\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 18:37:01 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Horse classes fetched successfully.\",\n    \"data\": {\n        \"entered\": [\n            {\n                \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                \"class_number\": \"J101\",\n                \"class_name\": \"1.0m Open\",\n                \"owner_name\": \"Jane Doe\",\n                \"rider_name\": \" \",\n                \"assistant_trainer_name\": \"Aayush Solanki\",\n                \"result_status\": \"NOT_STARTED\"\n            }\n        ],\n        \"completed\": []\n    }\n}"
+										}
+									]
 								},
 								{
 									"name": "Get Result of Horse in an Class",
