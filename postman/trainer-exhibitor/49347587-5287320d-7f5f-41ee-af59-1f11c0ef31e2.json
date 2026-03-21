@@ -9012,7 +9012,7 @@
 							"name": "Show Schedule",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "My Schedule",
 									"id": "49347587-6dd4fc17-9d74-49dd-91da-fd3f5efffad9",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
