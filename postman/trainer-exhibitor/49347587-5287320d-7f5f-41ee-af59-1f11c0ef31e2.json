@@ -9116,6 +9116,39 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Class Overview",
+									"id": "49347587-176ff4f1-f6d0-4076-8f82-aafbfbcf532b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/class-overview",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"class-overview"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-62f82113-c36e-41c1-bfa2-cb309c554111"
