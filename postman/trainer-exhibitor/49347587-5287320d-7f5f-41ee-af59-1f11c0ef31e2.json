@@ -6631,6 +6631,46 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-65e96784-b446-489c-8f03-2f63def6101f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/b35c39ea-b7fa-45b0-a88d-f676d56c8149\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/docs/copy-from-profile",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"horses",
+												":horseId",
+												"docs",
+												"copy-from-profile"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												},
+												{
+													"key": "horseId",
+													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
