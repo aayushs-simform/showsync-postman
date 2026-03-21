@@ -6419,7 +6419,7 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
+										"method": "POST",
 										"header": [],
 										"url": {
 											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/docs/upload-url",
@@ -6441,7 +6441,7 @@
 												},
 												{
 													"key": "horseId",
-													"value": ""
+													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
 												}
 											]
 										}
