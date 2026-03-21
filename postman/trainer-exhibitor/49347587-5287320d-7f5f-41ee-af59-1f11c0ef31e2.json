@@ -9131,12 +9131,12 @@
 											"raw": ""
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/:showId/class-overview",
+											"raw": "{{base_app}}/entries/:showId/class-overview",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
-												"shows",
+												"entries",
 												":showId",
 												"class-overview"
 											],
