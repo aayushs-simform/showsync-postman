@@ -5807,7 +5807,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"document_type\": \"COGGINS\",\n    \"file_name\": \"health-document.pdf\"\n}",
+											"raw": "{\n    \"document_type\": \"COGGINS\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
 											"options": {
 												"raw": {
 													"language": "json"
