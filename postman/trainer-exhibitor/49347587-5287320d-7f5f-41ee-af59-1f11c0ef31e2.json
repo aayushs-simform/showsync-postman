@@ -6598,7 +6598,12 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"document_type\": \"COGGINS\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}"
+											"raw": "{\n    \"blob_name\": \"horse-documents/24bca2b9-ef76-4b4b-9f10-05ee97264e73\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
 										"url": {
 											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/docs/confirm-upload",
