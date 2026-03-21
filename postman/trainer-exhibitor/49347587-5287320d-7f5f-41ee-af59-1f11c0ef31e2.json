@@ -8386,7 +8386,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"rider_payout_percent\": \"30\",\n    \"trainer_payout_percent\": \"30\"\n}",
+											"raw": "{\n    \"rider_payout_percent\": \"50\",\n    \"trainer_payout_percent\": \"60\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
