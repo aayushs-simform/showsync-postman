@@ -6633,7 +6633,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "(entries) Doc - Copy from profile",
 									"id": "49347587-65e96784-b446-489c-8f03-2f63def6101f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
