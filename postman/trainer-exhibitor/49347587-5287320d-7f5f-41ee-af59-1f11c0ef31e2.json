@@ -8729,14 +8729,32 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Confirm Upload",
 									"id": "49347587-5291f378-76bf-4519-b2d5-2e99bc71e249",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/w9/confirm-upload",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"w9",
+												"confirm-upload"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												}
+											]
+										}
 									},
 									"response": []
 								}
