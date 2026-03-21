@@ -6297,7 +6297,20 @@
 						},
 						{
 							"name": "Show Info",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "49347587-bbf659d0-cf3e-4fb1-a51c-5a464619076b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
 						},
 						{
