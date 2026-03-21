@@ -9279,7 +9279,12 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_id\": \"\",\n    \n}"
+											"raw": "{\n    \"horse_id\": \"\",\n    \"class_id\": \"\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
 										"url": {
 											"raw": "{{base_app}}/entries/:entryId/classes",
