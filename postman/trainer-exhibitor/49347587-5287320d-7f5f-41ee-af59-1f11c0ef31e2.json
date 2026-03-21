@@ -9587,8 +9587,21 @@
 							"id": "49347587-df8616bf-8b96-4e10-b7a3-f8d4c2e0cc9a"
 						},
 						{
-							"name": "New Folder",
-							"item": [],
+							"name": "Show Entries",
+							"item": [
+								{
+									"name": "New Request",
+									"id": "49347587-c8a26819-fc20-4dc9-be67-7039b77af9c3",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "49347587-ab629816-9d98-4736-b7e9-462bf679ca79"
 						}
 					],
