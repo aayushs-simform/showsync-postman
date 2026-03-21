@@ -9045,7 +9045,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Master Schedule",
 									"id": "49347587-0620a791-d8bc-48c1-b797-64c4878ab129",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9085,7 +9085,35 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/master-schedule/classes/:classId/entries",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"master-schedule",
+												"classes",
+												":classId",
+												"entries"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "classId",
+													"value": ""
+												}
+											]
+										}
 									},
 									"response": []
 								}
