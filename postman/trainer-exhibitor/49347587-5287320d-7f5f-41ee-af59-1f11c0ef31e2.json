@@ -7176,6 +7176,18 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Horse options fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\"\n        }\n    ]\n}"
 										}
 									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-ed04fd9c-9f3d-45eb-8210-6d5b3f3de96d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
