@@ -6673,7 +6673,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Complete Health Document Step",
 									"id": "49347587-cb7d5726-30df-4bf2-9c54-90d94c2334c3",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
