@@ -6295,12 +6295,17 @@
 						"key": "x-ms-blob-type",
 						"value": "BlockBlob",
 						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/pdf",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "file",
 					"file": {
-						"src": "postman-cloud:///1f12355d-f86e-4cf0-a721-8998a1e067c5"
+						"src": "/home/aayush/Downloads/AI_Prompts_Productivity_Guide.pdf"
 					}
 				},
 				"url": {
