@@ -5756,6 +5756,45 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Health documents fetched successfully.\",\n    \"data\": [\n        {\n            \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"total_documents\": 0,\n            \"document_status\": \"PENDING\"\n        }\n    ]\n}"
 										}
 									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-c64315f3-f3dc-4e40-ae42-602b1f8b8a36",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/health-documents/horses/:horseId",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"health-documents",
+												"horses",
+												":horseId"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "horseId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
