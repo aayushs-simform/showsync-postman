@@ -6713,7 +6713,7 @@
 							"name": "Show Info",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "Welcome summary",
 									"id": "49347587-bbf659d0-cf3e-4fb1-a51c-5a464619076b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -6735,6 +6735,18 @@
 												"welcome"
 											]
 										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-d29d87ae-6121-4a75-a1f9-99da5f6af993",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
 									},
 									"response": []
 								}
