@@ -8544,7 +8544,29 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"rider_payout_percent\": \"30\",\n    \"trainer_payout_percent\": \"30\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/w9/upload-url",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"w9",
+												"upload-url"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												}
+											]
+										}
 									},
 									"response": []
 								}
