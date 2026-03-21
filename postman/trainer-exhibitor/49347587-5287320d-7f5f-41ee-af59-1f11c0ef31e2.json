@@ -8033,7 +8033,20 @@
 						},
 						{
 							"name": "Show Invoice",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "49347587-705ceaee-44ef-4505-94e2-c01510fe4654",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "49347587-1b329d3c-b9fc-477e-9124-bb289795683c"
 						},
 						{
