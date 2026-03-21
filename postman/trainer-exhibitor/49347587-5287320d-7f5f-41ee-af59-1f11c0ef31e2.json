@@ -8225,7 +8225,7 @@
 							"name": "Show Prize Distribution",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "Get Prize Distribution",
 									"id": "49347587-986f0217-f645-4149-87c4-38b7b71d4f07",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -8258,7 +8258,7 @@
 									"response": [
 										{
 											"id": "49347587-01edf729-456f-4713-b137-6cae20362645",
-											"name": "New Request",
+											"name": "Get Prize Distribution",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
@@ -8374,6 +8374,39 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Prize distribution fetched successfully.\",\n    \"data\": {\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\"\n    }\n}"
 										}
 									]
+								},
+								{
+									"name": "Update Prize Distribution",
+									"id": "49347587-794acbba-a120-4f96-bf29-eec9d3c68586",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/prize-distribution",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"prize-distribution"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-5e5da3f8-9a8a-47dc-b4fe-e1f965b7365c"
