@@ -8547,7 +8547,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"rider_payout_percent\": \"30\",\n    \"trainer_payout_percent\": \"30\"\n}"
+											"raw": ""
 										},
 										"url": {
 											"raw": "{{base_app}}/entries/:entryId/w9/upload-url",
