@@ -8728,7 +8728,7 @@
 									},
 									"response": [
 										{
-											"id": "49347587-aaebdc29-5326-4c4e-830e-77e23d0a3775",
+											"id": "49347587-28502cd0-122c-4f20-8084-e77064452154",
 											"name": "New Request",
 											"originalRequest": {
 												"method": "GET",
@@ -8817,15 +8817,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "450"
+													"value": "458"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"1c2-JVUAnW7gu8a5spiX7jFD3VZlfSw\""
+													"value": "W/\"1ca-JyqEnYk051TT/kZmt79gf7uRrec\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 17:13:32 GMT"
+													"value": "Sat, 21 Mar 2026 17:14:40 GMT"
 												},
 												{
 													"key": "Connection",
@@ -8838,7 +8838,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"W9 status fetched successfully.\",\n    \"data\": {\n        \"id\": \"5f4057c3-29ea-4c4b-8198-782d5e8eab27\",\n        \"tax_document_type\": \"W9\",\n        \"submitted_at\": \"2026-03-21T17:06:14.567Z\",\n        \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/96af4801-b15e-4997-8a10-e569d51bfd80?sv=2026-02-06&spr=https&st=2026-03-21T17%3A13%3A32Z&se=2026-03-21T18%3A13%3A32Z&sr=b&sp=r&sig=4S4cpFijHTQI5UFJRPMFBg%2FwD0yRvDZMT%2BNmu82Gr%2Fk%3D\"\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"W9 status fetched successfully.\",\n    \"data\": {\n        \"linked_w9\": {\n            \"id\": \"5f4057c3-29ea-4c4b-8198-782d5e8eab27\",\n            \"tax_document_type\": \"W9\",\n            \"submitted_at\": \"2026-03-21T17:06:14.567Z\",\n            \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/96af4801-b15e-4997-8a10-e569d51bfd80?sv=2026-02-06&spr=https&st=2026-03-21T17%3A14%3A40Z&se=2026-03-21T18%3A14%3A40Z&sr=b&sp=r&sig=Bp0TKYRpjyJKPbaMyZ1lgptBe6RZ8jirZuDZeKy4ZbQ%3D\"\n        }\n    }\n}"
 										}
 									]
 								},
