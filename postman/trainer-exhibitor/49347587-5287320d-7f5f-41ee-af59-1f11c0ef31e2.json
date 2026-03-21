@@ -5803,11 +5803,11 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
+										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"document_type\": \"COGGINS\"\n}",
+											"raw": "{\n    \"document_type\": \"COGGINS\",\n    \"file_name\": \"health-document.pdf\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
