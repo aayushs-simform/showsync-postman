@@ -7609,6 +7609,40 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-29aac908-733f-4479-a663-c5859416ae7f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/shows/:showId/start",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												"shows",
+												":showId",
+												"start"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": ""
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
