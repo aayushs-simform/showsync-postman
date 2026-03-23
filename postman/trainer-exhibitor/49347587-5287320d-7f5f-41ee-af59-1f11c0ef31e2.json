@@ -1073,7 +1073,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc0BnbWFpbC5jb20iLCJqdGkiOiI2OGNiODAwNS05YjdkLTQzODgtYjE5Yy1mOWQyNjg1MWU1NGEiLCJhdWQiOiJhcHA6cmVnaXN0cmF0aW9uIiwiaWF0IjoxNzc0MjQ1Nzg0LCJleHAiOjE3NzQyNDY2ODR9.Ko7mT9BZwn0051EoL1OA55KUVICd_rl-ZFrT4AfBTJ4\",\n  \"usef_member_id\": \"1000001\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3NAZ21haWwuY29tIiwianRpIjoiYTk0YTY0N2EtNjI4My00YTk1LWJjY2MtMmNiZDBmNThiZGIwIiwiYXVkIjoiYXBwOnJlZ2lzdHJhdGlvbiIsImlhdCI6MTc3NDI0NjIzNiwiZXhwIjoxNzc0MjQ3MTM2fQ.Sr_ePtD9WkKXYEclMGZUmqABLmGHniE32ZxzoAkcs3U\",\n  \"usef_member_id\": \"1000002\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1222,7 +1222,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc0BnbWFpbC5jb20iLCJqdGkiOiI2OGNiODAwNS05YjdkLTQzODgtYjE5Yy1mOWQyNjg1MWU1NGEiLCJhdWQiOiJhcHA6cmVnaXN0cmF0aW9uIiwiaWF0IjoxNzc0MjQ1Nzg0LCJleHAiOjE3NzQyNDY2ODR9.Ko7mT9BZwn0051EoL1OA55KUVICd_rl-ZFrT4AfBTJ4\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simforms@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3454354548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"1000001\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3NAZ21haWwuY29tIiwianRpIjoiYTk0YTY0N2EtNjI4My00YTk1LWJjY2MtMmNiZDBmNThiZGIwIiwiYXVkIjoiYXBwOnJlZ2lzdHJhdGlvbiIsImlhdCI6MTc3NDI0NjIzNiwiZXhwIjoxNzc0MjQ3MTM2fQ.Sr_ePtD9WkKXYEclMGZUmqABLmGHniE32ZxzoAkcs3U\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simformss@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3424354548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"1000001\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
