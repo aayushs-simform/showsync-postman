@@ -10425,7 +10425,7 @@
 									},
 									"response": [
 										{
-											"id": "49347587-720e536f-eb26-4ff7-895e-a67c21d08e96",
+											"id": "49347587-61da3faa-efec-4f6f-9c48-41a2d045529a",
 											"name": "My Schedule",
 											"originalRequest": {
 												"method": "GET",
@@ -10518,15 +10518,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "274"
+													"value": "261"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"112-V8DfMzZZX2Ie3UnejRANOOb3PdM\""
+													"value": "W/\"105-O4y3clixAXbYaHbqWr3ofIevNH4\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 18:35:19 GMT"
+													"value": "Mon, 23 Mar 2026 09:33:16 GMT"
 												},
 												{
 													"key": "Connection",
@@ -10539,7 +10539,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"My schedule fetched successfully.\",\n    \"data\": [\n        {\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"2026-03-15T08:00:00.000Z\",\n            \"class_time\": null,\n            \"horse_name\": \"Thunder's Lightning\",\n            \"rider_name\": \" \",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"course_map_url\": null\n        }\n    ]\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"My schedule fetched successfully.\",\n    \"data\": [\n        {\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"14-03-2026\",\n            \"class_time\": null,\n            \"horse_name\": \"Thunder's Lightning\",\n            \"rider_name\": null,\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"course_map_url\": null\n        }\n    ]\n}"
 										}
 									]
 								},
