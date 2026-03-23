@@ -8424,7 +8424,34 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"document_type\": \"COGGINS\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/riders",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"horses",
+												":horseId",
+												"riders"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												},
+												{
+													"key": "horseId",
+													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+												}
+											]
+										}
 									},
 									"response": []
 								}
