@@ -5027,6 +5027,15 @@
 							"request": {
 								"method": "PATCH",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"division_type\": \"HUNTER\",\n        \"division_name\": \"Training Levels 4\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/divisions/:id",
 									"host": [
