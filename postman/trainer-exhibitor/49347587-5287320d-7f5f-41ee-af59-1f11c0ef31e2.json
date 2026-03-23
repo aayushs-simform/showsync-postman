@@ -8462,8 +8462,40 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"rider_ids\": []\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/riders",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId",
+												"horses",
+												":horseId",
+												"riders"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												},
+												{
+													"key": "horseId",
+													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+												}
+											]
+										}
 									},
 									"response": []
 								}
