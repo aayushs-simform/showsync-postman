@@ -4895,7 +4895,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{base_app}}/shows/upcoming?horse_ids=dfad0293-1270-4dca-9a66-7290c1a2e02b",
+									"raw": "{{base_app}}/shows/upcoming?horse_ids=dfad0293-1270-4dca-9a66-7290c1a2e02b&venue_ids=d9978052-b80f-4721-8ed2-d4046286948a",
 									"host": [
 										"{{base_app}}"
 									],
@@ -4907,6 +4907,10 @@
 										{
 											"key": "horse_ids",
 											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+										},
+										{
+											"key": "venue_ids",
+											"value": "d9978052-b80f-4721-8ed2-d4046286948a"
 										}
 									]
 								}
