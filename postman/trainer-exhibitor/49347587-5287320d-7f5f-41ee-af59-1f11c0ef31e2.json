@@ -8474,12 +8474,12 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/classes/:classId/rider",
+											"raw": "{{base_app}}/entries/:showId/my-horses/:horseId/classes/:classId/rider",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
-												"shows",
+												"entries",
 												":showId",
 												"my-horses",
 												":horseId",
