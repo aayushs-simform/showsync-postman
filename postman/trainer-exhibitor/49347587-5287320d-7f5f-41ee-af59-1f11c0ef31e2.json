@@ -8763,7 +8763,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/classes/:classId/rider",
+											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/riders",
 											"host": [
 												"{{base_app}}"
 											],
@@ -8772,9 +8772,7 @@
 												":entryId",
 												"horses",
 												":horseId",
-												"classes",
-												":classId",
-												"rider"
+												"riders"
 											],
 											"variable": [
 												{
@@ -8784,10 +8782,6 @@
 												{
 													"key": "horseId",
 													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
-												},
-												{
-													"key": "classId",
-													"value": "f7fba716-fdf5-4c16-8f28-9f6f85f20d64"
 												}
 											]
 										}
