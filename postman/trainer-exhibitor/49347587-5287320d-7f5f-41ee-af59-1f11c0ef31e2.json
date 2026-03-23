@@ -8466,7 +8466,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"rider_ids\": [\"d0f81f10-daad-4017-b5a7-9ccf22830943\"]\n}",
+											"raw": "{\n    \"rider_ids\": [\"Person added successfully\"]\n}",
 											"options": {
 												"raw": {
 													"language": "json"
