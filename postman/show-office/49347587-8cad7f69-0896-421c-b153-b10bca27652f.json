@@ -6193,7 +6193,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"prize_money\": \"1000.00\",\n  \"first_place_percentage\": \"50.00\",\n  \"second_place_percentage\": \"30.00\",\n  \"third_place_percentage\": \"20.00\"\n}",
+									"raw": "{\n    \"class_id\": \"\",\n    \"prize_money\": \"1000.00\",\n    \"first_place_percentage\": \"50.00\",\n    \"second_place_percentage\": \"30.00\",\n    \"third_place_percentage\": \"20.00\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
