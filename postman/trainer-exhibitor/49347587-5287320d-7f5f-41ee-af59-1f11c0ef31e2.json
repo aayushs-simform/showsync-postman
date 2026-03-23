@@ -8583,7 +8583,7 @@
 											"raw": "{\n    \"document_type\": \"COGGINS\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/riders",
+											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/classes/:classId/rider",
 											"host": [
 												"{{base_app}}"
 											],
@@ -8592,7 +8592,9 @@
 												":entryId",
 												"horses",
 												":horseId",
-												"riders"
+												"classes",
+												":classId",
+												"rider"
 											],
 											"variable": [
 												{
@@ -8602,6 +8604,10 @@
 												{
 													"key": "horseId",
 													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+												},
+												{
+													"key": "classId",
+													"value": ""
 												}
 											]
 										}
