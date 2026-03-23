@@ -1222,7 +1222,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3NAZ21haWwuY29tIiwianRpIjoiYTk0YTY0N2EtNjI4My00YTk1LWJjY2MtMmNiZDBmNThiZGIwIiwiYXVkIjoiYXBwOnJlZ2lzdHJhdGlvbiIsImlhdCI6MTc3NDI0NjIzNiwiZXhwIjoxNzc0MjQ3MTM2fQ.Sr_ePtD9WkKXYEclMGZUmqABLmGHniE32ZxzoAkcs3U\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simformss@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3424354548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"1000001\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3NAZ21haWwuY29tIiwianRpIjoiYTk0YTY0N2EtNjI4My00YTk1LWJjY2MtMmNiZDBmNThiZGIwIiwiYXVkIjoiYXBwOnJlZ2lzdHJhdGlvbiIsImlhdCI6MTc3NDI0NjIzNiwiZXhwIjoxNzc0MjQ3MTM2fQ.Sr_ePtD9WkKXYEclMGZUmqABLmGHniE32ZxzoAkcs3U\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simformss@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3424354548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"1000002\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1365,6 +1365,130 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Registration successful\",\n    \"data\": {\n        \"id\": \"48f464d9-a737-4497-bc69-d4853ec2e933\",\n        \"first_name\": \"Jane\",\n        \"last_name\": \"Doe\",\n        \"email\": \"aayushs.simform@gmail.com\",\n        \"phone_country_code\": \"+1\",\n        \"phone_number\": \"5555550100\",\n        \"account_type\": \"FULL_MEMBER\",\n        \"trainer_exhibitor_type\": \"EXHIBITOR\",\n        \"usef_member_id\": \"12345678\",\n        \"is_usef_verified\": false,\n        \"status\": true,\n        \"profile_photo\": null,\n        \"created_at\": \"2026-03-12T05:16:59.447Z\"\n    }\n}"
+						},
+						{
+							"id": "49347587-ca3acc48-283e-43dd-ba5c-695e275beef0",
+							"name": "Complete Registration",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3NAZ21haWwuY29tIiwianRpIjoiYTk0YTY0N2EtNjI4My00YTk1LWJjY2MtMmNiZDBmNThiZGIwIiwiYXVkIjoiYXBwOnJlZ2lzdHJhdGlvbiIsImlhdCI6MTc3NDI0NjIzNiwiZXhwIjoxNzc0MjQ3MTM2fQ.Sr_ePtD9WkKXYEclMGZUmqABLmGHniE32ZxzoAkcs3U\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simformss@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3424354548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"1000002\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_app}}/auth/register/complete",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"auth",
+										"register",
+										"complete"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "app_access_token=s%3AeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhMDBmMDQ3MS0zYWVjLTQ1YTktYTY4MC0xNmYzZjMyZjNjNzciLCJzZXNzaW9uX2lkIjoiMDY1ZTE0ZGUtNWU0Ni00Njk4LTgzNjItZTI3N2M5OTA4NGZjIiwianRpIjoiZGUzZGQ3ODAtOTU4NS00NDFmLTk4NzktMTNkNTZhZWEzYzI1IiwiaWF0IjoxNzc0MjQ2Mjk1LCJleHAiOjE3NzQyNDcxOTV9.l2InQzXFQ3JRVUC4P7GfZb4020DZBlwPUO-wSSLpkxY.VLkoa9yEgGUZkfYV6UtaFcN51sy%2Bkyw2sp%2FMVOgIBfw; Max-Age=900; Path=/; Expires=Mon, 23 Mar 2026 06:26:35 GMT; HttpOnly; Secure; SameSite=None"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "app_refresh_token=s%3AeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhMDBmMDQ3MS0zYWVjLTQ1YTktYTY4MC0xNmYzZjMyZjNjNzciLCJzZXNzaW9uX2lkIjoiMDY1ZTE0ZGUtNWU0Ni00Njk4LTgzNjItZTI3N2M5OTA4NGZjIiwianRpIjoiODE1MzgyNDQtMjY1Ni00ODE3LWJkOTAtNzI3OGI1NTU2NTFhIiwiaWF0IjoxNzc0MjQ2Mjk1LCJleHAiOjE3NzQ4NTEwOTV9.vuKeV2r6eMlR0xwHv_FAQJJmq5gdWy-cuCcOAmazN5E.Se8GmW%2FcIY3gy20b%2BDsaD0YBUDWO38X3Dbd9zfVTBjs; Max-Age=604800; Path=/; Expires=Mon, 30 Mar 2026 06:11:35 GMT; HttpOnly; Secure; SameSite=None"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "426"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1aa-4RkgCVqUxOQ0xZF164ncvOuxWo0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Mar 2026 06:11:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": true,\n    \"message\": \"Registration successful\",\n    \"data\": {\n        \"id\": \"a00f0471-3aec-45a9-a680-16f3f32f3c77\",\n        \"first_name\": \"Jane\",\n        \"last_name\": \"Doe\",\n        \"email\": \"aayushs.simformss@gmail.com\",\n        \"phone_country_code\": \"+1\",\n        \"phone_number\": \"3424354548\",\n        \"account_type\": \"FULL_MEMBER\",\n        \"trainer_exhibitor_type\": \"EXHIBITOR\",\n        \"usef_member_id\": \"1000002\",\n        \"is_usef_verified\": true,\n        \"status\": true,\n        \"profile_photo\": null,\n        \"created_at\": \"2026-03-23T06:11:35.835Z\"\n    }\n}"
 						}
 					]
 				},
