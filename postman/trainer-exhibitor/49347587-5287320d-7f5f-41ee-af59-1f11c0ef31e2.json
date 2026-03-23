@@ -4007,7 +4007,7 @@
 					]
 				},
 				{
-					"name": "*USEF lookup",
+					"name": "USEF lookup",
 					"id": "49347587-3f27b372-e0fc-4b14-86c3-6977c6758691",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -4049,7 +4049,137 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "49347587-c25c80d4-343c-4136-9cde-c5f2759deb48",
+							"name": "*USEF lookup",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"full_name\": \"Aayush Solanki\",\n    \"category\": \"CO_OWNER\",\n    \"membership_type\": \"USEF\",\n    \"usef_member_id\": \"\",\n    \"usef_membership_status\": \"\",\n    \"is_usef_verified\": \"\",\n    \"city\": \"California\",\n    \"state\": \"TX\",\n    \"country\": \"USA\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"phone_number\": \"9399400758\"\n}"
+								},
+								"url": {
+									"raw": "{{base_app}}/people/usef-lookup/:usef_member_id",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"people",
+										"usef-lookup",
+										":usef_member_id"
+									],
+									"query": [
+										{
+											"key": "venue_id",
+											"value": "d9978052-b80f-4721-8ed2-d4046286948b",
+											"disabled": true
+										},
+										{
+											"key": "tab",
+											"value": "archived",
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "usef_member_id",
+											"value": "1000001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "234"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ea-EKgze8PbOHvJlmZY3vrXfHDHoZk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Mar 2026 06:01:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": true,\n    \"message\": \"USEF member profile fetched successfully\",\n    \"data\": {\n        \"usef_member_id\": \"1000001\",\n        \"full_name\": \"Alice Anderson\",\n        \"email\": \"alice.anderson@example.com\",\n        \"phone_number\": \"+15551110001\",\n        \"usef_membership_status\": \"ACTIVE\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Remove People",
