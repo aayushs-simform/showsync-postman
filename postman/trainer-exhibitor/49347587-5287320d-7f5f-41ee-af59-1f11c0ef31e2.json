@@ -8417,7 +8417,7 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "Get all Riders of Horse in the Show",
 									"id": "49347587-0dedbf7b-0c1e-4b77-8d7c-3eae0fcfe9bb",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -8456,7 +8456,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Assign Rider to the Horse",
 									"id": "49347587-b626855c-7624-40a2-93a0-de76fc0ca50b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
