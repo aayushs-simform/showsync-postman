@@ -6189,7 +6189,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PATCH",
+								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -6201,7 +6201,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/divisions/:divisionId/classes/prize-money",
+									"raw": "{{base_org}}/shows/:showId/divisions/classes/prize-money",
 									"host": [
 										"{{base_org}}"
 									],
@@ -6209,7 +6209,6 @@
 										"shows",
 										":showId",
 										"divisions",
-										":divisionId",
 										"classes",
 										"prize-money"
 									],
@@ -6217,10 +6216,6 @@
 										{
 											"key": "showId",
 											"value": "{{showId}}"
-										},
-										{
-											"key": "divisionId",
-											"value": "11e121db-79e6-4d23-b619-d7b8ef429eff"
 										}
 									]
 								}
