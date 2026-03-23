@@ -6193,7 +6193,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n    \"prize_money\": \"1000.00\",\n    \"first_place_percentage\": \"60.00\",\n    \"second_place_percentage\": \"30.00\",\n    \"third_place_percentage\": \"20.00\"\n}",
+									"raw": "{\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n    \"prize_money\": \"1000.00\",\n    \"first_place_percentage\": \"60.00\",\n    \"second_place_percentage\": \"20.00\",\n    \"third_place_percentage\": \"20.00\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6222,14 +6222,14 @@
 							},
 							"response": [
 								{
-									"id": "49347587-dbe79f04-6f4b-4c71-9324-ff2a7e17252c",
-									"name": "New Request",
+									"id": "49347587-f2c1514e-9a3e-43ba-be9c-c75d5fd00688",
+									"name": "Update  prize money breakdown",
 									"originalRequest": {
-										"method": "PATCH",
+										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"prize_money\": \"1000.00\",\n  \"first_place_percentage\": \"50.00\",\n  \"second_place_percentage\": \"30.00\",\n  \"third_place_percentage\": \"20.00\"\n}",
+											"raw": "{\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n    \"prize_money\": \"1000.00\",\n    \"first_place_percentage\": \"60.00\",\n    \"second_place_percentage\": \"20.00\",\n    \"third_place_percentage\": \"20.00\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -6237,7 +6237,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_org}}/shows/:showId/divisions/:divisionId/classes/:classId",
+											"raw": "{{base_org}}/shows/:showId/divisions/classes/prize-money",
 											"host": [
 												"{{base_org}}"
 											],
@@ -6245,29 +6245,20 @@
 												"shows",
 												":showId",
 												"divisions",
-												":divisionId",
 												"classes",
-												":classId"
+												"prize-money"
 											],
 											"variable": [
 												{
 													"key": "showId",
 													"value": "{{showId}}"
-												},
-												{
-													"key": "divisionId",
-													"value": "47ffeebe-b002-436c-b3f2-224041d2f6b6"
-												},
-												{
-													"key": "classId",
-													"value": "fd50cd9a-80da-4998-833a-4673abc7f245"
 												}
 											]
 										}
 									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "Text",
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6318,10 +6309,6 @@
 											"value": "0"
 										},
 										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "http://localhost:5175"
-										},
-										{
 											"key": "Vary",
 											"value": "Origin"
 										},
@@ -6335,15 +6322,15 @@
 										},
 										{
 											"key": "Content-Length",
-											"value": "54"
+											"value": "72"
 										},
 										{
 											"key": "ETag",
-											"value": "W/\"36-zsuojgSGcnW6JBbR/QXD4hEaTkA\""
+											"value": "W/\"48-U2QpZ2870Ub1Pizz6VwRhCHSNe0\""
 										},
 										{
 											"key": "Date",
-											"value": "Mon, 02 Mar 2026 12:20:09 GMT"
+											"value": "Mon, 23 Mar 2026 04:10:21 GMT"
 										},
 										{
 											"key": "Connection",
@@ -6356,7 +6343,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"status\": true,\n    \"message\": \"Class updated successfully\"\n}"
+									"body": "{\n    \"status\": true,\n    \"message\": \"Prize money assigned to classes successfully\"\n}"
 								}
 							]
 						}
