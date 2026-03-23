@@ -929,7 +929,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"email\": \"aayushs.simform@gmail.com\",\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n    \"otp\": \"123456\"\n}"
+							"raw": "{\n  \"email\": \"aayushs.simforms@gmail.com\",\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n    \"otp\": \"123456\"\n}"
 						},
 						"url": {
 							"raw": "{{base_app}}/auth/register/verify-otp",
@@ -1073,7 +1073,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc0BnbWFpbC5jb20iLCJqdGkiOiI2OGNiODAwNS05YjdkLTQzODgtYjE5Yy1mOWQyNjg1MWU1NGEiLCJhdWQiOiJhcHA6cmVnaXN0cmF0aW9uIiwiaWF0IjoxNzc0MjQ1Nzg0LCJleHAiOjE3NzQyNDY2ODR9.Ko7mT9BZwn0051EoL1OA55KUVICd_rl-ZFrT4AfBTJ4\",\n  \"usef_member_id\": \"12345678\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
