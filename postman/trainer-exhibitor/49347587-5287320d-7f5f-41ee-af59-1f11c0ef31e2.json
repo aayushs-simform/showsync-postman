@@ -8462,7 +8462,7 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "POST",
+										"method": "GET",
 										"header": [],
 										"body": {
 											"mode": "raw",
@@ -8474,25 +8474,31 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/horses/:horseId/riders",
+											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/classes/:classId/rider",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
-												"entries",
-												":entryId",
-												"horses",
+												"shows",
+												":showId",
+												"my-horses",
 												":horseId",
-												"riders"
+												"classes",
+												":classId",
+												"rider"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "showId",
+													"value": ""
 												},
 												{
 													"key": "horseId",
-													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+													"value": ""
+												},
+												{
+													"key": "classId",
+													"value": ""
 												}
 											]
 										}
