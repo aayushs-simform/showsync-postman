@@ -8417,6 +8417,40 @@
 									]
 								},
 								{
+									"name": "New Request",
+									"id": "49347587-a9911f0d-d70b-43c0-8820-8b6338d11678",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"rider_id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:showId/my-horses/riders",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"my-horses",
+												"riders"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
 									"name": "Get all Riders of Horse in the Show",
 									"id": "49347587-0dedbf7b-0c1e-4b77-8d7c-3eae0fcfe9bb",
 									"protocolProfileBehavior": {
