@@ -2611,7 +2611,7 @@
 					]
 				},
 				{
-					"name": "*USEF Lookup",
+					"name": "USEF Lookup",
 					"id": "49347587-c0853a65-0442-4122-beaf-25fe3dc584af",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2632,12 +2632,126 @@
 							"variable": [
 								{
 									"key": "usef_horse_id",
-									"value": "343424"
+									"value": "2000001"
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "49347587-4d511206-c42e-43ee-abd3-9d7cad26d1e1",
+							"name": "*USEF Lookup",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/horses/usef-lookup/:usef_horse_id",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"horses",
+										"usef-lookup",
+										":usef_horse_id"
+									],
+									"variable": [
+										{
+											"key": "usef_horse_id",
+											"value": "2000001"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "273"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"111-QH1naOp0PmOACdl2jlcNpn89014\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Mar 2026 06:01:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": true,\n    \"message\": \"Horse details fetched from USEF.\",\n    \"data\": {\n        \"usef_horse_id\": \"2000001\",\n        \"horse_name\": \"Thunderstrike\",\n        \"usef_number\": \"USEF-5001\",\n        \"breed\": \"Warmblood\",\n        \"gender\": \"GELDING\",\n        \"date_of_birth\": \"2018-04-15\",\n        \"color\": \"Bay\",\n        \"sire\": \"Thunderbolt\",\n        \"dam\": \"Silver Star\"\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Health Document - Request SAS URL",
