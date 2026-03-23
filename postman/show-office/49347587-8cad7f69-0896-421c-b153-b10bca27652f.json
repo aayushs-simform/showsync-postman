@@ -6193,7 +6193,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n    \"prize_money\": \"1000.00\",\n    \"first_place_percentage\": \"60.00\",\n    \"second_place_percentage\": \"20.00\",\n    \"third_place_percentage\": \"20.00\"\n}",
+									"raw": "{\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n    \"prize_money\": \"1000.00\",\n    \"first_place_percentage\": \"60.00\",\n    \"second_place_percentage\": \"20.00\",\n    \"third_place_percentage\": \"20.00\",\n    \"add_back_money\": \"0\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
