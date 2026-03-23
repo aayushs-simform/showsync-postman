@@ -5029,7 +5029,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"division_type\": \"HUNTER\",\n    \"division_name\": \"Training Levels 4\"\n}",
+									"raw": "{\n    \"division_type\": \"HUNTER\",\n    \"division_name\": \"Open Jumpers 4\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5061,11 +5061,20 @@
 							},
 							"response": [
 								{
-									"id": "49347587-7eab41f3-56af-4100-a83c-22241c9c4b10",
-									"name": "New Request",
+									"id": "49347587-5bd8e8a8-5eb7-4eb3-b107-975440a83036",
+									"name": "Update Division",
 									"originalRequest": {
 										"method": "PATCH",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"division_type\": \"HUNTER\",\n    \"division_name\": \"Open Jumpers 4\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{base_org}}/shows/:showId/divisions/:id",
 											"host": [
@@ -5084,14 +5093,14 @@
 												},
 												{
 													"key": "id",
-													"value": "ce365dfa-bc43-4241-9b17-f2ae6854fcd5"
+													"value": "11e121db-79e6-4d23-b619-d7b8ef429eff"
 												}
 											]
 										}
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": "Text",
+									"_postman_previewlanguage": null,
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -5142,10 +5151,6 @@
 											"value": "0"
 										},
 										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "http://localhost:5175"
-										},
-										{
 											"key": "Vary",
 											"value": "Origin"
 										},
@@ -5167,7 +5172,7 @@
 										},
 										{
 											"key": "Date",
-											"value": "Mon, 02 Mar 2026 11:30:43 GMT"
+											"value": "Mon, 23 Mar 2026 13:29:34 GMT"
 										},
 										{
 											"key": "Connection",
