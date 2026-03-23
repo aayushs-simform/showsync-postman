@@ -11356,6 +11356,12 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"url": {
+					"raw": "See Doc Below",
+					"host": [
+						"See Doc Below"
+					]
+				},
 				"description": "---\n\n### **Mock Members**\n\n**1\\. Member ID: 1000001**\n\n- Name: Alice Anderson\n    \n- Email: [alice.anderson@example.com](https://mailto:alice.anderson@example.com)\n    \n- Phone: +15551110001\n    \n- Status: ACTIVE\n    \n\n**2\\. Member ID: 1000002**\n\n- Name: Bob Baker\n    \n- Email: [bob.baker@example.com](https://mailto:bob.baker@example.com)\n    \n- Phone: +15551110002\n    \n- Status: ACTIVE\n    \n\n**3\\. Member ID: 1000003**\n\n- Name: Carol Clark\n    \n- Email: Not provided\n    \n- Phone: +15551110003\n    \n- Status: INACTIVE\n    \n\n**4\\. Member ID: 1000004**\n\n- Name: David Davis\n    \n- Email: [david.davis@example.com](https://mailto:david.davis@example.com)\n    \n- Phone: Not provided\n    \n- Status: SUSPENDED\n    \n\n**5\\. Member ID: 1000005**\n\n- Name: Eve Evans\n    \n- Email: [eve.evans@example.com](https://mailto:eve.evans@example.com)\n    \n- Phone: +15551110005\n    \n- Status: ACTIVE\n    \n\n---\n\n### **Mock Horses**\n\n**1\\. Horse ID: 2000001**\n\n- Name: Thunderstrike\n    \n- USEF Number: USEF-5001\n    \n- Breed: Warmblood\n    \n- Gender: Gelding\n    \n- Date of Birth: 2018-04-15\n    \n- Color: Bay\n    \n- Sire: Thunderbolt\n    \n- Dam: Silver Star\n    \n\n**2\\. Horse ID: 2000002**\n\n- Name: Midnight Dream\n    \n- USEF Number: USEF-5002\n    \n- Breed: Thoroughbred\n    \n- Gender: Mare\n    \n- Date of Birth: 2016-06-20\n    \n- Color: Black\n    \n- Sire: Dark Knight\n    \n- Dam: Moonbeam\n    \n\n**3\\. Horse ID: 2000003**\n\n- Name: Golden Arrow\n    \n- USEF Number: USEF-5003\n    \n- Breed: Quarter Horse\n    \n- Gender: Stallion\n    \n- Date of Birth: 2019-03-10\n    \n- Color: Palomino\n    \n- Sire: Not provided\n    \n- Dam: Not provided\n    \n\n**4\\. Horse ID: 2000004**\n\n- Name: River Dance\n    \n- USEF Number: USEF-5004\n    \n- Breed: Hanoverian\n    \n- Gender: Mare\n    \n- Date of Birth: 2017-09-05\n    \n- Color: Chestnut\n    \n- Sire: River Rock\n    \n- Dam: Dancing Queen\n    \n\n**5\\. Horse ID: 2000005**\n\n- Name: Storm Chaser\n    \n- USEF Number: Not provided\n    \n- Breed: Arabian\n    \n- Gender: Gelding\n    \n- Date of Birth: 2020-01-22\n    \n- Color: Grey\n    \n- Sire: Not provided\n    \n- Dam: Not provided\n    \n\n---"
 			},
 			"response": []
