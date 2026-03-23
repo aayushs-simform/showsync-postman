@@ -8755,7 +8755,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "[\n    {\n        \"rider_id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n    }\n]",
+											"raw": "[\n    {\n        \"class_id\": \"\",\n        \"rider_id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n    }\n]",
 											"options": {
 												"raw": {
 													"language": "json"
