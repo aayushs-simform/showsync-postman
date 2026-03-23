@@ -2272,7 +2272,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"horse_name\": \"Thunder's Lightning\",\n    \"date_of_birth\": \"2018-08-12\",\n    \"breed\": \"Thoroughbred\",\n    \"breed_registration_no\": \"TB-56789\",\n    \"color\": \"Chestnut\",\n    \"gender\": \"STALLION\", //STALLION, MARE, GELDING\n    \"height\": \"16.2\",\n    \"measurement_card_no\": \"MC-2023-0045\",\n    \"hunter_green_status\": \"Regular Hunter\",\n    \"sire\": \"Silver Spirit\",\n    \"dam\": \"Golden Grace\",\n    \"microchip_number\": \"23456886\"\n}",
+							"raw": "{\n    \"horse_name\": \"Water Lightning\",\n    \"date_of_birth\": \"2018-08-12\",\n    \"breed\": \"Thoroughbred\",\n    \"breed_registration_no\": \"TB-56789\",\n    \"color\": \"Chestnut\",\n    \"gender\": \"STALLION\", //STALLION, MARE, GELDING\n    \"height\": \"16.2\",\n    \"measurement_card_no\": \"MC-2023-0045\",\n    \"hunter_green_status\": \"Regular Hunter\",\n    \"sire\": \"Silver Spirit\",\n    \"dam\": \"Golden Grace\",\n    \"microchip_number\": \"23456886\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
