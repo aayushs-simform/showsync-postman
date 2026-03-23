@@ -6201,7 +6201,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/divisions/:divisionId/classes/:classId",
+									"raw": "{{base_org}}/shows/:showId/divisions/:divisionId/classes/prize-money",
 									"host": [
 										"{{base_org}}"
 									],
@@ -6211,7 +6211,7 @@
 										"divisions",
 										":divisionId",
 										"classes",
-										":classId"
+										"prize-money"
 									],
 									"variable": [
 										{
@@ -6221,10 +6221,6 @@
 										{
 											"key": "divisionId",
 											"value": "11e121db-79e6-4d23-b619-d7b8ef429eff"
-										},
-										{
-											"key": "classId",
-											"value": "f7fba716-fdf5-4c16-8f28-9f6f85f20d64"
 										}
 									]
 								}
