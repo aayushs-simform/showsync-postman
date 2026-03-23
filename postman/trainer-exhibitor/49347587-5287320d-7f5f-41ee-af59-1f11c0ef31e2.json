@@ -5495,6 +5495,1328 @@
 					"name": "Entries",
 					"item": [
 						{
+							"name": "Show Info",
+							"item": [
+								{
+									"name": "Welcome summary",
+									"id": "49347587-bbf659d0-cf3e-4fb1-a51c-5a464619076b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/welcome",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"welcome"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-4d54e302-4f7c-4527-980f-3aa58350e3b5",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/welcome",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"welcome"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "146"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"92-YDl9IRG+uBQfK1S+IXU9eJy/vq8\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 14:42:15 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Welcome summary fetched successfully.\",\n    \"data\": {\n        \"today_shows_count\": 0,\n        \"enrolled_shows_count\": 1,\n        \"upcoming_shows_count\": 1\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Today's Shows",
+									"id": "49347587-d29d87ae-6121-4a75-a1f9-99da5f6af993",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/today",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"today"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Enrolled Show",
+									"id": "49347587-db87ae14-b17d-46ec-ae83-b0d8ce20f67d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/enrolled",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"enrolled"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-793245b7-e203-4315-bfcb-88f9461af765",
+											"name": "Enrolled Show",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/enrolled",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"enrolled"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "468"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"1d4-T6YLwXoJapSW1Dnp4/bmZrdssAE\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 14:46:19 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Enrolled shows fetched successfully.\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"is_enrolled\": true,\n            \"division_types\": [\n                \"JUMPER\",\n                \"HUNTER\"\n            ],\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"horses\": [\n                \"Thunder's Lightning\"\n            ]\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "Upcoming Shows",
+									"id": "49347587-a7d181a3-968d-4241-8fbb-7d176585cf73",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/upcoming",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"upcoming"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-c0b53659-c3a0-4f6e-a3ff-0c32d9453754",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/upcoming",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"upcoming"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "453"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"1c5-m4SfrHLtfOq1eb+2sHbHetO+wyw\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 14:47:40 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Upcoming shows fetched successfully.\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n            \"is_enrolled\": true\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "Dropdown Horses",
+									"id": "49347587-b4a42345-ba7e-4c9b-949a-7fac531b1202",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/dropdowns/horses",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"dropdowns",
+												"horses"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-cc57b4e2-2541-4de1-ade6-b38eda21b498",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/dropdowns/horses",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"dropdowns",
+														"horses"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "153"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"99-1TZRIdg5n0adFYOLR1rEyQYf9Jg\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 14:48:57 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Horse options fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\"\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "Dopdown Venues",
+									"id": "49347587-ed04fd9c-9f3d-45eb-8210-6d5b3f3de96d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/dropdowns/venues",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"dropdowns",
+												"venues"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-0ca0d075-0e8e-40aa-acaa-4e7bf3fe0687",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/dropdowns/venues",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"dropdowns",
+														"venues"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "163"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"a3-CNnT3M5uIGnXodg6jpxkn0sZmHk\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 14:50:05 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Venue options fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "Show Details",
+									"id": "49347587-25e4eb02-65a5-464a-80ad-9e0b990c5079",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/:id",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-4f17a97a-30da-450c-bdb9-6003f284fe25",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/:id",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "{{showId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "371"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"173-2IXghYHyUFFZ2OmxPnWInATiTSo\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 14:51:38 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Show details fetched successfully.\",\n    \"data\": {\n        \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n        \"show_name\": \"Summer Classic 2026\",\n        \"start_date\": \"2026-07-10T00:00:00.000Z\",\n        \"end_date\": \"2026-07-15T00:00:00.000Z\",\n        \"organization_name\": \"News Brideg Stables2\",\n        \"venue_name\": \"Golden Gate Equestrian Center\",\n        \"division_types\": [\n            \"JUMPER\",\n            \"HUNTER\"\n        ],\n        \"is_enrolled\": true\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Entry - Preflight",
+									"id": "49347587-bc1177bf-190f-47f0-9d12-38c6e40e240e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/shows/:id/preflight",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												"shows",
+												":id",
+												"preflight"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Entry - Start the Entry",
+									"id": "49347587-29aac908-733f-4479-a663-c5859416ae7f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/shows/:showId/start",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												"shows",
+												":showId",
+												"start"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-565b04cc-7ba4-4048-83ce-256f2eacad85",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/entries/shows/:showId/start",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"entries",
+														"shows",
+														":showId",
+														"start"
+													],
+													"variable": [
+														{
+															"key": "showId",
+															"value": "{{showId}}"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "234"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"ea-Jl28evi2ug2VzKkW/2yGCjTQIO8\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 14:55:34 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Entry started successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"created_at\": \"2026-03-20T13:35:46.837Z\",\n        \"wizard_step\": \"RIDER_TRAINER_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"status\": \"ENTERED\"\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Entry Details",
+									"id": "49347587-8ad403be-626e-425d-ad44-103c660e84a9",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/entries/:entryId",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"entries",
+												":entryId"
+											],
+											"variable": [
+												{
+													"key": "entryId",
+													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-9185ae07-3d29-4072-bc1f-f443068214cd",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/entries/:entryId",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"entries",
+														":entryId"
+													],
+													"variable": [
+														{
+															"key": "entryId",
+															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "300"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"12c-puGYDkCH+AOXfaVSK+qkzt1ukXw\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 15:04:32 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Entry fetched successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"wizard_step\": \"RIDER_TRAINER_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\",\n        \"status\": \"ENTERED\",\n        \"riders\": []\n    }\n}"
+										},
+										{
+											"id": "49347587-4ac871b3-d780-4784-9120-cec959c305a4",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/entries/:entryId",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"entries",
+														":entryId"
+													],
+													"variable": [
+														{
+															"key": "entryId",
+															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "288"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"120-aBNRj/a9gR1VqhoXzrrNN+Rx4AU\""
+												},
+												{
+													"key": "Date",
+													"value": "Sat, 21 Mar 2026 15:05:49 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Entry fetched successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"wizard_step\": \"RIDER_TRAINER_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\",\n        \"status\": \"ENTERED\"\n    }\n}"
+										}
+									]
+								}
+							],
+							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
+						},
+						{
 							"name": "Preflight",
 							"item": [
 								{
@@ -7970,1328 +9292,6 @@
 								}
 							],
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
-						},
-						{
-							"name": "Show Info",
-							"item": [
-								{
-									"name": "Welcome summary",
-									"id": "49347587-bbf659d0-cf3e-4fb1-a51c-5a464619076b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/welcome",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"welcome"
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-4d54e302-4f7c-4527-980f-3aa58350e3b5",
-											"name": "New Request",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/welcome",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"welcome"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "146"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"92-YDl9IRG+uBQfK1S+IXU9eJy/vq8\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:42:15 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Welcome summary fetched successfully.\",\n    \"data\": {\n        \"today_shows_count\": 0,\n        \"enrolled_shows_count\": 1,\n        \"upcoming_shows_count\": 1\n    }\n}"
-										}
-									]
-								},
-								{
-									"name": "Today's Shows",
-									"id": "49347587-d29d87ae-6121-4a75-a1f9-99da5f6af993",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/today",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"today"
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "Enrolled Show",
-									"id": "49347587-db87ae14-b17d-46ec-ae83-b0d8ce20f67d",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/enrolled",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"enrolled"
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-793245b7-e203-4315-bfcb-88f9461af765",
-											"name": "Enrolled Show",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/enrolled",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"enrolled"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "468"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"1d4-T6YLwXoJapSW1Dnp4/bmZrdssAE\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:46:19 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Enrolled shows fetched successfully.\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"is_enrolled\": true,\n            \"division_types\": [\n                \"JUMPER\",\n                \"HUNTER\"\n            ],\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"horses\": [\n                \"Thunder's Lightning\"\n            ]\n        }\n    ]\n}"
-										}
-									]
-								},
-								{
-									"name": "Upcoming Shows",
-									"id": "49347587-a7d181a3-968d-4241-8fbb-7d176585cf73",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/upcoming",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"upcoming"
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-c0b53659-c3a0-4f6e-a3ff-0c32d9453754",
-											"name": "New Request",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/upcoming",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"upcoming"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "453"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"1c5-m4SfrHLtfOq1eb+2sHbHetO+wyw\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:47:40 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Upcoming shows fetched successfully.\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n            \"is_enrolled\": true\n        }\n    ]\n}"
-										}
-									]
-								},
-								{
-									"name": "Dropdown Horses",
-									"id": "49347587-b4a42345-ba7e-4c9b-949a-7fac531b1202",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/dropdowns/horses",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"dropdowns",
-												"horses"
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-cc57b4e2-2541-4de1-ade6-b38eda21b498",
-											"name": "New Request",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/dropdowns/horses",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"dropdowns",
-														"horses"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "153"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"99-1TZRIdg5n0adFYOLR1rEyQYf9Jg\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:48:57 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Horse options fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\"\n        }\n    ]\n}"
-										}
-									]
-								},
-								{
-									"name": "Dopdown Venues",
-									"id": "49347587-ed04fd9c-9f3d-45eb-8210-6d5b3f3de96d",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/dropdowns/venues",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"dropdowns",
-												"venues"
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-0ca0d075-0e8e-40aa-acaa-4e7bf3fe0687",
-											"name": "New Request",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/dropdowns/venues",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"dropdowns",
-														"venues"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "163"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"a3-CNnT3M5uIGnXodg6jpxkn0sZmHk\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:50:05 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Venue options fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        }\n    ]\n}"
-										}
-									]
-								},
-								{
-									"name": "Show Details",
-									"id": "49347587-25e4eb02-65a5-464a-80ad-9e0b990c5079",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/:id",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												":id"
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "{{showId}}"
-												}
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-4f17a97a-30da-450c-bdb9-6003f284fe25",
-											"name": "New Request",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/:id",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														":id"
-													],
-													"variable": [
-														{
-															"key": "id",
-															"value": "{{showId}}"
-														}
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "371"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"173-2IXghYHyUFFZ2OmxPnWInATiTSo\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:51:38 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Show details fetched successfully.\",\n    \"data\": {\n        \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n        \"show_name\": \"Summer Classic 2026\",\n        \"start_date\": \"2026-07-10T00:00:00.000Z\",\n        \"end_date\": \"2026-07-15T00:00:00.000Z\",\n        \"organization_name\": \"News Brideg Stables2\",\n        \"venue_name\": \"Golden Gate Equestrian Center\",\n        \"division_types\": [\n            \"JUMPER\",\n            \"HUNTER\"\n        ],\n        \"is_enrolled\": true\n    }\n}"
-										}
-									]
-								},
-								{
-									"name": "Entry - Preflight",
-									"id": "49347587-bc1177bf-190f-47f0-9d12-38c6e40e240e",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/entries/shows/:id/preflight",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"entries",
-												"shows",
-												":id",
-												"preflight"
-											],
-											"variable": [
-												{
-													"key": "id",
-													"value": "{{showId}}"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "Entry - Start the Entry",
-									"id": "49347587-29aac908-733f-4479-a663-c5859416ae7f",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/entries/shows/:showId/start",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"entries",
-												"shows",
-												":showId",
-												"start"
-											],
-											"variable": [
-												{
-													"key": "showId",
-													"value": "{{showId}}"
-												}
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-565b04cc-7ba4-4048-83ce-256f2eacad85",
-											"name": "New Request",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/entries/shows/:showId/start",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"entries",
-														"shows",
-														":showId",
-														"start"
-													],
-													"variable": [
-														{
-															"key": "showId",
-															"value": "{{showId}}"
-														}
-													]
-												}
-											},
-											"status": "Created",
-											"code": 201,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "234"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"ea-Jl28evi2ug2VzKkW/2yGCjTQIO8\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:55:34 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Entry started successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"created_at\": \"2026-03-20T13:35:46.837Z\",\n        \"wizard_step\": \"RIDER_TRAINER_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"status\": \"ENTERED\"\n    }\n}"
-										}
-									]
-								},
-								{
-									"name": "Entry Details",
-									"id": "49347587-8ad403be-626e-425d-ad44-103c660e84a9",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/entries/:entryId",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"entries",
-												":entryId"
-											],
-											"variable": [
-												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
-												}
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-9185ae07-3d29-4072-bc1f-f443068214cd",
-											"name": "New Request",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/entries/:entryId",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"entries",
-														":entryId"
-													],
-													"variable": [
-														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
-														}
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "300"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"12c-puGYDkCH+AOXfaVSK+qkzt1ukXw\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 15:04:32 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Entry fetched successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"wizard_step\": \"RIDER_TRAINER_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\",\n        \"status\": \"ENTERED\",\n        \"riders\": []\n    }\n}"
-										},
-										{
-											"id": "49347587-4ac871b3-d780-4784-9120-cec959c305a4",
-											"name": "New Request",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/entries/:entryId",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"entries",
-														":entryId"
-													],
-													"variable": [
-														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
-														}
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "288"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"120-aBNRj/a9gR1VqhoXzrrNN+Rx4AU\""
-												},
-												{
-													"key": "Date",
-													"value": "Sat, 21 Mar 2026 15:05:49 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Entry fetched successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"wizard_step\": \"RIDER_TRAINER_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\",\n        \"status\": \"ENTERED\"\n    }\n}"
-										}
-									]
-								}
-							],
-							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
 						},
 						{
 							"name": "Show Invoice",
