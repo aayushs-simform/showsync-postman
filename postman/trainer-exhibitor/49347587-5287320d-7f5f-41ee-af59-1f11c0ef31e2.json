@@ -4895,13 +4895,19 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{base_app}}/shows/upcoming",
+									"raw": "{{base_app}}/shows/upcoming?horse_ids=dfad0293-1270-4dca-9a66-7290c1a2e02b",
 									"host": [
 										"{{base_app}}"
 									],
 									"path": [
 										"shows",
 										"upcoming"
+									],
+									"query": [
+										{
+											"key": "horse_ids",
+											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+										}
 									]
 								}
 							},
