@@ -6244,8 +6244,8 @@
 									},
 									"response": [
 										{
-											"id": "49347587-4f17a97a-30da-450c-bdb9-6003f284fe25",
-											"name": "New Request",
+											"id": "49347587-1a9bfa0c-4595-4a7c-886f-79b4c4db0c67",
+											"name": "Show Details",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
@@ -6336,15 +6336,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "371"
+													"value": "343"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"173-2IXghYHyUFFZ2OmxPnWInATiTSo\""
+													"value": "W/\"157-TP5S94RtJw360wCum+i8dsGyEbc\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:51:38 GMT"
+													"value": "Mon, 23 Mar 2026 08:39:48 GMT"
 												},
 												{
 													"key": "Connection",
@@ -6357,7 +6357,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Show details fetched successfully.\",\n    \"data\": {\n        \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n        \"show_name\": \"Summer Classic 2026\",\n        \"start_date\": \"2026-07-10T00:00:00.000Z\",\n        \"end_date\": \"2026-07-15T00:00:00.000Z\",\n        \"organization_name\": \"News Brideg Stables2\",\n        \"venue_name\": \"Golden Gate Equestrian Center\",\n        \"division_types\": [\n            \"JUMPER\",\n            \"HUNTER\"\n        ],\n        \"is_enrolled\": true\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Show details fetched successfully.\",\n    \"data\": {\n        \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n        \"show_name\": \"Summer Classic 2026\",\n        \"start_date\": \"10-07-2026\",\n        \"end_date\": \"15-07-2026\",\n        \"organization_name\": \"News Brideg Stables2\",\n        \"venue_name\": \"Golden Gate Equestrian Center\",\n        \"division_types\": [\n            \"JUMPER\",\n            \"HUNTER\"\n        ],\n        \"is_enrolled\": true\n    }\n}"
 										}
 									]
 								},
