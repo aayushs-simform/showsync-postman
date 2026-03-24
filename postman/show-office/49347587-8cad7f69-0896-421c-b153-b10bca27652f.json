@@ -5136,15 +5136,14 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/divisions/upsert",
+									"raw": "{{base_org}}/shows/:showId/divisions",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows",
 										":showId",
-										"divisions",
-										"upsert"
+										"divisions"
 									],
 									"variable": [
 										{
