@@ -7413,7 +7413,7 @@
 									"variable": [
 										{
 											"key": "showId",
-											"value": "123c1397-11b7-4653-a201-f3d404c55905"
+											"value": "{{showId}}"
 										}
 									]
 								}
