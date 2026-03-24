@@ -9829,11 +9829,12 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/prize-distribution",
+													"raw": "{{base_app}}/shows/entries/:entryId/prize-distribution",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"prize-distribution"
@@ -9956,11 +9957,12 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/prize-distribution",
+											"raw": "{{base_app}}/shows/entries/:entryId/prize-distribution",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"prize-distribution"
@@ -9990,11 +9992,12 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/prize-distribution",
+													"raw": "{{base_app}}/shows/entries/:entryId/prize-distribution",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"prize-distribution"
@@ -10117,11 +10120,12 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/w9/upload-url",
+											"raw": "{{base_app}}/shows/entries/:entryId/w9/upload-url",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"w9",
@@ -10152,11 +10156,12 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/w9/upload-url",
+													"raw": "{{base_app}}/shows/entries/:entryId/w9/upload-url",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"w9",
@@ -10271,11 +10276,12 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/w9",
+											"raw": "{{base_app}}/shows/entries/:entryId/w9",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"w9"
