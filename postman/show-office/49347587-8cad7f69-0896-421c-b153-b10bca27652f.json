@@ -6414,7 +6414,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n    \"prize_money\": \"1000.00\",\n    \"first_place_percentage\": \"60.00\",\n    \"second_place_percentage\": \"20.00\",\n    \"third_place_percentage\": \"20.00\",\n    \"add_back_money\": \"0\"\n}",
+									"raw": "[\n    {\n        \"class_id\": \"eb042dd9-7016-49db-a0bc-baa15bbbf311\",\n        \"prize_money\": \"1000.00\",\n        \"first_place_percentage\": \"60.00\",\n        \"second_place_percentage\": \"20.00\",\n        \"third_place_percentage\": \"20.00\",\n        \"add_back_money\": \"0\"\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6441,7 +6441,132 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-264fb733-c211-4e46-842d-a3af6a380cb1",
+									"name": "Update  prize money breakdown",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "[\n    {\n        \"class_id\": \"eb042dd9-7016-49db-a0bc-baa15bbbf311\",\n        \"prize_money\": \"1000.00\",\n        \"first_place_percentage\": \"60.00\",\n        \"second_place_percentage\": \"20.00\",\n        \"third_place_percentage\": \"20.00\",\n        \"add_back_money\": \"0\"\n    }\n]",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/divisions/classes/prize-money",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"divisions",
+												"classes",
+												"prize-money"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "72"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"48-U2QpZ2870Ub1Pizz6VwRhCHSNe0\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 24 Mar 2026 05:22:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Prize money assigned to classes successfully\"\n}"
+								}
+							]
 						}
 					],
 					"id": "49347587-d8f033d7-df93-4cfa-a33c-64c446ec4c54"
