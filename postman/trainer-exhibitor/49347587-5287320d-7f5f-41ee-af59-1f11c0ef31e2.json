@@ -11052,11 +11052,12 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/stalls",
+											"raw": "{{base_app}}/shows/entries/:entryId/stalls",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"stalls"
@@ -11086,11 +11087,12 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/stalls",
+													"raw": "{{base_app}}/shows/entries/:entryId/stalls",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"stalls"
@@ -11540,11 +11542,12 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/classes",
+											"raw": "{{base_app}}/shows/entries/:entryId/classes",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"classes"
@@ -11701,11 +11704,12 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/classes",
+											"raw": "{{base_app}}/shows/entries/:entryId/classes",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"classes"
@@ -11735,11 +11739,12 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/classes",
+													"raw": "{{base_app}}/shows/entries/:entryId/classes",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"classes"
