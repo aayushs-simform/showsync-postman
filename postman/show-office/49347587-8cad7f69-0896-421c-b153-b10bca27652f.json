@@ -5441,7 +5441,7 @@
 							]
 						},
 						{
-							"name": "Add New Class",
+							"name": "(Deprecated) Add New Class",
 							"id": "49347587-da03e3e3-da3e-4cff-bb6a-a252d06d6532",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5750,7 +5750,7 @@
 							]
 						},
 						{
-							"name": "Update Class",
+							"name": "(Deprecated) Update Class",
 							"id": "49347587-07700b95-8cf1-4478-9e01-972b5177a791",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5919,7 +5919,7 @@
 							]
 						},
 						{
-							"name": "Remove Classes",
+							"name": "(Deprecated) Remove Classes",
 							"id": "49347587-fa88db7d-0036-4f63-bc38-976299df84f0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -6088,7 +6088,7 @@
 							]
 						},
 						{
-							"name": "Grouped Division",
+							"name": "(Deprecated) Grouped Division",
 							"id": "49347587-a55cefc8-705f-4419-ae29-87441e0b7be5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
