@@ -6375,12 +6375,13 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/showsentries/shows/:id/preflight",
+											"raw": "{{base_app}}/shows/entries/shows/:id/preflight",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
-												"showsentries",
+												"shows",
+												"entries",
 												"shows",
 												":id",
 												"preflight"
@@ -6405,11 +6406,12 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/shows/:id/preflight",
+													"raw": "{{base_app}}/shows/entries/shows/:id/preflight",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														"shows",
 														":id",
@@ -6528,11 +6530,12 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/shows/:showId/start",
+											"raw": "{{base_app}}/shows/entries/shows/:showId/start",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												"shows",
 												":showId",
@@ -6558,11 +6561,12 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/shows/:showId/start",
+													"raw": "{{base_app}}/shows/entries/shows/:showId/start",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														"shows",
 														":showId",
@@ -6681,11 +6685,12 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId",
+											"raw": "{{base_app}}/shows/entries/:entryId",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId"
 											],
@@ -6709,11 +6714,12 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId",
+													"raw": "{{base_app}}/shows/entries/:entryId",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId"
 													],
@@ -6825,11 +6831,12 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId",
+													"raw": "{{base_app}}/shows/entries/:entryId",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId"
 													],
