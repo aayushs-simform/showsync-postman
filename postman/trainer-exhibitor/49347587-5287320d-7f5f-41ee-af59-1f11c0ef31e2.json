@@ -10302,11 +10302,12 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/w9",
+													"raw": "{{base_app}}/shows/entries/:entryId/w9",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"w9"
@@ -10897,11 +10898,12 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/stalls",
+											"raw": "{{base_app}}/shows/entries/:entryId/stalls",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"stalls"
@@ -10922,11 +10924,12 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/stalls",
+													"raw": "{{base_app}}/shows/entries/:entryId/stalls",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"stalls"
