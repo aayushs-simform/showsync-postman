@@ -12223,7 +12223,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1dd8d051-f8a4-4476-b181-77a0917246aa",
+				"id": "21cd7b93-b761-4deb-a6a8-f4bf3848d9f3",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -12267,7 +12267,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "42877731-ec33-4768-b6aa-761d2491ba12",
+				"id": "d56c781b-b38d-441c-b40a-edf07e8a125d",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -12345,13 +12345,11 @@
 		},
 		{
 			"key": "showId",
-			"value": "",
-			"type": "default"
+			"value": ""
 		},
 		{
 			"key": "entryId",
-			"value": "",
-			"type": "default"
+			"value": ""
 		}
 	]
 }
