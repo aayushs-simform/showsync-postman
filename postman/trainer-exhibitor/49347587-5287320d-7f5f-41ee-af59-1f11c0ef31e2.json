@@ -11386,11 +11386,12 @@
 											"raw": ""
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/class-overview",
+											"raw": "{{base_app}}/shows/entries/:entryId/class-overview",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"class-overview"
@@ -11415,11 +11416,12 @@
 													"raw": ""
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/class-overview",
+													"raw": "{{base_app}}/shows/entries/:entryId/class-overview",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"class-overview"
@@ -11577,11 +11579,12 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/classes",
+													"raw": "{{base_app}}/shows/entries/:entryId/classes",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"classes"
