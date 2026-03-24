@@ -6955,11 +6955,12 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/entries/shows/:showId/preflight",
+											"raw": "{{base_app}}/shows/entries/shows/:showId/preflight",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												"shows",
 												":showId",
@@ -6998,11 +6999,12 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{base_app}}/entries/shows/:showId/preflight",
+													"raw": "{{base_app}}/shows/entries/shows/:showId/preflight",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														"shows",
 														":showId",
@@ -7138,11 +7140,12 @@
 											"raw": ""
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/shows/:showId/start",
+											"raw": "{{base_app}}/shows/entries/shows/:showId/start",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												"shows",
 												":showId",
@@ -7168,11 +7171,12 @@
 													"raw": ""
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/shows/:showId/start",
+													"raw": "{{base_app}}/shows/entries/shows/:showId/start",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														"shows",
 														":showId",
@@ -7287,11 +7291,12 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/entries/:id",
+											"raw": "{{base_app}}/shows/entries/:id",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":id"
 											],
@@ -7311,11 +7316,12 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{base_app}}/entries/:id",
+													"raw": "{{base_app}}/shows/entries/:id",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":id"
 													],
