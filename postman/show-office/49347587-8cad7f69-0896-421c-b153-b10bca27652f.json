@@ -4688,21 +4688,6 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Fee deleted successfully\"\n}"
 								}
 							]
-						},
-						{
-							"name": "New Request",
-							"id": "49347587-b65e7c78-7000-4efb-a65f-8051515e486c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": ""
-								}
-							},
-							"response": []
 						}
 					],
 					"id": "49347587-6f1019ee-51e9-4048-8b2c-8956419cc3d1"
