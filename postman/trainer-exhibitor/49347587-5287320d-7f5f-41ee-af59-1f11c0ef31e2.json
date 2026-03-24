@@ -780,7 +780,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"email\": \"aayushs.simformsss@gmail.com\"\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n}"
+							"raw": "{\n  \"email\": \"aayushs.simformssss@gmail.com\"\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n}"
 						},
 						"url": {
 							"raw": "{{base_app}}/auth/register/send-otp",
@@ -929,7 +929,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"email\": \"aayushs.simformsss@gmail.com\",\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n    \"otp\": \"123456\"\n}"
+							"raw": "{\n  \"email\": \"aayushs.simformssss@gmail.com\",\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n    \"otp\": \"123456\"\n}"
 						},
 						"url": {
 							"raw": "{{base_app}}/auth/register/verify-otp",
@@ -1222,7 +1222,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3NzQGdtYWlsLmNvbSIsImp0aSI6ImJkOWMxYTdmLTFmMTgtNGM2MS04OGRkLTJkNDk2MzY1YWM5OSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzQzMzQ3NTEsImV4cCI6MTc3NDMzNTY1MX0.y044__slt7WIzqBvJ0CDYB7jwTaOwx4LUvf_wFOeaVo\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simformsss@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3455354548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"1000003\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3Nzc0BnbWFpbC5jb20iLCJqdGkiOiIyMDRkYzU1NC1mYzk5LTRlNDQtOTFlMi03Y2M4MDE2YWM2NWYiLCJhdWQiOiJhcHA6cmVnaXN0cmF0aW9uIiwiaWF0IjoxNzc0MzM1Nzg2LCJleHAiOjE3NzQzMzY2ODZ9.CaO6VIgLPebJj_cyJszn7RAOjEtoDsnv5q6jEVNHJdE\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simformssss@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3455324548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"1000003\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
