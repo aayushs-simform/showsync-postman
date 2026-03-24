@@ -9565,11 +9565,12 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/b35c39ea-b7fa-45b0-a88d-f676d56c8149\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/docs/complete",
+											"raw": "{{base_app}}/shows/entries/:entryId/docs/complete",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"docs",
@@ -9605,11 +9606,12 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/payment-summary",
+											"raw": "{{base_app}}/shows/entries/:entryId/payment-summary",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"payment-summary"
@@ -9634,11 +9636,12 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/payment-summary",
+													"raw": "{{base_app}}/shows/entries/:entryId/payment-summary",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
+														"shows",
 														"entries",
 														":entryId",
 														"payment-summary"
@@ -9756,11 +9759,12 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/complete",
+											"raw": "{{base_app}}/shows/entries/:entryId/complete",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"complete"
@@ -9795,11 +9799,12 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/entries/:entryId/prize-distribution",
+											"raw": "{{base_app}}/shows/entries/:entryId/prize-distribution",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
+												"shows",
 												"entries",
 												":entryId",
 												"prize-distribution"
