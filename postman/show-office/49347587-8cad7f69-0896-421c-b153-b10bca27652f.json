@@ -8263,6 +8263,18 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "View Entry Classes",
+							"id": "49347587-b7ec7996-7e85-45e2-9c6d-48b05e8a5924",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-bfcbbd52-dce5-4208-abdb-d92de68aa6e2"
