@@ -9369,14 +9369,14 @@
 					},
 					"response": [
 						{
-							"id": "49347587-48ab403b-d681-43b5-805f-99a7f463f160",
+							"id": "49347587-40ae49db-618d-48f2-83db-8ef1ea2ee459",
 							"name": "Update Venues",
 							"originalRequest": {
 								"method": "PATCH",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"venue_name\": \"Golden Gate Equestrian Center\",\n    \"address\": \"San Francisco\",\n    \"state\": \"North Carolina\",\n    \"country\": \"USA\",\n    \"phone\": \"+1-561-555-0100\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"website\": \"https://mail.google.com/\",\n    \"facility_map_url\": \"https://mail.google.com/mail/u/0/#inbox/FMfcgzQfCDNQlrclFwtrhKPqrCrJnCxM\"\n}",
+									"raw": "{\n    \"venue_name\": \"Golden Gate Equestrian Center\",\n    \"address\": \"San Francisco\",\n    \"state\": \"North Carolina\",\n    \"country\": \"USA\",\n    \"phone\": \"+1-561-555-0100\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"website\": \"https://mail.google.com/\",\n    \"facility_map_blob_name\": \"venue-facility-maps/95d9c33c-912f-40f1-83dd-8cc6bae408cf\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -9395,14 +9395,14 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "d440a32e-772c-4863-b099-80047881b37a"
+											"value": "27557062-32c5-40de-a843-1bf10e9e65f2"
 										}
 									]
 								}
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "Text",
+							"_postman_previewlanguage": null,
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -9453,10 +9453,6 @@
 									"value": "0"
 								},
 								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "http://localhost:5175"
-								},
-								{
 									"key": "Vary",
 									"value": "Origin"
 								},
@@ -9478,7 +9474,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 27 Feb 2026 10:14:56 GMT"
+									"value": "Wed, 25 Mar 2026 04:34:23 GMT"
 								},
 								{
 									"key": "Connection",
@@ -14077,7 +14073,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/venue-facility-maps/13efb92e-d525-4c3d-bf9a-e9980d2c6e69?sv=2026-02-06&spr=https&st=2026-03-25T04%3A17%3A13Z&se=2026-03-25T04%3A27%3A13Z&sr=b&sp=w&sig=KgXVp2wNUPttY08LcAfpEEjp1a%2Fa2QVk47F2P6zodHs%3D&rsct=application%2Fpdf",
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/venue-facility-maps/95d9c33c-912f-40f1-83dd-8cc6bae408cf?sv=2026-02-06&spr=https&st=2026-03-25T04%3A33%3A46Z&se=2026-03-25T04%3A43%3A46Z&sr=b&sp=w&sig=4ZT9vlhcp9ReDQWtNwSshYkgQhrBifCq%2BmbYR2CyVps%3D&rsct=application%2Fpdf",
 					"protocol": "https",
 					"host": [
 						"devshowsyncstorage",
@@ -14089,7 +14085,7 @@
 					"path": [
 						"showsync",
 						"venue-facility-maps",
-						"13efb92e-d525-4c3d-bf9a-e9980d2c6e69"
+						"95d9c33c-912f-40f1-83dd-8cc6bae408cf"
 					],
 					"query": [
 						{
@@ -14102,11 +14098,11 @@
 						},
 						{
 							"key": "st",
-							"value": "2026-03-25T04%3A17%3A13Z"
+							"value": "2026-03-25T04%3A33%3A46Z"
 						},
 						{
 							"key": "se",
-							"value": "2026-03-25T04%3A27%3A13Z"
+							"value": "2026-03-25T04%3A43%3A46Z"
 						},
 						{
 							"key": "sr",
@@ -14118,7 +14114,7 @@
 						},
 						{
 							"key": "sig",
-							"value": "KgXVp2wNUPttY08LcAfpEEjp1a%2Fa2QVk47F2P6zodHs%3D"
+							"value": "4ZT9vlhcp9ReDQWtNwSshYkgQhrBifCq%2BmbYR2CyVps%3D"
 						},
 						{
 							"key": "rsct",
