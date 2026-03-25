@@ -7391,7 +7391,7 @@
 					"id": "49347587-2780d031-b324-4adc-82bb-6eb6b0e3e244"
 				},
 				{
-					"name": "*Entries  (View)",
+					"name": "Entries  (View)",
 					"item": [
 						{
 							"name": "List all Entries",
@@ -7886,6 +7886,15 @@
 							"request": {
 								"method": "PATCH",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/entries/:entryId/scratch",
 									"host": [
