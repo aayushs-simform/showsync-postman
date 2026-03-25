@@ -8774,7 +8774,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"\"\n}",
+									"raw": "{\n    \"class_id\": \"43a114c8-a6ac-4977-acd5-1744429f55a8\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
