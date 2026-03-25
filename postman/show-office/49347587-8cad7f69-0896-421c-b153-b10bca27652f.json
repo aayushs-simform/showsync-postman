@@ -7580,151 +7580,6 @@
 							]
 						},
 						{
-							"name": "List Show classes",
-							"id": "49347587-b1bfbd98-a66f-4091-9bf4-2b83ce6a8b35",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{base_org}}/shows/:showId/entries/classes",
-									"host": [
-										"{{base_org}}"
-									],
-									"path": [
-										"shows",
-										":showId",
-										"entries",
-										"classes"
-									],
-									"variable": [
-										{
-											"key": "showId",
-											"value": "{{showId}}"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "49347587-e83b3192-3bcf-4d5f-b517-3a8f01b56487",
-									"name": "List classes",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{base_org}}/shows/:showId/entries/classes",
-											"host": [
-												"{{base_org}}"
-											],
-											"path": [
-												"shows",
-												":showId",
-												"entries",
-												"classes"
-											],
-											"variable": [
-												{
-													"key": "showId",
-													"value": "{{showId}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": null,
-									"header": [
-										{
-											"key": "Content-Security-Policy",
-											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
-										},
-										{
-											"key": "Cross-Origin-Opener-Policy",
-											"value": "same-origin"
-										},
-										{
-											"key": "Cross-Origin-Resource-Policy",
-											"value": "same-origin"
-										},
-										{
-											"key": "Origin-Agent-Cluster",
-											"value": "?1"
-										},
-										{
-											"key": "Referrer-Policy",
-											"value": "no-referrer"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-DNS-Prefetch-Control",
-											"value": "off"
-										},
-										{
-											"key": "X-Download-Options",
-											"value": "noopen"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "SAMEORIGIN"
-										},
-										{
-											"key": "X-Permitted-Cross-Domain-Policies",
-											"value": "none"
-										},
-										{
-											"key": "X-XSS-Protection",
-											"value": "0"
-										},
-										{
-											"key": "Vary",
-											"value": "Origin"
-										},
-										{
-											"key": "Access-Control-Allow-Credentials",
-											"value": "true"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "293"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"125-dEny3xHgTQTKnQPewR5btt65lp8\""
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 25 Mar 2026 11:05:44 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"status\": true,\n    \"message\": \"Classes retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n            \"class_id\": \"J101\",\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"2026-03-14T18:30:00.000Z\",\n            \"class_time\": null,\n            \"result_status\": \"NOT_STARTED\",\n            \"division_name\": \"Open Jumpers 4\",\n            \"entry_count\": 1\n        }\n    ]\n}"
-								}
-							]
-						},
-						{
 							"name": "View Entry",
 							"id": "49347587-5d6bf144-8bc0-4674-b7c7-b580eb2bd416",
 							"protocolProfileBehavior": {
@@ -8424,7 +8279,153 @@
 				},
 				{
 					"name": "**Classes (View)",
-					"item": [],
+					"item": [
+						{
+							"name": "List Show classes",
+							"id": "49347587-b1bfbd98-a66f-4091-9bf4-2b83ce6a8b35",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/entries/classes",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"entries",
+										"classes"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "49347587-e83b3192-3bcf-4d5f-b517-3a8f01b56487",
+									"name": "List classes",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/entries/classes",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"entries",
+												"classes"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "293"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"125-dEny3xHgTQTKnQPewR5btt65lp8\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 25 Mar 2026 11:05:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Classes retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n            \"class_id\": \"J101\",\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"2026-03-14T18:30:00.000Z\",\n            \"class_time\": null,\n            \"result_status\": \"NOT_STARTED\",\n            \"division_name\": \"Open Jumpers 4\",\n            \"entry_count\": 1\n        }\n    ]\n}"
+								}
+							]
+						}
+					],
 					"id": "49347587-e2b253ff-0444-49d8-84b2-ab9b05b5f8bb"
 				},
 				{
