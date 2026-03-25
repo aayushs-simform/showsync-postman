@@ -7403,7 +7403,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/entries",
+									"raw": "{{base_org}}/shows/:showId/entries?status=SCRATCHED",
 									"host": [
 										"{{base_org}}"
 									],
@@ -7421,12 +7421,13 @@
 										{
 											"key": "doc_verification_status",
 											"value": "APPROVED",
+											"description": "PENDING, APPROVED, REJECTED",
 											"disabled": true
 										},
 										{
 											"key": "status",
-											"value": "ENTEREDsss",
-											"disabled": true
+											"value": "SCRATCHED",
+											"description": "ENTERED, SCRATCHED"
 										}
 									],
 									"variable": [
