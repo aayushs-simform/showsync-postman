@@ -9837,7 +9837,7 @@
 					},
 					"response": [
 						{
-							"id": "49347587-5e29948e-e6b5-44e4-8dcc-439da6b1cce4",
+							"id": "49347587-c0123693-61f4-48ed-9343-9a1f7f9ceae3",
 							"name": "New Request",
 							"originalRequest": {
 								"method": "POST",
@@ -9852,21 +9852,14 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/venues/:id/facility-map/upload-url",
+									"raw": "{{base_org}}/venues/facility-map/upload-url",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"venues",
-										":id",
 										"facility-map",
 										"upload-url"
-									],
-									"variable": [
-										{
-											"key": "id",
-											"value": "d9978052-b80f-4721-8ed2-d4046286948b"
-										}
 									]
 								}
 							},
@@ -9936,15 +9929,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "496"
+									"value": "502"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"1f0-td5zJXjoBeFBviJxUchm2atgv0w\""
+									"value": "W/\"1f6-wUQ+5n3u6PmGZIGNF9SH55MnxwY\""
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 25 Mar 2026 04:17:13 GMT"
+									"value": "Wed, 25 Mar 2026 05:11:18 GMT"
 								},
 								{
 									"key": "Connection",
@@ -9957,7 +9950,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"status\": true,\n    \"message\": \"Venue facility map upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/venue-facility-maps/13efb92e-d525-4c3d-bf9a-e9980d2c6e69?sv=2026-02-06&spr=https&st=2026-03-25T04%3A17%3A13Z&se=2026-03-25T04%3A27%3A13Z&sr=b&sp=w&sig=KgXVp2wNUPttY08LcAfpEEjp1a%2Fa2QVk47F2P6zodHs%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"venue-facility-maps/13efb92e-d525-4c3d-bf9a-e9980d2c6e69\",\n        \"expires_at\": \"2026-03-25T04:26:13.113Z\"\n    }\n}"
+							"body": "{\n    \"status\": true,\n    \"message\": \"Venue facility map upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/venue-facility-maps/4fc321b6-1e90-4480-a560-95b228e230b0?sv=2026-02-06&spr=https&st=2026-03-25T05%3A11%3A18Z&se=2026-03-25T05%3A21%3A18Z&sr=b&sp=w&sig=t56WsG%2FzAukzM9S%2FG9CIX2aOP4%2BwsdTyKpfEpg%2BWFk8%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"venue-facility-maps/4fc321b6-1e90-4480-a560-95b228e230b0\",\n        \"expires_at\": \"2026-03-25T05:20:18.820Z\"\n    }\n}"
 						}
 					]
 				}
