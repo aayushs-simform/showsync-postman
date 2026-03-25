@@ -7619,7 +7619,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/entries/classes/:entryId",
+									"raw": "{{base_org}}/shows/:showId/entries/:entryId",
 									"host": [
 										"{{base_org}}"
 									],
@@ -7627,7 +7627,6 @@
 										"shows",
 										":showId",
 										"entries",
-										"classes",
 										":entryId"
 									],
 									"variable": [
