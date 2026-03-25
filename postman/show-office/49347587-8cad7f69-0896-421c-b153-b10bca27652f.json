@@ -9990,7 +9990,7 @@
 							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}"
 						},
 						"url": {
-							"raw": "{{base_org}}/venues/:id/facility-map/upload-url",
+							"raw": "{{base_org}}/venues/:id/facility-map/confirm",
 							"host": [
 								"{{base_org}}"
 							],
@@ -9998,7 +9998,7 @@
 								"venues",
 								":id",
 								"facility-map",
-								"upload-url"
+								"confirm"
 							],
 							"variable": [
 								{
@@ -14115,7 +14115,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/96af4801-b15e-4997-8a10-e569d51bfd80?sv=2026-02-06&spr=https&st=2026-03-21T17%3A05%3A46Z&se=2026-03-21T17%3A15%3A46Z&sr=b&sp=w&sig=bP9ksCxuXKyhLqHPYvRc6BsCDtyuZmKh8U059YngBxg%3D&rsct=application%2Fpdf",
+					"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/venue-facility-maps/13efb92e-d525-4c3d-bf9a-e9980d2c6e69?sv=2026-02-06&spr=https&st=2026-03-25T04%3A17%3A13Z&se=2026-03-25T04%3A27%3A13Z&sr=b&sp=w&sig=KgXVp2wNUPttY08LcAfpEEjp1a%2Fa2QVk47F2P6zodHs%3D&rsct=application%2Fpdf",
 					"protocol": "https",
 					"host": [
 						"devshowsyncstorage",
@@ -14126,8 +14126,8 @@
 					],
 					"path": [
 						"showsync",
-						"horse-documents",
-						"96af4801-b15e-4997-8a10-e569d51bfd80"
+						"venue-facility-maps",
+						"13efb92e-d525-4c3d-bf9a-e9980d2c6e69"
 					],
 					"query": [
 						{
@@ -14140,11 +14140,11 @@
 						},
 						{
 							"key": "st",
-							"value": "2026-03-21T17%3A05%3A46Z"
+							"value": "2026-03-25T04%3A17%3A13Z"
 						},
 						{
 							"key": "se",
-							"value": "2026-03-21T17%3A15%3A46Z"
+							"value": "2026-03-25T04%3A27%3A13Z"
 						},
 						{
 							"key": "sr",
@@ -14156,7 +14156,7 @@
 						},
 						{
 							"key": "sig",
-							"value": "bP9ksCxuXKyhLqHPYvRc6BsCDtyuZmKh8U059YngBxg%3D"
+							"value": "KgXVp2wNUPttY08LcAfpEEjp1a%2Fa2QVk47F2P6zodHs%3D"
 						},
 						{
 							"key": "rsct",
