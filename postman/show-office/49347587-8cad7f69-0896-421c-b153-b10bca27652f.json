@@ -9975,40 +9975,6 @@
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue facility map upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/venue-facility-maps/13efb92e-d525-4c3d-bf9a-e9980d2c6e69?sv=2026-02-06&spr=https&st=2026-03-25T04%3A17%3A13Z&se=2026-03-25T04%3A27%3A13Z&sr=b&sp=w&sig=KgXVp2wNUPttY08LcAfpEEjp1a%2Fa2QVk47F2P6zodHs%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"venue-facility-maps/13efb92e-d525-4c3d-bf9a-e9980d2c6e69\",\n        \"expires_at\": \"2026-03-25T04:26:13.113Z\"\n    }\n}"
 						}
 					]
-				},
-				{
-					"name": "Facility Map Upload confirm",
-					"id": "49347587-e1dba5f5-128a-4782-aaaa-fe2776de896a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}"
-						},
-						"url": {
-							"raw": "{{base_org}}/venues/:id/facility-map/confirm",
-							"host": [
-								"{{base_org}}"
-							],
-							"path": [
-								"venues",
-								":id",
-								"facility-map",
-								"confirm"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "d9978052-b80f-4721-8ed2-d4046286948b"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "49347587-e8bb43bf-5836-4122-b118-cde40ea71d8d"
