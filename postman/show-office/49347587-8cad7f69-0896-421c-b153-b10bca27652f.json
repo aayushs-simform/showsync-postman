@@ -7874,6 +7874,124 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Entry retrieved successfully\",\n    \"data\": {\n        \"horse\": {\n            \"name\": \"Thunder's Lightning\",\n            \"usef_number\": null,\n            \"breed\": \"Thoroughbred\",\n            \"age\": 7,\n            \"color\": \"Chestnut\",\n            \"gender\": \"STALLION\",\n            \"height\": \"16.20\",\n            \"microchip_number\": \"23456886\",\n            \"registration_status\": false\n        },\n        \"health_documents\": [\n            {\n                \"document_name\": \"COGGINS\",\n                \"verification_status\": \"PENDING\",\n                \"reason\": null,\n                \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a?sv=2026-02-06&spr=https&st=2026-03-25T11%3A17%3A20Z&se=2026-03-25T12%3A17%3A20Z&sr=b&sp=r&sig=DgwlbXjyk6hokMBa9Z3ZaAdHA7dVmRt1Dv0u2xsj4zI%3D\"\n            }\n        ],\n        \"members\": {\n            \"owner\": {\n                \"name\": \"Jane Doe\",\n                \"email\": \"aayushs.simform@gmail.com\",\n                \"mobile_number\": \"5555550100\",\n                \"usef\": \"12345678\",\n                \"usef_membership_type\": null,\n                \"usef_membership_expiry_date\": null\n            },\n            \"riders\": [\n                {\n                    \"name\": \"Aayush Rider\",\n                    \"email\": \"aayushs.simforsm@gmail.com\",\n                    \"mobile_number\": \"9399400758\",\n                    \"usef\": null,\n                    \"usef_membership_type\": \"USEF\",\n                    \"usef_membership_expiry_date\": null\n                }\n            ],\n            \"trainer\": null\n        }\n    }\n}"
+								},
+								{
+									"id": "49347587-b078b66a-cb25-452a-a928-2dddb47f19c3",
+									"name": "View Entry",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/entries/:entryId",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"entries",
+												":entryId"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "entryId",
+													"value": "d3d32258-75e8-405e-957d-86b1f315c973"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1061"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"425-HbUntdKK9sj7agd/pXaH4eWopDs\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 25 Mar 2026 11:22:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Entry retrieved successfully\",\n    \"data\": {\n        \"horse\": {\n            \"name\": \"Thunder's Lightning\",\n            \"usef_number\": null,\n            \"breed\": \"Thoroughbred\",\n            \"age\": 7,\n            \"color\": \"Chestnut\",\n            \"gender\": \"STALLION\",\n            \"height\": \"16.20\",\n            \"microchip_number\": \"23456886\",\n            \"registration_status\": false\n        },\n        \"health_documents\": [\n            {\n                \"id\": \"01e00aaa-666c-4536-a7c2-4fc2f08eaf9d\",\n                \"document_name\": \"COGGINS\",\n                \"verification_status\": \"PENDING\",\n                \"reason\": null,\n                \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a?sv=2026-02-06&spr=https&st=2026-03-25T11%3A22%3A40Z&se=2026-03-25T12%3A22%3A40Z&sr=b&sp=r&sig=7wtB%2BpWSYgrAr%2B%2FHMxGC6KXJg2es7k2oV1yjo76TN8E%3D\"\n            }\n        ],\n        \"members\": {\n            \"owner\": {\n                \"name\": \"Jane Doe\",\n                \"email\": \"aayushs.simform@gmail.com\",\n                \"mobile_number\": \"5555550100\",\n                \"usef\": \"12345678\",\n                \"usef_membership_type\": null,\n                \"usef_membership_expiry_date\": null\n            },\n            \"riders\": [\n                {\n                    \"name\": \"Aayush Rider\",\n                    \"email\": \"aayushs.simforsm@gmail.com\",\n                    \"mobile_number\": \"9399400758\",\n                    \"usef\": null,\n                    \"usef_membership_type\": \"USEF\",\n                    \"usef_membership_expiry_date\": null\n                }\n            ],\n            \"trainer\": null\n        }\n    }\n}"
 								}
 							]
 						},
@@ -7951,7 +8069,7 @@
 										},
 										{
 											"key": "entryId",
-											"value": "d3d32258-75e8-405e-957d-86b1f315c973"
+											"value": "01e00aaa-666c-4536-a7c2-4fc2f08eaf9d"
 										},
 										{
 											"key": "docId",
