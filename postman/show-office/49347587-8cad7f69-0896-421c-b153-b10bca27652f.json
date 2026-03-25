@@ -8424,6 +8424,49 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Classes retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n            \"class_id\": \"J101\",\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"2026-03-14T18:30:00.000Z\",\n            \"class_time\": null,\n            \"result_status\": \"NOT_STARTED\",\n            \"division_name\": \"Open Jumpers 4\",\n            \"entry_count\": 1\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "Remove Class from Entry Copy",
+							"id": "49347587-5dd7fe98-cca6-4993-b74b-2b7c64b67588",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/classes/:classId/horses/:entryId",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"classes",
+										":classId",
+										"horses",
+										":entryId"
+									],
+									"variable": [
+										{
+											"id": "e1e749aa-e06a-4bfb-816f-c368b9d1262d",
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"id": "9c06e7ab-a738-40d4-ba4a-1b803e6fafb4",
+											"key": "classId",
+											"value": ""
+										},
+										{
+											"id": "c9400daf-afc2-452b-b0e9-7786843de102",
+											"key": "entryId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-e2b253ff-0444-49d8-84b2-ab9b05b5f8bb"
