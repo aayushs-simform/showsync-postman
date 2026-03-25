@@ -324,7 +324,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"reset_token\": \"783151f0-625c-4f1b-9255-9873afb08a73\",\n    \"new_password\": \"Strong@1!\",\n    \"confirm_password\": \"Strong@1!\"\n}",
+									"raw": "{\n    \"reset_token\": \"e84dae78-d137-4089-891a-4f401e363638\",\n    \"new_password\": \"Strong@1!\",\n    \"confirm_password\": \"Strong@1!\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
