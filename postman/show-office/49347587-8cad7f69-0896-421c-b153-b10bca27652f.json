@@ -8770,10 +8770,19 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"class_id\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/entries/:entryId/owner-horses",
+									"raw": "{{base_org}}/shows/:showId/entries/:entryId/classes",
 									"host": [
 										"{{base_org}}"
 									],
@@ -8782,7 +8791,7 @@
 										":showId",
 										"entries",
 										":entryId",
-										"owner-horses"
+										"classes"
 									],
 									"variable": [
 										{
