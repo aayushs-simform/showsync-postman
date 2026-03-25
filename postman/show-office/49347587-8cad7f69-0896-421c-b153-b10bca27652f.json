@@ -8771,7 +8771,30 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/entries/:entryId/owner-horses",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"entries",
+										":entryId",
+										"owner-horses"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "entryId",
+											"value": "d3d32258-75e8-405e-957d-86b1f315c973"
+										}
+									]
+								}
 							},
 							"response": []
 						}
