@@ -9812,6 +9812,34 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "Facility Map Upload URL",
+					"id": "49347587-1c7298ef-cc77-4961-b638-aa1ba23465e1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_org}}/venues/:id",
+							"host": [
+								"{{base_org}}"
+							],
+							"path": [
+								"venues",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "49347587-e8bb43bf-5836-4122-b118-cde40ea71d8d"
