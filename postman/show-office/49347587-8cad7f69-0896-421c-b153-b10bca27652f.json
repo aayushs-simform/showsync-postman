@@ -8609,7 +8609,7 @@
 							"response": []
 						},
 						{
-							"name": "Owner Horses",
+							"name": "Owner Horses by Entry",
 							"id": "49347587-c4966ac6-dad9-4b81-b3a8-06681c9ec290",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -8636,10 +8636,142 @@
 										},
 										{
 											"key": "entryId",
-											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+											"value": "d3d32258-75e8-405e-957d-86b1f315c973"
 										}
 									]
 								}
+							},
+							"response": [
+								{
+									"id": "49347587-fa01ccef-8b3b-4027-a2fe-546c71b7c036",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/entries/:entryId/owner-horses",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"entries",
+												":entryId",
+												"owner-horses"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "entryId",
+													"value": "d3d32258-75e8-405e-957d-86b1f315c973"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "554"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"22a-tZtfH2h6R5WAZaeJ5CGFsHbc2m8\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 25 Mar 2026 12:14:24 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Owner horses retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"breed\": \"Thoroughbred\",\n            \"color\": \"Chestnut\",\n            \"gender\": \"STALLION\",\n            \"height\": \"16.20\",\n            \"usef_number\": null,\n            \"is_registered\": false,\n            \"existing_entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\"\n        },\n        {\n            \"id\": \"43a114c8-a6ac-4977-acd5-1744429f55a8\",\n            \"horse_name\": \"Water Lightning\",\n            \"breed\": \"Thoroughbred\",\n            \"color\": \"Chestnut\",\n            \"gender\": \"STALLION\",\n            \"height\": \"16.20\",\n            \"usef_number\": null,\n            \"is_registered\": false,\n            \"existing_entry_id\": null\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Add Horse to Class",
+							"id": "49347587-e48f14d5-a8d9-4be4-98e6-8822f93478d7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
