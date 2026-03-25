@@ -9800,6 +9800,18 @@
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue deleted successfully\"\n}"
 						}
 					]
+				},
+				{
+					"name": "Upsert Venue & Arena",
+					"id": "49347587-e40647bc-8ade-4994-b217-87db04e5e9a0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "49347587-e8bb43bf-5836-4122-b118-cde40ea71d8d"
