@@ -9343,7 +9343,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"venue_name\": \"Golden Gate Equestrian Center\",\n    \"address\": \"San Francisco\",\n    \"state\": \"North Carolina\",\n    \"country\": \"USA\",\n    \"phone\": \"+1-561-555-0100\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"website\": \"https://mail.google.com/\",\n    // \"facility_map_blob_name\": \"venue-facility-maps/95d9c33c-912f-40f1-83dd-8cc6bae408cf\",\n    \"arenas\": [\n        {\n            \"arena_code\": \"A1\",\n            \"arena_name\": \"North arena\"\n        }\n    ]\n}",
+							"raw": "{\n    \"venue_name\": \"Golden Gate Equestrian Center\",\n    \"address\": \"San Francisco\",\n    \"state\": \"North Carolina\",\n    \"country\": \"USA\",\n    \"phone\": \"+1-561-555-0100\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"website\": \"https://mail.google.com/\",\n    // \"facility_map_blob_name\": \"venue-facility-maps/95d9c33c-912f-40f1-83dd-8cc6bae408cf\",\n    \"arenas\": [\n        {\n            \"arena_code\": \"A1\",\n            \"arena_name\": \"North arena\"\n        },\n         {\n            \"arena_code\": \"A2\",\n            \"arena_name\": \"North arena\"\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
