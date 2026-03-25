@@ -9820,21 +9820,32 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "{{base_org}}/venues/:id",
+							"raw": "{{base_org}}/venues/:id/facility-map/confirm",
 							"host": [
 								"{{base_org}}"
 							],
 							"path": [
 								"venues",
-								":id"
+								":id",
+								"facility-map",
+								"confirm"
 							],
 							"variable": [
 								{
 									"key": "id",
-									"value": ""
+									"value": "d9978052-b80f-4721-8ed2-d4046286948b"
 								}
 							]
 						}
