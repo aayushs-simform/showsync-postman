@@ -9824,21 +9824,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_org}}/venues/:id/facility-map/upload-url",
+							"raw": "{{base_org}}/venues/facility-map/upload-url",
 							"host": [
 								"{{base_org}}"
 							],
 							"path": [
 								"venues",
-								":id",
 								"facility-map",
 								"upload-url"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "d9978052-b80f-4721-8ed2-d4046286948b"
-								}
 							]
 						}
 					},
