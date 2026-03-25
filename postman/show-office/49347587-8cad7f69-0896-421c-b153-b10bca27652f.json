@@ -8426,7 +8426,7 @@
 							]
 						},
 						{
-							"name": "Remove Class from Entry Copy",
+							"name": "Remove Class from Entry",
 							"id": "49347587-5dd7fe98-cca6-4993-b74b-2b7c64b67588",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -8449,17 +8449,14 @@
 									],
 									"variable": [
 										{
-											"id": "e1e749aa-e06a-4bfb-816f-c368b9d1262d",
 											"key": "showId",
 											"value": "{{showId}}"
 										},
 										{
-											"id": "9c06e7ab-a738-40d4-ba4a-1b803e6fafb4",
 											"key": "classId",
 											"value": ""
 										},
 										{
-											"id": "c9400daf-afc2-452b-b0e9-7786843de102",
 											"key": "entryId",
 											"value": ""
 										}
