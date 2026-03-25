@@ -8578,7 +8578,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/classes/horses/:entryId",
+									"raw": "{{base_org}}/shows/:showId/classes/:classId/horses/:entryId",
 									"host": [
 										"{{base_org}}"
 									],
@@ -8586,6 +8586,7 @@
 										"shows",
 										":showId",
 										"classes",
+										":classId",
 										"horses",
 										":entryId"
 									],
@@ -8593,6 +8594,10 @@
 										{
 											"key": "showId",
 											"value": "{{showId}}"
+										},
+										{
+											"key": "classId",
+											"value": ""
 										},
 										{
 											"key": "entryId",
