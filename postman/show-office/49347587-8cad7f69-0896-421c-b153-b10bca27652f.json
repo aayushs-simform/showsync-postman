@@ -7412,6 +7412,13 @@
 										":showId",
 										"entries"
 									],
+									"query": [
+										{
+											"key": "search",
+											"value": "dfdg",
+											"disabled": true
+										}
+									],
 									"variable": [
 										{
 											"key": "showId",
