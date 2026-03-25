@@ -8087,7 +8087,142 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-319597d5-0731-470f-b981-3658f93f9224",
+									"name": "Verify Entry Document",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"verification_status\": \"APPROVED\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/entries/:entryId/docs/:docId/verify",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"entries",
+												":entryId",
+												"docs",
+												":docId",
+												"verify"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "entryId",
+													"value": "d3d32258-75e8-405e-957d-86b1f315c973"
+												},
+												{
+													"key": "docId",
+													"value": "01e00aaa-666c-4536-a7c2-4fc2f08eaf9d"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "70"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"46-Hdiubdo3oz/bNudMAIr6/tV3zqk\""
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 25 Mar 2026 11:23:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Document verification updated successfully\"\n}"
+								}
+							]
 						},
 						{
 							"name": "Remove Class from Entry",
