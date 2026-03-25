@@ -7580,7 +7580,7 @@
 							]
 						},
 						{
-							"name": "List classes",
+							"name": "List Show classes",
 							"id": "49347587-b1bfbd98-a66f-4091-9bf4-2b83ce6a8b35",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
