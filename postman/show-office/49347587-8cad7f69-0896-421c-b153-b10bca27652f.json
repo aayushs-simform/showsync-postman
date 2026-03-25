@@ -8048,6 +8048,15 @@
 							"request": {
 								"method": "PATCH",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"verification_status\": \"APPROVED\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/entries/:entryId/docs/:docId/verify",
 									"host": [
@@ -8069,11 +8078,11 @@
 										},
 										{
 											"key": "entryId",
-											"value": "01e00aaa-666c-4536-a7c2-4fc2f08eaf9d"
+											"value": "d3d32258-75e8-405e-957d-86b1f315c973"
 										},
 										{
 											"key": "docId",
-											"value": ""
+											"value": "01e00aaa-666c-4536-a7c2-4fc2f08eaf9d"
 										}
 									]
 								}
