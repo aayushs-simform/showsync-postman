@@ -8426,6 +8426,35 @@
 							]
 						},
 						{
+							"name": "New Request",
+							"id": "49347587-e726cbb0-4c73-4493-9f3d-3dfc408ec975",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/classes",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"classes"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Remove Class from Entry",
 							"id": "49347587-5dd7fe98-cca6-4993-b74b-2b7c64b67588",
 							"protocolProfileBehavior": {
