@@ -7429,6 +7429,11 @@
 											"value": "ENTERED",
 											"description": "ENTERED, SCRATCHED",
 											"disabled": true
+										},
+										{
+											"key": "classes",
+											"value": "1.0m Open",
+											"disabled": true
 										}
 									],
 									"variable": [
