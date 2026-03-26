@@ -12020,6 +12020,28 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Supply orders fetched successfully.\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"27fe0cfe-dcf2-44e8-a7b0-f385bd38e851\",\n            \"order_number\": \"SO-20260326-8405\",\n            \"created_at\": \"2026-03-26T06:13:23.819Z\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"total_amount\": \"600.00\",\n            \"status\": \"PENDING\"\n        }\n    ]\n}"
 										}
 									]
+								},
+								{
+									"name": "Cancel Order",
+									"id": "49347587-a6043dc8-61b3-4148-b68c-503cd11b20a8",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/supply-orders/cancel",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"supply-orders",
+												"cancel"
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-df8616bf-8b96-4e10-b7a3-f8d4c2e0cc9a"
