@@ -13043,7 +13043,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "8f8cda92-3358-4eca-9bfe-da594292a9b7",
+				"id": "1904dbc1-978d-4210-ba51-42a83424c7d5",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -13087,7 +13087,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a3e7774b-2688-42be-9ae4-ea04199dec9d",
+				"id": "32011d2f-d8ee-4473-82dc-e78fc6a262f5",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -13105,6 +13105,7 @@
 					"        url: pm.environment.get(\"base_app\") + \"/auth/refresh\",",
 					"        method: \"POST\",",
 					"        header: {",
+					"            \"Authentication\": \"Bearer \",",
 					"            \"Content-Type\": \"application/json\",",
 					"            \"x-api-platform\": pm.collectionVariables.get(\"platform\"),",
 					"            \"x-device-id\": pm.collectionVariables.get(\"deviceId\"),",
@@ -13173,8 +13174,7 @@
 		},
 		{
 			"key": "enrollmentId",
-			"value": "",
-			"type": "default"
+			"value": ""
 		}
 	]
 }
