@@ -14484,8 +14484,8 @@
 					},
 					"response": [
 						{
-							"id": "49347587-47f1d2cb-495f-440d-867c-aabadb50876a",
-							"name": "New Request",
+							"id": "49347587-4fc1bcb0-7db8-4f7a-8527-1ca65d5fb3f3",
+							"name": "Venue Summary - Supply Item",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -14502,7 +14502,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "json",
+							"_postman_previewlanguage": null,
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -14553,10 +14553,6 @@
 									"value": "0"
 								},
 								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "http://localhost:5175"
-								},
-								{
 									"key": "Vary",
 									"value": "Origin"
 								},
@@ -14566,21 +14562,19 @@
 								},
 								{
 									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
+									"value": "application/json; charset=utf-8"
 								},
 								{
 									"key": "Content-Length",
-									"value": "191"
+									"value": "576"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"bf-TTJu+9GP8f/l2mFOql1zrL0uH/U\""
+									"value": "W/\"240-Kg0QoblUnU9XeWRgmR1aB/gKY2g\""
 								},
 								{
 									"key": "Date",
-									"value": "Tue, 10 Mar 2026 11:30:40 GMT"
+									"value": "Thu, 26 Mar 2026 11:11:45 GMT"
 								},
 								{
 									"key": "Connection",
@@ -14591,15 +14585,9 @@
 									"value": "timeout=5"
 								}
 							],
-							"cookie": [
-								{
-									"expires": "Invalid Date",
-									"domain": "",
-									"path": ""
-								}
-							],
+							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"status\": true,\n    \"message\": \"Venue supply summary fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"5a75b987-3fbe-4adf-9bb0-38344197e751\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"supply_item_count\": 2\n        }\n    ]\n}"
+							"body": "{\n    \"status\": true,\n    \"message\": \"Venue supply summary fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"country\": \"USA\",\n            \"state\": \"North Carolina\",\n            \"city\": null,\n            \"supply_item_count\": 3\n        },\n        {\n            \"id\": \"27557062-32c5-40de-a843-1bf10e9e65f2\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"country\": \"USA\",\n            \"state\": \"North Carolina\",\n            \"city\": null,\n            \"supply_item_count\": 0\n        },\n        {\n            \"id\": \"f033001e-710d-4d2f-a967-4e17fb2bf3a1\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"country\": \"USA\",\n            \"state\": \"North Carolina\",\n            \"city\": null,\n            \"supply_item_count\": 0\n        }\n    ]\n}"
 						}
 					]
 				},
