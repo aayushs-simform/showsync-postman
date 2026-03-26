@@ -14464,7 +14464,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/supply-items?venue_id=5a75b987-3fbe-4adf-9bb0-38344197e751",
+							"raw": "{{base_org}}/supply-items?venue_id=d9978052-b80f-4721-8ed2-d4046286948b",
 							"host": [
 								"{{base_org}}"
 							],
@@ -14474,7 +14474,7 @@
 							"query": [
 								{
 									"key": "venue_id",
-									"value": "5a75b987-3fbe-4adf-9bb0-38344197e751"
+									"value": "d9978052-b80f-4721-8ed2-d4046286948b"
 								}
 							]
 						}
