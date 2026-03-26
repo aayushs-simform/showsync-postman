@@ -10044,27 +10044,27 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/prize-distribution",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/prize-distribution",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentId",
 												"prize-distribution"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
 									},
 									"response": [
 										{
-											"id": "49347587-01edf729-456f-4713-b137-6cae20362645",
+											"id": "49347587-df96b3e1-b7a5-424b-a2e3-cd97e7d537d1",
 											"name": "Get Prize Distribution",
 											"originalRequest": {
 												"method": "GET",
@@ -10074,27 +10074,27 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/:entryId/prize-distribution",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/prize-distribution",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														":entryId",
+														"enrollments",
+														":enrollmentId",
 														"prize-distribution"
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
 														}
 													]
 												}
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -10158,15 +10158,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "171"
+													"value": "172"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"ab-AAHdMXCJUNlucQH069ttytJrNoc\""
+													"value": "W/\"ac-TzVWuTqBop8v2hzeUPry5lZHY/w\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 16:34:42 GMT"
+													"value": "Thu, 26 Mar 2026 04:27:26 GMT"
 												},
 												{
 													"key": "Connection",
@@ -10179,7 +10179,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Prize distribution fetched successfully.\",\n    \"data\": {\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\"\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Prize distribution fetched successfully.\",\n    \"data\": {\n        \"owner_payout_percent\": \"40.00\",\n        \"rider_payout_percent\": \"30.00\",\n        \"trainer_payout_percent\": \"30.00\"\n    }\n}"
 										}
 									]
 								},
