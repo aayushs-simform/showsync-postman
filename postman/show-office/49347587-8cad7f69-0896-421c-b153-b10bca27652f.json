@@ -14472,7 +14472,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/supply-items/venue-summary",
+							"raw": "{{base_org}}/supply-items/venue-summary?country=India",
 							"host": [
 								"{{base_org}}"
 							],
@@ -14485,6 +14485,11 @@
 									"key": "state",
 									"value": "North Carolina",
 									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "India",
+									"type": "text"
 								}
 							]
 						}
