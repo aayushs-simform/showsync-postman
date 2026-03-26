@@ -9873,7 +9873,7 @@
 							"name": "Show Invoice",
 							"item": [
 								{
-									"name": "Get Entry invoice",
+									"name": "Get Payment Summary",
 									"id": "49347587-705ceaee-44ef-4505-94e2-c01510fe4654",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9886,20 +9886,20 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/payment-summary",
+											"raw": "{{base_app}}/shows/enrollements/:enrollementId/payment-summary",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollements",
+												":enrollementId",
 												"payment-summary"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollementId",
+													"value": "{{enrollementId}}"
 												}
 											]
 										}
