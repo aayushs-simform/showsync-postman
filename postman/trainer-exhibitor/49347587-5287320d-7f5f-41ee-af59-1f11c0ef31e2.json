@@ -10710,27 +10710,27 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/w9/confirm-upload",
+													"raw": "{{base_app}}/enrollments/:enrollmentId/w9/confirm-upload",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
-														"entries",
-														":entryId",
+														"enrollments",
+														":enrollmentId",
 														"w9",
 														"confirm-upload"
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
 														}
 													]
 												}
 											},
 											"status": "Created",
 											"code": 201,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
