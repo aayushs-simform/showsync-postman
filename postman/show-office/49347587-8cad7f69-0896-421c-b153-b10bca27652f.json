@@ -15603,7 +15603,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/shows/:showId/supply-orders?page=100&limit=10",
+							"raw": "{{base_org}}/shows/:showId/supply-orders",
 							"host": [
 								"{{base_org}}"
 							],
@@ -15626,11 +15626,13 @@
 								},
 								{
 									"key": "page",
-									"value": "100"
+									"value": "1",
+									"disabled": true
 								},
 								{
 									"key": "limit",
-									"value": "10"
+									"value": "10",
+									"disabled": true
 								}
 							],
 							"variable": [
