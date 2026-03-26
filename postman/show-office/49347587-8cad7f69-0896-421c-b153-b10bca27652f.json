@@ -15603,7 +15603,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/shows/:showId/supply-orders?tab=HISTORY",
+							"raw": "{{base_org}}/shows/:showId/supply-orders?tab=ACTIVE",
 							"host": [
 								"{{base_org}}"
 							],
@@ -15620,7 +15620,7 @@
 								},
 								{
 									"key": "tab",
-									"value": "HISTORY",
+									"value": "ACTIVE",
 									"description": "ACTIVE, HISTORY"
 								}
 							],
