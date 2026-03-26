@@ -11885,7 +11885,7 @@
 									]
 								},
 								{
-									"name": "List All Orders",
+									"name": "My Orders",
 									"id": "49347587-c241ec58-f84a-43f9-9f85-d930faedf786",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
