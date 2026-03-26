@@ -6856,14 +6856,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/shows/entries/shows/:showId/preflight",
+											"raw": "{{base_app}}/shows/enrollments/:showId/preflight",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												"shows",
+												"enrollments",
 												":showId",
 												"preflight"
 											],
@@ -6894,20 +6893,19 @@
 									},
 									"response": [
 										{
-											"id": "49347587-a15d1b5a-e803-4cf0-97c3-74e4f78b6e89",
-											"name": "New Request",
+											"id": "49347587-23296b4d-a213-484a-97e2-8471e8837afd",
+											"name": "Pre Check Details",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{base_app}}/shows/entries/shows/:showId/preflight",
+													"raw": "{{base_app}}/shows/enrollments/:showId/preflight",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														"shows",
+														"enrollments",
 														":showId",
 														"preflight"
 													],
@@ -6919,12 +6917,12 @@
 														},
 														{
 															"key": "from_date",
-															"value": null,
+															"value": "",
 															"disabled": true
 														},
 														{
 															"key": "to_date",
-															"value": null,
+															"value": "",
 															"disabled": true
 														}
 													],
@@ -6938,7 +6936,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -7002,15 +7000,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "551"
+													"value": "591"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"227-wIj/OiL/FSKL4VAP1u7VgNZktLU\""
+													"value": "W/\"24f-BajVxNfXp6saUY8f0u+qdy9ZpRs\""
 												},
 												{
 													"key": "Date",
-													"value": "Fri, 20 Mar 2026 13:02:53 GMT"
+													"value": "Thu, 26 Mar 2026 04:07:01 GMT"
 												},
 												{
 													"key": "Connection",
@@ -7023,7 +7021,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Entry preflight fetched successfully.\",\n    \"data\": {\n        \"show\": {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n            \"total_stalls_allowed\": 200,\n            \"stall_fee\": \"150.00\",\n            \"total_rv_space_allowed\": 50,\n            \"rv_fee\": \"75.00\",\n            \"platform_fee\": \"10.00\",\n            \"enable_late_fee\": true,\n            \"late_fee_amount\": \"50.00\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"is_usef_verified\": false,\n        \"existing_entry\": null\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment preflight fetched successfully.\",\n    \"data\": {\n        \"show\": {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"10-07-2026\",\n            \"end_date\": \"15-07-2026\",\n            \"registration_closing_date\": \"30-06-2026\",\n            \"total_stalls_allowed\": 200,\n            \"stall_fee\": \"150.00\",\n            \"total_rv_space_allowed\": 50,\n            \"rv_fee\": \"75.00\",\n            \"platform_fee\": \"10.00\",\n            \"enable_late_fee\": true,\n            \"late_fee_amount\": \"50.00\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"is_usef_verified\": true,\n        \"existing_entry\": {\n            \"enrollment_id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n            \"wizard_step\": \"COMPLETED\"\n        }\n    }\n}"
 										}
 									]
 								},
