@@ -11972,7 +11972,7 @@
 									},
 									"response": [
 										{
-											"id": "49347587-f450a0bd-63d4-4843-8f3b-f546e69da097",
+											"id": "49347587-82ada0f8-23d9-4f4a-a382-15870c8b3eca",
 											"name": "Remove horse from class",
 											"originalRequest": {
 												"method": "DELETE",
@@ -11987,27 +11987,27 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/:entryId/classes",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/classes",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														":entryId",
+														"enrollments",
+														":enrollmentId",
 														"classes"
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
 														}
 													]
 												}
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -12079,7 +12079,7 @@
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 18:35:00 GMT"
+													"value": "Thu, 26 Mar 2026 04:47:49 GMT"
 												},
 												{
 													"key": "Connection",
