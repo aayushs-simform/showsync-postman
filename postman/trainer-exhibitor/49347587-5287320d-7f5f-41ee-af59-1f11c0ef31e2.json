@@ -11759,7 +11759,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"show_id\": \"\"\n}"
+											"raw": "{\n    \"show_id\": \"{{showId}}\",\n    \"horse_id\": \"\"\n}"
 										},
 										"url": {
 											"raw": "{{base_app}}/supply-orders",
