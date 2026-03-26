@@ -14472,13 +14472,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/supply-items/venue-summary",
+							"raw": "{{base_org}}/supply-items/venue-summary?state=North Carolinas",
 							"host": [
 								"{{base_org}}"
 							],
 							"path": [
 								"supply-items",
 								"venue-summary"
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "North Carolinas"
+								}
 							]
 						}
 					},
