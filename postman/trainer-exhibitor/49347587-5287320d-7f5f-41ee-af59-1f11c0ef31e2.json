@@ -7039,14 +7039,13 @@
 											"raw": ""
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/shows/:showId/start",
+											"raw": "{{base_app}}/shows/enrollments/:showId/start",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												"shows",
+												"enrollments",
 												":showId",
 												"start"
 											],
@@ -7070,14 +7069,13 @@
 													"raw": ""
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/shows/:showId/start",
+													"raw": "{{base_app}}/shows/enrollments/:showId/start",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														"shows",
+														"enrollments",
 														":showId",
 														"start"
 													],
@@ -7091,7 +7089,7 @@
 											},
 											"status": "Created",
 											"code": 201,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -7190,13 +7188,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:id",
+											"raw": "{{base_app}}/shows/enrollments/:id",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
+												"enrollments",
 												":id"
 											],
 											"variable": [
@@ -7215,13 +7213,13 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{base_app}}/shows/entries/:id",
+													"raw": "{{base_app}}/shows/enrollments/:id",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
+														"enrollments",
 														":id"
 													],
 													"variable": [
@@ -7234,7 +7232,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
