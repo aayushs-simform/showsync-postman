@@ -14472,7 +14472,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/supply-items/venue-summary?state=North Carolinassdsd",
+							"raw": "{{base_org}}/supply-items/venue-summary",
 							"host": [
 								"{{base_org}}"
 							],
@@ -14483,7 +14483,8 @@
 							"query": [
 								{
 									"key": "state",
-									"value": "North Carolinassdsd"
+									"value": "North Carolina",
+									"disabled": true
 								}
 							]
 						}
