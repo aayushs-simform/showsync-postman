@@ -11644,7 +11644,17 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/supply-orders/item-categories",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"supply-orders",
+												"item-categories"
+											]
+										}
 									},
 									"response": []
 								}
