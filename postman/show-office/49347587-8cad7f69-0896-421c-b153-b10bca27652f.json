@@ -15853,6 +15853,69 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Update Order Status",
+					"id": "49347587-029441c8-241f-43f6-81c1-30a08fc5279c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_org}}/shows/:showId/supply-orders/:id/status",
+							"host": [
+								"{{base_org}}"
+							],
+							"path": [
+								"shows",
+								":showId",
+								"supply-orders",
+								":id",
+								"status"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "5264",
+									"disabled": true
+								},
+								{
+									"key": "tab",
+									"value": "ACTIVE",
+									"description": "ACTIVE, HISTORY",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "order_number:asc",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "showId",
+									"value": "c38389e9-dae1-4e42-8f62-06492edede51"
+								},
+								{
+									"key": "id",
+									"value": "27fe0cfe-dcf2-44e8-a7b0-f385bd38e851"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "49347587-f07fe27d-827b-44f1-9dd9-aaccac5ff4bb"
