@@ -11446,7 +11446,20 @@
 						},
 						{
 							"name": "Show Supplies",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "49347587-98287f6f-b950-4707-94ff-b71435abbcf6",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "49347587-df8616bf-8b96-4e10-b7a3-f8d4c2e0cc9a"
 						},
 						{
