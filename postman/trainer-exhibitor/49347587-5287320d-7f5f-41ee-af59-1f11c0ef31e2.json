@@ -9165,20 +9165,20 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/docs",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentsId/docs",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentsId",
 												"docs"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollmentsId",
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
