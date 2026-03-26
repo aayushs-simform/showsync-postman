@@ -9231,8 +9231,8 @@
 									},
 									"response": [
 										{
-											"id": "49347587-1d5194fa-a6da-4e9b-b4e2-9ef98e8f00ac",
-											"name": "New Request",
+											"id": "49347587-693f2656-6905-48af-944d-c11158a938f5",
+											"name": "(entries) Get Upload URL",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
@@ -9246,13 +9246,14 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/entries/:entryId/horses/:horseId/docs/upload-url",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses/:horseId/docs/upload-url",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
-														"entries",
-														":entryId",
+														"shows",
+														"enrollments",
+														":enrollmentId",
 														"horses",
 														":horseId",
 														"docs",
@@ -9260,8 +9261,8 @@
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
 														},
 														{
 															"key": "horseId",
@@ -9272,7 +9273,7 @@
 											},
 											"status": "Created",
 											"code": 201,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -9336,15 +9337,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "472"
+													"value": "474"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"1d8-I10x6d2+N8BZpjPY9kMq8uo94mk\""
+													"value": "W/\"1da-O3MTlLYR9DOX+KQhvTJefJaqKYQ\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:34:33 GMT"
+													"value": "Thu, 26 Mar 2026 04:11:25 GMT"
 												},
 												{
 													"key": "Connection",
@@ -9357,7 +9358,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Upload URL generated successfully.\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/24bca2b9-ef76-4b4b-9f10-05ee97264e73?sv=2026-02-06&spr=https&st=2026-03-21T14%3A34%3A33Z&se=2026-03-21T14%3A44%3A33Z&sr=b&sp=w&sig=5OQb3iUPOrh%2BtQ8y6s9VUU19qsHeEiWgSu7Mjy2Lz%2FY%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"horse-documents/24bca2b9-ef76-4b4b-9f10-05ee97264e73\",\n        \"expires_at\": \"2026-03-21T14:43:33.540Z\"\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Upload URL generated successfully.\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/f6e1e41e-f0b6-4299-a1b3-591ca4f5556a?sv=2026-02-06&spr=https&st=2026-03-26T04%3A11%3A25Z&se=2026-03-26T04%3A21%3A25Z&sr=b&sp=w&sig=Zz%2F%2FRZqC2j%2FB4nrPX9Hx7LPzEJxF2EotsAzSRX0acGU%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"horse-documents/f6e1e41e-f0b6-4299-a1b3-591ca4f5556a\",\n        \"expires_at\": \"2026-03-26T04:20:25.819Z\"\n    }\n}"
 										}
 									]
 								},
