@@ -6397,14 +6397,13 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/shows/:id/preflight",
+											"raw": "{{base_app}}/shows/enrollments/:id/preflight",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												"shows",
+												"enrollments",
 												":id",
 												"preflight"
 											],
@@ -6418,7 +6417,7 @@
 									},
 									"response": [
 										{
-											"id": "49347587-2480c40f-5e58-4eee-bada-46f6e00327b8",
+											"id": "49347587-6d8f005c-12c5-4ab3-9089-bc4951303c23",
 											"name": "Entry - Preflight",
 											"originalRequest": {
 												"method": "GET",
@@ -6428,14 +6427,13 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/shows/:id/preflight",
+													"raw": "{{base_app}}/shows/enrollments/:id/preflight",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														"shows",
+														"enrollments",
 														":id",
 														"preflight"
 													],
@@ -6449,7 +6447,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -6513,15 +6511,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "581"
+													"value": "591"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"245-lveFL+rx7l/bd5YexKB+05OwCeU\""
+													"value": "W/\"24f-BajVxNfXp6saUY8f0u+qdy9ZpRs\""
 												},
 												{
 													"key": "Date",
-													"value": "Mon, 23 Mar 2026 08:43:41 GMT"
+													"value": "Thu, 26 Mar 2026 04:04:39 GMT"
 												},
 												{
 													"key": "Connection",
@@ -6534,7 +6532,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Entry preflight fetched successfully.\",\n    \"data\": {\n        \"show\": {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"10-07-2026\",\n            \"end_date\": \"15-07-2026\",\n            \"registration_closing_date\": \"30-06-2026\",\n            \"total_stalls_allowed\": 200,\n            \"stall_fee\": \"150.00\",\n            \"total_rv_space_allowed\": 50,\n            \"rv_fee\": \"75.00\",\n            \"platform_fee\": \"10.00\",\n            \"enable_late_fee\": true,\n            \"late_fee_amount\": \"50.00\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"is_usef_verified\": true,\n        \"existing_entry\": {\n            \"entry_id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n            \"wizard_step\": \"COMPLETED\"\n        }\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment preflight fetched successfully.\",\n    \"data\": {\n        \"show\": {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"10-07-2026\",\n            \"end_date\": \"15-07-2026\",\n            \"registration_closing_date\": \"30-06-2026\",\n            \"total_stalls_allowed\": 200,\n            \"stall_fee\": \"150.00\",\n            \"total_rv_space_allowed\": 50,\n            \"rv_fee\": \"75.00\",\n            \"platform_fee\": \"10.00\",\n            \"enable_late_fee\": true,\n            \"late_fee_amount\": \"50.00\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"is_usef_verified\": true,\n        \"existing_entry\": {\n            \"enrollment_id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n            \"wizard_step\": \"COMPLETED\"\n        }\n    }\n}"
 										}
 									]
 								},
