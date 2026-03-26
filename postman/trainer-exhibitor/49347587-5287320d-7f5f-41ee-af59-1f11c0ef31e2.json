@@ -9845,13 +9845,13 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/b35c39ea-b7fa-45b0-a88d-f676d56c8149\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/docs/complete",
+											"raw": "{{base_app}}/shows/enrollments/:entryId/docs/complete",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
+												"enrollments",
 												":entryId",
 												"docs",
 												"complete"
@@ -9859,7 +9859,7 @@
 											"variable": [
 												{
 													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
