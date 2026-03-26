@@ -8186,20 +8186,20 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/horses",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentId",
 												"horses"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "{{entryId}}"
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
