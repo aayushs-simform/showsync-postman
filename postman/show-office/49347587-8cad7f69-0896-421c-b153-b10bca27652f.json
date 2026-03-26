@@ -10505,14 +10505,14 @@
 					},
 					"response": [
 						{
-							"id": "49347587-e5b3c47d-b051-446d-9a6c-895d251513ea",
+							"id": "49347587-ba1adc1c-340a-4986-af18-d0ee76a4f378",
 							"name": "Add New Venue",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"venue_name\": \"Golden Gate Equestrian Center\",\n    \"address\": \"San Francisco\",\n    \"state\": \"North Carolina\",\n    \"country\": \"USA\",\n    \"phone\": \"+1-561-555-0100\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"website\": \"https://mail.google.com/\",\n    // \"facility_map_blob_name\": \"venue-facility-maps/95d9c33c-912f-40f1-83dd-8cc6bae408cf\",\n    \"arenas\": [ //Optional\n        {\n            \"arena_code\": \"A1\",\n            \"arena_name\": \"North arena\"\n        },\n         {\n            \"arena_code\": \"A2\",\n            \"arena_name\": \"North arena\"\n        }\n    ]\n}",
+									"raw": "{\n    \"venue_name\": \"Golden Gate Equestrian Center\",\n    \"address\": \"San Francisco\",\n    \"state\": \"North Carolina\",\n    \"country\": \"USA\",\n    \"city\": \"New Yok\",\n    \"phone\": \"+1-561-555-0100\",\n    \"email\": \"aayushs.simform@gmail.com\",\n    \"website\": \"https://mail.google.com/\",\n    // \"facility_map_blob_name\": \"venue-facility-maps/95d9c33c-912f-40f1-83dd-8cc6bae408cf\",\n    \"arenas\": [ //Optional\n        {\n            \"arena_code\": \"A1\",\n            \"arena_name\": \"North arena\"\n        },\n         {\n            \"arena_code\": \"A2\",\n            \"arena_name\": \"North arena\"\n        }\n    ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10599,11 +10599,11 @@
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"6b-sYuBnI8LidIzsCcOK1WurLfGJwo\""
+									"value": "W/\"6b-Jz0RGli6OiBHwXKgsKjEst7yGNE\""
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 25 Mar 2026 04:37:51 GMT"
+									"value": "Thu, 26 Mar 2026 11:12:27 GMT"
 								},
 								{
 									"key": "Connection",
@@ -10616,7 +10616,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"status\": true,\n    \"message\": \"Venue created successfully\",\n    \"data\": {\n        \"id\": \"f033001e-710d-4d2f-a967-4e17fb2bf3a1\"\n    }\n}"
+							"body": "{\n    \"status\": true,\n    \"message\": \"Venue created successfully\",\n    \"data\": {\n        \"id\": \"e974e1c8-36bb-4091-8202-5a0a0ca9d5b2\"\n    }\n}"
 						}
 					]
 				},
