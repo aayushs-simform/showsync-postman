@@ -9156,7 +9156,7 @@
 									]
 								},
 								{
-									"name": "(entries) Requirements and Documents",
+									"name": "(Enrollment) Requirements and Documents",
 									"id": "49347587-7cb57269-314b-4a79-9085-2a1a9c681fd5",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9301,7 +9301,7 @@
 									]
 								},
 								{
-									"name": "(entries) Get Upload URL",
+									"name": "(Enrollment) Get Upload URL",
 									"id": "49347587-e8407661-8f0b-40f3-b50b-63e317d400a6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -10004,20 +10004,20 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/complete",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/complete",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentId",
 												"complete"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
