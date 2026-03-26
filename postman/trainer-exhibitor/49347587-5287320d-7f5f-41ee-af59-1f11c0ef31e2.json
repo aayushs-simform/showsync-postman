@@ -11448,36 +11448,6 @@
 							"name": "Show Supplies",
 							"item": [
 								{
-									"name": "New Request",
-									"id": "49347587-98287f6f-b950-4707-94ff-b71435abbcf6",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"show_id\": \"\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/supply-orders",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"supply-orders"
-											]
-										}
-									},
-									"response": []
-								},
-								{
 									"name": "Available Items",
 									"id": "49347587-ed03003b-d416-43e4-9922-44e80fd6b8d4",
 									"protocolProfileBehavior": {
@@ -11509,6 +11479,158 @@
 													"key": "show_id",
 													"value": "{{showId}}"
 												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-dfc61b94-97f6-4334-9cc3-b7f7848c080c",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"show_id\": \"\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/supply-orders/items?show_id={{showId}}",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"supply-orders",
+														"items"
+													],
+													"query": [
+														{
+															"key": "show_id",
+															"value": "{{showId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "684"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"2ac-UAOA92yw9Xf/Ax6DjL08ZeDBKoI\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 26 Mar 2026 05:20:54 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Available supply items fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"8973860c-56ff-4f73-b863-c6ff03ff8c96\",\n            \"item_name\": \"Shavings\",\n            \"category\": \"BEDDING_STALL_SUPPLIES\",\n            \"price\": \"300.00\",\n            \"available_quantity\": null\n        },\n        {\n            \"id\": \"b985a981-5348-4540-ba2e-1d8ade80aaca\",\n            \"item_name\": \"Grain (Sweet Feed, Oats, Pellets)\",\n            \"category\": \"FEED_NUTRITION\",\n            \"price\": \"300.00\",\n            \"available_quantity\": null\n        },\n        {\n            \"id\": \"bec4f614-1195-4bfc-9f82-f80844085aba\",\n            \"item_name\": \"Water Buckets\",\n            \"category\": \"WATER_HYDRATION\",\n            \"price\": \"300.00\",\n            \"available_quantity\": null\n        },\n        {\n            \"id\": \"ff7a880d-e4c1-41f8-89a1-b82715d1060c\",\n            \"item_name\": \"Water Buckets\",\n            \"category\": \"WATER_HYDRATION\",\n            \"price\": \"300.00\",\n            \"available_quantity\": 50\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-98287f6f-b950-4707-94ff-b71435abbcf6",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"show_id\": \"\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/supply-orders",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"supply-orders"
 											]
 										}
 									},
