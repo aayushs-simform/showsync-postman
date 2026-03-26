@@ -15457,18 +15457,6 @@
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue supply summary fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"5a75b987-3fbe-4adf-9bb0-38344197e751\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"supply_item_count\": 2\n        }\n    ]\n}"
 						}
 					]
-				},
-				{
-					"name": "Cancel Order",
-					"id": "49347587-a6043dc8-61b3-4148-b68c-503cd11b20a8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
 				}
 			],
 			"id": "49347587-2a9bd9b0-6591-4f89-9487-4983bf70fdb3"
