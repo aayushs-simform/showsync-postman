@@ -11755,7 +11755,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"show_id\": \"{{showId}}\",\n    \"horse_id\": \"\"\n}"
+											"raw": "{\n    \"show_id\": \"{{showId}}\",\n    \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n    \"items\": [\n        \n    ]\n}"
 										},
 										"url": {
 											"raw": "{{base_app}}/supply-orders",
