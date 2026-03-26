@@ -9665,17 +9665,22 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/b35c39ea-b7fa-45b0-a88d-f676d56c8149\"\n}"
+											"raw": "{\n    \"horse_document_id\": \"horse-documents/b35c39ea-b7fa-45b0-a88d-f676d56c8149\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/horses/:horseId/docs/copy-from-profile",
+											"raw": "{{base_app}}/shows/enrollments/:enrollments/horses/:horseId/docs/copy-from-profile",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollments",
 												"horses",
 												":horseId",
 												"docs",
@@ -9683,8 +9688,8 @@
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollments",
+													"value": "{{enrollmentId}}"
 												},
 												{
 													"key": "horseId",
