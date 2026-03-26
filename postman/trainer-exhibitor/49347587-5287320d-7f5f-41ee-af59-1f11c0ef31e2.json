@@ -11885,14 +11885,28 @@
 									]
 								},
 								{
-									"name": "New Request",
+									"name": "List All Orders",
 									"id": "49347587-c241ec58-f84a-43f9-9f85-d930faedf786",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{base_app}}/supply-orders",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"supply-orders"
+											]
+										}
 									},
 									"response": []
 								}
