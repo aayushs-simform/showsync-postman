@@ -8774,7 +8774,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"43a114c8-a6ac-4977-acd5-1744429f55a8\"\n}",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -8782,16 +8782,16 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/entries/:entryId/classes",
+									"raw": "{{base_org}}/shows/:showId/classes/:classId/horses",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows",
 										":showId",
-										"entries",
-										":entryId",
-										"classes"
+										"classes",
+										":classId",
+										"horses"
 									],
 									"variable": [
 										{
@@ -8799,8 +8799,8 @@
 											"value": "{{showId}}"
 										},
 										{
-											"key": "entryId",
-											"value": "d3d32258-75e8-405e-957d-86b1f315c973"
+											"key": "classId",
+											"value": "43a114c8-a6ac-4977-acd5-1744429f55a8"
 										}
 									]
 								}
