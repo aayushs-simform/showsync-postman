@@ -15594,14 +15594,31 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Show Orders",
 					"id": "49347587-4805f692-632c-4571-99b7-fe04d1629707",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{base_org}}/shows/:showId/supply-orders",
+							"host": [
+								"{{base_org}}"
+							],
+							"path": [
+								"shows",
+								":showId",
+								"supply-orders"
+							],
+							"variable": [
+								{
+									"key": "showId",
+									"value": "c38389e9-dae1-4e42-8f62-06492edede51"
+								}
+							]
+						}
 					},
 					"response": []
 				}
