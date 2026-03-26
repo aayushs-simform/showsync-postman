@@ -8597,16 +8597,141 @@
 										},
 										{
 											"key": "classId",
-											"value": "b6622a89-1cdf-4a23-8d19-e74436161d14"
+											"value": "f7fba716-fdf5-4c16-8f28-9f6f85f20d64"
 										},
 										{
 											"key": "entryId",
-											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+											"value": "b6622a89-1cdf-4a23-8d19-e74436161d14"
 										}
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-7f0372bf-b1c9-44c5-ab1b-37920e788335",
+									"name": "Remove Class from Entry",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/classes/:classId/horses/:entryId",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"classes",
+												":classId",
+												"horses",
+												":entryId"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												},
+												{
+													"key": "classId",
+													"value": "f7fba716-fdf5-4c16-8f28-9f6f85f20d64"
+												},
+												{
+													"key": "entryId",
+													"value": "b6622a89-1cdf-4a23-8d19-e74436161d14"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "65"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"41-I0lGaPjBz9JqsISapTU717IOpb8\""
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 26 Mar 2026 03:58:16 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Horse removed from class successfully\"\n}"
+								}
+							]
 						},
 						{
 							"name": "Owner Horses by Entry",
