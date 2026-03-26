@@ -15861,8 +15861,17 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"FULFILLED\" //PENDING, FULFILLED, CANCELLED\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{base_org}}/shows/:showId/supply-orders/:id/status",
 							"host": [
