@@ -10202,28 +10202,28 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/prize-distribution",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/prize-distribution",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentId",
 												"prize-distribution"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
 									},
 									"response": [
 										{
-											"id": "49347587-71f65d9e-5bc3-4569-b1fd-12e702f3a61d",
-											"name": "New Request",
+											"id": "49347587-51d6fdb3-6d75-48e4-b68e-051407920eef",
+											"name": "Update Prize Distribution",
 											"originalRequest": {
 												"method": "PATCH",
 												"header": [],
@@ -10237,27 +10237,27 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/:entryId/prize-distribution",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/prize-distribution",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														":entryId",
+														"enrollments",
+														":enrollmentId",
 														"prize-distribution"
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
 														}
 													]
 												}
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -10329,7 +10329,7 @@
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 16:55:01 GMT"
+													"value": "Thu, 26 Mar 2026 04:27:49 GMT"
 												},
 												{
 													"key": "Connection",
@@ -10365,21 +10365,21 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/w9/upload-url",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/w9/upload-url",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentId",
 												"w9",
 												"upload-url"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollmentId",
+													"value": ""
 												}
 											]
 										}
