@@ -13043,7 +13043,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "afc3dc2c-3aee-440b-a9ae-07934ce662bb",
+				"id": "399e45f5-9025-444d-87d8-8a521ba9ba13",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -13087,7 +13087,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2ac301d1-02a6-455a-9608-9d31a09fc0b3",
+				"id": "c971c0d2-134b-40e0-a363-0055db9d5851",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -13105,7 +13105,7 @@
 					"        url: pm.environment.get(\"base_app\") + \"/auth/refresh\",",
 					"        method: \"POST\",",
 					"        header: {",
-					"            \"Authentication\": \"Bearer \" + pm.collectionVariables.get(\"refresh_token\"),",
+					"            \"Authorization\": \"Bearer \" + pm.collectionVariables.get(\"refresh_token\"),",
 					"            \"Content-Type\": \"application/json\",",
 					"            \"x-api-platform\": pm.collectionVariables.get(\"platform\"),",
 					"            \"x-device-id\": pm.collectionVariables.get(\"deviceId\"),",
