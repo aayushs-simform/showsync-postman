@@ -9204,14 +9204,14 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/horses/:horseId/docs/upload-url",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses/:horseId/docs/upload-url",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentId",
 												"horses",
 												":horseId",
 												"docs",
@@ -9219,8 +9219,8 @@
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
 												},
 												{
 													"key": "horseId",
