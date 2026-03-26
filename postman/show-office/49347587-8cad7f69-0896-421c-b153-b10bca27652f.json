@@ -14472,7 +14472,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/supply-items/venue-summary?country=India",
+							"raw": "{{base_org}}/supply-items/venue-summary",
 							"host": [
 								"{{base_org}}"
 							],
@@ -14488,8 +14488,13 @@
 								},
 								{
 									"key": "country",
-									"value": "India",
-									"type": "text"
+									"value": "USA",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "New york",
+									"disabled": true
 								}
 							]
 						}
