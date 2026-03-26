@@ -15603,7 +15603,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/shows/:showId/supply-orders?tab=ACTIVE",
+							"raw": "{{base_org}}/shows/:showId/supply-orders?page=2",
 							"host": [
 								"{{base_org}}"
 							],
@@ -15621,7 +15621,12 @@
 								{
 									"key": "tab",
 									"value": "ACTIVE",
-									"description": "ACTIVE, HISTORY"
+									"description": "ACTIVE, HISTORY",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2"
 								}
 							],
 							"variable": [
