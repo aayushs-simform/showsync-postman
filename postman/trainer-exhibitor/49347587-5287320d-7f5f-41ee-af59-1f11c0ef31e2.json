@@ -10379,15 +10379,15 @@
 											"variable": [
 												{
 													"key": "enrollmentId",
-													"value": ""
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
 									},
 									"response": [
 										{
-											"id": "49347587-354cf449-5a62-4ef7-b299-dff1088fe910",
-											"name": "New Request",
+											"id": "49347587-a2aab8a1-7882-44db-92df-a8674690fd73",
+											"name": "W9 - Get upload Url",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
@@ -10401,28 +10401,28 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/:entryId/w9/upload-url",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/w9/upload-url",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														":entryId",
+														"enrollments",
+														":enrollmentId",
 														"w9",
 														"upload-url"
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
 														}
 													]
 												}
 											},
 											"status": "Created",
 											"code": 201,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -10486,15 +10486,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "473"
+													"value": "471"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"1d9-1/CxkyrAHb5ERoGGgAiHi9MOne8\""
+													"value": "W/\"1d7-OhaAXduNE1qIYs2jobiZv0yLr1E\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 17:01:10 GMT"
+													"value": "Thu, 26 Mar 2026 04:28:18 GMT"
 												},
 												{
 													"key": "Connection",
@@ -10507,7 +10507,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"W9 upload URL generated successfully.\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/9fcab88d-d234-40fb-aa92-ccc90764070d?sv=2026-02-06&spr=https&st=2026-03-21T17%3A01%3A10Z&se=2026-03-21T17%3A11%3A10Z&sr=b&sp=w&sig=HtrBwEk8xyX2u7pQJOG%2FuugaOQNA9lnLybq0NFkR2ak%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"horse-documents/9fcab88d-d234-40fb-aa92-ccc90764070d\",\n        \"expires_at\": \"2026-03-21T17:10:10.444Z\"\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"W9 upload URL generated successfully.\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/4f163627-0450-441a-b512-302e2c752a28?sv=2026-02-06&spr=https&st=2026-03-26T04%3A28%3A18Z&se=2026-03-26T04%3A38%3A18Z&sr=b&sp=w&sig=CYwGs0BkzW4RrycePTJqeEuUdaYIq7PdSpoGVgoUjK4%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"horse-documents/4f163627-0450-441a-b512-302e2c752a28\",\n        \"expires_at\": \"2026-03-26T04:37:18.393Z\"\n    }\n}"
 										}
 									]
 								},
@@ -10521,20 +10521,20 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/w9",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/w9",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentId",
 												"w9"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
@@ -10653,6 +10653,120 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"W9 status fetched successfully.\",\n    \"data\": {\n        \"linked_w9\": {\n            \"id\": \"5f4057c3-29ea-4c4b-8198-782d5e8eab27\",\n            \"tax_document_type\": \"W9\",\n            \"submitted_at\": \"2026-03-21T17:06:14.567Z\",\n            \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/96af4801-b15e-4997-8a10-e569d51bfd80?sv=2026-02-06&spr=https&st=2026-03-21T17%3A14%3A40Z&se=2026-03-21T18%3A14%3A40Z&sr=b&sp=r&sig=Bp0TKYRpjyJKPbaMyZ1lgptBe6RZ8jirZuDZeKy4ZbQ%3D\"\n        }\n    }\n}"
+										},
+										{
+											"id": "49347587-7dca3c3f-6311-4e6f-ae3b-804119edff2e",
+											"name": "W9 - Get Document",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/w9",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"enrollments",
+														":enrollmentId",
+														"w9"
+													],
+													"variable": [
+														{
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "460"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"1cc-A9LfPPb2sMgP5npt/jU87hl922g\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 26 Mar 2026 04:28:40 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"W9 status fetched successfully.\",\n    \"data\": {\n        \"linked_w9\": {\n            \"id\": \"5f4057c3-29ea-4c4b-8198-782d5e8eab27\",\n            \"tax_document_type\": \"W9\",\n            \"submitted_at\": \"2026-03-21T17:06:14.567Z\",\n            \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/96af4801-b15e-4997-8a10-e569d51bfd80?sv=2026-02-06&spr=https&st=2026-03-26T04%3A28%3A40Z&se=2026-03-26T05%3A28%3A40Z&sr=b&sp=r&sig=XMtYQmbOMOEbL%2FS4fqnzOtDSiGglNwfrosiUBtJOj7k%3D\"\n        }\n    }\n}"
 										}
 									]
 								},
