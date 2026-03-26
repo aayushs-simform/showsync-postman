@@ -15462,6 +15462,33 @@
 			"id": "49347587-2a9bd9b0-6591-4f89-9487-4983bf70fdb3"
 		},
 		{
+			"name": "Manage Orders",
+			"item": [
+				{
+					"name": "Venue Summary Orders",
+					"id": "49347587-10455360-08ca-4694-ab44-262d38b8acf5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_org}}/supply-orders",
+							"host": [
+								"{{base_org}}"
+							],
+							"path": [
+								"supply-orders"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "49347587-f07fe27d-827b-44f1-9dd9-aaccac5ff4bb"
+		},
+		{
 			"name": "Health",
 			"id": "49347587-07138f25-65ff-4358-b5a5-9140ec0d2adb",
 			"protocolProfileBehavior": {
