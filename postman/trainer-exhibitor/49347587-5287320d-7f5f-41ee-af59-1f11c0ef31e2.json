@@ -9478,7 +9478,7 @@
 									]
 								},
 								{
-									"name": "(entries) Confirm upload",
+									"name": "(Enrollment) Confirm upload",
 									"id": "49347587-bfcfa7d3-847b-448f-a494-f69c2e899de8",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9655,7 +9655,7 @@
 									]
 								},
 								{
-									"name": "(entries) Doc - Copy from profile",
+									"name": "(Enrollment) Doc - Copy from profile",
 									"id": "49347587-65e96784-b446-489c-8f03-2f63def6101f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
