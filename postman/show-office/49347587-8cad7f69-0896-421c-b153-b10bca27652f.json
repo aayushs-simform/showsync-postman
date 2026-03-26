@@ -16393,8 +16393,17 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "PATCH",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"barn_name\": \"Aayush's Barn\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "{{base_org}}/shows/:showId/supply-orders/:id/barn-name",
 							"host": [
@@ -16447,7 +16456,164 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "49347587-50648af8-1692-4f07-b03f-8761ca9f5029",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"barn_name\": \"Aayush's Barn\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/supply-orders/:id/barn-name",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"supply-orders",
+										":id",
+										"barn-name"
+									],
+									"query": [
+										{
+											"key": "search",
+											"value": "5264",
+											"disabled": true
+										},
+										{
+											"key": "tab",
+											"value": "ACTIVE",
+											"description": "ACTIVE, HISTORY",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "order_number:asc",
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "c38389e9-dae1-4e42-8f62-06492edede51"
+										},
+										{
+											"key": "id",
+											"value": "27fe0cfe-dcf2-44e8-a7b0-f385bd38e851"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41-7QHiGmzqAtUFIsSGx9lp9dhWCeQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Mar 2026 09:59:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": true,\n    \"message\": \"Order barn name updated successfully.\"\n}"
+						}
+					]
 				}
 			],
 			"id": "49347587-f07fe27d-827b-44f1-9dd9-aaccac5ff4bb"
