@@ -14608,7 +14608,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"venue_id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n    \"item_name\": \"Water Buckets\",\n    \"category\": \"WATER_HYDRATION\", //BEDDING_STALL_SUPPLIES, FEED_NUTRITION, WATER_HYDRATION, EQUIPMENT_RENTAL, BARN_SERVICES, ARENA_TACK_SUPPLIES\n    \"price\": 300\n}",
+							"raw": "{\n    \"venue_id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n    \"item_name\": \"Water Buckets\",\n    \"category\": \"WATER_HYDRATION\", //BEDDING_STALL_SUPPLIES, FEED_NUTRITION, WATER_HYDRATION, EQUIPMENT_RENTAL, BARN_SERVICES, ARENA_TACK_SUPPLIES\n    \"price\": 300,\n    \"available_quantity\": 50\n}",
 							"options": {
 								"raw": {
 									"language": "json"
