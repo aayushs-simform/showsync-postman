@@ -11478,14 +11478,39 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Available Items",
 									"id": "49347587-ed03003b-d416-43e4-9922-44e80fd6b8d4",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"show_id\": \"\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/supply-orders/items?show_id",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"supply-orders",
+												"items"
+											],
+											"query": [
+												{
+													"key": "show_id",
+													"value": null
+												}
+											]
+										}
 									},
 									"response": []
 								}
