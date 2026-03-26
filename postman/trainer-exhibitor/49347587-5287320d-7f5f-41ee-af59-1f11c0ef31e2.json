@@ -11755,7 +11755,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"show_id\": \"{{showId}}\",\n    \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n    \"items\": [\n        \n    ]\n}"
+											"raw": "{\n    \"show_id\": \"{{showId}}\",\n    \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n    \"items\": [\n        {\n            \"supply_item_id\": \"8973860c-56ff-4f73-b863-c6ff03ff8c96\",\n            \"quantity\": \n        }\n    ]\n}"
 										},
 										"url": {
 											"raw": "{{base_app}}/supply-orders",
