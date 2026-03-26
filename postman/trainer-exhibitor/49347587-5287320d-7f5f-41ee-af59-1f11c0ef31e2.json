@@ -7491,10 +7491,6 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "{{base_app}}/shows/:showId/my-horses",
 											"host": [
