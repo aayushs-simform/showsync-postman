@@ -11454,8 +11454,26 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/supply-orders",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"supply-orders"
+											]
+										}
 									},
 									"response": []
 								}
