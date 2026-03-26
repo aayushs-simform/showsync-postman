@@ -11631,28 +11631,28 @@
 											"raw": ""
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/entries/:entryId/class-overview",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/class-overview",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"entries",
-												":entryId",
+												"enrollments",
+												":enrollmentId",
 												"class-overview"
 											],
 											"variable": [
 												{
-													"key": "entryId",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
 												}
 											]
 										}
 									},
 									"response": [
 										{
-											"id": "49347587-59090f73-3450-49ad-9149-d1f8b563daba",
-											"name": "New Request",
+											"id": "49347587-689f8df3-d36a-4e2e-ab85-6e1507b130c4",
+											"name": "Class Overview",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
@@ -11661,27 +11661,27 @@
 													"raw": ""
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/:entryId/class-overview",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/class-overview",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														":entryId",
+														"enrollments",
+														":enrollmentId",
 														"class-overview"
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
 														}
 													]
 												}
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -11745,15 +11745,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "509"
+													"value": "494"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"1fd-bRpQ18rS+fm2b1/q4ZUFMTe7UCM\""
+													"value": "W/\"1ee-qmxqJdNoVV3eEEajeBsXQ3v0MIY\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 18:16:08 GMT"
+													"value": "Thu, 26 Mar 2026 04:31:26 GMT"
 												},
 												{
 													"key": "Connection",
@@ -11766,7 +11766,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Class overview fetched successfully.\",\n    \"data\": {\n        \"horses\": [\n            {\n                \"horse_entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                \"horse_name\": \"Thunder's Lightning\",\n                \"divisions\": [\n                    {\n                        \"division_id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n                        \"division_name\": \"Open Jumpers 4\",\n                        \"classes\": [\n                            {\n                                \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                                \"class_name\": \"1.0m Open\",\n                                \"class_date\": \"2026-03-15T08:00:00.000Z\",\n                                \"class_time\": null,\n                                \"fee\": \"50.00\",\n                                \"is_entered\": false\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Class overview fetched successfully.\",\n    \"data\": {\n        \"horses\": [\n            {\n                \"horse_entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                \"horse_name\": \"Thunder's Lightning\",\n                \"divisions\": [\n                    {\n                        \"division_id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n                        \"division_name\": \"Open Jumpers 4\",\n                        \"classes\": [\n                            {\n                                \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                                \"class_name\": \"1.0m Open\",\n                                \"class_date\": \"14-03-2026\",\n                                \"class_time\": null,\n                                \"fee\": \"50.00\",\n                                \"is_entered\": true\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}"
 										}
 									]
 								},
