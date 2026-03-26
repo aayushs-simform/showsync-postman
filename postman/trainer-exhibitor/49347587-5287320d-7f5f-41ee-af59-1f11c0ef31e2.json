@@ -11463,7 +11463,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": ""
+											"raw": "{\n    \"show_id\": \"\"\n}"
 										},
 										"url": {
 											"raw": "{{base_app}}/supply-orders",
@@ -11474,6 +11474,18 @@
 												"supply-orders"
 											]
 										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-ed03003b-d416-43e4-9922-44e80fd6b8d4",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
 									},
 									"response": []
 								}
