@@ -1437,8 +1437,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
-								"packages": {},
+								"id": "57e3dc64-5b5b-4b0a-b1fd-f745ac1a7b2a",
 								"exec": [
 									"pm.test('Status code is 201', function () {",
 									"  pm.response.to.have.status(201);",
@@ -1468,7 +1467,10 @@
 									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
-								]
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -1481,7 +1483,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3Nzc0BnbWFpbC5jb20iLCJqdGkiOiIyMDRkYzU1NC1mYzk5LTRlNDQtOTFlMi03Y2M4MDE2YWM2NWYiLCJhdWQiOiJhcHA6cmVnaXN0cmF0aW9uIiwiaWF0IjoxNzc0MzM1Nzg2LCJleHAiOjE3NzQzMzY2ODZ9.CaO6VIgLPebJj_cyJszn7RAOjEtoDsnv5q6jEVNHJdE\",\n  \"first_name\": \"Jane\",\n  \"last_name\": \"Doe\",\n  \"email\": \"aayushs.simformssss@gmail.com\",\n  \"phone_country_code\": \"+1\",\n  \"phone_number\": \"3455324548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"1000003\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3Nzc0BnbWFpbC5jb20iLCJqdGkiOiIyMDRkYzU1NC1mYzk5LTRlNDQtOTFlMi03Y2M4MDE2YWM2NWYiLCJhdWQiOiJhcHA6cmVnaXN0cmF0aW9uIiwiaWF0IjoxNzc0MzM1Nzg2LCJleHAiOjE3NzQzMzY2ODZ9.CaO6VIgLPebJj_cyJszn7RAOjEtoDsnv5q6jEVNHJdE\",\n//   \"first_name\": \"Jane\",\n//   \"last_name\": \"Doe\",\n//   \"email\": \"aayushs.simformssss@gmail.com\",\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"3455324548\",\n  \"password\": \"P@ssword123\",\n  \"usef_member_id\": \"10004\",\n  \"fcm_token\": \"fcm_token_example_1234\",\n  \"device_fingerprint\": \"abc123fingerprint\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
