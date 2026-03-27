@@ -6301,8 +6301,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "9416eed3-90b5-49d5-85fa-adffcbeece0e",
 										"exec": [
 											"pm.test('Status code is 200', function () {",
 											"  pm.response.to.have.status(200);",
@@ -6322,7 +6321,10 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -6351,7 +6353,7 @@
 										},
 										{
 											"key": "id",
-											"value": "ce365dfa-bc43-4241-9b17-f2ae6854fcd5"
+											"value": "083459ef-30e2-4fdf-9fad-26772609e2c0"
 										}
 									]
 								}
