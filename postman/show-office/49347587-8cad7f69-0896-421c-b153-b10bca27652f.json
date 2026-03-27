@@ -10412,8 +10412,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "7533a019-5a5b-44f5-a949-d5e3203040ab",
 										"exec": [
 											"pm.test('Status code is 200', function () {",
 											"  pm.response.to.have.status(200);",
@@ -10438,7 +10437,10 @@
 											"  pm.expect(body.data).to.be.an('array');",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -10601,8 +10603,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "a3b06dfc-b80c-4a88-9470-6e75ce27dcfb",
 										"exec": [
 											"pm.test('Status code is 201', function () {",
 											"  pm.response.to.have.status(201);",
@@ -10627,7 +10628,10 @@
 											"  pm.expect(body.data).to.be.an('object');",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -10640,7 +10644,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"horse_id\": \"43a114c8-a6ac-4977-acd5-1744429f55a8\"\n}",
+									"raw": "{\n    \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
