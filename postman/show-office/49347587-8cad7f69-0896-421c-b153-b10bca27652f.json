@@ -12026,14 +12026,14 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/schedule",
+									"raw": "{{base_org}}/shows/:showId/master-schedule",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows",
 										":showId",
-										"schedule"
+										"master-schedule"
 									],
 									"variable": [
 										{
