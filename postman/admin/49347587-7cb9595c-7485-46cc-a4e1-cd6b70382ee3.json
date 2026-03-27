@@ -160,6 +160,35 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"If this email is registered, a one-time password has been sent.\"\n}"
 								}
+							],
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											""
+										]
+									}
+								}
 							]
 						},
 						{
@@ -311,6 +340,49 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"OTP verified successfully\",\n    \"data\": {\n        \"reset_token\": \"783151f0-625c-4f1b-9255-9873afb08a73\"\n    }\n}"
 								}
+							],
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											"",
+											"pm.test('Response data is an object', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('object');",
+											"});",
+											"",
+											"pm.test('Response contains reset token', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.have.property('reset_token');",
+											"});",
+											"",
+											"// Save reset token to collection variable",
+											"const otpBody = pm.response.json();",
+											"pm.collectionVariables.set('reset_token', otpBody.data.reset_token);",
+											""
+										]
+									}
+								}
 							]
 						},
 						{
@@ -461,6 +533,35 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Password reset successful\"\n}"
+								}
+							],
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											""
+										]
+									}
 								}
 							]
 						}
@@ -624,6 +725,45 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"id\": \"c2a4c7b5-ef34-4a90-ab04-d7f29c563122\",\n        \"created_at\": \"2026-02-24T12:36:06.788Z\",\n        \"first_name\": \"Super\",\n        \"last_name\": \"Admin\",\n        \"email\": \"superadmin@showsync.com\",\n        \"status\": true,\n        \"role\": \"SUPER_ADMIN\",\n        \"department\": null,\n        \"notification_in_app\": true,\n        \"notification_email\": true,\n        \"notification_sms\": false,\n        \"profile_image_url\": \"http://localhost:9000/showsync/profile-images/df538767-6476-4e5a-b234-6acdfa05f62d.png\",\n        \"permissions\": [\n            \"dashboard__view\",\n            \"show_organizers__view\",\n            \"show_organizers__create\",\n            \"show_organizers__edit\",\n            \"show_organizers__delete\",\n            \"show_organizers__suspend\",\n            \"internal_users__view\",\n            \"internal_users__create\",\n            \"internal_users__edit\",\n            \"internal_users__delete\",\n            \"platform_users__view\",\n            \"finances__view\",\n            \"finances__export\",\n            \"finances__refund\",\n            \"audit_logs__view\",\n            \"audit_logs__export\",\n            \"notifications__view\",\n            \"notifications__send\",\n            \"notifications__create\",\n            \"notifications__delete\"\n        ]\n    }\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				},
 				{
@@ -764,6 +904,45 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Profile fetched successfully\",\n    \"data\": {\n        \"id\": \"6b01ba45-0eca-4137-9d52-fdad944fc6f2\",\n        \"created_at\": \"2026-02-24T04:19:47.471Z\",\n        \"first_name\": \"Super\",\n        \"last_name\": \"Admin\",\n        \"email\": \"superadmin@showsync.com\",\n        \"phone_country_code\": \"+1\",\n        \"phone_number\": null,\n        \"status\": true,\n        \"role\": \"SUPER_ADMIN\",\n        \"department\": null,\n        \"notification_in_app\": true,\n        \"notification_email\": true,\n        \"notification_sms\": false,\n        \"permissions\": [\n            \"dashboard__view\",\n            \"show_organizers__view\",\n            \"show_organizers__create\",\n            \"show_organizers__edit\",\n            \"show_organizers__delete\",\n            \"show_organizers__suspend\",\n            \"internal_users__view\",\n            \"internal_users__create\",\n            \"internal_users__edit\",\n            \"internal_users__delete\",\n            \"platform_users__view\",\n            \"finances__view\",\n            \"finances__export\",\n            \"finances__refund\",\n            \"audit_logs__view\",\n            \"audit_logs__export\",\n            \"notifications__view\",\n            \"notifications__send\",\n            \"notifications__create\",\n            \"notifications__delete\"\n        ]\n    }\n}"
+						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
 						}
 					]
 				},
@@ -906,6 +1085,35 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Token refreshed successfully\"\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				},
 				{
@@ -1047,6 +1255,35 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Logout successful\"\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				}
 			],
@@ -1183,6 +1420,47 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Users fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"6b01ba45-0eca-4137-9d52-fdad944fc6f2\",\n            \"created_at\": \"2026-02-24T04:19:47.471Z\",\n            \"first_name\": \"Super\",\n            \"last_name\": \"Admin\",\n            \"email\": \"superadmin@showsync.com\",\n            \"phone_country_code\": \"+1\",\n            \"phone_number\": null,\n            \"status\": true,\n            \"role\": \"SUPER_ADMIN\"\n        }\n    ]\n}"
+						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response has pagination info', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
+									"});",
+									""
+								]
+							}
 						}
 					]
 				},
@@ -1328,6 +1606,45 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"User fetched successfully\",\n    \"data\": {\n        \"id\": \"6b01ba45-0eca-4137-9d52-fdad944fc6f2\",\n        \"first_name\": \"Super\",\n        \"last_name\": \"Admin\",\n        \"email\": \"superadmin@showsync.com\",\n        \"phone_country_code\": \"+1\",\n        \"phone_number\": null,\n        \"status\": true,\n        \"role\": \"SUPER_ADMIN\"\n    }\n}"
+						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
 						}
 					]
 				},
@@ -1477,6 +1794,45 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"User created successfully\",\n    \"data\": {\n        \"id\": \"d84219b6-cfa4-4fa9-867b-f453a08a604d\",\n        \"created_at\": \"2026-02-24T12:36:41.195Z\",\n        \"first_name\": \"Aayush\",\n        \"last_name\": \"Solanki\",\n        \"email\": \"aayushs.simform@gmail.com\",\n        \"status\": true,\n        \"role\": \"ADMIN\",\n        \"department\": null,\n        \"notification_in_app\": true,\n        \"notification_email\": true,\n        \"notification_sms\": false\n    }\n}"
+						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
 						}
 					]
 				},
@@ -1641,6 +1997,35 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"User updated successfully\"\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				},
 				{
@@ -1786,6 +2171,35 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"User deleted successfully\"\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				}
 			],
@@ -1922,6 +2336,45 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Profile fetched successfully\",\n    \"data\": {\n        \"id\": \"c2a4c7b5-ef34-4a90-ab04-d7f29c563122\",\n        \"created_at\": \"2026-02-24T12:36:06.788Z\",\n        \"first_name\": \"Super\",\n        \"last_name\": \"Admin\",\n        \"email\": \"superadmin@showsync.com\",\n        \"status\": true,\n        \"role\": \"SUPER_ADMIN\",\n        \"department\": null,\n        \"notification_in_app\": true,\n        \"notification_email\": true,\n        \"notification_sms\": false,\n        \"profile_image_url\": null\n    }\n}"
+						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
 						}
 					]
 				},
@@ -2071,6 +2524,45 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Profile updated successfully\",\n    \"data\": {\n        \"id\": \"c2a4c7b5-ef34-4a90-ab04-d7f29c563122\",\n        \"created_at\": \"2026-02-24T12:36:06.788Z\",\n        \"first_name\": \"Super\",\n        \"last_name\": \"Admin\",\n        \"email\": \"superadmin@showsync.com\",\n        \"status\": true,\n        \"role\": \"SUPER_ADMIN\",\n        \"department\": null,\n        \"notification_in_app\": true,\n        \"notification_email\": true,\n        \"notification_sms\": false,\n        \"profile_image_url\": null\n    }\n}"
+						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
 						}
 					]
 				},
@@ -2239,6 +2731,45 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Profile updated successfully\",\n    \"data\": {\n        \"id\": \"c2a4c7b5-ef34-4a90-ab04-d7f29c563122\",\n        \"created_at\": \"2026-02-24T12:36:06.788Z\",\n        \"first_name\": \"Super\",\n        \"last_name\": \"Admin\",\n        \"email\": \"superadmin@showsync.com\",\n        \"status\": true,\n        \"role\": \"SUPER_ADMIN\",\n        \"department\": null,\n        \"notification_in_app\": true,\n        \"notification_email\": true,\n        \"notification_sms\": false,\n        \"profile_image_url\": \"http://localhost:9000/showsync/profile-images/df538767-6476-4e5a-b234-6acdfa05f62d.png\"\n    }\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				},
 				{
@@ -2404,6 +2935,35 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Password changed successfully\"\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				},
 				{
@@ -2557,6 +3117,40 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Presigned upload URL generated. Upload the file then confirm.\",\n    \"data\": {\n        \"uploadUrl\": \"http://localhost:9000/showsync-temp/profile-images/a98146ec-d10a-4e8d-bcbc-cb23106bd295?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20260225%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260225T102944Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=1492cf10cda75d6c7e900b69b6baee2551c3a6fbd8da4511a2659ad60473137b\",\n        \"blobName\": \"profile-images/a98146ec-d10a-4e8d-bcbc-cb23106bd295\"\n    }\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				},
 				{
@@ -2589,7 +3183,26 @@
 							]
 						}
 					},
-					"response": []
+					"response": [],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									""
+								]
+							}
+						}
+					]
 				},
 				{
 					"name": "Update Image to Azure",
@@ -2673,7 +3286,21 @@
 							]
 						}
 					},
-					"response": []
+					"response": [],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					]
 				}
 			],
 			"id": "49347587-393b30da-88f9-493f-8e93-13873188b2f8"
@@ -2821,6 +3448,47 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Organisations fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"ed0c96af-2db9-4261-a6b7-157aea82619b\",\n            \"organization_name\": \"Sunset Ridge Stables\",\n            \"admin_name\": \"James Thompson\",\n            \"admin_email\": \"james@sunsetridge.com\",\n            \"admin_phone\": \"5552345678\",\n            \"admin_status\": \"INVITED\",\n            \"is_active\": false,\n            \"created_at\": \"2026-02-25T08:56:55.949Z\"\n        }\n    ]\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response has pagination info', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				},
 				{
@@ -2961,6 +3629,45 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Organization fetched successfully\",\n    \"data\": {\n        \"id\": \"c98623df-0304-4048-900b-38438d5f514e\",\n        \"org_id\": \"ORG-38W3\",\n        \"organization_name\": \"New Brideg Stables\",\n        \"is_active\": true,\n        \"admin_id\": \"507a00e2-adc8-47b5-b18c-4a335065dab7\",\n        \"admin_first_name\": \"James\",\n        \"admin_last_name\": \"Thompson\",\n        \"admin_email\": \"aayush.solanki@simformsolutions.com\",\n        \"admin_phone\": \"125656456\",\n        \"admin_status\": \"ACTIVE\",\n        \"support_email\": null,\n        \"helpline_number\": null,\n        \"address\": null,\n        \"staffs\": []\n    }\n}"
+						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
 						}
 					]
 				},
@@ -3110,6 +3817,35 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Organisation created successfully. Invitation email sent.\"\n}"
+						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
 						}
 					]
 				},
@@ -3274,6 +4010,35 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Organisation updated successfully\"\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				},
 				{
@@ -3419,6 +4184,35 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Organisation deleted successfully\"\n}"
 						}
+					],
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
+						}
 					]
 				}
 			],
@@ -3553,6 +4347,30 @@
 					"responseTime": null,
 					"body": "{\n    \"status\": \"ok\",\n    \"service\": \"admin\",\n    \"uptime\": 31,\n    \"timestamp\": \"2026-02-24T09:03:46.420Z\"\n}"
 				}
+			],
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"pm.test('Status code is 200', function () {",
+							"  pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Response time is less than 1000ms', function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"});",
+							"",
+							"pm.test('Response status is true', function () {",
+							"  const body = pm.response.json();",
+							"  pm.expect(body.status).to.be.true;",
+							"});",
+							""
+						]
+					}
+				}
 			]
 		},
 		{
@@ -3627,7 +4445,21 @@
 					]
 				}
 			},
-			"response": []
+			"response": [],
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"pm.test('Status code is 200', function () {",
+							"  pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			]
 		}
 	],
 	"event": [
@@ -3666,7 +4498,7 @@
 					"        header: {",
 					"            \"Content-Type\": \"application/json\"",
 					"        }",
-					"        // No need to manually send cookies — Postman sends them automatically",
+					"        // No need to manually send cookies \u2014 Postman sends them automatically",
 					"    }, function (err, res) {",
 					"",
 					"        if (err || res.code !== 200) {",
