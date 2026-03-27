@@ -889,8 +889,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
-								"packages": {},
+								"id": "2ad37401-575c-430a-92dd-8e5c77732515",
 								"exec": [
 									"pm.test('Status code is 200', function () {",
 									"  pm.response.to.have.status(200);",
@@ -910,7 +909,10 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									""
-								]
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -928,7 +930,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"email\": \"aayushs.simformssss@gmail.com\"\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n}"
+							"raw": "{\n  \"email\": \"aayushs.example@gmail.com\"\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n}"
 						},
 						"url": {
 							"raw": "{{base_app}}/auth/register/send-otp",
@@ -1291,7 +1293,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3Jtc3NAZ21haWwuY29tIiwianRpIjoiYTk0YTY0N2EtNjI4My00YTk1LWJjY2MtMmNiZDBmNThiZGIwIiwiYXVkIjoiYXBwOnJlZ2lzdHJhdGlvbiIsImlhdCI6MTc3NDI0NjIzNiwiZXhwIjoxNzc0MjQ3MTM2fQ.Sr_ePtD9WkKXYEclMGZUmqABLmGHniE32ZxzoAkcs3U\",\n  \"usef_member_id\": \"1000002\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5leGFtcGxlQGdtYWlsLmNvbSIsImp0aSI6IjhiZGNkZmE0LTE2NWYtNDM5Yy05NjgyLTYyNzIwYTU3Y2Y2MCIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzQ2MTI5OTksImV4cCI6MTc3NDYxMzg5OX0.t5EgLqJk6iYh7zLEjrA4LnGPPKAJ5Wc5scaVpJnqWF4\",\n  \"usef_member_id\": \"1000002\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
