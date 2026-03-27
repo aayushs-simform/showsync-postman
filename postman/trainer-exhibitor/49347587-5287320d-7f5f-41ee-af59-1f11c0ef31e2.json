@@ -1293,7 +1293,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5leGFtcGxlQGdtYWlsLmNvbSIsImp0aSI6IjhiZGNkZmE0LTE2NWYtNDM5Yy05NjgyLTYyNzIwYTU3Y2Y2MCIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzQ2MTI5OTksImV4cCI6MTc3NDYxMzg5OX0.t5EgLqJk6iYh7zLEjrA4LnGPPKAJ5Wc5scaVpJnqWF4\",\n  \"usef_member_id\": \"1000002\"\n}",
+							"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5leGFtcGxlQGdtYWlsLmNvbSIsImp0aSI6IjhiZGNkZmE0LTE2NWYtNDM5Yy05NjgyLTYyNzIwYTU3Y2Y2MCIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzQ2MTI5OTksImV4cCI6MTc3NDYxMzg5OX0.t5EgLqJk6iYh7zLEjrA4LnGPPKAJ5Wc5scaVpJnqWF4\",\n  \"usef_member_id\": \"10004\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
