@@ -1639,7 +1639,7 @@
 						},
 						{
 							"id": "49347587-ca3acc48-283e-43dd-ba5c-695e275beef0",
-							"name": "Complete Registration",
+							"name": "Complete Registration - Manual",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
@@ -1763,7 +1763,7 @@
 						},
 						{
 							"id": "49347587-c63b2def-be18-47ec-b3b4-49ca325f0180",
-							"name": "Complete Registration",
+							"name": "Complete Registration - With USEF",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
