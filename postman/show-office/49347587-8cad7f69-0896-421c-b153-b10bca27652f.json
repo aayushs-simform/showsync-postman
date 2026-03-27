@@ -12000,7 +12000,7 @@
 					"name": "**Master Schedule (View)",
 					"item": [
 						{
-							"name": "Get Schedule",
+							"name": "Master Schedule",
 							"event": [
 								{
 									"listen": "test",
