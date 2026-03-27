@@ -10,6 +10,35 @@
 			"item": [
 				{
 					"name": "Validate Invitation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									""
+								]
+							}
+						}
+					],
 					"id": "49347587-4c9974fe-4e12-472a-a138-befba7576d6a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -157,7 +186,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Invitation token is valid\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Accept Invitation",
 					"event": [
 						{
 							"listen": "test",
@@ -186,10 +218,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Accept Invitation",
+					],
 					"id": "49347587-f60bb4d5-194b-4aa4-b1ab-e3a2364eb3a8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -337,35 +366,6 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Invitation accepted. Password set successfully.\"\n}"
 						}
-					],
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"packages": {},
-								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test('Response time is less than 1000ms', function () {",
-									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-									"});",
-									"",
-									"pm.test('Response status is true', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.status).to.be.true;",
-									"});",
-									"",
-									"pm.test('Response has a message', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-									"});",
-									""
-								]
-							}
-						}
 					]
 				}
 			],
@@ -379,6 +379,35 @@
 					"item": [
 						{
 							"name": "Forgot Password - Request",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											""
+										]
+									}
+								}
+							],
 							"id": "49347587-cbc9de29-5e46-412a-97a1-ef52c8c0bb2c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -526,7 +555,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"If a matching account is found, a reset OTP has been sent to your email.\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Forgot Password - Validate OTP",
 							"event": [
 								{
 									"listen": "test",
@@ -551,14 +583,25 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an object', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('object');",
+											"});",
+											"",
+											"pm.test('Response contains reset token', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.have.property('reset_token');",
+											"});",
+											"",
+											"// Save reset token to collection variable",
+											"const otpBody = pm.response.json();",
+											"pm.collectionVariables.set('reset_token', otpBody.data.reset_token);",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Forgot Password - Validate OTP",
+							],
 							"id": "49347587-c0f5ebda-0ded-4cfb-a8e0-71519ee4fe6a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -706,7 +749,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"OTP verified successfully.\",\n    \"data\": {\n        \"reset_token\": \"f37ce0f7-0bdb-4cc9-8a2b-677a82aca607\"\n    }\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Forgot Password - Change Password",
 							"event": [
 								{
 									"listen": "test",
@@ -731,28 +777,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an object', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
-											"});",
-											"",
-											"pm.test('Response contains reset token', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.have.property('reset_token');",
-											"});",
-											"",
-											"// Save reset token to collection variable",
-											"const otpBody = pm.response.json();",
-											"pm.collectionVariables.set('reset_token', otpBody.data.reset_token);",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Forgot Password - Change Password",
+							],
 							"id": "49347587-ccb428b2-f4d6-453c-8988-293cd26955fa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -900,35 +929,6 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Password reset successfully.\"\n}"
 								}
-							],
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"type": "text/javascript",
-										"packages": {},
-										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
-											"});",
-											"",
-											"pm.test('Response time is less than 1000ms', function () {",
-											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-											"});",
-											"",
-											"pm.test('Response status is true', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.status).to.be.true;",
-											"});",
-											"",
-											"pm.test('Response has a message', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-											"});",
-											""
-										]
-									}
-								}
 							]
 						}
 					],
@@ -936,6 +936,45 @@
 				},
 				{
 					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
+									"});",
+									""
+								]
+							}
+						}
+					],
 					"id": "49347587-94c5e5c1-ee2c-47f1-b937-78594375a995",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1214,7 +1253,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Login successful.\",\n    \"data\": {\n        \"id\": \"507a00e2-adc8-47b5-b18c-4a335065dab7\",\n        \"created_at\": \"2026-03-10T08:55:19.735Z\",\n        \"first_name\": \"James\",\n        \"last_name\": \"Thompson\",\n        \"email\": \"aayush.solanki@simformsolutions.com\",\n        \"phone_country_code\": \"+1\",\n        \"phone_number\": \"125656456\",\n        \"status\": \"ACTIVE\",\n        \"user_type\": \"ORGANIZATION_ADMIN\",\n        \"joined_at\": \"2026-03-10T11:12:40.646Z\",\n        \"notification_in_app\": true,\n        \"notification_email\": true,\n        \"notification_sms\": false,\n        \"role_name\": \"Organization Admin\",\n        \"permissions\": [\n            \"dashboard:view\",\n            \"shows:view\",\n            \"shows:create\",\n            \"shows:edit\",\n            \"shows:delete\",\n            \"shows:publish\",\n            \"entries:view\",\n            \"entries:approve\",\n            \"entries:reject\",\n            \"entries:edit\",\n            \"financials:view\",\n            \"financials:export\",\n            \"financials:refund\",\n            \"staff:view\",\n            \"staff:invite\",\n            \"staff:edit\",\n            \"staff:remove\",\n            \"venues:view\",\n            \"venues:create\",\n            \"venues:edit\",\n            \"venues:delete\",\n            \"notifications:view\",\n            \"notifications:send\",\n            \"reports:view\",\n            \"reports:export\",\n            \"settings:view\",\n            \"settings:edit\",\n            \"roles:view\",\n            \"roles:create\",\n            \"roles:edit\",\n            \"roles:delete\",\n            \"ground_staff:view\",\n            \"ground_staff:invite\",\n            \"ground_staff:edit\",\n            \"ground_staff:remove\",\n            \"ground_staff_roles:view\",\n            \"ground_staff_roles:create\",\n            \"ground_staff_roles:edit\",\n            \"ground_staff_roles:delete\",\n            \"supply_items:view\",\n            \"supply_items:create\",\n            \"supply_items:edit\",\n            \"supply_items:delete\"\n        ]\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Me",
 					"event": [
 						{
 							"listen": "test",
@@ -1253,10 +1295,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Me",
+					],
 					"id": "49347587-83eca24b-9cd6-4a90-aff7-6f6fcdf97713",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1394,7 +1433,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Profile fetched successfully.\",\n    \"data\": {\n        \"id\": \"6d1d6f85-aa49-433e-a498-1736ddb7f2f7\",\n        \"created_at\": \"2026-02-25T11:16:45.445Z\",\n        \"role_id\": \"c71173b5-bcba-439b-9a6b-617e16afe542\",\n        \"first_name\": \"James\",\n        \"last_name\": \"Thompson\",\n        \"email\": \"aayushs.simform@gmail.com\",\n        \"phone_country_code\": \"+1\",\n        \"phone_number\": \"125656456\",\n        \"status\": \"ACTIVE\",\n        \"user_type\": \"ORGANISATION_ADMIN\",\n        \"joined_at\": \"2026-02-26T06:22:16.037Z\",\n        \"notification_in_app\": true,\n        \"notification_email\": true,\n        \"notification_sms\": false\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Refresh Token",
 					"event": [
 						{
 							"listen": "test",
@@ -1419,24 +1461,11 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
-									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Refresh Token",
+					],
 					"id": "49347587-2b3046e3-d365-453b-9735-16fab0d20687",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1582,7 +1611,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Token refreshed successfully.\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Logout",
 					"event": [
 						{
 							"listen": "test",
@@ -1611,10 +1643,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Logout",
+					],
 					"id": "49347587-a8b91d51-78cb-4352-b32a-5572d8d2132b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1760,35 +1789,6 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Logged out successfully.\"\n}"
 						}
-					],
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"packages": {},
-								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test('Response time is less than 1000ms', function () {",
-									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-									"});",
-									"",
-									"pm.test('Response status is true', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.status).to.be.true;",
-									"});",
-									"",
-									"pm.test('Response has a message', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-									"});",
-									""
-								]
-							}
-						}
 					]
 				}
 			],
@@ -1802,6 +1802,47 @@
 					"item": [
 						{
 							"name": "Get All Shows",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											"",
+											"pm.test('Response has pagination info', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.pagination).to.be.an('object');",
+											"  pm.expect(body.pagination).to.have.property('total_records');",
+											"  pm.expect(body.pagination).to.have.property('current_page');",
+											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
+											""
+										]
+									}
+								}
+							],
 							"id": "49347587-80394d72-a4ff-4a28-a9ef-e2449d4b1b0d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2221,7 +2262,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Shows fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 0,\n        \"current_page\": 20,\n        \"total_pages\": 0\n    },\n    \"data\": []\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "View Show",
 							"event": [
 								{
 									"listen": "test",
@@ -2247,25 +2291,20 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											"",
-											"pm.test('Response has pagination info', function () {",
+											"pm.test('Response data is an object', function () {",
 											"  const body = pm.response.json();",
-											"  pm.expect(body.pagination).to.be.an('object');",
-											"  pm.expect(body.pagination).to.have.property('total_records');",
-											"  pm.expect(body.pagination).to.have.property('current_page');",
+											"  pm.expect(body.data).to.be.an('object');",
 											"});",
 											"",
-											"pm.test('Response data is an array', function () {",
+											"pm.test('Response data has an id', function () {",
 											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
+											"  pm.expect(body.data).to.have.property('id');",
 											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "View Show",
+							],
 							"id": "49347587-612d94cb-5e10-45ff-ac0f-df7289801fd4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2405,7 +2444,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show fetched successfully\",\n    \"data\": {\n        \"id\": \"277a2a1f-bff4-4034-a4a9-e4bc0d9a067e\",\n        \"created_at\": \"2026-03-17T04:03:15.303Z\",\n        \"organization_id\": \"fd9986c1-4c74-4e45-95ca-15dce5faa4a4\",\n        \"status\": \"PUBLISHED\",\n        \"creation_step\": 4,\n        \"show_name\": \"Summer Classic 2026\",\n        \"circuit_name\": \"USEF Circuit\",\n        \"start_date\": \"2026-07-10T00:00:00.000Z\",\n        \"end_date\": \"2026-07-15T00:00:00.000Z\",\n        \"registration_opening_date\": \"2026-05-01T00:00:00.000Z\",\n        \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n        \"is_usef_required\": true,\n        \"total_stalls_allowed\": 200,\n        \"total_paddock_allowed\": 20,\n        \"total_rv_space_allowed\": 50,\n        \"require_advance_payment\": false,\n        \"entry_number_assignment\": \"AUTO\",\n        \"entry_number_start\": 100,\n        \"prize_document_url\": null,\n        \"is_active\": true,\n        \"venue\": {\n            \"id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"fees\": {\n            \"facility\": {\n                \"stall_fee\": 150,\n                \"paddock_fee\": 120,\n                \"rv_fee\": 75,\n                \"pump_out_fee\": 75\n            },\n            \"platform_fee\": 10,\n            \"late_fee\": {\n                \"enabled\": true,\n                \"amount\": 50\n            }\n        },\n        \"health_requirements\": [],\n        \"show_fees\": []\n    }\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Add New Show",
 							"event": [
 								{
 									"listen": "test",
@@ -2413,8 +2455,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -2444,10 +2486,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Add New Show",
+							],
 							"id": "49347587-ad9446df-a9ba-4857-9c4a-459ce0b382e1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2589,7 +2628,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show created successfully\",\n    \"data\": {\n        \"id\": \"2c31c565-7ffb-4fa0-a515-20693d425b29\",\n        \"show_name\": \"Summer Classic 2026\",\n        \"status\": \"DRAFT\",\n        \"creation_step\": 1\n    }\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Update Show",
 							"event": [
 								{
 									"listen": "test",
@@ -2597,8 +2639,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -2614,24 +2656,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an object', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
-											"});",
-											"",
-											"pm.test('Response data has an id', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.have.property('id');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Update Show",
+							],
 							"id": "49347587-1d6cec4c-32f9-4b17-b193-4d25c93a737b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2791,7 +2820,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show updated successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Delete Show",
 							"event": [
 								{
 									"listen": "test",
@@ -2820,10 +2852,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Delete Show",
+							],
 							"id": "49347587-45ff9ab2-f75b-4296-818d-2437e73f6513",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2965,7 +2994,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show deleted successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Show Statuses",
 							"event": [
 								{
 									"listen": "test",
@@ -2990,14 +3022,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Show Statuses",
+							],
 							"id": "49347587-5a243845-1a65-4d88-ad83-4a23bc0c5561",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3123,7 +3157,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show statuses fetched successfully\",\n    \"data\": [\n        {\n            \"label\": \"Draft\",\n            \"value\": \"DRAFT\"\n        },\n        {\n            \"label\": \"Published\",\n            \"value\": \"PUBLISHED\"\n        },\n        {\n            \"label\": \"In progress\",\n            \"value\": \"IN_PROGRESS\"\n        },\n        {\n            \"label\": \"Completed\",\n            \"value\": \"COMPLETED\"\n        },\n        {\n            \"label\": \"Cancelled\",\n            \"value\": \"CANCELLED\"\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Get Upload Prize money URl",
 							"event": [
 								{
 									"listen": "test",
@@ -3131,8 +3168,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -3149,18 +3186,15 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											"",
-											"pm.test('Response data is an array', function () {",
+											"pm.test('Response data is an object', function () {",
 											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
+											"  pm.expect(body.data).to.be.an('object');",
 											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Get Upload Prize money URl",
+							],
 							"id": "49347587-c3be01b2-33ad-43db-8908-14c9b629cb8e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3313,7 +3347,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Prize document upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/dc8f4fa6-6998-4e5e-b234-c5225c7a4e49?sv=2026-02-06&spr=https&st=2026-03-18T08%3A47%3A57Z&se=2026-03-18T08%3A57%3A57Z&sr=b&sp=w&sig=Pq9JLmTH9QpZtkkomb6cjxzocRHHAEVj3wrxiVo7G1A%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"show-prize-documents/dc8f4fa6-6998-4e5e-b234-c5225c7a4e49\",\n        \"expires_at\": \"2026-03-18T08:56:57.433Z\"\n    }\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Finish Show",
 							"event": [
 								{
 									"listen": "test",
@@ -3321,8 +3358,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -3338,19 +3375,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an object', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Finish Show",
+							],
 							"id": "49347587-9ab97371-0ee4-4eae-94b4-1cc473c65951",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3403,7 +3432,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -3490,7 +3519,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show marked as completed successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "(Deprecated) List Creation Steps",
 							"event": [
 								{
 									"listen": "test",
@@ -3515,14 +3547,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "(Deprecated) List Creation Steps",
+							],
 							"id": "49347587-2fab8485-0d46-4195-bb92-692fb4a391bd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3656,7 +3690,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show creation steps fetched successfully\",\n    \"data\": [\n        {\n            \"step\": 1,\n            \"value\": \"show_information\",\n            \"label\": \"Show Information\"\n        },\n        {\n            \"step\": 2,\n            \"value\": \"health_requirements\",\n            \"label\": \"Health Requirements\"\n        },\n        {\n            \"step\": 3,\n            \"value\": \"show_fees\",\n            \"label\": \"Show Fees\"\n        },\n        {\n            \"step\": 4,\n            \"value\": \"divisions_and_classes\",\n            \"label\": \"Divisions & Classes\"\n        },\n        {\n            \"step\": 5,\n            \"value\": \"prize_money\",\n            \"label\": \"Prize Money\"\n        },\n        {\n            \"step\": 6,\n            \"value\": \"liability_waivers\",\n            \"label\": \"Liability Waivers\"\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "(Deprecated) Update Creation Steps",
 							"event": [
 								{
 									"listen": "test",
@@ -3681,19 +3718,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an array', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "(Deprecated) Update Creation Steps",
+							],
 							"id": "49347587-8a16a854-afaf-415f-b631-6658d137f901",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3851,7 +3880,16 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show creation step updated successfully\"\n}"
 								}
-							],
+							]
+						}
+					],
+					"id": "49347587-91f94e2e-eea9-462c-989c-3166ea08c91c"
+				},
+				{
+					"name": "Health Requirements",
+					"item": [
+						{
+							"name": "Get List of Health Documents",
 							"event": [
 								{
 									"listen": "test",
@@ -3876,20 +3914,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						}
-					],
-					"id": "49347587-91f94e2e-eea9-462c-989c-3166ea08c91c"
-				},
-				{
-					"name": "Health Requirements",
-					"item": [
-						{
-							"name": "Get List of Health Documents",
+							],
 							"id": "49347587-479b0e44-2435-4f22-b0f5-b0127dbac90e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4029,7 +4063,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Health requirements fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"edeae6aa-a2ee-4687-a474-8189a3cbbbc1\",\n            \"document_type\": \"COGGINS\",\n            \"issued_within\": \"2025-11-19\",\n            \"valid_until\": \"2027-03-19\"\n        },\n        {\n            \"id\": \"e31a7a19-b3a3-4952-8bdf-e1543f81971c\",\n            \"document_type\": \"VACCINATION\",\n            \"issued_within\": \"2026-01-01\",\n            \"valid_until\": \"2026-08-01\"\n        },\n        {\n            \"id\": \"38563a0f-1b17-4610-9d9f-250fa3d9a549\",\n            \"document_type\": \"RABIES\",\n            \"issued_within\": \"2026-01-01\",\n            \"valid_until\": \"2026-08-01\"\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Add Health Document",
 							"event": [
 								{
 									"listen": "test",
@@ -4037,8 +4074,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -4063,10 +4100,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Add Health Document",
+							],
 							"id": "49347587-77509555-d0af-4009-b180-b52bd94c58cd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4224,7 +4258,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Health requirements added successfully\",\n    \"data\": [\n        {\n            \"id\": \"e31a7a19-b3a3-4952-8bdf-e1543f81971c\"\n        },\n        {\n            \"id\": \"38563a0f-1b17-4610-9d9f-250fa3d9a549\"\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Update Health Requirements",
 							"event": [
 								{
 									"listen": "test",
@@ -4232,8 +4269,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -4249,19 +4286,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an array', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Update Health Requirements",
+							],
 							"id": "49347587-15dbc757-506f-4aa8-a8dd-0bc7b8c210cd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4429,7 +4458,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Health requirement updated successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Remove Health Document",
 							"event": [
 								{
 									"listen": "test",
@@ -4458,10 +4490,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Remove Health Document",
+							],
 							"id": "49347587-ad9f5c7a-e7a7-4aa6-96a1-b668738fd096",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4615,7 +4644,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Health requirement removed successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Document Types",
 							"event": [
 								{
 									"listen": "test",
@@ -4640,14 +4672,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Document Types",
+							],
 							"id": "49347587-bb030db0-c4b6-4b7d-b43c-01fa6a024fe9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4801,7 +4835,16 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Health document types fetched successfully\",\n    \"data\": [\n        {\n            \"value\": \"COGGINS\",\n            \"label\": \"COGGINS\"\n        },\n        {\n            \"value\": \"VACCINATION\",\n            \"label\": \"VACCINATION\"\n        },\n        {\n            \"value\": \"RABIES\",\n            \"label\": \"RABIES\"\n        },\n        {\n            \"value\": \"HEALTH_CERTIFICATE\",\n            \"label\": \"HEALTH CERTIFICATE\"\n        },\n        {\n            \"value\": \"OTHER\",\n            \"label\": \"OTHER\"\n        }\n    ]\n}"
 								}
-							],
+							]
+						}
+					],
+					"id": "49347587-11cd2385-bd1d-4967-8662-f66d735c3bc9"
+				},
+				{
+					"name": "Show Fees",
+					"item": [
+						{
+							"name": "Get List of Shows Fees",
 							"event": [
 								{
 									"listen": "test",
@@ -4835,16 +4878,7 @@
 										]
 									}
 								}
-							]
-						}
-					],
-					"id": "49347587-11cd2385-bd1d-4967-8662-f66d735c3bc9"
-				},
-				{
-					"name": "Show Fees",
-					"item": [
-						{
-							"name": "Get List of Shows Fees",
+							],
 							"id": "49347587-e9ee76d1-2798-4bb1-885b-7d107b0c6c10",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4988,7 +5022,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Fees fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"0f323aaf-9d58-4abe-8396-76af631f7438\",\n            \"fee_category\": \"FEED_BEDDING\",\n            \"fee_name\": \"Feed 1\",\n            \"amount\": \"300.00\",\n            \"fee_label\": \"REFUNDABLE\",\n            \"is_mandatory\": true,\n            \"threshold\": \"0.90\"\n        },\n        {\n            \"id\": \"000d990e-7a2c-439a-be39-81c97720030e\",\n            \"fee_category\": \"FEED_BEDDING\",\n            \"fee_name\": \"Feed 1\",\n            \"amount\": \"300.00\",\n            \"fee_label\": \"REFUNDABLE\",\n            \"is_mandatory\": true,\n            \"threshold\": \"0.90\"\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Add New Show Fees",
 							"event": [
 								{
 									"listen": "test",
@@ -4996,8 +5033,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -5022,10 +5059,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Add New Show Fees",
+							],
 							"id": "49347587-46ee33dd-1a64-4b56-87d9-db4102d5a839",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5183,7 +5217,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Fees created successfully\",\n    \"data\": [\n        {\n            \"id\": \"d8ebdb79-76fd-46e3-83c1-d10ecee721cf\"\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Update Show Fees",
 							"event": [
 								{
 									"listen": "test",
@@ -5191,8 +5228,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -5208,19 +5245,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an array', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Update Show Fees",
+							],
 							"id": "49347587-ad816a1f-d8c0-4f05-a187-382b01c5c061",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5392,7 +5421,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Fee updated successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Remove Show Fees",
 							"event": [
 								{
 									"listen": "test",
@@ -5421,10 +5453,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Remove Show Fees",
+							],
 							"id": "49347587-0214dfdf-e5a0-453b-8c19-fd425c2285e0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5578,7 +5607,16 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Fee deleted successfully\"\n}"
 								}
-							],
+							]
+						}
+					],
+					"id": "49347587-6f1019ee-51e9-4048-8b2c-8956419cc3d1"
+				},
+				{
+					"name": "Division & Classes",
+					"item": [
+						{
+							"name": "Get All Divisions",
 							"event": [
 								{
 									"listen": "test",
@@ -5603,20 +5641,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						}
-					],
-					"id": "49347587-6f1019ee-51e9-4048-8b2c-8956419cc3d1"
-				},
-				{
-					"name": "Division & Classes",
-					"item": [
-						{
-							"name": "Get All Divisions",
+							],
 							"id": "49347587-7ff02a03-d3d1-4046-9dac-c5d00ad265d4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5873,7 +5907,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Divisions fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"083459ef-30e2-4fdf-9fad-26772609e2c0\",\n            \"created_at\": \"2026-03-20T12:58:34.633Z\",\n            \"show_id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"division_type\": \"HUNTER\",\n            \"division_name\": \"Training Levels 4\",\n            \"display_order\": 0,\n            \"classes\": []\n        },\n        {\n            \"id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n            \"created_at\": \"2026-03-20T12:58:34.633Z\",\n            \"show_id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"division_type\": \"JUMPER\",\n            \"division_name\": \"Open Jumpers 4\",\n            \"display_order\": 1,\n            \"classes\": [\n                {\n                    \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                    \"created_at\": \"2026-03-20T12:58:34.633Z\",\n                    \"division_id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n                    \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                    \"class_id\": \"J101\",\n                    \"class_name\": \"1.0m Open\",\n                    \"fee\": \"50.00\",\n                    \"prize_money\": \"1000.00\",\n                    \"class_date\": \"2026-03-15T08:00:00.000Z\",\n                    \"class_time\": null,\n                    \"result_status\": \"NOT_STARTED\",\n                    \"apply_nomination_fee\": true,\n                    \"course_map_url\": null,\n                    \"table_type\": \"TABLE_A\",\n                    \"score_required\": \"ONE\",\n                    \"add_back_money\": null,\n                    \"first_place_percentage\": \"60.00\",\n                    \"second_place_percentage\": \"20.00\",\n                    \"third_place_percentage\": \"20.00\"\n                }\n            ]\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Add / Update Divisions",
 							"event": [
 								{
 									"listen": "test",
@@ -5881,8 +5918,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -5898,19 +5935,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an array', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Add / Update Divisions",
+							],
 							"id": "49347587-1a56ff6a-51be-4771-b4ee-8062e2968851",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -6069,7 +6098,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Divisions and classes created successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Update Division",
 							"event": [
 								{
 									"listen": "test",
@@ -6077,8 +6109,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -6098,10 +6130,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Update Division",
+							],
 							"id": "49347587-ed5d216c-4338-4f63-aa62-2182165cfae2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -6264,7 +6293,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Division updated successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Remove Division",
 							"event": [
 								{
 									"listen": "test",
@@ -6293,10 +6325,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Remove Division",
+							],
 							"id": "49347587-868456fa-1849-49a6-b4d6-384c14375e7d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -6450,7 +6479,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Division deleted successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "(Deprecated) Add New Class",
 							"event": [
 								{
 									"listen": "test",
@@ -6458,8 +6490,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -6475,14 +6507,21 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an object', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('object');",
+											"});",
+											"",
+											"pm.test('Response data has an id', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.have.property('id');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "(Deprecated) Add New Class",
+							],
 							"id": "49347587-da03e3e3-da3e-4cff-bb6a-a252d06d6532",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -6788,7 +6827,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": false,\n    \"message\": \"duplicate key value violates unique constraint \\\"UQ_738eaf347647f8bbdd96aa0c4f7\\\"\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "(Deprecated) Update Class",
 							"event": [
 								{
 									"listen": "test",
@@ -6796,8 +6838,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -6813,24 +6855,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an object', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
-											"});",
-											"",
-											"pm.test('Response data has an id', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.have.property('id');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "(Deprecated) Update Class",
+							],
 							"id": "49347587-07700b95-8cf1-4478-9e01-972b5177a791",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -6996,7 +7025,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Class updated successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "(Deprecated) Remove Classes",
 							"event": [
 								{
 									"listen": "test",
@@ -7025,10 +7057,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "(Deprecated) Remove Classes",
+							],
 							"id": "49347587-fa88db7d-0036-4f63-bc38-976299df84f0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7194,7 +7223,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Class deleted successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "(Deprecated) Grouped Division",
 							"event": [
 								{
 									"listen": "test",
@@ -7219,14 +7251,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "(Deprecated) Grouped Division",
+							],
 							"id": "49347587-a55cefc8-705f-4419-ae29-87441e0b7be5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7368,7 +7402,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Divisions grouped by date fetched successfully\",\n    \"data\": [\n        {\n            \"date\": \"2026-03-17\",\n            \"divisions\": [\n                {\n                    \"id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                    \"division_type\": \"JUMPER\",\n                    \"division_name\": \"Adult High Jump 2\",\n                    \"classes\": [\n                        {\n                            \"id\": \"91e70419-a92b-49e7-bf43-69fe004e6591\",\n                            \"created_at\": \"2026-03-17T04:04:34.795Z\",\n                            \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                            \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                            \"class_id\": \"101\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"fee\": \"300.00\",\n                            \"prize_money\": \"500.00\",\n                            \"class_date\": \"2026-03-17T04:04:34.794Z\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\",\n                            \"apply_nomination_fee\": false,\n                            \"course_map_url\": null,\n                            \"table_type\": null,\n                            \"score_required\": null,\n                            \"add_back_money\": null,\n                            \"first_place_percentage\": null,\n                            \"second_place_percentage\": null,\n                            \"third_place_percentage\": null\n                        },\n                        {\n                            \"id\": \"035d19d5-9e74-415c-81d0-791d4c93d5b8\",\n                            \"created_at\": \"2026-03-17T04:04:38.041Z\",\n                            \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                            \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                            \"class_id\": \"102\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"fee\": \"300.00\",\n                            \"prize_money\": \"500.00\",\n                            \"class_date\": \"2026-03-17T04:04:38.041Z\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\",\n                            \"apply_nomination_fee\": false,\n                            \"course_map_url\": null,\n                            \"table_type\": null,\n                            \"score_required\": null,\n                            \"add_back_money\": null,\n                            \"first_place_percentage\": null,\n                            \"second_place_percentage\": null,\n                            \"third_place_percentage\": null\n                        }\n                    ]\n                }\n            ]\n        },\n        {\n            \"date\": \"2026-07-10\",\n            \"divisions\": [\n                {\n                    \"id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                    \"division_type\": \"JUMPER\",\n                    \"division_name\": \"Adult High Jump 2\",\n                    \"classes\": [\n                        {\n                            \"id\": \"05eb9f3a-9877-426e-aea7-a0dab8739746\",\n                            \"created_at\": \"2026-03-17T04:05:59.945Z\",\n                            \"division_id\": \"86b3add4-240c-4340-91d8-85c360dceea7\",\n                            \"arena_id\": \"a2a9f145-44b2-4bdf-a530-11e99397ccf9\",\n                            \"class_id\": \"103\",\n                            \"class_name\": \"0.80m Jumper\",\n                            \"fee\": \"300.00\",\n                            \"prize_money\": \"500.00\",\n                            \"class_date\": \"2026-07-10T00:00:00.000Z\",\n                            \"class_time\": null,\n                            \"result_status\": \"NOT_STARTED\",\n                            \"apply_nomination_fee\": false,\n                            \"course_map_url\": null,\n                            \"table_type\": null,\n                            \"score_required\": null,\n                            \"add_back_money\": null,\n                            \"first_place_percentage\": null,\n                            \"second_place_percentage\": null,\n                            \"third_place_percentage\": null\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Course Map - Get Upload URL",
 							"event": [
 								{
 									"listen": "test",
@@ -7376,8 +7413,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -7394,18 +7431,15 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											"",
-											"pm.test('Response data is an array', function () {",
+											"pm.test('Response data is an object', function () {",
 											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
+											"  pm.expect(body.data).to.be.an('object');",
 											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Course Map - Get Upload URL",
+							],
 							"id": "49347587-3faafe2a-b886-490b-ac54-780e0152038d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7567,7 +7601,16 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Course map upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/show-course-maps/265146bb-d432-44e2-bf71-158a7144fc7b?sv=2026-02-06&spr=https&st=2026-03-18T11%3A21%3A47Z&se=2026-03-18T11%3A31%3A47Z&sr=b&sp=w&sig=E8mbzulTUCJAPBcWXfzdadm7xa1GrpveQnHFOj0q%2FLI%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"show-course-maps/265146bb-d432-44e2-bf71-158a7144fc7b\",\n        \"expires_at\": \"2026-03-18T11:30:47.610Z\"\n    }\n}"
 								}
-							],
+							]
+						}
+					],
+					"id": "49347587-780acc93-5e9e-4f6a-8f3e-16306d8ef7ce"
+				},
+				{
+					"name": "Prize Money Breakdown",
+					"item": [
+						{
+							"name": "Update  prize money breakdown",
 							"event": [
 								{
 									"listen": "test",
@@ -7592,25 +7635,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an object', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						}
-					],
-					"id": "49347587-780acc93-5e9e-4f6a-8f3e-16306d8ef7ce"
-				},
-				{
-					"name": "Prize Money Breakdown",
-					"item": [
-						{
-							"name": "Update  prize money breakdown",
+							],
 							"id": "49347587-a95529a7-dc9f-419e-94d1-829e3b5e16ed",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7685,7 +7714,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -7772,7 +7801,16 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Prize money assigned to classes successfully\"\n}"
 								}
-							],
+							]
+						}
+					],
+					"id": "49347587-d8f033d7-df93-4cfa-a33c-64c446ec4c54"
+				},
+				{
+					"name": "Liability Waiver Agreement",
+					"item": [
+						{
+							"name": "List all Liability Documents",
 							"event": [
 								{
 									"listen": "test",
@@ -7780,8 +7818,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -7797,20 +7835,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						}
-					],
-					"id": "49347587-d8f033d7-df93-4cfa-a33c-64c446ec4c54"
-				},
-				{
-					"name": "Liability Waiver Agreement",
-					"item": [
-						{
-							"name": "List all Liability Documents",
+							],
 							"id": "49347587-e6c06eba-224c-4533-a1d7-657f9312969a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7962,7 +7996,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Liability documents fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"da67b3b4-d076-49ed-b08d-0eff41ce0909\",\n            \"document_type\": \"LIABILITY_WAIVER\",\n            \"document_name\": \"Standard Platform Liability Waiver\",\n            \"document_url\": \"https://cdn.showsync.com/waivers/standard-waiver.pdf\",\n            \"is_default\": true\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Upload New Liablity Document",
 							"event": [
 								{
 									"listen": "test",
@@ -7970,8 +8007,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -7988,18 +8025,20 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											"",
-											"pm.test('Response data is an array', function () {",
+											"pm.test('Response data is an object', function () {",
 											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
+											"  pm.expect(body.data).to.be.an('object');",
+											"});",
+											"",
+											"pm.test('Response data has an id', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.have.property('id');",
 											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Upload New Liablity Document",
+							],
 							"id": "49347587-a93e4711-ac1f-4da3-8708-b2a7c5f0d729",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -8157,7 +8196,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Liability document added successfully\",\n    \"data\": {\n        \"id\": \"ef9a9bad-f677-4661-bf81-859ddc2cb9bb\",\n        \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7?sv=2026-02-06&spr=https&st=2026-03-18T10%3A13%3A14Z&se=2026-03-18T11%3A13%3A14Z&sr=b&sp=r&sig=UU9qmbZvFq%2BGxfiqro3K7r2S2TALVnJouewylJzcxV8%3D\"\n    }\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Set Default Document",
 							"event": [
 								{
 									"listen": "test",
@@ -8165,8 +8207,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -8182,24 +8224,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an object', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
-											"});",
-											"",
-											"pm.test('Response data has an id', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.have.property('id');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Set Default Document",
+							],
 							"id": "49347587-5d0fd773-27d0-4e3a-bb73-aa9ddd977c99",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -8363,7 +8392,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Default document updated successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Remove Liability Document",
 							"event": [
 								{
 									"listen": "test",
@@ -8392,10 +8424,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Remove Liability Document",
+							],
 							"id": "49347587-f60e8af4-916f-4e8d-ba80-03bddcfeaeb5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -8557,7 +8586,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Liability document deleted successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Get Upload Document URL",
 							"event": [
 								{
 									"listen": "test",
@@ -8565,8 +8597,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -8582,14 +8614,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an object', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('object');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Get Upload Document URL",
+							],
 							"id": "49347587-0cf65ca8-5638-4ebb-aa68-d8c2f57c4e0b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -8749,16 +8783,24 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Liability document upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7?sv=2026-02-06&spr=https&st=2026-03-18T10%3A12%3A29Z&se=2026-03-18T10%3A22%3A29Z&sr=b&sp=w&sig=RIzgH67VhEEx4Yg%2B1t%2BvtJO2K%2FsG%2FVygoy6BS2jtXLU%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"show-liability-documents/9bf73ad7-a394-4b7d-ae63-f4f5b031f1e7\",\n        \"expires_at\": \"2026-03-18T10:21:29.077Z\"\n    }\n}"
 								}
-							],
+							]
+						}
+					],
+					"id": "49347587-2780d031-b324-4adc-82bb-6eb6b0e3e244"
+				},
+				{
+					"name": "Entries  (View)",
+					"item": [
+						{
+							"name": "List all Entries",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "e2f1dbad-4784-4ae9-b5e4-04a4ef29684d",
 										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -8775,24 +8817,25 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											"",
-											"pm.test('Response data is an object', function () {",
+											"pm.test('Response has pagination info', function () {",
 											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
+											"  pm.expect(body.pagination).to.be.an('object');",
+											"  pm.expect(body.pagination).to.have.property('total_records');",
+											"  pm.expect(body.pagination).to.have.property('current_page');",
+											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
-							]
-						}
-					],
-					"id": "49347587-2780d031-b324-4adc-82bb-6eb6b0e3e244"
-				},
-				{
-					"name": "Entries  (View)",
-					"item": [
-						{
-							"name": "List all Entries",
+							],
 							"id": "49347587-8ad4e922-17eb-420d-a946-f64502484344",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -8888,7 +8931,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -8975,7 +9018,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Entries retrieved successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n            \"status\": \"ENTERED\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"owner_name\": \"Jane Doe\",\n            \"trainer_name\": null,\n            \"classes\": [\n                \"1.0m Open\"\n            ],\n            \"doc_verification_status\": \"PENDING\"\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "View Entry",
 							"event": [
 								{
 									"listen": "test",
@@ -9001,25 +9047,15 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											"",
-											"pm.test('Response has pagination info', function () {",
+											"pm.test('Response data is an object', function () {",
 											"  const body = pm.response.json();",
-											"  pm.expect(body.pagination).to.be.an('object');",
-											"  pm.expect(body.pagination).to.have.property('total_records');",
-											"  pm.expect(body.pagination).to.have.property('current_page');",
-											"});",
-											"",
-											"pm.test('Response data is an array', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
+											"  pm.expect(body.data).to.be.an('object');",
 											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "View Entry",
+							],
 							"id": "49347587-5d6bf144-8bc0-4674-b7c7-b580eb2bd416",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -9082,7 +9118,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -9200,7 +9236,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -9287,7 +9323,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Entry retrieved successfully\",\n    \"data\": {\n        \"horse\": {\n            \"name\": \"Thunder's Lightning\",\n            \"usef_number\": null,\n            \"breed\": \"Thoroughbred\",\n            \"age\": 7,\n            \"color\": \"Chestnut\",\n            \"gender\": \"STALLION\",\n            \"height\": \"16.20\",\n            \"microchip_number\": \"23456886\",\n            \"registration_status\": false\n        },\n        \"health_documents\": [\n            {\n                \"id\": \"01e00aaa-666c-4536-a7c2-4fc2f08eaf9d\",\n                \"document_name\": \"COGGINS\",\n                \"verification_status\": \"PENDING\",\n                \"reason\": null,\n                \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a?sv=2026-02-06&spr=https&st=2026-03-25T11%3A22%3A40Z&se=2026-03-25T12%3A22%3A40Z&sr=b&sp=r&sig=7wtB%2BpWSYgrAr%2B%2FHMxGC6KXJg2es7k2oV1yjo76TN8E%3D\"\n            }\n        ],\n        \"members\": {\n            \"owner\": {\n                \"name\": \"Jane Doe\",\n                \"email\": \"aayushs.simform@gmail.com\",\n                \"mobile_number\": \"5555550100\",\n                \"usef\": \"12345678\",\n                \"usef_membership_type\": null,\n                \"usef_membership_expiry_date\": null\n            },\n            \"riders\": [\n                {\n                    \"name\": \"Aayush Rider\",\n                    \"email\": \"aayushs.simforsm@gmail.com\",\n                    \"mobile_number\": \"9399400758\",\n                    \"usef\": null,\n                    \"usef_membership_type\": \"USEF\",\n                    \"usef_membership_expiry_date\": null\n                }\n            ],\n            \"trainer\": null\n        }\n    }\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Scratch Entry",
 							"event": [
 								{
 									"listen": "test",
@@ -9302,29 +9341,11 @@
 											"pm.test('Response time is less than 1000ms', function () {",
 											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 											"});",
-											"",
-											"pm.test('Response status is true', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.status).to.be.true;",
-											"});",
-											"",
-											"pm.test('Response has a message', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-											"});",
-											"",
-											"pm.test('Response data is an object', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Scratch Entry",
+							],
 							"id": "49347587-920a7030-f72b-40ed-a041-3a43db724e19",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -9365,7 +9386,10 @@
 									]
 								}
 							},
-							"response": [],
+							"response": []
+						},
+						{
+							"name": "Verify Entry Document",
 							"event": [
 								{
 									"listen": "test",
@@ -9380,14 +9404,21 @@
 											"pm.test('Response time is less than 1000ms', function () {",
 											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Verify Entry Document",
+							],
 							"id": "49347587-997786a9-0e3d-41a9-b011-b64ffc849c55",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -9482,7 +9513,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -9569,7 +9600,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Document verification updated successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Remove Class from Entry",
 							"event": [
 								{
 									"listen": "test",
@@ -9584,24 +9618,11 @@
 											"pm.test('Response time is less than 1000ms', function () {",
 											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 											"});",
-											"",
-											"pm.test('Response status is true', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.status).to.be.true;",
-											"});",
-											"",
-											"pm.test('Response has a message', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Remove Class from Entry",
+							],
 							"id": "49347587-55b6ed97-27aa-47a7-ae08-f84ff734772c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -9638,7 +9659,10 @@
 									]
 								}
 							},
-							"response": [],
+							"response": []
+						},
+						{
+							"name": "View Entry Classes",
 							"event": [
 								{
 									"listen": "test",
@@ -9653,14 +9677,26 @@
 											"pm.test('Response time is less than 1000ms', function () {",
 											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "View Entry Classes",
+							],
 							"id": "49347587-b7ec7996-7e85-45e2-9c6d-48b05e8a5924",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -9725,7 +9761,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -9812,7 +9848,16 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Entry classes retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n            \"class_id\": \"J101\",\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"2026-03-14T18:30:00.000Z\",\n            \"class_time\": null,\n            \"result_status\": \"NOT_STARTED\",\n            \"division_name\": \"Open Jumpers 4\",\n            \"result\": null\n        }\n    ]\n}"
 								}
-							],
+							]
+						}
+					],
+					"id": "49347587-bfcbbd52-dce5-4208-abdb-d92de68aa6e2"
+				},
+				{
+					"name": "Classes (View)",
+					"item": [
+						{
+							"name": "List Show classes",
 							"event": [
 								{
 									"listen": "test",
@@ -9846,16 +9891,7 @@
 										]
 									}
 								}
-							]
-						}
-					],
-					"id": "49347587-bfcbbd52-dce5-4208-abdb-d92de68aa6e2"
-				},
-				{
-					"name": "Classes (View)",
-					"item": [
-						{
-							"name": "List Show classes",
+							],
 							"id": "49347587-b1bfbd98-a66f-4091-9bf4-2b83ce6a8b35",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -9910,7 +9946,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -9997,7 +10033,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Classes retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n            \"class_id\": \"J101\",\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"2026-03-14T18:30:00.000Z\",\n            \"class_time\": null,\n            \"result_status\": \"NOT_STARTED\",\n            \"division_name\": \"Open Jumpers 4\",\n            \"entry_count\": 1\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "List Classes in Show (with Horse details)",
 							"event": [
 								{
 									"listen": "test",
@@ -10031,10 +10070,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "List Classes in Show (with Horse details)",
+							],
 							"id": "49347587-e726cbb0-4c73-4493-9f3d-3dfc408ec975",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -10087,7 +10123,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -10174,7 +10210,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Classes retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n            \"class_id\": \"J101\",\n            \"class_name\": \"1.0m Open\",\n            \"class_date\": \"2026-03-14T18:30:00.000Z\",\n            \"class_time\": null,\n            \"division_name\": \"Open Jumpers 4\",\n            \"arena_name\": \"North arena\",\n            \"result_status\": \"NOT_STARTED\",\n            \"course_map_url\": null,\n            \"total_horses\": 1,\n            \"horses\": [\n                {\n                    \"id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                    \"entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                    \"name\": \"Thunder's Lightning\",\n                    \"rider_name\": \"Aayush Rider\"\n                }\n            ]\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Remove Class from Entry",
 							"event": [
 								{
 									"listen": "test",
@@ -10199,19 +10238,11 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
-											"",
-											"pm.test('Response data is an array', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
-											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Remove Class from Entry",
+							],
 							"id": "49347587-5dd7fe98-cca6-4993-b74b-2b7c64b67588",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -10286,7 +10317,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -10373,7 +10404,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Horse removed from class successfully\"\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Owner Horses by Entry",
 							"event": [
 								{
 									"listen": "test",
@@ -10398,14 +10432,16 @@
 											"  const body = pm.response.json();",
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Owner Horses by Entry",
+							],
 							"id": "49347587-c4966ac6-dad9-4b81-b3a8-06681c9ec290",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -10470,7 +10506,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -10557,7 +10593,10 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Owner horses retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"breed\": \"Thoroughbred\",\n            \"color\": \"Chestnut\",\n            \"gender\": \"STALLION\",\n            \"height\": \"16.20\",\n            \"usef_number\": null,\n            \"is_registered\": false,\n            \"existing_entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\"\n        },\n        {\n            \"id\": \"43a114c8-a6ac-4977-acd5-1744429f55a8\",\n            \"horse_name\": \"Water Lightning\",\n            \"breed\": \"Thoroughbred\",\n            \"color\": \"Chestnut\",\n            \"gender\": \"STALLION\",\n            \"height\": \"16.20\",\n            \"usef_number\": null,\n            \"is_registered\": false,\n            \"existing_entry_id\": null\n        }\n    ]\n}"
 								}
-							],
+							]
+						},
+						{
+							"name": "Add Horse to Class",
 							"event": [
 								{
 									"listen": "test",
@@ -10565,8 +10604,8 @@
 										"type": "text/javascript",
 										"packages": {},
 										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
 											"});",
 											"",
 											"pm.test('Response time is less than 1000ms', function () {",
@@ -10583,18 +10622,15 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											"",
-											"pm.test('Response data is an array', function () {",
+											"pm.test('Response data is an object', function () {",
 											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('array');",
+											"  pm.expect(body.data).to.be.an('object');",
 											"});",
 											""
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Add Horse to Class",
+							],
 							"id": "49347587-e48f14d5-a8d9-4be4-98e6-8822f93478d7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -10677,7 +10713,7 @@
 									},
 									"status": "Created",
 									"code": 201,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "Text",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -10764,40 +10800,6 @@
 									"responseTime": null,
 									"body": "{\n    \"status\": true,\n    \"message\": \"Horse added to class successfully\",\n    \"data\": {\n        \"entry_id\": \"b6622a89-1cdf-4a23-8d19-e74436161d14\"\n    }\n}"
 								}
-							],
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"type": "text/javascript",
-										"packages": {},
-										"exec": [
-											"pm.test('Status code is 201', function () {",
-											"  pm.response.to.have.status(201);",
-											"});",
-											"",
-											"pm.test('Response time is less than 1000ms', function () {",
-											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-											"});",
-											"",
-											"pm.test('Response status is true', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.status).to.be.true;",
-											"});",
-											"",
-											"pm.test('Response has a message', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-											"});",
-											"",
-											"pm.test('Response data is an object', function () {",
-											"  const body = pm.response.json();",
-											"  pm.expect(body.data).to.be.an('object');",
-											"});",
-											""
-										]
-									}
-								}
 							]
 						}
 					],
@@ -10811,6 +10813,45 @@
 							"item": [
 								{
 									"name": "Assign Staff",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"type": "text/javascript",
+												"packages": {},
+												"exec": [
+													"pm.test('Status code is 201', function () {",
+													"  pm.response.to.have.status(201);",
+													"});",
+													"",
+													"pm.test('Response time is less than 1000ms', function () {",
+													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+													"});",
+													"",
+													"pm.test('Response status is true', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.status).to.be.true;",
+													"});",
+													"",
+													"pm.test('Response has a message', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+													"});",
+													"",
+													"pm.test('Response data is an object', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.data).to.be.an('object');",
+													"});",
+													"",
+													"pm.test('Response data has an id', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.data).to.have.property('id');",
+													"});",
+													""
+												]
+											}
+										}
+									],
 									"id": "49347587-cb94e755-d7b5-4a64-b572-c867728fe25f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -10974,7 +11015,10 @@
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Show staff member assigned successfully\",\n    \"data\": {\n        \"id\": \"50e19e48-cb32-4765-b169-54219cfac1e8\"\n    }\n}"
 										}
-									],
+									]
+								},
+								{
+									"name": "List all assigned Members",
 									"event": [
 										{
 											"listen": "test",
@@ -10982,8 +11026,8 @@
 												"type": "text/javascript",
 												"packages": {},
 												"exec": [
-													"pm.test('Status code is 201', function () {",
-													"  pm.response.to.have.status(201);",
+													"pm.test('Status code is 200', function () {",
+													"  pm.response.to.have.status(200);",
 													"});",
 													"",
 													"pm.test('Response time is less than 1000ms', function () {",
@@ -11000,23 +11044,15 @@
 													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 													"});",
 													"",
-													"pm.test('Response data is an object', function () {",
+													"pm.test('Response data is an array', function () {",
 													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.be.an('object');",
-													"});",
-													"",
-													"pm.test('Response data has an id', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.have.property('id');",
+													"  pm.expect(body.data).to.be.an('array');",
 													"});",
 													""
 												]
 											}
 										}
-									]
-								},
-								{
-									"name": "List all assigned Members",
+									],
 									"id": "49347587-6e8c7e53-82b3-43b7-9014-615873856191",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -11162,7 +11198,10 @@
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Show staff assignments retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"50e19e48-cb32-4765-b169-54219cfac1e8\",\n            \"staff_role\": \"SHOW_OFFICE_STAFF\",\n            \"org_member_id\": \"bc6cdfb2-64d3-49d2-bb3a-bf16227f16cb\"\n        }\n    ]\n}"
 										}
-									],
+									]
+								},
+								{
+									"name": "Remove Assigned Staff",
 									"event": [
 										{
 											"listen": "test",
@@ -11187,19 +11226,11 @@
 													"  const body = pm.response.json();",
 													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 													"});",
-													"",
-													"pm.test('Response data is an array', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.be.an('array');",
-													"});",
 													""
 												]
 											}
 										}
-									]
-								},
-								{
-									"name": "Remove Assigned Staff",
+									],
 									"id": "49347587-bb9962f5-3ba7-4b61-a40e-7fc46c23b1bc",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -11355,7 +11386,16 @@
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Show staff assignment removed successfully\"\n}"
 										}
-									],
+									]
+								}
+							],
+							"id": "49347587-08e477fb-c7e8-4e37-89de-5eb2362229a2"
+						},
+						{
+							"name": "Arena Level",
+							"item": [
+								{
+									"name": "Assign Staff to Arena",
 									"event": [
 										{
 											"listen": "test",
@@ -11363,8 +11403,8 @@
 												"type": "text/javascript",
 												"packages": {},
 												"exec": [
-													"pm.test('Status code is 200', function () {",
-													"  pm.response.to.have.status(200);",
+													"pm.test('Status code is 201', function () {",
+													"  pm.response.to.have.status(201);",
 													"});",
 													"",
 													"pm.test('Response time is less than 1000ms', function () {",
@@ -11380,20 +11420,21 @@
 													"  const body = pm.response.json();",
 													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 													"});",
+													"",
+													"pm.test('Response data is an object', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.data).to.be.an('object');",
+													"});",
+													"",
+													"pm.test('Response data has an id', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.data).to.have.property('id');",
+													"});",
 													""
 												]
 											}
 										}
-									]
-								}
-							],
-							"id": "49347587-08e477fb-c7e8-4e37-89de-5eb2362229a2"
-						},
-						{
-							"name": "Arena Level",
-							"item": [
-								{
-									"name": "Assign Staff to Arena",
+									],
 									"id": "49347587-3a2f86f7-606d-4818-bad1-342bf59eba60",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -11557,7 +11598,10 @@
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Arena staff member assigned successfully\",\n    \"data\": {\n        \"id\": \"48ff5504-96ad-4e91-9f55-647f40aa97d7\"\n    }\n}"
 										}
-									],
+									]
+								},
+								{
+									"name": "List all ground members in show arena",
 									"event": [
 										{
 											"listen": "test",
@@ -11565,8 +11609,8 @@
 												"type": "text/javascript",
 												"packages": {},
 												"exec": [
-													"pm.test('Status code is 201', function () {",
-													"  pm.response.to.have.status(201);",
+													"pm.test('Status code is 200', function () {",
+													"  pm.response.to.have.status(200);",
 													"});",
 													"",
 													"pm.test('Response time is less than 1000ms', function () {",
@@ -11583,23 +11627,15 @@
 													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 													"});",
 													"",
-													"pm.test('Response data is an object', function () {",
+													"pm.test('Response data is an array', function () {",
 													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.be.an('object');",
-													"});",
-													"",
-													"pm.test('Response data has an id', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.have.property('id');",
+													"  pm.expect(body.data).to.be.an('array');",
 													"});",
 													""
 												]
 											}
 										}
-									]
-								},
-								{
-									"name": "List all ground members in show arena",
+									],
 									"id": "49347587-542a1786-183a-4fd9-a401-c65835338880",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -11745,7 +11781,10 @@
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Arena staff assignments retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": \"48ff5504-96ad-4e91-9f55-647f40aa97d7\",\n            \"arena_id\": \"205ccf17-8394-4718-bc5a-910698c8d2f2\",\n            \"staff_role\": \"JUDGE\",\n            \"gs_membership_id\": \"4506cd58-5b69-4ad2-8e2d-08fc889de56f\"\n        }\n    ]\n}"
 										}
-									],
+									]
+								},
+								{
+									"name": "Remove Ground Staff Assignment",
 									"event": [
 										{
 											"listen": "test",
@@ -11770,19 +11809,11 @@
 													"  const body = pm.response.json();",
 													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 													"});",
-													"",
-													"pm.test('Response data is an array', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.be.an('array');",
-													"});",
 													""
 												]
 											}
 										}
-									]
-								},
-								{
-									"name": "Remove Ground Staff Assignment",
+									],
 									"id": "49347587-d08ad3cd-e68f-488f-8b5d-3a5b31a7d8e6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -11938,35 +11969,6 @@
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Arena staff assignment removed successfully\"\n}"
 										}
-									],
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"type": "text/javascript",
-												"packages": {},
-												"exec": [
-													"pm.test('Status code is 200', function () {",
-													"  pm.response.to.have.status(200);",
-													"});",
-													"",
-													"pm.test('Response time is less than 1000ms', function () {",
-													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-													"});",
-													"",
-													"pm.test('Response status is true', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.status).to.be.true;",
-													"});",
-													"",
-													"pm.test('Response has a message', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-													"});",
-													""
-												]
-											}
-										}
 									]
 								}
 							],
@@ -11995,6 +11997,27 @@
 					"item": [
 						{
 							"name": "Get Schedule",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e5fe5cb6-bf0b-4d27-bb2d-ab50b61c550c",
+										"exec": [
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
+									}
+								}
+							],
 							"id": "49347587-5fedffa2-dbfe-43c4-a69b-2340f1bf0584",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -12020,7 +12043,10 @@
 									]
 								}
 							},
-							"response": [],
+							"response": []
+						},
+						{
+							"name": "Reorder Entries in Schedule",
 							"event": [
 								{
 									"listen": "test",
@@ -12039,10 +12065,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Reorder Entries in Schedule",
+							],
 							"id": "49347587-20f28be8-6f32-4ab6-885c-710fefad15e8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -12084,7 +12107,10 @@
 									]
 								}
 							},
-							"response": [],
+							"response": []
+						},
+						{
+							"name": "Update Result of Entry",
 							"event": [
 								{
 									"listen": "test",
@@ -12103,10 +12129,7 @@
 										]
 									}
 								}
-							]
-						},
-						{
-							"name": "Update Result of Entry",
+							],
 							"id": "49347587-0e004ab2-9411-4523-93d7-33c1384ae743",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -12149,26 +12172,7 @@
 									]
 								}
 							},
-							"response": [],
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"type": "text/javascript",
-										"packages": {},
-										"exec": [
-											"pm.test('Status code is 200', function () {",
-											"  pm.response.to.have.status(200);",
-											"});",
-											"",
-											"pm.test('Response time is less than 1000ms', function () {",
-											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-											"});",
-											""
-										]
-									}
-								}
-							]
+							"response": []
 						}
 					],
 					"id": "49347587-175c0642-ab0b-48e7-ab02-7ba824f7bdb6"
@@ -12181,6 +12185,47 @@
 			"item": [
 				{
 					"name": "List all Venues",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test('Response time is less than 1000ms', function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test('Response status is true', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.status).to.be.true;",
+									"});",
+									"",
+									"pm.test('Response has a message', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+									"});",
+									"",
+									"pm.test('Response has pagination info', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
+									"});",
+									""
+								]
+							}
+						}
+					],
 					"id": "49347587-3bc82a86-7b44-47f6-8e03-a1dce9564b5f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12328,7 +12373,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venues fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"d440a32e-772c-4863-b099-80047881b37a\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"country\": \"USA\",\n            \"status\": \"ACTIVE\",\n            \"total_arena_count\": 0\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "View Venue",
 					"event": [
 						{
 							"listen": "test",
@@ -12354,25 +12402,20 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response has pagination info', function () {",
+									"pm.test('Response data is an object', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.pagination).to.be.an('object');",
-									"  pm.expect(body.pagination).to.have.property('total_records');",
-									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"  pm.expect(body.data).to.be.an('object');",
 									"});",
 									"",
-									"pm.test('Response data is an array', function () {",
+									"pm.test('Response data has an id', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
+									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "View Venue",
+					],
 					"id": "49347587-7872a091-bf9a-43d5-8f30-0bbdbc0e2ef9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12514,7 +12557,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue fetched successfully\",\n    \"data\": {\n        \"id\": \"d440a32e-772c-4863-b099-80047881b37a\",\n        \"created_at\": \"2026-02-27T09:48:11.797Z\",\n        \"venue_name\": \"Golden Gate Equestrian Center\",\n        \"status\": \"ACTIVE\",\n        \"address\": \"San Francisco\",\n        \"city\": null,\n        \"state\": \"North Carolina\",\n        \"country\": \"USA\",\n        \"phone\": \"+1-561-555-0100\",\n        \"email\": \"aayushs.simform@gmail.com\",\n        \"website\": \"https://mail.google.com/\",\n        \"facility_map_url\": \"https://mail.google.com/mail/u/0/#inbox/FMfcgzQfCDNQlrclFwtrhKPqrCrJnCxM\",\n        \"arenas\": [\n            {\n                \"id\": \"be46c126-fce7-4b04-a6bb-1aaf05b69cad\",\n                \"created_at\": \"2026-02-27T10:05:20.822Z\",\n                \"venue_id\": \"d440a32e-772c-4863-b099-80047881b37a\",\n                \"arena_code\": \"A1\",\n                \"arena_name\": \"North arena\"\n            }\n        ],\n        \"total_arena_count\": 1\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Add New Venue",
 					"event": [
 						{
 							"listen": "test",
@@ -12522,8 +12568,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -12553,10 +12599,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Add New Venue",
+					],
 					"id": "49347587-b36f0890-fa95-46ca-afa2-5ff366ba74cf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12706,7 +12749,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue created successfully\",\n    \"data\": {\n        \"id\": \"e974e1c8-36bb-4091-8202-5a0a0ca9d5b2\"\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Add Arena",
 					"event": [
 						{
 							"listen": "test",
@@ -12745,10 +12791,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Add Arena",
+					],
 					"id": "49347587-6e25d1e0-98ef-428f-81bf-b6a1159abfca",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12910,7 +12953,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Arena created successfully\",\n    \"data\": {\n        \"id\": \"be46c126-fce7-4b04-a6bb-1aaf05b69cad\",\n        \"created_at\": \"2026-02-27T10:05:20.822Z\",\n        \"venue_id\": \"d440a32e-772c-4863-b099-80047881b37a\",\n        \"arena_code\": \"A1\",\n        \"arena_name\": \"North arena\"\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Venues",
 					"event": [
 						{
 							"listen": "test",
@@ -12918,8 +12964,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -12935,24 +12981,11 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
-									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Venues",
+					],
 					"id": "49347587-5cb88ea2-1e1e-4e02-bb4d-081449255190",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -13021,7 +13054,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -13108,7 +13141,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue updated successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Arena",
 					"event": [
 						{
 							"listen": "test",
@@ -13137,10 +13173,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Arena",
+					],
 					"id": "49347587-9bcfd327-7674-47c8-8e77-a0ca5467cf99",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -13294,7 +13327,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Arena updated successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Delete Venues",
 					"event": [
 						{
 							"listen": "test",
@@ -13323,10 +13359,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Delete Venues",
+					],
 					"id": "49347587-e284b2fb-6b7f-4fcd-897d-864bbfab822e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -13468,7 +13501,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue deleted successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Facility Map Upload URL",
 					"event": [
 						{
 							"listen": "test",
@@ -13476,8 +13512,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -13493,14 +13529,16 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
+									"",
+									"pm.test('Response data is an object', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Facility Map Upload URL",
+					],
 					"id": "49347587-1c7298ef-cc77-4961-b638-aa1ba23465e1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -13559,7 +13597,7 @@
 							},
 							"status": "Created",
 							"code": 201,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -13646,7 +13684,16 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue facility map upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/venue-facility-maps/4fc321b6-1e90-4480-a560-95b228e230b0?sv=2026-02-06&spr=https&st=2026-03-25T05%3A11%3A18Z&se=2026-03-25T05%3A21%3A18Z&sr=b&sp=w&sig=t56WsG%2FzAukzM9S%2FG9CIX2aOP4%2BwsdTyKpfEpg%2BWFk8%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"venue-facility-maps/4fc321b6-1e90-4480-a560-95b228e230b0\",\n        \"expires_at\": \"2026-03-25T05:20:18.820Z\"\n    }\n}"
 						}
-					],
+					]
+				}
+			],
+			"id": "49347587-e8bb43bf-5836-4122-b118-cde40ea71d8d"
+		},
+		{
+			"name": "Roles and Permissions",
+			"item": [
+				{
+					"name": "List roles",
 					"event": [
 						{
 							"listen": "test",
@@ -13654,8 +13701,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -13672,24 +13719,22 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response data is an object', function () {",
+									"pm.test('Response has pagination info', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				}
-			],
-			"id": "49347587-e8bb43bf-5836-4122-b118-cde40ea71d8d"
-		},
-		{
-			"name": "Roles and Permissions",
-			"item": [
-				{
-					"name": "List roles",
+					],
 					"id": "49347587-00d54a15-4f9b-4fe5-a46c-3971513b5a5f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -13821,7 +13866,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Roles fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 2,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"a14abd73-1de3-4987-85ab-0e989bef4d15\",\n            \"created_at\": \"2026-03-05T12:22:29.135Z\",\n            \"name\": \"Dashboard & Show Member\",\n            \"permissions\": [\n                \"dashboard__view\",\n                \"shows__view\"\n            ],\n            \"member_count\": 0\n        },\n        {\n            \"id\": \"c71173b5-bcba-439b-9a6b-617e16afe542\",\n            \"created_at\": \"2026-02-25T11:16:45.439Z\",\n            \"name\": \"Organisation Admin\",\n            \"permissions\": [],\n            \"member_count\": 1\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "View Role",
 					"event": [
 						{
 							"listen": "test",
@@ -13847,25 +13895,20 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response has pagination info', function () {",
+									"pm.test('Response data is an object', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.pagination).to.be.an('object');",
-									"  pm.expect(body.pagination).to.have.property('total_records');",
-									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"  pm.expect(body.data).to.be.an('object');",
 									"});",
 									"",
-									"pm.test('Response data is an array', function () {",
+									"pm.test('Response data has an id', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
+									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "View Role",
+					],
 					"id": "49347587-a8c8184b-8283-429f-aa65-1eb216279ff9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -14011,7 +14054,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Role fetched successfully\",\n    \"data\": {\n        \"id\": \"a14abd73-1de3-4987-85ab-0e989bef4d15\",\n        \"created_at\": \"2026-03-05T12:22:29.135Z\",\n        \"name\": \"Dashboard & Show Member\",\n        \"permissions\": [\n            \"dashboard__view\",\n            \"shows__view\"\n        ]\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Create New Role",
 					"event": [
 						{
 							"listen": "test",
@@ -14019,8 +14065,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -14050,10 +14096,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Create New Role",
+					],
 					"id": "49347587-98690fd2-d865-4ac2-8316-f7dc8f3463cf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -14195,7 +14238,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Role created successfully\",\n    \"data\": {\n        \"id\": \"92af70df-ea74-4f7c-829d-b822c5e0e837\"\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Role",
 					"event": [
 						{
 							"listen": "test",
@@ -14203,8 +14249,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -14220,24 +14266,11 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
-									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Role",
+					],
 					"id": "49347587-40146f4f-f2d1-4b8f-bf77-5e8e23314682",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -14393,7 +14426,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Role updated successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Delete Role",
 					"event": [
 						{
 							"listen": "test",
@@ -14422,10 +14458,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Delete Role",
+					],
 					"id": "49347587-c7059081-3afe-4248-92f7-7680eaa6a3fb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -14571,7 +14604,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Role deleted successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "List Permissions",
 					"event": [
 						{
 							"listen": "test",
@@ -14596,14 +14632,16 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
+									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "List Permissions",
+					],
 					"id": "49347587-b21711ac-4a63-4d89-91c4-6875f0d37c68",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -14737,7 +14775,16 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Permissions fetched successfully\",\n    \"data\": [\n        \"dashboard:view\",\n        \"shows:view\",\n        \"shows:create\",\n        \"shows:edit\",\n        \"shows:delete\",\n        \"shows:publish\",\n        \"entries:view\",\n        \"entries:approve\",\n        \"entries:reject\",\n        \"entries:edit\",\n        \"financials:view\",\n        \"financials:export\",\n        \"financials:refund\",\n        \"staff:view\",\n        \"staff:invite\",\n        \"staff:edit\",\n        \"staff:remove\",\n        \"venues:view\",\n        \"venues:create\",\n        \"venues:edit\",\n        \"venues:delete\",\n        \"notifications:view\",\n        \"notifications:send\",\n        \"reports:view\",\n        \"reports:export\",\n        \"settings:view\",\n        \"settings:edit\",\n        \"roles:view\",\n        \"roles:create\",\n        \"roles:edit\",\n        \"roles:delete\",\n        \"ground_staff:view\",\n        \"ground_staff:invite\",\n        \"ground_staff:edit\",\n        \"ground_staff:remove\",\n        \"ground_staff_roles:view\",\n        \"ground_staff_roles:create\",\n        \"ground_staff_roles:edit\",\n        \"ground_staff_roles:delete\"\n    ]\n}"
 						}
-					],
+					]
+				}
+			],
+			"id": "49347587-0cc07d4c-a572-47a8-877f-789f60d9d010"
+		},
+		{
+			"name": "Internal Users",
+			"item": [
+				{
+					"name": "Get list of all users",
 					"event": [
 						{
 							"listen": "test",
@@ -14763,6 +14810,13 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
+									"pm.test('Response has pagination info', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
 									"pm.test('Response data is an array', function () {",
 									"  const body = pm.response.json();",
 									"  pm.expect(body.data).to.be.an('array');",
@@ -14771,16 +14825,7 @@
 								]
 							}
 						}
-					]
-				}
-			],
-			"id": "49347587-0cc07d4c-a572-47a8-877f-789f60d9d010"
-		},
-		{
-			"name": "Internal Users",
-			"item": [
-				{
-					"name": "Get list of all users",
+					],
 					"id": "49347587-8628ab9a-6a19-42f0-9755-55770f9f451f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -14908,7 +14953,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Office staff members fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"1350c3e6-e298-4b07-9607-ee03df38ce5a\",\n            \"created_at\": \"2026-03-06T04:54:28.507Z\",\n            \"role_id\": \"e9a05d3a-7241-4f80-bbe6-f03f3e95e216\",\n            \"first_name\": \"Aayush\",\n            \"last_name\": \"Solanki\",\n            \"email\": \"aayush.solanki@simformsolutions.com\",\n            \"status\": \"ACTIVE\",\n            \"user_type\": \"MEMBER\",\n            \"joined_at\": \"2026-03-06T04:55:02.210Z\"\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "List all Users - Dropdown",
 					"event": [
 						{
 							"listen": "test",
@@ -14934,13 +14982,6 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response has pagination info', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.pagination).to.be.an('object');",
-									"  pm.expect(body.pagination).to.have.property('total_records');",
-									"  pm.expect(body.pagination).to.have.property('current_page');",
-									"});",
-									"",
 									"pm.test('Response data is an array', function () {",
 									"  const body = pm.response.json();",
 									"  pm.expect(body.data).to.be.an('array');",
@@ -14949,10 +14990,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "List all Users - Dropdown",
+					],
 					"id": "49347587-8f391252-9eb0-4773-b2eb-e575dacf0d6e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -15082,7 +15120,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Office staff dropdown fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"bc6cdfb2-64d3-49d2-bb3a-bf16227f16cb\",\n            \"name\": \"Aayush Solanki\",\n            \"role_name\": \"My Roll\"\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Add New User",
 					"event": [
 						{
 							"listen": "test",
@@ -15090,8 +15131,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -15108,18 +15149,20 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response data is an array', function () {",
+									"pm.test('Response data is an object', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Add New User",
+					],
 					"id": "49347587-bcbf8b5a-7f5b-43c3-ad40-0dd2d8e22970",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -15261,7 +15304,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Office staff member invited successfully\",\n    \"data\": {\n        \"id\": \"990e1b36-828c-42a5-b50d-213254066ec8\"\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Users",
 					"event": [
 						{
 							"listen": "test",
@@ -15269,8 +15315,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -15286,24 +15332,11 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
-									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Users",
+					],
 					"id": "49347587-c7889b7f-f0ab-4c7a-980d-1687a74185c1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -15459,7 +15492,16 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Office staff member updated successfully\"\n}"
 						}
-					],
+					]
+				}
+			],
+			"id": "49347587-7534d0a5-9d0a-4554-a0b5-01c7869f5faa"
+		},
+		{
+			"name": "Ground Staff - Users",
+			"item": [
+				{
+					"name": "Get list of all users",
 					"event": [
 						{
 							"listen": "test",
@@ -15484,20 +15526,23 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
+									"",
+									"pm.test('Response has pagination info', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
+									"});",
 									""
 								]
 							}
 						}
-					]
-				}
-			],
-			"id": "49347587-7534d0a5-9d0a-4554-a0b5-01c7869f5faa"
-		},
-		{
-			"name": "Ground Staff - Users",
-			"item": [
-				{
-					"name": "Get list of all users",
+					],
 					"id": "49347587-e5ab3522-8cd1-4a11-b6f7-e1fb177bba85",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -15621,7 +15666,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff members fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"ba68b383-5f66-4097-821c-aa42eb7e5fca\",\n            \"created_at\": \"2026-03-06T10:04:58.965Z\",\n            \"gs_user_id\": \"82cd4312-8445-432f-a9e8-1299090b0a68\",\n            \"status\": \"INVITED\",\n            \"joined_at\": null,\n            \"gs_user\": {\n                \"first_name\": \"Aayush\",\n                \"last_name\": \"Solanki\",\n                \"email\": \"aayush.solanki@simformsolutions.com\",\n                \"phone_country_code\": \"+1\",\n                \"phone_number\": null\n            },\n            \"gs_role\": {\n                \"id\": \"72c90535-b900-4702-be13-89cb44744e53\",\n                \"name\": \"Hunter\"\n            }\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Dropdown API",
 					"event": [
 						{
 							"listen": "test",
@@ -15647,13 +15695,6 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response has pagination info', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.pagination).to.be.an('object');",
-									"  pm.expect(body.pagination).to.have.property('total_records');",
-									"  pm.expect(body.pagination).to.have.property('current_page');",
-									"});",
-									"",
 									"pm.test('Response data is an array', function () {",
 									"  const body = pm.response.json();",
 									"  pm.expect(body.data).to.be.an('array');",
@@ -15662,10 +15703,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Dropdown API",
+					],
 					"id": "49347587-304ef82d-1609-44da-82a5-99f9f20408ec",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -15795,7 +15833,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff dropdown fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"4506cd58-5b69-4ad2-8e2d-08fc889de56f\",\n            \"name\": \"Aayush Solanki\",\n            \"role_name\": \"Hunters\"\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Add New User",
 					"event": [
 						{
 							"listen": "test",
@@ -15803,8 +15844,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -15821,18 +15862,20 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response data is an array', function () {",
+									"pm.test('Response data is an object', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
+									"  pm.expect(body.data).to.be.an('object');",
+									"});",
+									"",
+									"pm.test('Response data has an id', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Add New User",
+					],
 					"id": "49347587-60e57ca4-a0cb-4f50-a1cf-c67b8b730b12",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -15974,7 +16017,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff member invited successfully\",\n    \"data\": {\n        \"id\": \"ba68b383-5f66-4097-821c-aa42eb7e5fca\"\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Users",
 					"event": [
 						{
 							"listen": "test",
@@ -15982,8 +16028,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -15999,24 +16045,11 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
-									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Users",
+					],
 					"id": "49347587-2a6d3e27-fd5c-4ff5-b32e-d8e3b4b49784",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -16172,7 +16205,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff member updated successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Delete User",
 					"event": [
 						{
 							"listen": "test",
@@ -16201,10 +16237,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Delete User",
+					],
 					"id": "49347587-9dcb4945-4645-4e32-963d-2054cd0e1e5b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -16350,7 +16383,16 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff member removed from organisation successfully\"\n}"
 						}
-					],
+					]
+				}
+			],
+			"id": "49347587-c358e872-fcd2-409b-aa5a-eb0d8a629169"
+		},
+		{
+			"name": "Ground Staff - Roles",
+			"item": [
+				{
+					"name": "List roles",
 					"event": [
 						{
 							"listen": "test",
@@ -16375,20 +16417,23 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
+									"",
+									"pm.test('Response has pagination info', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
+									"});",
 									""
 								]
 							}
 						}
-					]
-				}
-			],
-			"id": "49347587-c358e872-fcd2-409b-aa5a-eb0d8a629169"
-		},
-		{
-			"name": "Ground Staff - Roles",
-			"item": [
-				{
-					"name": "List roles",
+					],
 					"id": "49347587-4cb3e740-9525-4841-a8b9-526d655ef46e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -16520,7 +16565,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff roles fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"2cc83e52-6685-4c95-8bf9-c656ec8c53c7\",\n            \"created_at\": \"2026-03-06T09:57:42.184Z\",\n            \"name\": \"Hunter\",\n            \"permissions\": [\n                \"shows:view\",\n                \"entries:view\",\n                \"schedule:view\",\n                \"notifications:view\"\n            ],\n            \"status\": \"ACTIVE\"\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "View Role",
 					"event": [
 						{
 							"listen": "test",
@@ -16546,25 +16594,20 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response has pagination info', function () {",
+									"pm.test('Response data is an object', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.pagination).to.be.an('object');",
-									"  pm.expect(body.pagination).to.have.property('total_records');",
-									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"  pm.expect(body.data).to.be.an('object');",
 									"});",
 									"",
-									"pm.test('Response data is an array', function () {",
+									"pm.test('Response data has an id', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
+									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "View Role",
+					],
 					"id": "49347587-eadb5966-77da-43cc-ba66-e8d0c53d1dca",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -16710,7 +16753,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff role fetched successfully\",\n    \"data\": {\n        \"id\": \"2cc83e52-6685-4c95-8bf9-c656ec8c53c7\",\n        \"created_at\": \"2026-03-06T09:57:42.184Z\",\n        \"name\": \"Hunter\",\n        \"permissions\": [\n            \"shows:view\",\n            \"entries:view\",\n            \"schedule:view\",\n            \"notifications:view\"\n        ],\n        \"status\": \"ACTIVE\"\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Create New Role",
 					"event": [
 						{
 							"listen": "test",
@@ -16718,8 +16764,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -16749,10 +16795,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Create New Role",
+					],
 					"id": "49347587-d5773127-ffd9-4096-8d51-278cde343e5e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -16894,7 +16937,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff role created successfully\",\n    \"data\": {\n        \"id\": \"2cc83e52-6685-4c95-8bf9-c656ec8c53c7\"\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Role",
 					"event": [
 						{
 							"listen": "test",
@@ -16902,8 +16948,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -16919,24 +16965,11 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
-									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Role",
+					],
 					"id": "49347587-84b8d58a-716b-475a-9ac1-0b489d5a2e6f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -17092,7 +17125,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff role updated successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Delete Role",
 					"event": [
 						{
 							"listen": "test",
@@ -17121,10 +17157,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Delete Role",
+					],
 					"id": "49347587-106b0ae0-ca94-4c3a-ab1f-242f01e08afe",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -17270,7 +17303,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff role deleted successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "List Permissions",
 					"event": [
 						{
 							"listen": "test",
@@ -17295,14 +17331,16 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
+									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "List Permissions",
+					],
 					"id": "49347587-6ed661fc-3d27-4881-90fb-54171b7be643",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -17436,7 +17474,16 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Ground staff permissions fetched successfully\",\n    \"data\": [\n        \"shows:view\",\n        \"entries:view\",\n        \"schedule:view\",\n        \"notifications:view\",\n        \"notifications:send\",\n        \"checkin:view\",\n        \"checkin:edit\",\n        \"results:view\",\n        \"results:edit\",\n        \"entries:edit\",\n        \"entries_scratch:edit\",\n        \"chat:all\"\n    ]\n}"
 						}
-					],
+					]
+				}
+			],
+			"id": "49347587-b03b9000-a741-4580-a390-c9d2872cd6e9"
+		},
+		{
+			"name": "Supply Items",
+			"item": [
+				{
+					"name": "Venue Summary - Supply Item",
 					"event": [
 						{
 							"listen": "test",
@@ -17470,16 +17517,7 @@
 								]
 							}
 						}
-					]
-				}
-			],
-			"id": "49347587-b03b9000-a741-4580-a390-c9d2872cd6e9"
-		},
-		{
-			"name": "Supply Items",
-			"item": [
-				{
-					"name": "Venue Summary - Supply Item",
+					],
 					"id": "49347587-0310d33d-e89d-44b5-80e2-d0d78ddc4937",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -17535,7 +17573,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -17622,7 +17660,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue supply summary fetched successfully\",\n    \"data\": [\n        {\n            \"id\": \"d9978052-b80f-4721-8ed2-d4046286948b\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"country\": \"USA\",\n            \"state\": \"North Carolina\",\n            \"city\": null,\n            \"supply_item_count\": 3\n        },\n        {\n            \"id\": \"27557062-32c5-40de-a843-1bf10e9e65f2\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"country\": \"USA\",\n            \"state\": \"North Carolina\",\n            \"city\": null,\n            \"supply_item_count\": 0\n        },\n        {\n            \"id\": \"f033001e-710d-4d2f-a967-4e17fb2bf3a1\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"country\": \"USA\",\n            \"state\": \"North Carolina\",\n            \"city\": null,\n            \"supply_item_count\": 0\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "All Supply Items",
 					"event": [
 						{
 							"listen": "test",
@@ -17648,6 +17689,13 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
+									"pm.test('Response has pagination info', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
 									"pm.test('Response data is an array', function () {",
 									"  const body = pm.response.json();",
 									"  pm.expect(body.data).to.be.an('array');",
@@ -17656,10 +17704,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "All Supply Items",
+					],
 					"id": "49347587-a61bd88d-2d98-4d2c-b415-0e9b3b74cc5a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -17799,7 +17844,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Supply items fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 2,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"e7c48b85-e028-4aa1-89ea-141b5922706d\",\n            \"created_at\": \"2026-03-10T11:17:14.424Z\",\n            \"item_name\": \"Shavings\",\n            \"category\": \"BEDDING_STALL_SUPPLIES\",\n            \"price\": \"300.00\",\n            \"available_quantity\": null\n        },\n        {\n            \"id\": \"b3ff5c72-3c04-48ce-b89b-10b1d36ef3d1\",\n            \"created_at\": \"2026-03-10T11:16:10.219Z\",\n            \"item_name\": \"Shavings\",\n            \"category\": \"BEDDING_STALL_SUPPLIES\",\n            \"price\": \"300.00\",\n            \"available_quantity\": null\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Create Supply Items",
 					"event": [
 						{
 							"listen": "test",
@@ -17807,8 +17855,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
+									"pm.test('Status code is 201', function () {",
+									"  pm.response.to.have.status(201);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -17825,25 +17873,20 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response has pagination info', function () {",
+									"pm.test('Response data is an object', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.pagination).to.be.an('object');",
-									"  pm.expect(body.pagination).to.have.property('total_records');",
-									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"  pm.expect(body.data).to.be.an('object');",
 									"});",
 									"",
-									"pm.test('Response data is an array', function () {",
+									"pm.test('Response data has an id', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
+									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Create Supply Items",
+					],
 					"id": "49347587-29e679c8-007c-442f-a29b-1a43ddc158bd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -18016,7 +18059,7 @@
 							},
 							"status": "Conflict",
 							"code": 409,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -18103,7 +18146,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": false,\n    \"message\": \"A supply item with this name and category already exists for this venue\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Supply Item Categories",
 					"event": [
 						{
 							"listen": "test",
@@ -18111,8 +18157,8 @@
 								"type": "text/javascript",
 								"packages": {},
 								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
+									"pm.test('Status code is 200', function () {",
+									"  pm.response.to.have.status(200);",
 									"});",
 									"",
 									"pm.test('Response time is less than 1000ms', function () {",
@@ -18129,23 +18175,15 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response data is an object', function () {",
+									"pm.test('Response data is an array', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
+									"  pm.expect(body.data).to.be.an('array');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Supply Item Categories",
+					],
 					"id": "49347587-b2a17848-77e6-4e9d-b193-ca5817144d88",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -18283,7 +18321,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Supply categories fetched successfully\",\n    \"data\": [\n        {\n            \"value\": \"BEDDING_STALL_SUPPLIES\",\n            \"label\": \"Bedding & Stall Supplies\"\n        },\n        {\n            \"value\": \"FEED_NUTRITION\",\n            \"label\": \"Feed & Nutrition\"\n        },\n        {\n            \"value\": \"WATER_HYDRATION\",\n            \"label\": \"Water & Hydration\"\n        },\n        {\n            \"value\": \"EQUIPMENT_RENTAL\",\n            \"label\": \"Equipment Rental\"\n        },\n        {\n            \"value\": \"BARN_SERVICES\",\n            \"label\": \"Barn Services\"\n        },\n        {\n            \"value\": \"ARENA_TACK_SUPPLIES\",\n            \"label\": \"Arena/Tack Supplies\"\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Supply Item",
 					"event": [
 						{
 							"listen": "test",
@@ -18308,19 +18349,11 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
-									"",
-									"pm.test('Response data is an array', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
-									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Supply Item",
+					],
 					"id": "49347587-e8b6634d-1a50-4e99-86c5-bff6f70bbef9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -18480,7 +18513,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Supply item updated successfully\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Remove Supply Item",
 					"event": [
 						{
 							"listen": "test",
@@ -18509,10 +18545,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Remove Supply Item",
+					],
 					"id": "49347587-07bc7e56-de92-4500-b058-fb881343a75a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -18662,7 +18695,16 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Supply item deleted successfully\"\n}"
 						}
-					],
+					]
+				}
+			],
+			"id": "49347587-2a9bd9b0-6591-4f89-9487-4983bf70fdb3"
+		},
+		{
+			"name": "Manage Orders",
+			"item": [
+				{
+					"name": "Shows Summary Orders",
 					"event": [
 						{
 							"listen": "test",
@@ -18687,20 +18729,23 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
+									"",
+									"pm.test('Response has pagination info', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.pagination).to.be.an('object');",
+									"  pm.expect(body.pagination).to.have.property('total_records');",
+									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"});",
+									"",
+									"pm.test('Response data is an array', function () {",
+									"  const body = pm.response.json();",
+									"  pm.expect(body.data).to.be.an('array');",
+									"});",
 									""
 								]
 							}
 						}
-					]
-				}
-			],
-			"id": "49347587-2a9bd9b0-6591-4f89-9487-4983bf70fdb3"
-		},
-		{
-			"name": "Manage Orders",
-			"item": [
-				{
-					"name": "Shows Summary Orders",
+					],
 					"id": "49347587-10455360-08ca-4694-ab44-262d38b8acf5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -18739,7 +18784,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -18826,7 +18871,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Shows with order summary fetched successfully.\",\n    \"pagination\": {\n        \"total_records\": 6,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"277a2a1f-bff4-4034-a4a9-e4bc0d9a067e\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"start_date\": \"2026-07-09T18:30:00.000Z\",\n            \"end_date\": \"2026-07-14T18:30:00.000Z\",\n            \"total_orders\": 0\n        },\n        {\n            \"id\": \"2c31c565-7ffb-4fa0-a515-20693d425b29\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"start_date\": \"2026-07-09T18:30:00.000Z\",\n            \"end_date\": \"2026-07-14T18:30:00.000Z\",\n            \"total_orders\": 0\n        },\n        {\n            \"id\": \"ad16ce88-bb0b-4b24-a4a5-cd66950a9914\",\n            \"show_name\": \"Summer Classic 2023\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"start_date\": \"2026-07-09T18:30:00.000Z\",\n            \"end_date\": \"2026-07-14T18:30:00.000Z\",\n            \"total_orders\": 0\n        },\n        {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"start_date\": \"2026-07-09T18:30:00.000Z\",\n            \"end_date\": \"2026-07-14T18:30:00.000Z\",\n            \"total_orders\": 3\n        },\n        {\n            \"id\": \"f31f5b38-b01a-4978-a454-d038feaea794\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"start_date\": \"2026-07-09T18:30:00.000Z\",\n            \"end_date\": \"2026-07-14T18:30:00.000Z\",\n            \"total_orders\": 0\n        },\n        {\n            \"id\": \"fc70cb04-e717-4352-8cf5-17f5bb20360f\",\n            \"show_name\": \"Summer Classic 2023\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"start_date\": \"2026-07-09T18:30:00.000Z\",\n            \"end_date\": \"2026-07-14T18:30:00.000Z\",\n            \"total_orders\": 0\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Show Orders",
 					"event": [
 						{
 							"listen": "test",
@@ -18867,10 +18915,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Show Orders",
+					],
 					"id": "49347587-4805f692-632c-4571-99b7-fe04d1629707",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -18979,7 +19024,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -19066,7 +19111,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Supply orders fetched successfully.\",\n    \"pagination\": {\n        \"total_records\": 3,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"27fe0cfe-dcf2-44e8-a7b0-f385bd38e851\",\n            \"order_number\": \"SO-20260326-8405\",\n            \"orderer_id\": \"40ab009c-13fb-4f59-a9d3-00b9129934eb\",\n            \"orderer_name\": \"Jane Doe\",\n            \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"barn_name\": null,\n            \"total_amount\": \"600.00\",\n            \"total_quantity\": 2,\n            \"status\": \"CANCELLED\",\n            \"created_at\": \"2026-03-26T06:13:23.819Z\"\n        },\n        {\n            \"id\": \"b249b3ad-d164-4589-9a76-e7b410140f30\",\n            \"order_number\": \"SO-20260326-3457\",\n            \"orderer_id\": \"40ab009c-13fb-4f59-a9d3-00b9129934eb\",\n            \"orderer_name\": \"Jane Doe\",\n            \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"barn_name\": null,\n            \"total_amount\": \"600.00\",\n            \"total_quantity\": 2,\n            \"status\": \"CANCELLED\",\n            \"created_at\": \"2026-03-26T07:17:22.304Z\"\n        },\n        {\n            \"id\": \"b678706d-ac0c-49e7-9925-29a0c1fe1157\",\n            \"order_number\": \"SO-20260326-5264\",\n            \"orderer_id\": \"40ab009c-13fb-4f59-a9d3-00b9129934eb\",\n            \"orderer_name\": \"Jane Doe\",\n            \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"barn_name\": null,\n            \"total_amount\": \"600.00\",\n            \"total_quantity\": 2,\n            \"status\": \"PENDING\",\n            \"created_at\": \"2026-03-26T07:18:24.511Z\"\n        }\n    ]\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Order Details",
 					"event": [
 						{
 							"listen": "test",
@@ -19092,25 +19140,20 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									"",
-									"pm.test('Response has pagination info', function () {",
+									"pm.test('Response data is an object', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.pagination).to.be.an('object');",
-									"  pm.expect(body.pagination).to.have.property('total_records');",
-									"  pm.expect(body.pagination).to.have.property('current_page');",
+									"  pm.expect(body.data).to.be.an('object');",
 									"});",
 									"",
-									"pm.test('Response data is an array', function () {",
+									"pm.test('Response data has an id', function () {",
 									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
+									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Order Details",
+					],
 					"id": "49347587-97a665d4-bb6a-42d7-81e6-d68efe6accf8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -19229,7 +19272,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -19316,7 +19359,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Supply order fetched successfully.\",\n    \"data\": {\n        \"id\": \"27fe0cfe-dcf2-44e8-a7b0-f385bd38e851\",\n        \"order_number\": \"SO-20260326-8405\",\n        \"orderer_name\": \"Jane Doe\",\n        \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n        \"horse_name\": \"Thunder's Lightning\",\n        \"barn_name\": null,\n        \"total_amount\": \"600.00\",\n        \"status\": \"CANCELLED\",\n        \"cancellation_reason\": \"My Mood\",\n        \"notes\": null,\n        \"created_at\": \"2026-03-26T06:13:23.819Z\",\n        \"order_items\": [\n            {\n                \"id\": \"4affa763-1de1-40a4-8e1f-b0a7a63d05c7\",\n                \"supply_item_id\": \"8973860c-56ff-4f73-b863-c6ff03ff8c96\",\n                \"item_name\": \"Shavings\",\n                \"category\": \"BEDDING_STALL_SUPPLIES\",\n                \"quantity\": 2,\n                \"unit_price\": \"300.00\",\n                \"subtotal\": \"600.00\"\n            }\n        ]\n    }\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Order Status",
 					"event": [
 						{
 							"listen": "test",
@@ -19341,24 +19387,11 @@
 									"  const body = pm.response.json();",
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
-									"});",
 									""
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Order Status",
+					],
 					"id": "49347587-029441c8-241f-43f6-81c1-30a08fc5279c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -19497,7 +19530,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -19653,7 +19686,7 @@
 							},
 							"status": "Bad Request",
 							"code": 400,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -19740,7 +19773,10 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": false,\n    \"message\": \"Invalid status transition. FULFILLED and CANCELLED orders cannot be changed.\"\n}"
 						}
-					],
+					]
+				},
+				{
+					"name": "Update Barn Name",
 					"event": [
 						{
 							"listen": "test",
@@ -19769,10 +19805,7 @@
 								]
 							}
 						}
-					]
-				},
-				{
-					"name": "Update Barn Name",
+					],
 					"id": "49347587-e34c5e24-3104-4824-bf16-8e2446c85c22",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -19911,7 +19944,7 @@
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": null,
+							"_postman_previewlanguage": "Text",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -19998,35 +20031,6 @@
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"Order barn name updated successfully.\"\n}"
 						}
-					],
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"packages": {},
-								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test('Response time is less than 1000ms', function () {",
-									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-									"});",
-									"",
-									"pm.test('Response status is true', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.status).to.be.true;",
-									"});",
-									"",
-									"pm.test('Response has a message', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-									"});",
-									""
-								]
-							}
-						}
 					]
 				}
 			],
@@ -20034,6 +20038,30 @@
 		},
 		{
 			"name": "Health",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"pm.test('Status code is 200', function () {",
+							"  pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Response time is less than 1000ms', function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"});",
+							"",
+							"pm.test('Response status is true', function () {",
+							"  const body = pm.response.json();",
+							"  pm.expect(body.status).to.be.true;",
+							"});",
+							""
+						]
+					}
+				}
+			],
 			"id": "49347587-07138f25-65ff-4358-b5a5-9140ec0d2adb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -20161,7 +20189,10 @@
 					"responseTime": null,
 					"body": "{\n    \"status\": \"ok\",\n    \"service\": \"organisation\",\n    \"uptime\": 71,\n    \"timestamp\": \"2026-02-25T12:18:32.252Z\"\n}"
 				}
-			],
+			]
+		},
+		{
+			"name": "Azure - Upload File",
 			"event": [
 				{
 					"listen": "test",
@@ -20171,24 +20202,11 @@
 						"exec": [
 							"pm.test('Status code is 200', function () {",
 							"  pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test('Response time is less than 1000ms', function () {",
-							"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-							"});",
-							"",
-							"pm.test('Response status is true', function () {",
-							"  const body = pm.response.json();",
-							"  pm.expect(body.status).to.be.true;",
-							"});",
-							""
+							"});"
 						]
 					}
 				}
-			]
-		},
-		{
-			"name": "Azure - Upload File",
+			],
 			"id": "49347587-a821376f-a941-40c9-b2d9-3d9ccc2d6d0b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -20259,21 +20277,7 @@
 					]
 				}
 			},
-			"response": [],
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							"pm.test('Status code is 200', function () {",
-							"  pm.response.to.have.status(200);",
-							"});"
-						]
-					}
-				}
-			]
+			"response": []
 		}
 	],
 	"event": [
@@ -20312,7 +20316,7 @@
 					"        header: {",
 					"            \"Content-Type\": \"application/json\"",
 					"        }",
-					"        // No need to manually send cookies \u2014 Postman sends them automatically",
+					"        // No need to manually send cookies — Postman sends them automatically",
 					"    }, function (err, res) {",
 					"",
 					"        if (err || res.code !== 200) {",
