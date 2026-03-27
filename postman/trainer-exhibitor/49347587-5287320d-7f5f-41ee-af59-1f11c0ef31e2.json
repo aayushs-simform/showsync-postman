@@ -1428,6 +1428,122 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"status\": true,\n    \"message\": \"USEF member profile fetched successfully\",\n    \"data\": {\n        \"usef_member_id\": \"1000001\",\n        \"first_name\": \"Alice\",\n        \"last_name\": \"Anderson\",\n        \"email\": \"alice.anderson@example.com\",\n        \"phone_number\": \"+15551110001\",\n        \"membership_status\": \"ACTIVE\"\n    }\n}"
+						},
+						{
+							"id": "49347587-b62d7fea-ad56-46aa-bff0-cccae67dbfe1",
+							"name": "USEF lookup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5leGFtcGxlQGdtYWlsLmNvbSIsImp0aSI6IjhiZGNkZmE0LTE2NWYtNDM5Yy05NjgyLTYyNzIwYTU3Y2Y2MCIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzQ2MTI5OTksImV4cCI6MTc3NDYxMzg5OX0.t5EgLqJk6iYh7zLEjrA4LnGPPKAJ5Wc5scaVpJnqWF4\",\n  \"usef_member_id\": \"10004\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_app}}/auth/register/usef-lookup",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"auth",
+										"register",
+										"usef-lookup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "491"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1eb-sSoPH7nB6CYS2LMlYYvFD1rUCVw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 27 Mar 2026 12:09:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": true,\n    \"message\": \"USEF member profile fetched successfully\",\n    \"data\": {\n        \"usef_member_id\": \"10004\",\n        \"first_name\": \"Woody\",\n        \"last_name\": \"Sheriff\",\n        \"member_name\": \"Woody Sheriff\",\n        \"email\": \"customercare@usef.org\",\n        \"phone_country_code\": \"+1\",\n        \"phone_number\": \"8593333333\",\n        \"membership_status\": \"INACTIVE\",\n        \"membership_type\": \"CHARGE SHOW PASS FEE\",\n        \"category\": \"AMATEUR\",\n        \"effective_date\": \"2022-03-24T00:00:00\",\n        \"expiration_date\": \"2023-03-23T00:00:00\",\n        \"city\": \"Lexington\",\n        \"state\": \"KY\",\n        \"country\": \"UNITED STATES\"\n    }\n}"
 						}
 					]
 				},
