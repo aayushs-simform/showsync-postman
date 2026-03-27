@@ -3617,8 +3617,8 @@
 					},
 					"response": [
 						{
-							"id": "49347587-4d511206-c42e-43ee-abd3-9d7cad26d1e1",
-							"name": "*USEF Lookup",
+							"id": "49347587-498bdbfe-d995-46eb-98d6-806c6665af3e",
+							"name": "USEF Lookup",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -3635,14 +3635,14 @@
 									"variable": [
 										{
 											"key": "usef_horse_id",
-											"value": "2000001"
+											"value": "10002"
 										}
 									]
 								}
 							},
 							"status": "OK",
 							"code": 200,
-							"_postman_previewlanguage": "Text",
+							"_postman_previewlanguage": "json",
 							"header": [
 								{
 									"key": "Content-Security-Policy",
@@ -3702,19 +3702,21 @@
 								},
 								{
 									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
+									"value": "application/json",
+									"description": "",
+									"type": "text"
 								},
 								{
 									"key": "Content-Length",
-									"value": "273"
+									"value": "377"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"111-QH1naOp0PmOACdl2jlcNpn89014\""
+									"value": "W/\"179-qlzWfeOxf/DLA1/XYGSyoGpMMxE\""
 								},
 								{
 									"key": "Date",
-									"value": "Mon, 23 Mar 2026 06:01:52 GMT"
+									"value": "Fri, 27 Mar 2026 12:36:42 GMT"
 								},
 								{
 									"key": "Connection",
@@ -3725,9 +3727,15 @@
 									"value": "timeout=5"
 								}
 							],
-							"cookie": [],
+							"cookie": [
+								{
+									"expires": "Invalid Date",
+									"domain": "",
+									"path": ""
+								}
+							],
 							"responseTime": null,
-							"body": "{\n    \"status\": true,\n    \"message\": \"Horse details fetched from USEF.\",\n    \"data\": {\n        \"usef_horse_id\": \"2000001\",\n        \"horse_name\": \"Thunderstrike\",\n        \"usef_number\": \"USEF-5001\",\n        \"breed\": \"Warmblood\",\n        \"gender\": \"GELDING\",\n        \"date_of_birth\": \"2018-04-15\",\n        \"color\": \"Bay\",\n        \"sire\": \"Thunderbolt\",\n        \"dam\": \"Silver Star\"\n    }\n}"
+							"body": "{\n    \"status\": true,\n    \"message\": \"Horse details fetched from USEF.\",\n    \"data\": {\n        \"usef_horse_id\": \"10002\",\n        \"horse_name\": \"BULLSEYE\",\n        \"usef_number\": null,\n        \"breed\": \"QUARTER HORSE\",\n        \"breed_registration_no\": null,\n        \"gender\": \"Gelding\",\n        \"date_of_birth\": \"1999-11-13T00:00:00\",\n        \"color\": \"BAY\",\n        \"height\": \"15.2\",\n        \"measurement_card_no\": null,\n        \"hunter_green_status\": \"Horse ID\",\n        \"sire\": \"\",\n        \"dam\": \"\",\n        \"microchip_number\": \"\"\n    }\n}"
 						}
 					]
 				},
