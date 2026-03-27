@@ -9263,8 +9263,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "1ee5cdfa-0f28-458d-b6fd-bf69251d1435",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -9289,7 +9288,10 @@
 													"  pm.expect(body.data).to.be.an('object');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
@@ -9460,8 +9462,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "85f2f1a9-eb5c-47e4-a7b5-a3e259dcd63b",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -9471,7 +9472,10 @@
 													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
@@ -14630,8 +14634,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "d44bd392-32ec-4b43-a987-c1f08c8b02e5",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -14656,7 +14659,10 @@
 													"  pm.expect(body.data).to.be.an('array');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
