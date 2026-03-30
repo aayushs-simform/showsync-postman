@@ -12492,6 +12492,15 @@
 									"request": {
 										"method": "POST",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"signer_name\": \"Aayush Solanki\",\n    \"electronic_consent\": true\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/waiver/sign",
 											"host": [
