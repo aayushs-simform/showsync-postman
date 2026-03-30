@@ -9421,6 +9421,200 @@
 									]
 								},
 								{
+									"name": "Add horse to Enrollment",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "70c182b1-582f-4d15-a016-23d301cc9738",
+												"exec": [
+													"pm.test('Status code is 201', function () {",
+													"  pm.response.to.have.status(201);",
+													"});",
+													"",
+													"pm.test('Response time is less than 1000ms', function () {",
+													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+													"});",
+													"",
+													"pm.test('Response status is true', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.status).to.be.true;",
+													"});",
+													"",
+													"pm.test('Response has a message', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+													"});",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
+											}
+										}
+									],
+									"id": "49347587-5016b0e0-9282-48e7-abb1-7a587884b9a0",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"horse_ids\": [\n        \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\"\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"enrollments",
+												":enrollmentId",
+												"horses"
+											],
+											"variable": [
+												{
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-8efcfa09-c89a-4e81-950b-c72f4bfc26ce",
+											"name": "New Request",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"horse_ids\": [\n        \"dfad0293-1270-4dca-9a66-7290c1a2e02b\"\n    ]\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/entries/:entryId/horses",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"entries",
+														":entryId",
+														"horses"
+													],
+													"variable": [
+														{
+															"key": "entryId",
+															"value": "{{entryId}}"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "Text",
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "63"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"3f-6/jKykkqXBt3EMx6y649dhlNzZQ\""
+												},
+												{
+													"key": "Date",
+													"value": "Fri, 20 Mar 2026 13:49:26 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Horse selection saved successfully.\"\n}"
+										}
+									]
+								},
+								{
 									"name": "List all classes horses registered on",
 									"event": [
 										{
@@ -9686,7 +9880,7 @@
 									"response": []
 								},
 								{
-									"name": "Add Trainer to Horse",
+									"name": "Assign Trainer to Horse",
 									"event": [
 										{
 											"listen": "test",
@@ -9890,12 +10084,13 @@
 									]
 								},
 								{
-									"name": "Add horse to Enrollment",
+									"name": "Assign Rider to the Horse",
 									"event": [
 										{
 											"listen": "test",
 											"script": {
-												"id": "70c182b1-582f-4d15-a016-23d301cc9738",
+												"type": "text/javascript",
+												"packages": {},
 												"exec": [
 													"pm.test('Status code is 201', function () {",
 													"  pm.response.to.have.status(201);",
@@ -9915,14 +10110,11 @@
 													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 													"});",
 													""
-												],
-												"type": "text/javascript",
-												"packages": {},
-												"requests": {}
+												]
 											}
 										}
 									],
-									"id": "49347587-5016b0e0-9282-48e7-abb1-7a587884b9a0",
+									"id": "49347587-b626855c-7624-40a2-93a0-de76fc0ca50b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9931,7 +10123,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_ids\": [\n        \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\"\n    ]\n}",
+											"raw": "[\n    {\n        \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n        \"rider_id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n    }\n]",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -9939,7 +10131,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses/:horseId/riders",
 											"host": [
 												"{{base_app}}"
 											],
@@ -9947,26 +10139,32 @@
 												"shows",
 												"enrollments",
 												":enrollmentId",
-												"horses"
+												"horses",
+												":horseId",
+												"riders"
 											],
 											"variable": [
 												{
 													"key": "enrollmentId",
 													"value": "{{enrollmentId}}"
+												},
+												{
+													"key": "horseId",
+													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
 												}
 											]
 										}
 									},
 									"response": [
 										{
-											"id": "49347587-8efcfa09-c89a-4e81-950b-c72f4bfc26ce",
-											"name": "New Request",
+											"id": "49347587-71d9c6f6-91ec-4bec-a578-4e18f4b26d3a",
+											"name": "Assign Rider to the Horse",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n    \"horse_ids\": [\n        \"dfad0293-1270-4dca-9a66-7290c1a2e02b\"\n    ]\n}",
+													"raw": "[\n    {\n        \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n        \"rider_id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n    }\n]",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -9974,20 +10172,26 @@
 													}
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/:entryId/horses",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses/:horseId/riders",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														":entryId",
-														"horses"
+														"enrollments",
+														":enrollmentId",
+														"horses",
+														":horseId",
+														"riders"
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "{{entryId}}"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
+														},
+														{
+															"key": "horseId",
+															"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
 														}
 													]
 												}
@@ -10058,15 +10262,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "63"
+													"value": "65"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"3f-6/jKykkqXBt3EMx6y649dhlNzZQ\""
+													"value": "W/\"41-WbQDKJS5BlJHH0DKFxfXO+MckDo\""
 												},
 												{
 													"key": "Date",
-													"value": "Fri, 20 Mar 2026 13:49:26 GMT"
+													"value": "Thu, 26 Mar 2026 04:10:54 GMT"
 												},
 												{
 													"key": "Connection",
@@ -10079,7 +10283,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Horse selection saved successfully.\"\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Rider assigned to class successfully.\"\n}"
 										}
 									]
 								},
@@ -10478,210 +10682,6 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Class rider options fetched successfully.\",\n    \"data\": {\n        \"current_rider_id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\",\n        \"options\": [\n            {\n                \"id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\",\n                \"full_name\": \"Aayush Rider\"\n            }\n        ]\n    }\n}"
-										}
-									]
-								},
-								{
-									"name": "Assign Rider to the Horse",
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"type": "text/javascript",
-												"packages": {},
-												"exec": [
-													"pm.test('Status code is 201', function () {",
-													"  pm.response.to.have.status(201);",
-													"});",
-													"",
-													"pm.test('Response time is less than 1000ms', function () {",
-													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-													"});",
-													"",
-													"pm.test('Response status is true', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.status).to.be.true;",
-													"});",
-													"",
-													"pm.test('Response has a message', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-													"});",
-													""
-												]
-											}
-										}
-									],
-									"id": "49347587-b626855c-7624-40a2-93a0-de76fc0ca50b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "[\n    {\n        \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n        \"rider_id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n    }\n]",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses/:horseId/riders",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"enrollments",
-												":enrollmentId",
-												"horses",
-												":horseId",
-												"riders"
-											],
-											"variable": [
-												{
-													"key": "enrollmentId",
-													"value": "{{enrollmentId}}"
-												},
-												{
-													"key": "horseId",
-													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
-												}
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-71d9c6f6-91ec-4bec-a578-4e18f4b26d3a",
-											"name": "Assign Rider to the Horse",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "[\n    {\n        \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n        \"rider_id\": \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n    }\n]",
-													"options": {
-														"raw": {
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/horses/:horseId/riders",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"enrollments",
-														":enrollmentId",
-														"horses",
-														":horseId",
-														"riders"
-													],
-													"variable": [
-														{
-															"key": "enrollmentId",
-															"value": "{{enrollmentId}}"
-														},
-														{
-															"key": "horseId",
-															"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
-														}
-													]
-												}
-											},
-											"status": "Created",
-											"code": 201,
-											"_postman_previewlanguage": "Text",
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "65"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"41-WbQDKJS5BlJHH0DKFxfXO+MckDo\""
-												},
-												{
-													"key": "Date",
-													"value": "Thu, 26 Mar 2026 04:10:54 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Rider assigned to class successfully.\"\n}"
 										}
 									]
 								}
