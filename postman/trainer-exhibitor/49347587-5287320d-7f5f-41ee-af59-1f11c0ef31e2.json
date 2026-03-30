@@ -15747,7 +15747,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Cities List",
 					"id": "49347587-9c373459-0709-4350-bfb4-ec9d2db9e087",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
