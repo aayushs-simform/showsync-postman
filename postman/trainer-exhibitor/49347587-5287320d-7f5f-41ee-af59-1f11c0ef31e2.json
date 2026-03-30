@@ -11481,8 +11481,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "c901c05a-448d-45de-a717-ec1255b60b16",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -11492,7 +11491,10 @@
 													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
@@ -11508,7 +11510,7 @@
 											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/complete",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/prize-distribution",
 											"host": [
 												"{{base_app}}"
 											],
@@ -11516,7 +11518,7 @@
 												"shows",
 												"enrollments",
 												":enrollmentId",
-												"complete"
+												"prize-distribution"
 											],
 											"variable": [
 												{
@@ -11540,8 +11542,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "cbe494bd-6726-4d30-bc6a-bb5ac6b59f4d",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -11566,7 +11567,10 @@
 													"  pm.expect(body.data).to.be.an('object');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
