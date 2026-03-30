@@ -9305,7 +9305,7 @@
 									},
 									"response": [
 										{
-											"id": "49347587-1fb2c22b-dbac-4f11-a1a1-9c75506a35d9",
+											"id": "49347587-7f3e132d-121f-4113-915f-b8fa0445b29c",
 											"name": "List horses in the show",
 											"originalRequest": {
 												"method": "GET",
@@ -9330,7 +9330,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "json",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -9390,21 +9390,19 @@
 												},
 												{
 													"key": "Content-Type",
-													"value": "application/json",
-													"description": "",
-													"type": "text"
+													"value": "application/json; charset=utf-8"
 												},
 												{
 													"key": "Content-Length",
-													"value": "446"
+													"value": "872"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"1be-m3EDuOLcckCLmeYXlx5tqKNsjDM\""
+													"value": "W/\"368-0uD4iwaS4HgHWRDUOLzbZDQRZP4\""
 												},
 												{
 													"key": "Date",
-													"value": "Mon, 30 Mar 2026 09:22:15 GMT"
+													"value": "Mon, 30 Mar 2026 09:44:42 GMT"
 												},
 												{
 													"key": "Connection",
@@ -9415,15 +9413,9 @@
 													"value": "timeout=5"
 												}
 											],
-											"cookie": [
-												{
-													"expires": "Invalid Date",
-													"domain": "",
-													"path": ""
-												}
-											],
+											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Registered horses fetched successfully.\",\n    \"data\": [\n        {\n            \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n            \"horse_name\": \"Water Lightning\",\n            \"usef_horse_id\": \"2000003\",\n            \"trainer\": {\n                \"id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n                \"full_name\": \"Aayush Solanki\"\n            },\n            \"assistant_trainer\": {\n                \"id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n                \"full_name\": \"Aayush Solanki\"\n            },\n            \"payer\": {\n                \"id\": \"0161d00b-719b-419d-a460-90a16b704d56\",\n                \"full_name\": \"Aayush Owner\"\n            }\n        }\n    ]\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Registered horses fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n            \"horse_name\": \"Water Lightning\",\n            \"usef_horse_id\": \"2000003\",\n            \"trainer\": {\n                \"id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n                \"full_name\": \"Aayush Solanki\"\n            },\n            \"assistant_trainer\": {\n                \"id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n                \"full_name\": \"Aayush Solanki\"\n            },\n            \"payer\": {\n                \"id\": \"0161d00b-719b-419d-a460-90a16b704d56\",\n                \"full_name\": \"Aayush Owner\"\n            },\n            \"health_documents\": [\n                {\n                    \"id\": \"9cd66e07-9292-4540-91a9-8e8a7d5689af\",\n                    \"document_type\": \"COGGINS\",\n                    \"verification_status\": \"PENDING\",\n                    \"issued_date\": null,\n                    \"expiry_date\": null,\n                    \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/75f433e4-cec5-4a21-948b-c55b92b68be3?sv=2026-02-06&spr=https&st=2026-03-30T09%3A44%3A20Z&se=2026-03-30T10%3A44%3A20Z&sr=b&sp=r&sig=BO9M7EaljoW2QzXbGjVWxckkLQM3VFLXaNcctpgu6L0%3D\"\n                }\n            ]\n        }\n    ]\n}"
 										}
 									]
 								},
