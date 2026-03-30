@@ -3747,98 +3747,48 @@
 				},
 				{
 					"name": "Health Documents",
-					"item": [],
-					"id": "49347587-2667326e-d783-4431-b46d-4125e6feccc4"
-				},
-				{
-					"name": "Health Document - Request SAS URL",
-					"event": [
+					"item": [
 						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"packages": {},
-								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
-									"});",
-									"",
-									"pm.test('Response time is less than 1000ms', function () {",
-									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-									"});",
-									"",
-									"pm.test('Response status is true', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.status).to.be.true;",
-									"});",
-									"",
-									"pm.test('Response has a message', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									""
-								]
-							}
-						}
-					],
-					"id": "49347587-7737ef5e-8c53-4560-9536-26ab68de6d86",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-ms-blob-type",
-								"value": "BlockBlob",
-								"type": "text",
-								"disabled": true
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/pdf",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366,\n    \"document_type\": \"COGGINS\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{base_app}}/horses/:id/documents/upload-url",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"horses",
-								":id",
-								"documents",
-								"upload-url"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
-								}
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "49347587-49814a74-f998-4d98-b887-23f17334c785",
 							"name": "Health Document - Request SAS URL",
-							"originalRequest": {
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											"",
+											"pm.test('Response data is an object', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('object');",
+											"});",
+											""
+										]
+									}
+								}
+							],
+							"id": "49347587-7737ef5e-8c53-4560-9536-26ab68de6d86",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
 								"method": "POST",
 								"header": [
 									{
@@ -3877,172 +3827,191 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "b463957c-fcde-41f1-9292-6c82472b85c5"
+											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
 										}
 									]
 								}
 							},
-							"status": "Created",
-							"code": 201,
-							"_postman_previewlanguage": "Text",
-							"header": [
+							"response": [
 								{
-									"key": "Content-Security-Policy",
-									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-								},
-								{
-									"key": "Cross-Origin-Opener-Policy",
-									"value": "same-origin"
-								},
-								{
-									"key": "Cross-Origin-Resource-Policy",
-									"value": "same-origin"
-								},
-								{
-									"key": "Origin-Agent-Cluster",
-									"value": "?1"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "no-referrer"
-								},
-								{
-									"key": "Strict-Transport-Security",
-									"value": "max-age=31536000; includeSubDomains"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-DNS-Prefetch-Control",
-									"value": "off"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "Vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Access-Control-Allow-Credentials",
-									"value": "true"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "470"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"1d6-shjjYVzWqquan10po9a0G7IV9DE\""
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 13 Mar 2026 08:16:34 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"status\": true,\n    \"message\": \"Upload URL generated successfully.\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/1a9763ab-8824-4d61-a368-aa57f9a38fda?sv=2026-02-06&spr=https&st=2026-03-13T08%3A16%3A34Z&se=2026-03-13T08%3A26%3A34Z&sr=b&sp=w&sig=r7duBrCdRHc1%2BMK9lQhKFgpgHhoOUPVzT5ZQRGqrUQk%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"horse-documents/1a9763ab-8824-4d61-a368-aa57f9a38fda\",\n        \"expires_at\": \"2026-03-13T08:25:34.489Z\"\n    }\n}"
-						}
-					]
-				},
-				{
-					"name": "Health Documents - List",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"packages": {},
-								"exec": [
-									"pm.test('Status code is 200', function () {",
-									"  pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test('Response time is less than 1000ms', function () {",
-									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-									"});",
-									"",
-									"pm.test('Response status is true', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.status).to.be.true;",
-									"});",
-									"",
-									"pm.test('Response has a message', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-									"});",
-									"",
-									"pm.test('Response data is an array', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('array');",
-									"});",
-									""
-								]
-							}
-						}
-					],
-					"id": "49347587-388c01cf-4ded-4adf-abec-507a9b3dbe77",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"file_type\": \"application/pdf\",\n    \"file_size\": 204800,\n    \"document_type\": \"COGGINS\"\n}"
-						},
-						"url": {
-							"raw": "{{base_app}}/horses/:id/documents",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"horses",
-								":id",
-								"documents"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+									"id": "49347587-49814a74-f998-4d98-b887-23f17334c785",
+									"name": "Health Document - Request SAS URL",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-ms-blob-type",
+												"value": "BlockBlob",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/pdf",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366,\n    \"document_type\": \"COGGINS\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_app}}/horses/:id/documents/upload-url",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"horses",
+												":id",
+												"documents",
+												"upload-url"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "b463957c-fcde-41f1-9292-6c82472b85c5"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "470"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1d6-shjjYVzWqquan10po9a0G7IV9DE\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 13 Mar 2026 08:16:34 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Upload URL generated successfully.\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/1a9763ab-8824-4d61-a368-aa57f9a38fda?sv=2026-02-06&spr=https&st=2026-03-13T08%3A16%3A34Z&se=2026-03-13T08%3A26%3A34Z&sr=b&sp=w&sig=r7duBrCdRHc1%2BMK9lQhKFgpgHhoOUPVzT5ZQRGqrUQk%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"horse-documents/1a9763ab-8824-4d61-a368-aa57f9a38fda\",\n        \"expires_at\": \"2026-03-13T08:25:34.489Z\"\n    }\n}"
 								}
 							]
-						}
-					},
-					"response": [
+						},
 						{
-							"id": "49347587-1b5aa445-4be9-47c1-a37e-6f0537ae0215",
-							"name": "New Request",
-							"originalRequest": {
+							"name": "Health Documents - List",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 200', function () {",
+											"  pm.response.to.have.status(200);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											"",
+											"pm.test('Response data is an array', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('array');",
+											"});",
+											""
+										]
+									}
+								}
+							],
+							"id": "49347587-388c01cf-4ded-4adf-abec-507a9b3dbe77",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
 								"method": "GET",
 								"header": [],
 								"body": {
@@ -4062,188 +4031,182 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "b463957c-fcde-41f1-9292-6c82472b85c5"
+											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
 										}
 									]
 								}
 							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "Text",
-							"header": [
+							"response": [
 								{
-									"key": "Content-Security-Policy",
-									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-								},
-								{
-									"key": "Cross-Origin-Opener-Policy",
-									"value": "same-origin"
-								},
-								{
-									"key": "Cross-Origin-Resource-Policy",
-									"value": "same-origin"
-								},
-								{
-									"key": "Origin-Agent-Cluster",
-									"value": "?1"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "no-referrer"
-								},
-								{
-									"key": "Strict-Transport-Security",
-									"value": "max-age=31536000; includeSubDomains"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-DNS-Prefetch-Control",
-									"value": "off"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "Vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Access-Control-Allow-Credentials",
-									"value": "true"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Content-Length",
-									"value": "1104"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"450-WR12+CpM8v8f16fdytPoxQFDLc8\""
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 13 Mar 2026 07:20:36 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"status\": true,\n    \"message\": \"Documents fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"b0f1c6b3-a0d3-458c-b50a-de5cafce36a1\",\n            \"document_type\": \"COGGINS\",\n            \"issued_date\": \"2024-01-10\",\n            \"expiry_date\": \"2025-01-10\",\n            \"file_size\": 4366,\n            \"original_file_name\": \"health-doc.pdf\",\n            \"verification_status\": \"PENDING\",\n            \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/02e01f58-ecb3-4264-83bc-7f7d2dc45b53?sv=2026-02-06&spr=https&st=2026-03-13T07%3A20%3A36Z&se=2026-03-13T08%3A20%3A36Z&sr=b&sp=r&sig=t6pIVVZkCwRonkLml6f7oE66hPXc0JrYa0QIWhaHMhQ%3D\",\n            \"created_at\": \"2026-03-13T07:20:17.307Z\"\n        },\n        {\n            \"id\": \"af21fff0-2dd3-43c3-9913-a1f1eaadf00e\",\n            \"document_type\": \"COGGINS\",\n            \"issued_date\": \"2024-01-10\",\n            \"expiry_date\": \"2025-01-10\",\n            \"file_size\": 4366,\n            \"original_file_name\": \"health-doc.pdf\",\n            \"verification_status\": \"PENDING\",\n            \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/02e01f58-ecb3-4264-83bc-7f7d2dc45b53?sv=2026-02-06&spr=https&st=2026-03-13T07%3A20%3A36Z&se=2026-03-13T08%3A20%3A36Z&sr=b&sp=r&sig=t6pIVVZkCwRonkLml6f7oE66hPXc0JrYa0QIWhaHMhQ%3D\",\n            \"created_at\": \"2026-03-13T07:18:05.095Z\"\n        }\n    ]\n}"
-						}
-					]
-				},
-				{
-					"name": "Health Documents - Confirm",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"packages": {},
-								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
-									"});",
-									"",
-									"pm.test('Response time is less than 1000ms', function () {",
-									"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-									"});",
-									"",
-									"pm.test('Response status is true', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.status).to.be.true;",
-									"});",
-									"",
-									"pm.test('Response has a message', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-									"});",
-									"",
-									"pm.test('Response data is an object', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.be.an('object');",
-									"});",
-									"",
-									"pm.test('Response data has an id', function () {",
-									"  const body = pm.response.json();",
-									"  pm.expect(body.data).to.have.property('id');",
-									"});",
-									""
-								]
-							}
-						}
-					],
-					"id": "49347587-6ba61aef-c0c5-4121-8de7-ce04530a62fe",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"blob_name\": \"horse-documents/5d6d32ab-3842-48f9-b26b-a8e165791192\",\n    \"issued_date\": \"2024-01-10\",\n    \"expiry_date\": \"2025-01-10\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{base_app}}/horses/:id/documents/confirm",
-							"host": [
-								"{{base_app}}"
-							],
-							"path": [
-								"horses",
-								":id",
-								"documents",
-								"confirm"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+									"id": "49347587-1b5aa445-4be9-47c1-a37e-6f0537ae0215",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"file_name\": \"health-doc.pdf\",\n    \"file_type\": \"application/pdf\",\n    \"file_size\": 204800,\n    \"document_type\": \"COGGINS\"\n}"
+										},
+										"url": {
+											"raw": "{{base_app}}/horses/:id/documents",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"horses",
+												":id",
+												"documents"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "b463957c-fcde-41f1-9292-6c82472b85c5"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1104"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"450-WR12+CpM8v8f16fdytPoxQFDLc8\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 13 Mar 2026 07:20:36 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Documents fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"b0f1c6b3-a0d3-458c-b50a-de5cafce36a1\",\n            \"document_type\": \"COGGINS\",\n            \"issued_date\": \"2024-01-10\",\n            \"expiry_date\": \"2025-01-10\",\n            \"file_size\": 4366,\n            \"original_file_name\": \"health-doc.pdf\",\n            \"verification_status\": \"PENDING\",\n            \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/02e01f58-ecb3-4264-83bc-7f7d2dc45b53?sv=2026-02-06&spr=https&st=2026-03-13T07%3A20%3A36Z&se=2026-03-13T08%3A20%3A36Z&sr=b&sp=r&sig=t6pIVVZkCwRonkLml6f7oE66hPXc0JrYa0QIWhaHMhQ%3D\",\n            \"created_at\": \"2026-03-13T07:20:17.307Z\"\n        },\n        {\n            \"id\": \"af21fff0-2dd3-43c3-9913-a1f1eaadf00e\",\n            \"document_type\": \"COGGINS\",\n            \"issued_date\": \"2024-01-10\",\n            \"expiry_date\": \"2025-01-10\",\n            \"file_size\": 4366,\n            \"original_file_name\": \"health-doc.pdf\",\n            \"verification_status\": \"PENDING\",\n            \"read_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/02e01f58-ecb3-4264-83bc-7f7d2dc45b53?sv=2026-02-06&spr=https&st=2026-03-13T07%3A20%3A36Z&se=2026-03-13T08%3A20%3A36Z&sr=b&sp=r&sig=t6pIVVZkCwRonkLml6f7oE66hPXc0JrYa0QIWhaHMhQ%3D\",\n            \"created_at\": \"2026-03-13T07:18:05.095Z\"\n        }\n    ]\n}"
 								}
 							]
-						}
-					},
-					"response": [
+						},
 						{
-							"id": "49347587-d1db107e-b79a-4795-8222-72f0ed2f3f46",
 							"name": "Health Documents - Confirm",
-							"originalRequest": {
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
+											"});",
+											"",
+											"pm.test('Response time is less than 1000ms', function () {",
+											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+											"});",
+											"",
+											"pm.test('Response status is true', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.status).to.be.true;",
+											"});",
+											"",
+											"pm.test('Response has a message', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+											"});",
+											"",
+											"pm.test('Response data is an object', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.be.an('object');",
+											"});",
+											"",
+											"pm.test('Response data has an id', function () {",
+											"  const body = pm.response.json();",
+											"  pm.expect(body.data).to.have.property('id');",
+											"});",
+											""
+										]
+									}
+								}
+							],
+							"id": "49347587-6ba61aef-c0c5-4121-8de7-ce04530a62fe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"blob_name\": \"horse-documents/6ee2fd5f-2023-4d1c-a572-255b4e292279\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366,\n    \"document_type\": \"COGGINS\",\n    \"issued_date\": \"2024-01-10\",\n    \"expiry_date\": \"2025-01-10\"\n}",
+									"raw": "{\n    \"blob_name\": \"horse-documents/5d6d32ab-3842-48f9-b26b-a8e165791192\",\n    \"issued_date\": \"2024-01-10\",\n    \"expiry_date\": \"2025-01-10\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4264,201 +4227,166 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "b463957c-fcde-41f1-9292-6c82472b85c5"
+											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
 										}
 									]
 								}
 							},
-							"status": "Created",
-							"code": 201,
-							"_postman_previewlanguage": "json",
-							"header": [
+							"response": [
 								{
-									"key": "Content-Security-Policy",
-									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-								},
-								{
-									"key": "Cross-Origin-Opener-Policy",
-									"value": "same-origin"
-								},
-								{
-									"key": "Cross-Origin-Resource-Policy",
-									"value": "same-origin"
-								},
-								{
-									"key": "Origin-Agent-Cluster",
-									"value": "?1"
-								},
-								{
-									"key": "Referrer-Policy",
-									"value": "no-referrer"
-								},
-								{
-									"key": "Strict-Transport-Security",
-									"value": "max-age=31536000; includeSubDomains"
-								},
-								{
-									"key": "X-Content-Type-Options",
-									"value": "nosniff"
-								},
-								{
-									"key": "X-DNS-Prefetch-Control",
-									"value": "off"
-								},
-								{
-									"key": "X-Download-Options",
-									"value": "noopen"
-								},
-								{
-									"key": "X-Frame-Options",
-									"value": "SAMEORIGIN"
-								},
-								{
-									"key": "X-Permitted-Cross-Domain-Policies",
-									"value": "none"
-								},
-								{
-									"key": "X-XSS-Protection",
-									"value": "0"
-								},
-								{
-									"key": "Vary",
-									"value": "Origin"
-								},
-								{
-									"key": "Access-Control-Allow-Credentials",
-									"value": "true"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json",
-									"description": "",
-									"type": "text"
-								},
-								{
-									"key": "Content-Length",
-									"value": "298"
-								},
-								{
-									"key": "ETag",
-									"value": "W/\"12a-e6zXsL/PyZavmZE47782P6rIrA4\""
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 13 Mar 2026 08:25:02 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "keep-alive"
-								},
-								{
-									"key": "Keep-Alive",
-									"value": "timeout=5"
-								}
-							],
-							"cookie": [
-								{
-									"expires": "Invalid Date",
-									"domain": "",
-									"path": ""
-								}
-							],
-							"responseTime": null,
-							"body": "{\n    \"status\": true,\n    \"message\": \"Document uploaded successfully.\",\n    \"data\": {\n        \"id\": \"9c7051cb-5f5a-473b-996f-5bee82554ee0\",\n        \"document_type\": \"COGGINS\",\n        \"issued_date\": \"2024-01-10T00:00:00.000Z\",\n        \"expiry_date\": \"2025-01-10T00:00:00.000Z\",\n        \"file_size\": 4366,\n        \"file_name\": \"health-doc.pdf\",\n        \"verification_status\": \"PENDING\"\n    }\n}"
-						}
-					]
-				},
-				{
-					"name": "Health Document - Upload File",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"packages": {},
-								"exec": [
-									"pm.test('Status code is 201', function () {",
-									"  pm.response.to.have.status(201);",
-									"});"
-								]
-							}
-						}
-					],
-					"id": "49347587-b6642ac1-48b1-4dd9-ab7a-f1602e65bfe0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-ms-blob-type",
-								"value": "BlockBlob",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "file",
-							"file": {
-								"src": "/home/aayush/projects/Project Estimator/templates/task_estimation_template.xlsx"
-							}
-						},
-						"url": {
-							"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/dc8f4fa6-6998-4e5e-b234-c5225c7a4e49?sv=2026-02-06&spr=https&st=2026-03-18T08%3A47%3A57Z&se=2026-03-18T08%3A57%3A57Z&sr=b&sp=w&sig=Pq9JLmTH9QpZtkkomb6cjxzocRHHAEVj3wrxiVo7G1A%3D&rsct=application%2Fpdf",
-							"protocol": "https",
-							"host": [
-								"devshowsyncstorage",
-								"blob",
-								"core",
-								"windows",
-								"net"
-							],
-							"path": [
-								"showsync",
-								"show-prize-documents",
-								"dc8f4fa6-6998-4e5e-b234-c5225c7a4e49"
-							],
-							"query": [
-								{
-									"key": "sv",
-									"value": "2026-02-06"
-								},
-								{
-									"key": "spr",
-									"value": "https"
-								},
-								{
-									"key": "st",
-									"value": "2026-03-18T08%3A47%3A57Z"
-								},
-								{
-									"key": "se",
-									"value": "2026-03-18T08%3A57%3A57Z"
-								},
-								{
-									"key": "sr",
-									"value": "b"
-								},
-								{
-									"key": "sp",
-									"value": "w"
-								},
-								{
-									"key": "sig",
-									"value": "Pq9JLmTH9QpZtkkomb6cjxzocRHHAEVj3wrxiVo7G1A%3D"
-								},
-								{
-									"key": "rsct",
-									"value": "application%2Fpdf"
+									"id": "49347587-d1db107e-b79a-4795-8222-72f0ed2f3f46",
+									"name": "Health Documents - Confirm",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6ee2fd5f-2023-4d1c-a572-255b4e292279\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366,\n    \"document_type\": \"COGGINS\",\n    \"issued_date\": \"2024-01-10\",\n    \"expiry_date\": \"2025-01-10\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_app}}/horses/:id/documents/confirm",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"horses",
+												":id",
+												"documents",
+												"confirm"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "b463957c-fcde-41f1-9292-6c82472b85c5"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Content-Length",
+											"value": "298"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12a-e6zXsL/PyZavmZE47782P6rIrA4\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 13 Mar 2026 08:25:02 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Document uploaded successfully.\",\n    \"data\": {\n        \"id\": \"9c7051cb-5f5a-473b-996f-5bee82554ee0\",\n        \"document_type\": \"COGGINS\",\n        \"issued_date\": \"2024-01-10T00:00:00.000Z\",\n        \"expiry_date\": \"2025-01-10T00:00:00.000Z\",\n        \"file_size\": 4366,\n        \"file_name\": \"health-doc.pdf\",\n        \"verification_status\": \"PENDING\"\n    }\n}"
 								}
 							]
-						}
-					},
-					"response": [
+						},
 						{
-							"id": "49347587-74ad35ca-f9f3-493c-aeff-fdd5f9e348e4",
-							"name": "New Request",
-							"originalRequest": {
+							"name": "Health Document - Upload File",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"packages": {},
+										"exec": [
+											"pm.test('Status code is 201', function () {",
+											"  pm.response.to.have.status(201);",
+											"});"
+										]
+									}
+								}
+							],
+							"id": "49347587-b6642ac1-48b1-4dd9-ab7a-f1602e65bfe0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
 								"method": "PUT",
 								"header": [
 									{
@@ -4470,16 +4398,11 @@
 								"body": {
 									"mode": "file",
 									"file": {
-										"src": "/home/aayush/Downloads/AI_Prompts_Productivity_Guide.pdf"
-									},
-									"options": {
-										"raw": {
-											"language": "json"
-										}
+										"src": "/home/aayush/projects/Project Estimator/templates/task_estimation_template.xlsx"
 									}
 								},
 								"url": {
-									"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/0ec9ffb0-2e4d-4855-b733-0d770abbfab6?sv=2026-02-06&spr=https&st=2026-03-13T07%3A05%3A53Z&se=2026-03-13T07%3A15%3A53Z&sr=b&sp=w&sig=X1W79UwvYfKzVG8HHUuYexodKBik46QyeosB4aRPbKU%3D&rsct=application%2Fpdf",
+									"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/show-prize-documents/dc8f4fa6-6998-4e5e-b234-c5225c7a4e49?sv=2026-02-06&spr=https&st=2026-03-18T08%3A47%3A57Z&se=2026-03-18T08%3A57%3A57Z&sr=b&sp=w&sig=Pq9JLmTH9QpZtkkomb6cjxzocRHHAEVj3wrxiVo7G1A%3D&rsct=application%2Fpdf",
 									"protocol": "https",
 									"host": [
 										"devshowsyncstorage",
@@ -4490,8 +4413,8 @@
 									],
 									"path": [
 										"showsync",
-										"horse-documents",
-										"0ec9ffb0-2e4d-4855-b733-0d770abbfab6"
+										"show-prize-documents",
+										"dc8f4fa6-6998-4e5e-b234-c5225c7a4e49"
 									],
 									"query": [
 										{
@@ -4504,11 +4427,11 @@
 										},
 										{
 											"key": "st",
-											"value": "2026-03-13T07%3A05%3A53Z"
+											"value": "2026-03-18T08%3A47%3A57Z"
 										},
 										{
 											"key": "se",
-											"value": "2026-03-13T07%3A15%3A53Z"
+											"value": "2026-03-18T08%3A57%3A57Z"
 										},
 										{
 											"key": "sr",
@@ -4520,7 +4443,7 @@
 										},
 										{
 											"key": "sig",
-											"value": "X1W79UwvYfKzVG8HHUuYexodKBik46QyeosB4aRPbKU%3D"
+											"value": "Pq9JLmTH9QpZtkkomb6cjxzocRHHAEVj3wrxiVo7G1A%3D"
 										},
 										{
 											"key": "rsct",
@@ -4529,56 +4452,139 @@
 									]
 								}
 							},
-							"status": "Created",
-							"code": 201,
-							"_postman_previewlanguage": "Text",
-							"header": [
+							"response": [
 								{
-									"key": "Content-Length",
-									"value": "0"
-								},
-								{
-									"key": "Content-MD5",
-									"value": "avBfXkVD2eGwvpOQcBEh5g=="
-								},
-								{
-									"key": "Last-Modified",
-									"value": "Fri, 13 Mar 2026 07:06:06 GMT"
-								},
-								{
-									"key": "ETag",
-									"value": "\"0x8DE80CEFF25D2D7\""
-								},
-								{
-									"key": "Server",
-									"value": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0"
-								},
-								{
-									"key": "x-ms-request-id",
-									"value": "978de104-b01e-005f-71b7-b2d8fd000000"
-								},
-								{
-									"key": "x-ms-version",
-									"value": "2026-02-06"
-								},
-								{
-									"key": "x-ms-content-crc64",
-									"value": "a0ykc+Uq34A="
-								},
-								{
-									"key": "x-ms-request-server-encrypted",
-									"value": "true"
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 13 Mar 2026 07:06:05 GMT"
+									"id": "49347587-74ad35ca-f9f3-493c-aeff-fdd5f9e348e4",
+									"name": "New Request",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "x-ms-blob-type",
+												"value": "BlockBlob",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "file",
+											"file": {
+												"src": "/home/aayush/Downloads/AI_Prompts_Productivity_Guide.pdf"
+											},
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/0ec9ffb0-2e4d-4855-b733-0d770abbfab6?sv=2026-02-06&spr=https&st=2026-03-13T07%3A05%3A53Z&se=2026-03-13T07%3A15%3A53Z&sr=b&sp=w&sig=X1W79UwvYfKzVG8HHUuYexodKBik46QyeosB4aRPbKU%3D&rsct=application%2Fpdf",
+											"protocol": "https",
+											"host": [
+												"devshowsyncstorage",
+												"blob",
+												"core",
+												"windows",
+												"net"
+											],
+											"path": [
+												"showsync",
+												"horse-documents",
+												"0ec9ffb0-2e4d-4855-b733-0d770abbfab6"
+											],
+											"query": [
+												{
+													"key": "sv",
+													"value": "2026-02-06"
+												},
+												{
+													"key": "spr",
+													"value": "https"
+												},
+												{
+													"key": "st",
+													"value": "2026-03-13T07%3A05%3A53Z"
+												},
+												{
+													"key": "se",
+													"value": "2026-03-13T07%3A15%3A53Z"
+												},
+												{
+													"key": "sr",
+													"value": "b"
+												},
+												{
+													"key": "sp",
+													"value": "w"
+												},
+												{
+													"key": "sig",
+													"value": "X1W79UwvYfKzVG8HHUuYexodKBik46QyeosB4aRPbKU%3D"
+												},
+												{
+													"key": "rsct",
+													"value": "application%2Fpdf"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Content-MD5",
+											"value": "avBfXkVD2eGwvpOQcBEh5g=="
+										},
+										{
+											"key": "Last-Modified",
+											"value": "Fri, 13 Mar 2026 07:06:06 GMT"
+										},
+										{
+											"key": "ETag",
+											"value": "\"0x8DE80CEFF25D2D7\""
+										},
+										{
+											"key": "Server",
+											"value": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0"
+										},
+										{
+											"key": "x-ms-request-id",
+											"value": "978de104-b01e-005f-71b7-b2d8fd000000"
+										},
+										{
+											"key": "x-ms-version",
+											"value": "2026-02-06"
+										},
+										{
+											"key": "x-ms-content-crc64",
+											"value": "a0ykc+Uq34A="
+										},
+										{
+											"key": "x-ms-request-server-encrypted",
+											"value": "true"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 13 Mar 2026 07:06:05 GMT"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": null
+							]
 						}
-					]
+					],
+					"id": "49347587-2667326e-d783-4431-b46d-4125e6feccc4"
+				},
+				{
+					"name": "*Show History",
+					"item": [],
+					"id": "49347587-5ecd2f80-0ff7-4dd7-a14a-e4a2a34c7269"
 				}
 			],
 			"id": "49347587-e25b011a-753c-4ef1-b9f7-b5bfd7ca3af7"
