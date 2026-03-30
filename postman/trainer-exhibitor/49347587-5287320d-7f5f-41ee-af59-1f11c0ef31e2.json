@@ -9879,7 +9879,7 @@
 									"response": []
 								},
 								{
-									"name": "Assign People to Horse",
+									"name": "Assign Trainer / Assit. Trainer / Payer to Horse",
 									"event": [
 										{
 											"listen": "test",
