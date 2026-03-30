@@ -8245,198 +8245,6 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Entry started successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"created_at\": \"2026-03-20T13:35:46.837Z\",\n        \"wizard_step\": \"RIDER_TRAINER_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"status\": \"ENTERED\"\n    }\n}"
 										}
 									]
-								},
-								{
-									"name": "Enrollement Details",
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"id": "b570d0db-0cee-4ff4-9a96-01e66a58f6f9",
-												"exec": [
-													"pm.test('Status code is 200', function () {",
-													"  pm.response.to.have.status(200);",
-													"});",
-													"",
-													"pm.test('Response time is less than 1000ms', function () {",
-													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-													"});",
-													"",
-													"pm.test('Response status is true', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.status).to.be.true;",
-													"});",
-													"",
-													"pm.test('Response has a message', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-													"});",
-													"",
-													"pm.test('Response data is an object', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.be.an('object');",
-													"});",
-													"",
-													"pm.test('Response data has an id', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.have.property('id');",
-													"});",
-													""
-												],
-												"type": "text/javascript",
-												"packages": {},
-												"requests": {}
-											}
-										}
-									],
-									"id": "49347587-8ad403be-626e-425d-ad44-103c660e84a9",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentId",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"enrollments",
-												":enrollmentId"
-											],
-											"variable": [
-												{
-													"key": "enrollmentId",
-													"value": "1ab170a0-bbdd-4441-a990-a6dbaf9ba134"
-												}
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-da010963-eeb7-4df2-b8b7-566c18b45b51",
-											"name": "Entry Details",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/enrollments/:enrollmentId",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"enrollments",
-														":enrollmentId"
-													],
-													"variable": [
-														{
-															"key": "enrollmentId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
-														}
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "Text",
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "314"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"13a-kbe3CT4DKY0GuXeUhm4XyWUKQuo\""
-												},
-												{
-													"key": "Date",
-													"value": "Thu, 26 Mar 2026 04:06:21 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment fetched successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"wizard_step\": \"COMPLETED\",\n        \"wizard_completed_at\": \"2026-03-21T15:09:40.717Z\",\n        \"owner_payout_percent\": \"40.00\",\n        \"rider_payout_percent\": \"30.00\",\n        \"trainer_payout_percent\": \"30.00\",\n        \"status\": \"ENTERED\",\n        \"riders\": []\n    }\n}"
-										}
-									]
 								}
 							],
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
@@ -8854,13 +8662,12 @@
 									]
 								},
 								{
-									"name": "View Entry",
+									"name": "Enrollement Details",
 									"event": [
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "b570d0db-0cee-4ff4-9a96-01e66a58f6f9",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -8890,17 +8697,24 @@
 													"  pm.expect(body.data).to.have.property('id');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
-									"id": "49347587-4bc0dd90-684a-4f95-9bca-7ed08faf5f09",
+									"id": "49347587-8ad403be-626e-425d-ad44-103c660e84a9",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+										},
 										"url": {
 											"raw": "{{base_app}}/shows/enrollments/:id",
 											"host": [
@@ -8914,31 +8728,35 @@
 											"variable": [
 												{
 													"key": "id",
-													"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+													"value": "1ab170a0-bbdd-4441-a990-a6dbaf9ba134"
 												}
 											]
 										}
 									},
 									"response": [
 										{
-											"id": "49347587-f0106a7b-71bb-438e-98c0-0d6addcb6454",
-											"name": "View Entry",
+											"id": "49347587-da010963-eeb7-4df2-b8b7-566c18b45b51",
+											"name": "Entry Details",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
 												"url": {
-													"raw": "{{base_app}}/shows/enrollments/:id",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
 														"enrollments",
-														":id"
+														":enrollmentId"
 													],
 													"variable": [
 														{
-															"key": "id",
+															"key": "enrollmentId",
 															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
 														}
 													]
@@ -9010,15 +8828,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "951"
+													"value": "314"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"3b7-8iSKRBU0Wajjw7DOGT5bb/ZT9Eo\""
+													"value": "W/\"13a-kbe3CT4DKY0GuXeUhm4XyWUKQuo\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 14:05:12 GMT"
+													"value": "Thu, 26 Mar 2026 04:06:21 GMT"
 												},
 												{
 													"key": "Connection",
@@ -9031,7 +8849,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Entry fetched successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"created_at\": \"2026-03-20T13:35:46.837Z\",\n        \"owner_id\": \"40ab009c-13fb-4f59-a9d3-00b9129934eb\",\n        \"show_id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n        \"trainer_id\": null,\n        \"payer_id\": null,\n        \"wizard_step\": \"RIDER_TRAINER_SELECTION\",\n        \"wizard_completed_at\": null,\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\",\n        \"tax_document_id\": null,\n        \"status\": \"ENTERED\",\n        \"riders\": [],\n        \"horse_entries\": [\n            {\n                \"id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                \"created_at\": \"2026-03-20T13:48:45.055Z\",\n                \"entry_id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n                \"show_id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n                \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                \"owner_id\": \"40ab009c-13fb-4f59-a9d3-00b9129934eb\",\n                \"trainer_id\": null,\n                \"payer_id\": null,\n                \"status\": \"ENTERED\",\n                \"entry_date\": \"2026-03-20T13:48:45.050Z\",\n                \"wizard_step\": \"HORSE_SELECTION\",\n                \"wizard_completed_at\": null\n            }\n        ]\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment fetched successfully.\",\n    \"data\": {\n        \"id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n        \"wizard_step\": \"COMPLETED\",\n        \"wizard_completed_at\": \"2026-03-21T15:09:40.717Z\",\n        \"owner_payout_percent\": \"40.00\",\n        \"rider_payout_percent\": \"30.00\",\n        \"trainer_payout_percent\": \"30.00\",\n        \"status\": \"ENTERED\",\n        \"riders\": []\n    }\n}"
 										}
 									]
 								}
