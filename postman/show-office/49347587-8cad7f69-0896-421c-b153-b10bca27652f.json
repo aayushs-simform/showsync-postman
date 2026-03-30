@@ -1806,8 +1806,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "45990aab-c86b-433f-9f82-fa5de76f10de",
 										"exec": [
 											"pm.test('Status code is 200', function () {",
 											"  pm.response.to.have.status(200);",
@@ -1839,7 +1838,10 @@
 											"  pm.expect(body.data).to.be.an('array');",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -2674,7 +2676,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n//   \"venue_id\": \"bf307249-0821-40c5-ac1c-124680163ad8\"\n//   \"circuit_name\": \"USEF Circuit\",\n//   \"start_date\": \"2026-07-10\",\n//   \"end_date\": \"2026-07-15\",\n//   \"registration_opening_date\": \"2026-05-01\",\n//   \"registration_closing_date\": \"2026-06-30\",\n//   \"is_usef_required\": true,\n//   \"total_stalls_allowed\": 200,\n//   \"stall_fee\": \"150.00\",\n//   \"total_rv_space_allowed\": 50,\n//   \"rv_fee\": \"75.00\",\n//   \"pump_out_fee\": \"75.00\",\n//   \"total_paddock_allowed\": 20,\n//   \"paddock_fee\": \"120.00\",\n//   \"require_advance_payment\": false,\n//   \"enable_late_fee\": true,\n//   \"late_fee_amount\": \"50.00\",\n//   \"entry_number_assignment\": \"AUTO\",\n//   \"entry_number_start\": 100\n}",
+									"raw": "{\n    \"show_name\": \"San Francisco Equestrian - 2026\"\n//   \"venue_id\": \"bf307249-0821-40c5-ac1c-124680163ad8\"\n//   \"circuit_name\": \"USEF Circuit\",\n//   \"start_date\": \"2026-07-10\",\n//   \"end_date\": \"2026-07-15\",\n//   \"registration_opening_date\": \"2026-05-01\",\n//   \"registration_closing_date\": \"2026-06-30\",\n//   \"is_usef_required\": true,\n//   \"total_stalls_allowed\": 200,\n//   \"stall_fee\": \"150.00\",\n//   \"total_rv_space_allowed\": 50,\n//   \"rv_fee\": \"75.00\",\n//   \"pump_out_fee\": \"75.00\",\n//   \"total_paddock_allowed\": 20,\n//   \"paddock_fee\": \"120.00\",\n//   \"require_advance_payment\": false,\n//   \"enable_late_fee\": true,\n//   \"late_fee_amount\": \"50.00\",\n//   \"entry_number_assignment\": \"AUTO\",\n//   \"entry_number_start\": 100\n}",
 									"options": {
 										"raw": {
 											"language": "json"
