@@ -5961,7 +5961,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\n    {\n        // \"id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 4s\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                // \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                \"arena_id\": \"f83825ae-5a7d-42b8-b0d2-f8b4004385ba\",\n                \"class_id\": \"J107\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"60.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"score_required\": \"ONE\", //ONE, TWO\n                \"table_type\": \"TABLE_A\",\n                \"apply_nomination_fee\": true\n                // \"course_map_blob_name\": \"show-course-maps/95802461-9d14-46b0-a987-6a1cbeea6b8f\"\n            },\n            {\n                \"arena_id\": \"f83825ae-5a7d-42b8-b0d2-f8b4004385ba\",\n                \"class_id\": \"J108\",\n                \"class_name\": \"2.0m Open\",\n                \"fee\": \"60.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"score_required\": \"ONE\", //ONE, TWO\n                \"table_type\": \"TABLE_A\",\n                \"apply_nomination_fee\": true\n                // \"course_map_blob_name\": \"show-course-maps/95802461-9d14-46b0-a987-6a1cbeea6b8f\"\n            }\n        ]\n    }\n]",
+									"raw": "[\n    {\n        // \"id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n        \"division_type\": \"JUMPER\",\n        \"division_name\": \"Open Jumpers 4s\",\n        \"display_order\": 1,\n        \"classes\": [\n            {\n                // \"id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                \"arena_id\": \"411a323f-a99a-489a-91c3-0c85ede8b0cf\",\n                \"class_id\": \"J107\",\n                \"class_name\": \"1.0m Open\",\n                \"fee\": \"60.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"score_required\": \"ONE\", //ONE, TWO\n                \"table_type\": \"TABLE_A\",\n                \"apply_nomination_fee\": true\n                // \"course_map_blob_name\": \"show-course-maps/95802461-9d14-46b0-a987-6a1cbeea6b8f\"\n            },\n            {\n                \"arena_id\": \"f83825ae-5a7d-42b8-b0d2-f8b4004385ba\",\n                \"class_id\": \"J108\",\n                \"class_name\": \"2.0m Open\",\n                \"fee\": \"60.00\",\n                \"class_date\": \"2026-03-15T08:00:00Z\",\n                \"score_required\": \"ONE\", //ONE, TWO\n                \"table_type\": \"TABLE_A\",\n                \"apply_nomination_fee\": true\n                // \"course_map_blob_name\": \"show-course-maps/95802461-9d14-46b0-a987-6a1cbeea6b8f\"\n            }\n        ]\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -12254,7 +12254,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_org}}/venues?page=1&limit=1",
+							"raw": "{{base_org}}/venues",
 							"host": [
 								"{{base_org}}"
 							],
@@ -12264,11 +12264,13 @@
 							"query": [
 								{
 									"key": "page",
-									"value": "1"
+									"value": "1",
+									"disabled": true
 								},
 								{
 									"key": "limit",
-									"value": "1"
+									"value": "1",
+									"disabled": true
 								}
 							]
 						}
@@ -12401,8 +12403,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
-								"packages": {},
+								"id": "137132fb-d81f-4aba-8e2a-32173abad36f",
 								"exec": [
 									"pm.test('Status code is 200', function () {",
 									"  pm.response.to.have.status(200);",
@@ -12432,7 +12433,10 @@
 									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
-								]
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -12455,7 +12459,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "1163b66f-fd67-4ab9-8509-47d42b4ebd5c"
+									"value": "0661e1e7-1e98-4f76-9312-d5086610b5cc"
 								}
 							]
 						}
