@@ -5797,14 +5797,24 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "List Categories",
 					"id": "49347587-ffd2386e-de30-462e-b01e-ffb016879ade",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{base_app}}/people/categories",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"people",
+								"categories"
+							]
+						}
 					},
 					"response": []
 				}
