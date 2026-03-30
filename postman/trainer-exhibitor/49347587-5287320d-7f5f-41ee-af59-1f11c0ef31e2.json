@@ -14767,6 +14767,195 @@
 							"name": "Show Entries",
 							"item": [
 								{
+									"name": "Class Overview",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "bf27a49e-4538-489d-9a50-8cb4150fb506",
+												"exec": [
+													"pm.test('Status code is 200', function () {",
+													"  pm.response.to.have.status(200);",
+													"});",
+													"",
+													"pm.test('Response time is less than 1000ms', function () {",
+													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
+													"});",
+													"",
+													"pm.test('Response status is true', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.status).to.be.true;",
+													"});",
+													"",
+													"pm.test('Response has a message', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
+													"});",
+													"",
+													"pm.test('Response data is an object', function () {",
+													"  const body = pm.response.json();",
+													"  pm.expect(body.data).to.be.an('object');",
+													"});",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
+											}
+										}
+									],
+									"id": "49347587-176ff4f1-f6d0-4076-8f82-aafbfbcf532b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/class-overview",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"enrollments",
+												":enrollmentId",
+												"class-overview"
+											],
+											"variable": [
+												{
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "49347587-689f8df3-d36a-4e2e-ab85-6e1507b130c4",
+											"name": "Class Overview",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": ""
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/class-overview",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"enrollments",
+														":enrollmentId",
+														"class-overview"
+													],
+													"variable": [
+														{
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "Text",
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "494"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"1ee-qmxqJdNoVV3eEEajeBsXQ3v0MIY\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 26 Mar 2026 04:31:26 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Class overview fetched successfully.\",\n    \"data\": {\n        \"horses\": [\n            {\n                \"horse_entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                \"horse_name\": \"Thunder's Lightning\",\n                \"divisions\": [\n                    {\n                        \"division_id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n                        \"division_name\": \"Open Jumpers 4\",\n                        \"classes\": [\n                            {\n                                \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                                \"class_name\": \"1.0m Open\",\n                                \"class_date\": \"14-03-2026\",\n                                \"class_time\": null,\n                                \"fee\": \"50.00\",\n                                \"is_entered\": true\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}"
+										}
+									]
+								},
+								{
 									"name": "My Entries in the class",
 									"event": [
 										{
@@ -14964,195 +15153,6 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Class entries fetched successfully.\",\n    \"data\": [\n        {\n            \"entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n            \"horse_name\": \"Thunder's Lightning\",\n            \"rider_name\": \" \",\n            \"ride_order\": null,\n            \"result\": null,\n            \"class_date\": \"2026-03-15T08:00:00.000Z\",\n            \"class_time\": null\n        }\n    ]\n}"
-										}
-									]
-								},
-								{
-									"name": "Class Overview",
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"id": "bf27a49e-4538-489d-9a50-8cb4150fb506",
-												"exec": [
-													"pm.test('Status code is 200', function () {",
-													"  pm.response.to.have.status(200);",
-													"});",
-													"",
-													"pm.test('Response time is less than 1000ms', function () {",
-													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
-													"});",
-													"",
-													"pm.test('Response status is true', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.status).to.be.true;",
-													"});",
-													"",
-													"pm.test('Response has a message', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
-													"});",
-													"",
-													"pm.test('Response data is an object', function () {",
-													"  const body = pm.response.json();",
-													"  pm.expect(body.data).to.be.an('object');",
-													"});",
-													""
-												],
-												"type": "text/javascript",
-												"packages": {},
-												"requests": {}
-											}
-										}
-									],
-									"id": "49347587-176ff4f1-f6d0-4076-8f82-aafbfbcf532b",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
-										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/class-overview",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"enrollments",
-												":enrollmentId",
-												"class-overview"
-											],
-											"variable": [
-												{
-													"key": "enrollmentId",
-													"value": "{{enrollmentId}}"
-												}
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "49347587-689f8df3-d36a-4e2e-ab85-6e1507b130c4",
-											"name": "Class Overview",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"body": {
-													"mode": "raw",
-													"raw": ""
-												},
-												"url": {
-													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/class-overview",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"enrollments",
-														":enrollmentId",
-														"class-overview"
-													],
-													"variable": [
-														{
-															"key": "enrollmentId",
-															"value": "{{enrollmentId}}"
-														}
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "Text",
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "494"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"1ee-qmxqJdNoVV3eEEajeBsXQ3v0MIY\""
-												},
-												{
-													"key": "Date",
-													"value": "Thu, 26 Mar 2026 04:31:26 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Class overview fetched successfully.\",\n    \"data\": {\n        \"horses\": [\n            {\n                \"horse_entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                \"horse_name\": \"Thunder's Lightning\",\n                \"divisions\": [\n                    {\n                        \"division_id\": \"11e121db-79e6-4d23-b619-d7b8ef429eff\",\n                        \"division_name\": \"Open Jumpers 4\",\n                        \"classes\": [\n                            {\n                                \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\",\n                                \"class_name\": \"1.0m Open\",\n                                \"class_date\": \"14-03-2026\",\n                                \"class_time\": null,\n                                \"fee\": \"50.00\",\n                                \"is_entered\": true\n                            }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n}"
 										}
 									]
 								},
