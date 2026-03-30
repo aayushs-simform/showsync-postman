@@ -11505,17 +11505,8 @@
 									"request": {
 										"method": "POST",
 										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n    \"rider_payout_percent\": 30,\n    \"trainer_payout_percent\": 30\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
 										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/prize-distribution",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/complete",
 											"host": [
 												"{{base_app}}"
 											],
@@ -11523,7 +11514,7 @@
 												"shows",
 												"enrollments",
 												":enrollmentId",
-												"prize-distribution"
+												"complete"
 											],
 											"variable": [
 												{
