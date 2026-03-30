@@ -15198,7 +15198,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n    \"class_id\": \"3227e4c7-0aba-4950-bb9d-11c44d09965c\"\n}",
+											"raw": "{\n    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n    \"class_id\": \"3227e4c7-0aba-4950-bb9d-11c44d09965c\",\n    \"rider_id\": \"\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
