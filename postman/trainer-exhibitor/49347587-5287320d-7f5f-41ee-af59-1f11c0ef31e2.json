@@ -10520,53 +10520,51 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentsId/docs",
+											"raw": "{{base_app}}/shows/:showId/required-docs",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"shows",
-												"enrollments",
-												":enrollmentsId",
-												"docs"
+												":showId",
+												"required-docs"
 											],
 											"variable": [
 												{
-													"key": "enrollmentsId",
-													"value": "{{enrollmentId}}"
+													"key": "showId",
+													"value": "{{showId}}"
 												}
 											]
 										}
 									},
 									"response": [
 										{
-											"id": "49347587-807b1fea-7c97-4b11-a1c4-0ebfc9e2866e",
-											"name": "(entries) Requirements and Documents",
+											"id": "49347587-03a70e7d-a42d-4c98-adc8-6bdac1fef876",
+											"name": "List of Required Documents",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{base_app}}/shows/enrollments/:enrollmentsId/docs",
+													"raw": "{{base_app}}/shows/:showId/required-docs",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"enrollments",
-														":enrollmentsId",
-														"docs"
+														":showId",
+														"required-docs"
 													],
 													"variable": [
 														{
-															"key": "enrollmentsId",
-															"value": "{{enrollmentId}}"
+															"key": "showId",
+															"value": "{{showId}}"
 														}
 													]
 												}
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -10630,15 +10628,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "1413"
+													"value": "336"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"585-Z5X9CL8MvNmfFKb43MPDkYkPNAQ\""
+													"value": "W/\"150-IRE7NJxRW5OkEnz4f7hAjLv3vvs\""
 												},
 												{
 													"key": "Date",
-													"value": "Thu, 26 Mar 2026 04:16:05 GMT"
+													"value": "Mon, 30 Mar 2026 09:54:55 GMT"
 												},
 												{
 													"key": "Connection",
@@ -10651,7 +10649,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Document upload status fetched successfully.\",\n    \"data\": {\n        \"requirements\": [\n            {\n                \"id\": \"3a4ed96c-47c6-473f-ad65-411a7e912cf9\",\n                \"document_type\": \"VACCINATION\",\n                \"issued_within\": \"2026-01-01\",\n                \"valid_until\": \"2026-08-01\"\n            },\n            {\n                \"id\": \"e6686980-2d3a-48ca-bf96-71bca0ccbb44\",\n                \"document_type\": \"RABIES\",\n                \"issued_within\": \"2026-01-01\",\n                \"valid_until\": \"2026-08-01\"\n            },\n            {\n                \"id\": \"fe4dde98-158b-4f65-ac52-ab4d084d914b\",\n                \"document_type\": \"HEALTH_CERTIFICATE\",\n                \"issued_within\": \"2026-01-01\",\n                \"valid_until\": \"2026-08-01\"\n            }\n        ],\n        \"horse_statuses\": [\n            {\n                \"required_types\": [\n                    \"VACCINATION\",\n                    \"RABIES\",\n                    \"HEALTH_CERTIFICATE\"\n                ],\n                \"uploaded_documents\": [\n                    {\n                        \"id\": \"01e00aaa-666c-4536-a7c2-4fc2f08eaf9d\",\n                        \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                        \"document_type\": \"COGGINS\",\n                        \"document_url\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\",\n                        \"issued_date\": null,\n                        \"expiry_date\": null,\n                        \"verification_status\": \"APPROVED\"\n                    },\n                    {\n                        \"id\": \"48d75ab8-0b42-430e-832e-e22b3b9b71db\",\n                        \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                        \"document_type\": \"COGGINS\",\n                        \"document_url\": \"horse-documents/f6e1e41e-f0b6-4299-a1b3-591ca4f5556a\",\n                        \"issued_date\": null,\n                        \"expiry_date\": null,\n                        \"verification_status\": \"PENDING\"\n                    },\n                    {\n                        \"id\": \"0949733c-0e0b-44c0-9a70-fb8d66563807\",\n                        \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                        \"document_type\": \"COGGINS\",\n                        \"document_url\": \"horse-documents/8c6fc280-d8d9-4575-82ab-84d3a2b1b584\",\n                        \"issued_date\": null,\n                        \"expiry_date\": null,\n                        \"verification_status\": \"PENDING\"\n                    }\n                ],\n                \"profile_documents\": []\n            }\n        ]\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Required documents fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"5811a579-ed64-4bed-8867-f76ac91d366a\",\n            \"document_type\": \"VACCINATION\",\n            \"issued_within\": \"2026-01-01\",\n            \"valid_until\": \"2026-08-01\"\n        },\n        {\n            \"id\": \"2af706d6-4afe-4264-89c0-34f1de30c4fd\",\n            \"document_type\": \"RABIES\",\n            \"issued_within\": \"2026-01-01\",\n            \"valid_until\": \"2026-08-01\"\n        }\n    ]\n}"
 										}
 									]
 								},
