@@ -10700,7 +10700,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"document_type\": \"VACCINATION\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
+											"raw": "{\n    \"document_type\": \"RABIES\",\n    \"file_name\": \"health-doc.pdf\",\n    \"mime_type\": \"application/pdf\",\n    \"file_size\": 4366\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -10908,7 +10908,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/c4d0c6fe-6449-4013-9f95-aaf1edd777ad\"\n}",
+											"raw": "{\n    \"blob_name\": \"horse-documents/73f74948-ed4b-47f5-972d-68b741cf422b\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -11524,7 +11524,122 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-f0dae17d-b692-4ce8-a454-31895163d184",
+											"name": "Complete Step",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/complete",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"enrollments",
+														":enrollmentId",
+														"complete"
+													],
+													"variable": [
+														{
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "62"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"3e-gWAvT5TC4zY2sBR5J5WH+SY892Q\""
+												},
+												{
+													"key": "Date",
+													"value": "Mon, 30 Mar 2026 10:47:18 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment completed successfully.\"\n}"
+										}
+									]
 								}
 							],
 							"id": "49347587-1b329d3c-b9fc-477e-9124-bb289795683c"
