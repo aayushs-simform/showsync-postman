@@ -9921,7 +9921,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n    \"payer_id\": \"\"\n}",
+											"raw": "{\n    \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n    \"payer_id\": \"\",\n    \"assistant_trainer_id\": \"\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
