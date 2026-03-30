@@ -9880,7 +9880,7 @@
 									"response": []
 								},
 								{
-									"name": "Assign Trainer to Horse",
+									"name": "Assign People to Horse",
 									"event": [
 										{
 											"listen": "test",
@@ -9917,11 +9917,11 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "POST",
+										"method": "PATCH",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n    \"payer_id\": \"\",\n    \"assistant_trainer_id\": \"\"\n}",
+											"raw": "{\n    \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\", //optional\n    \"payer_id\": \"\", //optional\n    \"assistant_trainer_id\": \"\" //optional\n}",
 											"options": {
 												"raw": {
 													"language": "json"
