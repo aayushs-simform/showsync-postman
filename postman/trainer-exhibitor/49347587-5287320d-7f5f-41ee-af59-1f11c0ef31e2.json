@@ -14741,8 +14741,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "bd4c11e7-8e14-4fb6-b6e9-d0476182804d",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -14752,7 +14751,10 @@
 													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
@@ -14764,13 +14766,20 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/supply-orders/cancel",
+											"raw": "{{base_app}}/supply-orders/:id/cancel",
 											"host": [
 												"{{base_app}}"
 											],
 											"path": [
 												"supply-orders",
+												":id",
 												"cancel"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "c766ed53-aad4-4970-97d0-c50fd8339767"
+												}
 											]
 										}
 									},
