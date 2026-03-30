@@ -10880,8 +10880,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "76f2be92-027c-4a41-bb72-a692032699db",
 												"exec": [
 													"pm.test('Status code is 201', function () {",
 													"  pm.response.to.have.status(201);",
@@ -10901,7 +10900,10 @@
 													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
@@ -10914,7 +10916,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"blob_name\": \"horse-documents/8c6fc280-d8d9-4575-82ab-84d3a2b1b584\"\n}",
+											"raw": "{\n    \"blob_name\": \"horse-documents/75f433e4-cec5-4a21-948b-c55b92b68be3\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -10942,7 +10944,7 @@
 												},
 												{
 													"key": "horseId",
-													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+													"value": "ea6e27a5-2d75-4eca-9af7-2ad5605d9767"
 												}
 											]
 										}
