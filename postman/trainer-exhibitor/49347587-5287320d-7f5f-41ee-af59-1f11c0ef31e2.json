@@ -11356,8 +11356,8 @@
 									},
 									"response": [
 										{
-											"id": "49347587-180d86ea-aff4-46d1-a80f-3c2b2f499dd7",
-											"name": "Get invoice",
+											"id": "49347587-85bce34d-8377-4ad8-9cc8-fd800be51cd3",
+											"name": "Get Payment Summary",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
@@ -11366,27 +11366,27 @@
 													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 												},
 												"url": {
-													"raw": "{{base_app}}/shows/entries/:entryId/payment-summary",
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/payment-summary",
 													"host": [
 														"{{base_app}}"
 													],
 													"path": [
 														"shows",
-														"entries",
-														":entryId",
+														"enrollments",
+														":enrollmentId",
 														"payment-summary"
 													],
 													"variable": [
 														{
-															"key": "entryId",
-															"value": "734a3b0c-a5d1-4011-a1e8-fc4a703c3516"
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
 														}
 													]
 												}
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -11450,15 +11450,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "349"
+													"value": "261"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"15d-di4JNLo5VdRjLJpCxjbVGikJ3A0\""
+													"value": "W/\"105-3ZkhZdq+DhpHSDHCN1/bG5NRaTA\""
 												},
 												{
 													"key": "Date",
-													"value": "Sat, 21 Mar 2026 15:08:12 GMT"
+													"value": "Mon, 30 Mar 2026 10:13:24 GMT"
 												},
 												{
 													"key": "Connection",
@@ -11471,7 +11471,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Payment summary fetched successfully.\",\n    \"data\": {\n        \"horse_breakdowns\": [\n            {\n                \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n                \"entry_id\": \"d3d32258-75e8-405e-957d-86b1f315c973\",\n                \"line_items\": [\n                    {\n                        \"description\": \"Platform fee\",\n                        \"quantity\": 1,\n                        \"unit_price\": \"10\",\n                        \"subtotal\": \"10\"\n                    }\n                ],\n                \"subtotal\": 10\n            }\n        ],\n        \"grand_total\": 10,\n        \"is_late_fee_applied\": false\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Payment summary fetched successfully.\",\n    \"data\": {\n        \"common_fees\": [\n            {\n                \"description\": \"Platform fee\",\n                \"amount\": 10\n            }\n        ],\n        \"horse_breakdowns\": [\n            {\n                \"horse_name\": \"Water Lightning\",\n                \"line_items\": [],\n                \"subtotal\": 0\n            }\n        ],\n        \"grand_total\": 10,\n        \"is_late_fee_applied\": false\n    }\n}"
 										}
 									]
 								},
