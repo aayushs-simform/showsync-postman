@@ -6454,7 +6454,7 @@
 									},
 									"status": "OK",
 									"code": 200,
-									"_postman_previewlanguage": null,
+									"_postman_previewlanguage": "json",
 									"header": [
 										{
 											"key": "Content-Security-Policy",
@@ -6514,7 +6514,9 @@
 										},
 										{
 											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
+											"value": "application/json",
+											"description": "",
+											"type": "text"
 										},
 										{
 											"key": "Content-Length",
@@ -6537,9 +6539,15 @@
 											"value": "timeout=5"
 										}
 									],
-									"cookie": [],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
 									"responseTime": null,
-									"body": "{\n    \"status\": true,\n    \"message\": \"Today's shows fetched successfully.\",\n    \"data\": []\n}"
+									"body": "{\n    \"status\": true,\n    \"message\": \"Today's shows fetched successfully.\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"2026-07-10T00:00:00.000Z\",\n            \"end_date\": \"2026-07-15T00:00:00.000Z\",\n            \"registration_closing_date\": \"2026-06-30T00:00:00.000Z\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"is_enrolled\": true,\n            \"division_types\": [\n                \"JUMPER\",\n                \"HUNTER\"\n            ],\n            \"horses\": [\n                \"Thunder's Lightning\"\n            ]\n        }\n    ]\n}"
 								}
 							]
 						},
