@@ -15868,12 +15868,127 @@
 							"variable": [
 								{
 									"key": "country_code",
-									"value": ""
+									"value": "IN"
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "49347587-09f4e820-444a-437e-b491-0be2628e1138",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/common/countries/:country_code/states",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"common",
+										"countries",
+										":country_code",
+										"states"
+									],
+									"variable": [
+										{
+											"key": "country_code",
+											"value": "IN"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1453"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5ad-b2a9+r7l1socWSpQNNfeYeYIx0U\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Mar 2026 06:37:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": true,\n    \"message\": \"States fetched successfully.\",\n    \"data\": [\n        {\n            \"name\": \"Andaman and Nicobar Islands\",\n            \"iso_code\": \"AN\"\n        },\n        {\n            \"name\": \"Andhra Pradesh\",\n            \"iso_code\": \"AP\"\n        },\n        {\n            \"name\": \"Arunachal Pradesh\",\n            \"iso_code\": \"AR\"\n        },\n        {\n            \"name\": \"Assam\",\n            \"iso_code\": \"AS\"\n        },\n        {\n            \"name\": \"Bihar\",\n            \"iso_code\": \"BR\"\n        },\n        {\n            \"name\": \"Chandigarh\",\n            \"iso_code\": \"CH\"\n        },\n        {\n            \"name\": \"Chhattisgarh\",\n            \"iso_code\": \"CT\"\n        },\n        {\n            \"name\": \"Dadra and Nagar Haveli and Daman and Diu\",\n            \"iso_code\": \"DH\"\n        },\n        {\n            \"name\": \"Delhi\",\n            \"iso_code\": \"DL\"\n        },\n        {\n            \"name\": \"Goa\",\n            \"iso_code\": \"GA\"\n        },\n        {\n            \"name\": \"Gujarat\",\n            \"iso_code\": \"GJ\"\n        },\n        {\n            \"name\": \"Haryana\",\n            \"iso_code\": \"HR\"\n        },\n        {\n            \"name\": \"Himachal Pradesh\",\n            \"iso_code\": \"HP\"\n        },\n        {\n            \"name\": \"Jammu and Kashmir\",\n            \"iso_code\": \"JK\"\n        },\n        {\n            \"name\": \"Jharkhand\",\n            \"iso_code\": \"JH\"\n        },\n        {\n            \"name\": \"Karnataka\",\n            \"iso_code\": \"KA\"\n        },\n        {\n            \"name\": \"Kerala\",\n            \"iso_code\": \"KL\"\n        },\n        {\n            \"name\": \"Ladakh\",\n            \"iso_code\": \"LA\"\n        },\n        {\n            \"name\": \"Lakshadweep\",\n            \"iso_code\": \"LD\"\n        },\n        {\n            \"name\": \"Madhya Pradesh\",\n            \"iso_code\": \"MP\"\n        },\n        {\n            \"name\": \"Maharashtra\",\n            \"iso_code\": \"MH\"\n        },\n        {\n            \"name\": \"Manipur\",\n            \"iso_code\": \"MN\"\n        },\n        {\n            \"name\": \"Meghalaya\",\n            \"iso_code\": \"ML\"\n        },\n        {\n            \"name\": \"Mizoram\",\n            \"iso_code\": \"MZ\"\n        },\n        {\n            \"name\": \"Nagaland\",\n            \"iso_code\": \"NL\"\n        },\n        {\n            \"name\": \"Odisha\",\n            \"iso_code\": \"OR\"\n        },\n        {\n            \"name\": \"Puducherry\",\n            \"iso_code\": \"PY\"\n        },\n        {\n            \"name\": \"Punjab\",\n            \"iso_code\": \"PB\"\n        },\n        {\n            \"name\": \"Rajasthan\",\n            \"iso_code\": \"RJ\"\n        },\n        {\n            \"name\": \"Sikkim\",\n            \"iso_code\": \"SK\"\n        },\n        {\n            \"name\": \"Tamil Nadu\",\n            \"iso_code\": \"TN\"\n        },\n        {\n            \"name\": \"Telangana\",\n            \"iso_code\": \"TG\"\n        },\n        {\n            \"name\": \"Tripura\",\n            \"iso_code\": \"TR\"\n        },\n        {\n            \"name\": \"Uttar Pradesh\",\n            \"iso_code\": \"UP\"\n        },\n        {\n            \"name\": \"Uttarakhand\",\n            \"iso_code\": \"UT\"\n        },\n        {\n            \"name\": \"West Bengal\",\n            \"iso_code\": \"WB\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Cities List",
@@ -15883,7 +15998,35 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+						},
+						"url": {
+							"raw": "{{base_app}}/common/countries/:country_code/states/:state_code/cities",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"common",
+								"countries",
+								":country_code",
+								"states",
+								":state_code",
+								"cities"
+							],
+							"variable": [
+								{
+									"key": "country_code",
+									"value": "IN"
+								},
+								{
+									"key": "state_code",
+									"value": ""
+								}
+							]
+						}
 					},
 					"response": []
 				}
