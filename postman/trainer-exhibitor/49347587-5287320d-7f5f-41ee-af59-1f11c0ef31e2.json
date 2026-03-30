@@ -9929,7 +9929,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/assistant-trainer",
+											"raw": "{{base_app}}/shows/:showId/my-horses/:horseId/people",
 											"host": [
 												"{{base_app}}"
 											],
@@ -9938,7 +9938,7 @@
 												":showId",
 												"my-horses",
 												":horseId",
-												"assistant-trainer"
+												"people"
 											],
 											"variable": [
 												{
