@@ -10667,8 +10667,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "e5142da5-f00c-42c2-b092-cf1bf614839c",
 												"exec": [
 													"pm.test('Status code is 201', function () {",
 													"  pm.response.to.have.status(201);",
@@ -10693,7 +10692,10 @@
 													"  pm.expect(body.data).to.be.an('object');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
@@ -10734,7 +10736,7 @@
 												},
 												{
 													"key": "horseId",
-													"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+													"value": "ea6e27a5-2d75-4eca-9af7-2ad5605d9767"
 												}
 											]
 										}
