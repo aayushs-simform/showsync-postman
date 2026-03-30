@@ -8659,8 +8659,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "fa21dff8-316a-450b-b965-bfbba7eb6fa5",
 												"exec": [
 													"pm.test('Status code is 201', function () {",
 													"  pm.response.to.have.status(201);",
@@ -8690,7 +8689,10 @@
 													"  pm.expect(body.data).to.have.property('id');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
