@@ -5925,8 +5925,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "8ec7706d-f1e6-433d-bcd2-d74aa6f4c7c2",
 										"exec": [
 											"pm.test('Status code is 201', function () {",
 											"  pm.response.to.have.status(201);",
@@ -5946,7 +5945,10 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
