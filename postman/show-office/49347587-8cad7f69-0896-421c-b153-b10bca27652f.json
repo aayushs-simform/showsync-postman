@@ -7667,7 +7667,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "[\n    {\n        \"class_id\": \"3227e4c7-0aba-4950-bb9d-11c44d09965c\",\n        \"prize_money\": \"1000.00\",\n        \"first_place_percentage\": \"60.00\",\n        \"second_place_percentage\": \"20.00\",\n        \"third_place_percentage\": \"20.00\",\n        \"add_back_money\": \"0\"\n    },\n    {\n        \"class_id\": \"3227e4c7-0aba-4950-bb9d-11c44d09965c\",\n        \"prize_money\": \"1000.00\",\n        \"first_place_percentage\": \"60.00\",\n        \"second_place_percentage\": \"20.00\",\n        \"third_place_percentage\": \"20.00\",\n        \"add_back_money\": \"0\"\n    }\n]",
+									"raw": "[\n    {\n        \"class_id\": \"3227e4c7-0aba-4950-bb9d-11c44d09965c\",\n        \"prize_money\": \"1000.00\",\n        \"first_place_percentage\": \"60.00\",\n        \"second_place_percentage\": \"20.00\",\n        \"third_place_percentage\": \"20.00\",\n        \"add_back_money\": \"0\"\n    },\n    {\n        \"class_id\": \"2b2306e1-9264-496e-81cb-2ba7c9a14218\",\n        \"prize_money\": \"1000.00\",\n        \"first_place_percentage\": \"60.00\",\n        \"second_place_percentage\": \"20.00\",\n        \"third_place_percentage\": \"20.00\",\n        \"add_back_money\": \"0\"\n    }\n]",
 									"options": {
 										"raw": {
 											"language": "json"
