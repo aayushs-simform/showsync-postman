@@ -14973,8 +14973,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "bf27a49e-4538-489d-9a50-8cb4150fb506",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -14999,7 +14998,10 @@
 													"  pm.expect(body.data).to.be.an('object');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
@@ -15196,7 +15198,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\"\n}",
+											"raw": "{\n    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n    \"class_id\": \"f7fba716-fdf5-4c16-8f28-9f6f85f20d64\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
