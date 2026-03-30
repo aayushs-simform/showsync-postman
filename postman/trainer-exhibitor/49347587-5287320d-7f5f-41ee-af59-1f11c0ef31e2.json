@@ -15709,8 +15709,46 @@
 			"name": "Common",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Countries",
 					"id": "49347587-4aba8530-3229-4cc9-bebe-5a793b23f281",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+						},
+						"url": {
+							"raw": "{{base_app}}/common/country",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"common",
+								"country"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "States List",
+					"id": "49347587-a11e2671-3c02-4e0c-bfe5-05d017c1ad52",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "49347587-9c373459-0709-4350-bfb4-ec9d2db9e087",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
