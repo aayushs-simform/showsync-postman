@@ -4077,8 +4077,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "72ab40ce-91b7-4178-88c5-94785726f614",
 										"exec": [
 											"pm.test('Status code is 201', function () {",
 											"  pm.response.to.have.status(201);",
@@ -4103,7 +4102,10 @@
 											"  pm.expect(body.data).to.be.an('array');",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -5036,8 +5038,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "cd843083-3519-4ab2-8185-b4a50940cb58",
 										"exec": [
 											"pm.test('Status code is 201', function () {",
 											"  pm.response.to.have.status(201);",
@@ -5062,7 +5063,10 @@
 											"  pm.expect(body.data).to.be.an('array');",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
