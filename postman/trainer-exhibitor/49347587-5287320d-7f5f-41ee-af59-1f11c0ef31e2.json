@@ -15855,13 +15855,21 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_app}}/common/countries",
+							"raw": "{{base_app}}/common/countries/:country_code/states",
 							"host": [
 								"{{base_app}}"
 							],
 							"path": [
 								"common",
-								"countries"
+								"countries",
+								":country_code",
+								"states"
+							],
+							"variable": [
+								{
+									"key": "country_code",
+									"value": ""
+								}
 							]
 						}
 					},
