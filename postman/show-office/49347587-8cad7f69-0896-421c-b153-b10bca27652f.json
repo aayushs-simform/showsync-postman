@@ -2498,7 +2498,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"venue_id\": \"1163b66f-fd67-4ab9-8509-47d42b4ebd5c\",\n  \"show_name\": \"Summer Classic 2023\",\n  \"circuit_name\": \"USEF Circuit\",\n  \"start_date\": \"2026-05-15\",\n  \"end_date\": \"2026-05-30\",\n  \"registration_opening_date\": \"2026-03-15\",\n  \"registration_closing_date\": \"2026-04-15\",\n//   \"is_usef_required\": true,\n  \"total_stalls_allowed\": 200,\n  \"stall_fee\": \"150.00\",\n  \"total_rv_space_allowed\": 50,\n  \"rv_fee\": \"75.00\",\n  \"pump_out_fee\": \"75.00\",\n  \"total_paddock_allowed\": 20,\n  \"paddock_fee\": \"120.00\",\n//   \"require_advance_payment\": false,\n  \"enable_late_fee\": true,\n  \"late_fee_amount\": \"50.00\",\n  \"entry_number_assignment\": \"AUTO\"\n//   \"entry_number_start\": 100,\n//   \"prize_document_blob_name\": \"show-prize-documents/093bb54b-4b23-45b9-a557-75739a2fa8ca\"\n}",
+									"raw": "{\n  \"venue_id\": \"0661e1e7-1e98-4f76-9312-d5086610b5cc\",\n  \"show_name\": \"Summer Classic 2023\",\n  \"circuit_name\": \"USEF Circuit\",\n  \"start_date\": \"2026-05-15\",\n  \"end_date\": \"2026-05-30\",\n  \"registration_opening_date\": \"2026-03-15\",\n  \"registration_closing_date\": \"2026-04-15\",\n//   \"is_usef_required\": true,\n  \"total_stalls_allowed\": 200,\n  \"stall_fee\": \"150.00\",\n  \"total_rv_space_allowed\": 50,\n  \"rv_fee\": \"75.00\",\n  \"pump_out_fee\": \"75.00\",\n  \"total_paddock_allowed\": 20,\n  \"paddock_fee\": \"120.00\",\n//   \"require_advance_payment\": false,\n  \"enable_late_fee\": true,\n  \"late_fee_amount\": \"50.00\",\n  \"entry_number_assignment\": \"AUTO\"\n//   \"entry_number_start\": 100,\n//   \"prize_document_blob_name\": \"show-prize-documents/093bb54b-4b23-45b9-a557-75739a2fa8ca\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2638,8 +2638,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "574efd49-85cb-4cbf-bf3e-c05a10d58d31",
 										"exec": [
 											"pm.test('Status code is 200', function () {",
 											"  pm.response.to.have.status(200);",
@@ -2659,7 +2658,10 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -2672,7 +2674,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"venue_id\": \"bf307249-0821-40c5-ac1c-124680163ad8\"\n//   \"circuit_name\": \"USEF Circuit\",\n//   \"start_date\": \"2026-07-10\",\n//   \"end_date\": \"2026-07-15\",\n//   \"registration_opening_date\": \"2026-05-01\",\n//   \"registration_closing_date\": \"2026-06-30\",\n//   \"is_usef_required\": true,\n//   \"total_stalls_allowed\": 200,\n//   \"stall_fee\": \"150.00\",\n//   \"total_rv_space_allowed\": 50,\n//   \"rv_fee\": \"75.00\",\n//   \"pump_out_fee\": \"75.00\",\n//   \"total_paddock_allowed\": 20,\n//   \"paddock_fee\": \"120.00\",\n//   \"require_advance_payment\": false,\n//   \"enable_late_fee\": true,\n//   \"late_fee_amount\": \"50.00\",\n//   \"entry_number_assignment\": \"AUTO\",\n//   \"entry_number_start\": 100\n}",
+									"raw": "{\n//   \"venue_id\": \"bf307249-0821-40c5-ac1c-124680163ad8\"\n//   \"circuit_name\": \"USEF Circuit\",\n//   \"start_date\": \"2026-07-10\",\n//   \"end_date\": \"2026-07-15\",\n//   \"registration_opening_date\": \"2026-05-01\",\n//   \"registration_closing_date\": \"2026-06-30\",\n//   \"is_usef_required\": true,\n//   \"total_stalls_allowed\": 200,\n//   \"stall_fee\": \"150.00\",\n//   \"total_rv_space_allowed\": 50,\n//   \"rv_fee\": \"75.00\",\n//   \"pump_out_fee\": \"75.00\",\n//   \"total_paddock_allowed\": 20,\n//   \"paddock_fee\": \"120.00\",\n//   \"require_advance_payment\": false,\n//   \"enable_late_fee\": true,\n//   \"late_fee_amount\": \"50.00\",\n//   \"entry_number_assignment\": \"AUTO\",\n//   \"entry_number_start\": 100\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2691,7 +2693,7 @@
 									"variable": [
 										{
 											"key": "id",
-											"value": "bd48c858-f29f-43ab-b8d4-c7356da2cc68"
+											"value": "9638551f-52f1-4bcd-9e23-541b1b0d5a0c"
 										}
 									]
 								}
