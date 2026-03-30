@@ -5795,6 +5795,18 @@
 							"body": "{\n    \"status\": true,\n    \"message\": \"Person deactivated successfully.\"\n}"
 						}
 					]
+				},
+				{
+					"name": "New Request",
+					"id": "49347587-ffd2386e-de30-462e-b01e-ffb016879ade",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "49347587-8054f1f1-2ebb-4608-b9fe-307de307d0ed"
