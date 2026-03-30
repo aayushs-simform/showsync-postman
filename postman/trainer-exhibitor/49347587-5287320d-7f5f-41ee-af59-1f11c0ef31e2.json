@@ -12482,6 +12482,37 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"W9 uploaded and linked successfully.\"\n}"
 										}
 									]
+								},
+								{
+									"name": "Sign Liability Waiver Document",
+									"id": "49347587-047c7ae0-d6c8-4b2f-9a7f-982885b63090",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/waiver/sign",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"enrollments",
+												":enrollmentId",
+												"waiver",
+												"sign"
+											],
+											"variable": [
+												{
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-5e5da3f8-9a8a-47dc-b4fe-e1f965b7365c"
