@@ -9931,7 +9931,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_ids\": [\n        \"dfad0293-1270-4dca-9a66-7290c1a2e02b\"\n    ]\n}",
+											"raw": "{\n    \"horse_ids\": [\n        \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\"\n    ]\n}",
 											"options": {
 												"raw": {
 													"language": "json"
