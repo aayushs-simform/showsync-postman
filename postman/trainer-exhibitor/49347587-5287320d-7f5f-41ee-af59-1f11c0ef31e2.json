@@ -7933,7 +7933,7 @@
 									},
 									"response": [
 										{
-											"id": "49347587-6d8f005c-12c5-4ab3-9089-bc4951303c23",
+											"id": "49347587-a6dbab95-4598-4ea0-9138-953dc178d995",
 											"name": "Entry - Preflight",
 											"originalRequest": {
 												"method": "GET",
@@ -7963,7 +7963,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "Text",
+											"_postman_previewlanguage": null,
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -8027,15 +8027,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "591"
+													"value": "568"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"24f-BajVxNfXp6saUY8f0u+qdy9ZpRs\""
+													"value": "W/\"238-7xdSGuLFKukcTGgpqIsn6cX5XYQ\""
 												},
 												{
 													"key": "Date",
-													"value": "Thu, 26 Mar 2026 04:04:39 GMT"
+													"value": "Mon, 30 Mar 2026 05:43:38 GMT"
 												},
 												{
 													"key": "Connection",
@@ -8048,7 +8048,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment preflight fetched successfully.\",\n    \"data\": {\n        \"show\": {\n            \"id\": \"c38389e9-dae1-4e42-8f62-06492edede51\",\n            \"show_name\": \"Summer Classic 2026\",\n            \"start_date\": \"10-07-2026\",\n            \"end_date\": \"15-07-2026\",\n            \"registration_closing_date\": \"30-06-2026\",\n            \"total_stalls_allowed\": 200,\n            \"stall_fee\": \"150.00\",\n            \"total_rv_space_allowed\": 50,\n            \"rv_fee\": \"75.00\",\n            \"platform_fee\": \"10.00\",\n            \"enable_late_fee\": true,\n            \"late_fee_amount\": \"50.00\",\n            \"venue_name\": \"Golden Gate Equestrian Center\"\n        },\n        \"is_usef_verified\": true,\n        \"existing_entry\": {\n            \"enrollment_id\": \"734a3b0c-a5d1-4011-a1e8-fc4a703c3516\",\n            \"wizard_step\": \"COMPLETED\"\n        }\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment preflight fetched successfully.\",\n    \"data\": {\n        \"show\": {\n            \"id\": \"9638551f-52f1-4bcd-9e23-541b1b0d5a0c\",\n            \"show_name\": \"San Francisco Equestrian - 2026\",\n            \"start_date\": \"15-05-2026\",\n            \"end_date\": \"30-05-2026\",\n            \"registration_opening_date\": \"15-03-2026\",\n            \"registration_closing_date\": \"15-04-2026\",\n            \"total_stalls_allowed\": 200,\n            \"stall_fee\": \"150.00\",\n            \"total_rv_space_allowed\": 50,\n            \"rv_fee\": \"75.00\",\n            \"platform_fee\": \"10.00\",\n            \"enable_late_fee\": true,\n            \"late_fee_amount\": \"50.00\",\n            \"venue_name\": \"San Francisco Equestrian Center\"\n        },\n        \"is_usef_verified\": true,\n        \"existing_entry\": null\n    }\n}"
 										}
 									]
 								},
@@ -8058,8 +8058,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "7aad673c-0f29-4e7d-8450-da9f7bfd56b7",
 												"exec": [
 													"pm.test('Status code is 201', function () {",
 													"  pm.response.to.have.status(201);",
@@ -8089,7 +8088,10 @@
 													"  pm.expect(body.data).to.have.property('id');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
