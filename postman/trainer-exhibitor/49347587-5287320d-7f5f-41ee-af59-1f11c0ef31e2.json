@@ -11284,7 +11284,7 @@
 							"id": "49347587-ec92a23c-8c23-40b2-8c6e-d5bf6e1716aa"
 						},
 						{
-							"name": "Show Invoice",
+							"name": "Payment Summary",
 							"item": [
 								{
 									"name": "Get Payment Summary",
