@@ -12962,8 +12962,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "e5c0d8c6-215e-46b4-9a88-c0d014b76dd7",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -12988,7 +12987,10 @@
 													"  pm.expect(body.data).to.be.an('array');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
