@@ -15722,13 +15722,13 @@
 							"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
 						},
 						"url": {
-							"raw": "{{base_app}}/common/country",
+							"raw": "{{base_app}}/common/countries",
 							"host": [
 								"{{base_app}}"
 							],
 							"path": [
 								"common",
-								"country"
+								"countries"
 							]
 						}
 					},
