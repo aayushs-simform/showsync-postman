@@ -4628,12 +4628,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_app}}/people",
+							"raw": "{{base_app}}/people?category=RIDER",
 							"host": [
 								"{{base_app}}"
 							],
 							"path": [
 								"people"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "RIDER"
+								}
 							]
 						}
 					},
