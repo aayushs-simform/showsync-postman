@@ -12054,7 +12054,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/stall-assignments/:assignmentId",
+									"raw": "{{base_org}}/shows/:showId/stall-assignments/enrollment/:assignmentId",
 									"host": [
 										"{{base_org}}"
 									],
@@ -12062,6 +12062,7 @@
 										"shows",
 										":showId",
 										"stall-assignments",
+										"enrollment",
 										":assignmentId"
 									],
 									"variable": [
