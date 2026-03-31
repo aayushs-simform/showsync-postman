@@ -14296,7 +14296,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"pump_out_type\": \"BLACK_WATER\", //BLACK_WATER, GRAY_WATER\n    \"day_of_week\": \"MONDAY\"\n}",
+											"raw": "{\n    \"pump_out_type\": \"BLACK_WATER\", //BLACK_WATER, GRAY_WATER\n    \"day_of_week\": \"MONDAY\",\n    \"rv_space_name\": \"A20\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
