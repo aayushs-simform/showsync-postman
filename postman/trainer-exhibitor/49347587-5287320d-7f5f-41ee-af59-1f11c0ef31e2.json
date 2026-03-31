@@ -13606,13 +13606,42 @@
 							"name": "Show Stalls",
 							"item": [
 								{
+									"name": "List Available Stalls",
+									"id": "49347587-661e821b-676e-41d3-b212-75ad2a7fa51b",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/stalls",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"enrollments",
+												":enrollmentId",
+												"stalls"
+											],
+											"variable": [
+												{
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
 									"name": "Applied Stalls / RVs",
 									"event": [
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "d20c1c65-4c83-4c86-a0a5-a8b3c14112a7",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -13637,7 +13666,10 @@
 													"  pm.expect(body.data).to.be.an('object');",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
