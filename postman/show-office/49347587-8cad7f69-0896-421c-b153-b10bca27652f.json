@@ -12478,8 +12478,17 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "PATCH",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"assigned_rv_spaces\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/rv-assignments/enrollment/:enrollmentId",
 									"host": [
