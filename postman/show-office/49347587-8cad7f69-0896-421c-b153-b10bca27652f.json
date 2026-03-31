@@ -12046,7 +12046,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"stall_names\": \"\"\n}",
+									"raw": "{\n    \"stall_names\": \"A1, A2\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -12083,7 +12083,20 @@
 				},
 				{
 					"name": "**RV Assignment (View)",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "49347587-6ac93eaf-6b67-4336-886c-6e28c848d4c9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "49347587-edb6f362-0d53-42a5-b330-7e62c9aff190"
 				},
 				{
