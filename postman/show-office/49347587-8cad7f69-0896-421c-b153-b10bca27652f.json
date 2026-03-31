@@ -12481,7 +12481,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/rv-assignments/:assignmentId",
+									"raw": "{{base_org}}/shows/:showId/rv-assignments/enrollment/:enrollmentId",
 									"host": [
 										"{{base_org}}"
 									],
@@ -12489,7 +12489,8 @@
 										"shows",
 										":showId",
 										"rv-assignments",
-										":assignmentId"
+										"enrollment",
+										":enrollmentId"
 									],
 									"variable": [
 										{
@@ -12497,7 +12498,7 @@
 											"value": "{{showId}}"
 										},
 										{
-											"key": "assignmentId",
+											"key": "enrollmentId",
 											"value": "1ab170a0-bbdd-4441-a990-a6dbaf9ba134"
 										}
 									]
