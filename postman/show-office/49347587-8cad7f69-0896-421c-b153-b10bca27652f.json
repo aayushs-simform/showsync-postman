@@ -12085,8 +12085,37 @@
 					"name": "**RV Assignment (View)",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "List of RV Requested",
 							"id": "49347587-6ac93eaf-6b67-4336-886c-6e28c848d4c9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/rv-assignments",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"rv-assignments"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Assign RV Spaces",
+							"id": "49347587-67687fe9-4adf-4b22-b74c-020d21fd42d3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
