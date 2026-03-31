@@ -13761,7 +13761,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "",
+											"raw": "{\n    \"horse_id\": \"\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
