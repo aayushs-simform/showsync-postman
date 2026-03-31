@@ -4594,22 +4594,16 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_app}}/shows/:showId/my-horses/:id/show-history",
+									"raw": "{{base_app}}/horses/:id/show-history",
 									"host": [
 										"{{base_app}}"
 									],
 									"path": [
-										"shows",
-										":showId",
-										"my-horses",
+										"horses",
 										":id",
 										"show-history"
 									],
 									"variable": [
-										{
-											"key": "showId",
-											"value": "{{showId}}"
-										},
 										{
 											"key": "id",
 											"value": "ea6e27a5-2d75-4eca-9af7-2ad5605d9767"
