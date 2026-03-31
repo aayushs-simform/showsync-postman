@@ -13643,7 +13643,7 @@
 									},
 									"response": [
 										{
-											"id": "49347587-b77d3dfa-6667-48e5-a7e3-5eeebf9116f7",
+											"id": "49347587-47178353-de0a-4309-ba85-26c378c4f035",
 											"name": "List Available & Applied  Stalls / RV / Paddock",
 											"originalRequest": {
 												"method": "GET",
@@ -13733,15 +13733,15 @@
 												},
 												{
 													"key": "Content-Length",
-													"value": "670"
+													"value": "760"
 												},
 												{
 													"key": "ETag",
-													"value": "W/\"29e-kihtdGXM/7Sb0ztllUMSHOzpr7g\""
+													"value": "W/\"2f8-6KGqjypicmJ3OHRjsOaoakyyZKc\""
 												},
 												{
 													"key": "Date",
-													"value": "Tue, 31 Mar 2026 09:57:07 GMT"
+													"value": "Tue, 31 Mar 2026 10:16:46 GMT"
 												},
 												{
 													"key": "Connection",
@@ -13754,7 +13754,7 @@
 											],
 											"cookie": [],
 											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Stall availability fetched successfully.\",\n    \"data\": {\n        \"stalls\": {\n            \"total_allowed\": 200,\n            \"fee\": \"150.00\",\n            \"available\": 195,\n            \"is_assigned\": true,\n            \"assigned_names\": \"A1, A2\",\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"stall_count\": 5\n                }\n            ]\n        },\n        \"paddocks\": {\n            \"total_allowed\": 20,\n            \"fee\": \"120.00\",\n            \"available\": 10,\n            \"is_assigned\": true,\n            \"assigned_names\": \"P1, P2\",\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"paddock_count\": 10\n                }\n            ]\n        },\n        \"rvs\": {\n            \"total_allowed\": 50,\n            \"fee\": \"75.00\",\n            \"pump_out_fee\": \"75.00\",\n            \"available\": 45,\n            \"rv_count\": 5,\n            \"is_assigned\": true,\n            \"assigned_spaces\": \"RV1, RV2\"\n        }\n    }\n}"
+											"body": "{\n    \"status\": true,\n    \"message\": \"Stall availability fetched successfully.\",\n    \"data\": {\n        \"stalls\": {\n            \"total_allowed\": 200,\n            \"fee\": \"150.00\",\n            \"available\": 195,\n            \"is_assigned\": true,\n            \"assigned_names\": \"A1, A2\",\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"stall_count\": 5\n                }\n            ]\n        },\n        \"paddocks\": {\n            \"total_allowed\": 20,\n            \"fee\": \"120.00\",\n            \"available\": 10,\n            \"is_assigned\": true,\n            \"assigned_names\": \"P1, P2\",\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"paddock_count\": 10\n                }\n            ]\n        },\n        \"rvs\": {\n            \"total_allowed\": 50,\n            \"fee\": \"75.00\",\n            \"pump_out_fee\": \"75.00\",\n            \"available\": 45,\n            \"rv_count\": 5,\n            \"is_assigned\": true,\n            \"assigned_spaces\": [\n                {\n                    \"rv_space_name\": \"RV1\",\n                    \"pump_out_status\": \"PENDING\"\n                },\n                {\n                    \"rv_space_name\": \"RV2\",\n                    \"pump_out_status\": null\n                }\n            ]\n        }\n    }\n}"
 										}
 									]
 								},
