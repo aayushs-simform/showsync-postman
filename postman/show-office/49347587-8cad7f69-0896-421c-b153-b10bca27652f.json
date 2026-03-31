@@ -12482,7 +12482,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"assigned_rv_spaces\": \"\"\n}",
+									"raw": "{\n    \"assigned_rv_spaces\": \"RV1, RV2\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
