@@ -4583,7 +4583,20 @@
 				},
 				{
 					"name": "*Show History",
-					"item": [],
+					"item": [
+						{
+							"name": "Show history",
+							"id": "49347587-07560c5b-3f70-434c-b744-c507ee3ba46a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "49347587-5ecd2f80-0ff7-4dd7-a14a-e4a2a34c7269"
 				}
 			],
