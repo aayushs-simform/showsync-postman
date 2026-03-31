@@ -13040,7 +13040,12 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": ""
+									"raw": "{\n    \"result\": {\n        \n    },\n    \"notes\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
 								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/schedule/classes/:classId/entries/:entryId/result",
