@@ -13761,7 +13761,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_id\": \"\"\n}",
+											"raw": "{\n    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n    \"\"\n}",
 											"options": {
 												"raw": {
 													"language": "json"
