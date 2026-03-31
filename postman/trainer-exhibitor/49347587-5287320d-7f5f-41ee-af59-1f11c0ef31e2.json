@@ -14371,42 +14371,6 @@
 									]
 								},
 								{
-									"name": "Pump Out Requests",
-									"id": "49347587-8166ba70-7750-459d-a5ce-94f2d5e55235",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/pump-out-requests?search=BLACK_WATERssfsff",
-											"host": [
-												"{{base_app}}"
-											],
-											"path": [
-												"shows",
-												"enrollments",
-												":enrollmentId",
-												"pump-out-requests"
-											],
-											"query": [
-												{
-													"key": "search",
-													"value": "BLACK_WATERssfsff"
-												}
-											],
-											"variable": [
-												{
-													"key": "enrollmentId",
-													"value": "{{enrollmentId}}"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
 									"name": "Request Pump Out",
 									"id": "49347587-d57893f3-e9c5-4631-b736-617c41e9fe07",
 									"protocolProfileBehavior": {
