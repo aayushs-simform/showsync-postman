@@ -12121,6 +12121,40 @@
 							},
 							"request": {
 								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/rv-assignments/:assignmentId",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"rv-assignments",
+										":assignmentId"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "assignmentId",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "49347587-4455e916-adfe-4f9c-8ca1-631f2017100d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
 								"header": []
 							},
 							"response": []
@@ -12130,7 +12164,20 @@
 				},
 				{
 					"name": "**Paddock Assignment (View)",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "49347587-14644087-abc9-43fe-8fd2-325ba38eac40",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "49347587-bacdbdd0-ebe4-436e-a022-27844f685b7d"
 				},
 				{
