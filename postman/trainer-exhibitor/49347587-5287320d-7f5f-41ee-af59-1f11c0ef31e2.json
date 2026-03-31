@@ -14103,7 +14103,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "[\n    {\n        \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"paddock_count\": 5\n    }\n]",
+											"raw": "[\n    {\n        \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"paddock_count\": 100\n    }\n]",
 											"options": {
 												"raw": {
 													"language": "json"
