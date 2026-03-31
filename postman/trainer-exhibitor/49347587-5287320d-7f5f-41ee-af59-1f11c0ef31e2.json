@@ -13635,234 +13635,6 @@
 									},
 									"response": [
 										{
-											"id": "49347587-eb11a53a-e54e-4b75-acdf-51262321da11",
-											"name": "List Available  Stalls / RV / Paddock",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/stalls",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"enrollments",
-														":enrollmentId",
-														"stalls"
-													],
-													"variable": [
-														{
-															"key": "enrollmentId",
-															"value": "{{enrollmentId}}"
-														}
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "551"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"227-PpIEfu+FBXt20itPkc/7PZ3AQCk\""
-												},
-												{
-													"key": "Date",
-													"value": "Tue, 31 Mar 2026 04:06:55 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Stall availability fetched successfully.\",\n    \"data\": {\n        \"stalls\": {\n            \"total_allowed\": 200,\n            \"fee\": \"150.00\",\n            \"available\": 200,\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"stall_count\": 0\n                }\n            ]\n        },\n        \"paddocks\": {\n            \"total_allowed\": 20,\n            \"fee\": \"120.00\",\n            \"available\": 20,\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"paddock_count\": 0\n                }\n            ]\n        },\n        \"rvs\": {\n            \"total_allowed\": 50,\n            \"fee\": \"75.00\",\n            \"pump_out_fee\": \"75.00\",\n            \"available\": 50,\n            \"rv_count\": 0,\n            \"is_assigned\": false\n        }\n    }\n}"
-										},
-										{
-											"id": "49347587-d77d0d4f-05f6-4990-9717-81f228ddb375",
-											"name": "List Available & Applied  Stalls / RV / Paddock",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/stalls",
-													"host": [
-														"{{base_app}}"
-													],
-													"path": [
-														"shows",
-														"enrollments",
-														":enrollmentId",
-														"stalls"
-													],
-													"variable": [
-														{
-															"key": "enrollmentId",
-															"value": "{{enrollmentId}}"
-														}
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": null,
-											"header": [
-												{
-													"key": "Content-Security-Policy",
-													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
-												},
-												{
-													"key": "Cross-Origin-Opener-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Cross-Origin-Resource-Policy",
-													"value": "same-origin"
-												},
-												{
-													"key": "Origin-Agent-Cluster",
-													"value": "?1"
-												},
-												{
-													"key": "Referrer-Policy",
-													"value": "no-referrer"
-												},
-												{
-													"key": "Strict-Transport-Security",
-													"value": "max-age=31536000; includeSubDomains"
-												},
-												{
-													"key": "X-Content-Type-Options",
-													"value": "nosniff"
-												},
-												{
-													"key": "X-DNS-Prefetch-Control",
-													"value": "off"
-												},
-												{
-													"key": "X-Download-Options",
-													"value": "noopen"
-												},
-												{
-													"key": "X-Frame-Options",
-													"value": "SAMEORIGIN"
-												},
-												{
-													"key": "X-Permitted-Cross-Domain-Policies",
-													"value": "none"
-												},
-												{
-													"key": "X-XSS-Protection",
-													"value": "0"
-												},
-												{
-													"key": "Vary",
-													"value": "Origin"
-												},
-												{
-													"key": "Access-Control-Allow-Credentials",
-													"value": "true"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
-												},
-												{
-													"key": "Content-Length",
-													"value": "551"
-												},
-												{
-													"key": "ETag",
-													"value": "W/\"227-4oUqYjp4fnW9yVr6flOc68po6co\""
-												},
-												{
-													"key": "Date",
-													"value": "Tue, 31 Mar 2026 04:47:37 GMT"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Keep-Alive",
-													"value": "timeout=5"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"status\": true,\n    \"message\": \"Stall availability fetched successfully.\",\n    \"data\": {\n        \"stalls\": {\n            \"total_allowed\": 200,\n            \"fee\": \"150.00\",\n            \"available\": 195,\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"stall_count\": 5\n                }\n            ]\n        },\n        \"paddocks\": {\n            \"total_allowed\": 20,\n            \"fee\": \"120.00\",\n            \"available\": 15,\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"paddock_count\": 5\n                }\n            ]\n        },\n        \"rvs\": {\n            \"total_allowed\": 50,\n            \"fee\": \"75.00\",\n            \"pump_out_fee\": \"75.00\",\n            \"available\": 45,\n            \"rv_count\": 5,\n            \"is_assigned\": false\n        }\n    }\n}"
-										},
-										{
 											"id": "49347587-11de8893-b04b-4a4f-99b3-431b115c7a6d",
 											"name": "List Available & Applied  Stalls / RV / Paddock",
 											"originalRequest": {
@@ -13889,7 +13661,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "json",
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -13949,7 +13721,9 @@
 												},
 												{
 													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
+													"value": "application/json",
+													"description": "",
+													"type": "text"
 												},
 												{
 													"key": "Content-Length",
@@ -13972,7 +13746,13 @@
 													"value": "timeout=5"
 												}
 											],
-											"cookie": [],
+											"cookie": [
+												{
+													"expires": "Invalid Date",
+													"domain": "",
+													"path": ""
+												}
+											],
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Stall availability fetched successfully.\",\n    \"data\": {\n        \"stalls\": {\n            \"total_allowed\": 200,\n            \"fee\": \"150.00\",\n            \"available\": 195,\n            \"is_assigned\": false,\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"stall_count\": 5\n                }\n            ]\n        },\n        \"paddocks\": {\n            \"total_allowed\": 20,\n            \"fee\": \"120.00\",\n            \"available\": 15,\n            \"is_assigned\": false,\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"paddock_count\": 5\n                }\n            ]\n        },\n        \"rvs\": {\n            \"total_allowed\": 50,\n            \"fee\": \"75.00\",\n            \"pump_out_fee\": \"75.00\",\n            \"available\": 45,\n            \"rv_count\": 5,\n            \"is_assigned\": false\n        }\n    }\n}"
 										}
