@@ -12326,7 +12326,7 @@
 					"id": "49347587-45ceafec-52bf-4c7c-b780-d1572e6e808d"
 				},
 				{
-					"name": "**RV Assignment (View)",
+					"name": "RV Assignment (View)",
 					"item": [
 						{
 							"name": "List of RV Requested",
@@ -12454,7 +12454,7 @@
 					"id": "49347587-edb6f362-0d53-42a5-b330-7e62c9aff190"
 				},
 				{
-					"name": "**Paddock Assignment (View)",
+					"name": "Paddock Assignment (View)",
 					"item": [
 						{
 							"name": "Paddock Assignment Requests",
