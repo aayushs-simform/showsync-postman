@@ -199,8 +199,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "bf3cfe6e-0f65-43b7-8d84-cfa409369daa",
 										"exec": [
 											"pm.test('Status code is 200', function () {",
 											"  pm.response.to.have.status(200);",
@@ -234,7 +233,10 @@
 											"const otpBody = pm.response.json();",
 											"pm.collectionVariables.set('reset_token', otpBody.data.reset_token);",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -4528,6 +4530,10 @@
 	"variable": [
 		{
 			"key": "accessTokenRefreshed",
+			"value": ""
+		},
+		{
+			"key": "reset_token",
 			"value": ""
 		}
 	]
