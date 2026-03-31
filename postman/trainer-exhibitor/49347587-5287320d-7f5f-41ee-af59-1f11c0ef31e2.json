@@ -16291,6 +16291,11 @@
 			"name": "Common",
 			"item": [
 				{
+					"name": "Locations",
+					"item": [],
+					"id": "49347587-49b202d5-a802-409c-9c69-5c624366402c"
+				},
+				{
 					"name": "Countries List",
 					"id": "49347587-4aba8530-3229-4cc9-bebe-5a793b23f281",
 					"protocolProfileBehavior": {
