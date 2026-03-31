@@ -13760,7 +13760,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/stalls",
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/stall-request",
 											"host": [
 												"{{base_app}}"
 											],
@@ -13768,7 +13768,7 @@
 												"shows",
 												"enrollments",
 												":enrollmentId",
-												"stalls"
+												"stall-request"
 											],
 											"variable": [
 												{
@@ -13799,8 +13799,26 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/paddock-request",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"enrollments",
+												":enrollmentId",
+												"paddock-request"
+											],
+											"variable": [
+												{
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
+												}
+											]
+										}
 									},
 									"response": []
 								}
