@@ -21456,8 +21456,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
-						"packages": {},
+						"id": "10a3fb62-b0cc-41c4-84b3-ad6092c30684",
 						"exec": [
 							"pm.test('Status code is 200', function () {",
 							"  pm.response.to.have.status(200);",
@@ -21472,7 +21471,10 @@
 							"  pm.expect(body.status).to.be.true;",
 							"});",
 							""
-						]
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
