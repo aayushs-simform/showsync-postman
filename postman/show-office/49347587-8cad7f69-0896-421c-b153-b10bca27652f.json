@@ -12036,14 +12036,36 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Assign Stalls",
 							"id": "49347587-c0cec595-3ad5-4700-91bb-84e159c77d52",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/stall-assignments/:assignmentId",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"stall-assignments",
+										":assignmentId"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "assignmentId",
+											"value": ""
+										}
+									]
+								}
 							},
 							"response": []
 						}
