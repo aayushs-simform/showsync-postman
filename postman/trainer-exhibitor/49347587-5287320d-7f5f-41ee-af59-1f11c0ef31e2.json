@@ -13757,7 +13757,7 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
+										"method": "PUT",
 										"header": [],
 										"url": {
 											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/stall-request",
@@ -13787,8 +13787,26 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/rv-request",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"enrollments",
+												":enrollmentId",
+												"rv-request"
+											],
+											"variable": [
+												{
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
+												}
+											]
+										}
 									},
 									"response": []
 								},
@@ -13799,8 +13817,17 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "POST",
+										"method": "PUT",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/paddock-request",
 											"host": [
