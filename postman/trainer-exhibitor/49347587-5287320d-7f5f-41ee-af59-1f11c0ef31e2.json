@@ -13775,7 +13775,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Paddock Request",
 									"id": "49347587-52b26e25-e2c6-4ccb-9408-d5180ffac02e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
