@@ -13822,8 +13822,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "2f7913f8-6871-4f34-81d2-9dbac8cfd034",
 												"exec": [
 													"pm.test('Status code is 201', function () {",
 													"  pm.response.to.have.status(201);",
@@ -13843,7 +13842,10 @@
 													"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
@@ -13856,7 +13858,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"horse_stalls\": [\n       {\n         \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n         \"stall_count\": 1,\n         \"rv_count\": 1\n       }\n    ]\n}",
+											"raw": "{\n    \"horse_stalls\": [\n       {\n         \"horse_id\": \"dfad0293-1270-4dca-9a66-7290c1a2e02b\",\n         \"stall_count\": 1,\n        //  \"rv_count\": 1\n       }\n    ]\n}",
 											"options": {
 												"raw": {
 													"language": "json"
