@@ -13671,7 +13671,7 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": null,
+											"_postman_previewlanguage": "json",
 											"header": [
 												{
 													"key": "Content-Security-Policy",
@@ -13731,7 +13731,9 @@
 												},
 												{
 													"key": "Content-Type",
-													"value": "application/json; charset=utf-8"
+													"value": "application/json",
+													"description": "",
+													"type": "text"
 												},
 												{
 													"key": "Content-Length",
@@ -13754,7 +13756,13 @@
 													"value": "timeout=5"
 												}
 											],
-											"cookie": [],
+											"cookie": [
+												{
+													"expires": "Invalid Date",
+													"domain": "",
+													"path": ""
+												}
+											],
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Stall availability fetched successfully.\",\n    \"data\": {\n        \"stalls\": {\n            \"total_allowed\": 200,\n            \"fee\": \"150.00\",\n            \"available\": 195,\n            \"is_assigned\": true,\n            \"assigned_names\": \"A1, A2\",\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"stall_count\": 5\n                }\n            ]\n        },\n        \"paddocks\": {\n            \"total_allowed\": 20,\n            \"fee\": \"120.00\",\n            \"available\": 10,\n            \"is_assigned\": true,\n            \"assigned_names\": \"P1, P2\",\n            \"horse_requests\": [\n                {\n                    \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                    \"horse_name\": \"Water Lightning\",\n                    \"paddock_count\": 10\n                }\n            ]\n        },\n        \"rvs\": {\n            \"total_allowed\": 50,\n            \"fee\": \"75.00\",\n            \"pump_out_fee\": \"75.00\",\n            \"available\": 45,\n            \"rv_count\": 5,\n            \"is_assigned\": true,\n            \"assigned_spaces\": [\n                {\n                    \"rv_space_name\": \"RV1\",\n                    \"pump_out_status\": \"PENDING\"\n                },\n                {\n                    \"rv_space_name\": \"RV2\",\n                    \"pump_out_status\": null\n                }\n            ]\n        }\n    }\n}"
 										},
