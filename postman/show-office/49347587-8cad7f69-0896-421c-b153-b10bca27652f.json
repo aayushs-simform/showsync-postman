@@ -12007,7 +12007,7 @@
 					"name": "**Stall Assignment (View)",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "List Stall Requested",
 							"id": "49347587-de693a7a-5c5e-4da9-97e2-8392c2502223",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
