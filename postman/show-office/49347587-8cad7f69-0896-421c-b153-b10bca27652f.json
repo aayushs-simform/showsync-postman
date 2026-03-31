@@ -13036,7 +13036,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "PATCH",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -13064,11 +13064,11 @@
 										},
 										{
 											"key": "classId",
-											"value": ""
+											"value": "3227e4c7-0aba-4950-bb9d-11c44d09965c"
 										},
 										{
 											"key": "entryId",
-											"value": ""
+											"value": "ca6f87b8-67da-45fb-aa60-40499c36fd14"
 										}
 									]
 								}
