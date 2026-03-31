@@ -13606,7 +13606,7 @@
 							"name": "Show Stalls",
 							"item": [
 								{
-									"name": "List Available Stalls",
+									"name": "List Available & Applied  Stalls",
 									"id": "49347587-661e821b-676e-41d3-b212-75ad2a7fa51b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
