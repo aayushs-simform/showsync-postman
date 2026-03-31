@@ -12483,7 +12483,121 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-60b8a097-6102-4e41-88ad-686734f7b868",
+									"name": "Paddock Assignment Requests",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/paddock-assignments",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"paddock-assignments"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "417"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"1a1-S+meZGCgp/tZqE4wyjTp1YjQadg\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 31 Mar 2026 09:36:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Paddock assignment list fetched successfully\",\n    \"pagination\": {\n        \"total_records\": 1,\n        \"current_page\": 1,\n        \"total_pages\": 1\n    },\n    \"data\": [\n        {\n            \"assignment_id\": null,\n            \"enrollment_id\": \"1ab170a0-bbdd-4441-a990-a6dbaf9ba134\",\n            \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n            \"trainer_name\": \"Aayush Solanki\",\n            \"num_horses\": 1,\n            \"requested_paddock_count\": 10,\n            \"barn_name\": null,\n            \"paddock_stall_names\": null,\n            \"is_assigned\": false\n        }\n    ]\n}"
+								}
+							]
 						},
 						{
 							"name": "Assign Paddock",
@@ -12492,10 +12606,19 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "PATCH",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"paddock_names\": \"P1, P2\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
-									"raw": "{{base_org}}/shows/:showId/paddock-assignments/:assignmentId",
+									"raw": "{{base_org}}/shows/:showId/paddock-assignments/enrollment/:assignmentId",
 									"host": [
 										"{{base_org}}"
 									],
@@ -12503,6 +12626,7 @@
 										"shows",
 										":showId",
 										"paddock-assignments",
+										"enrollment",
 										":assignmentId"
 									],
 									"variable": [
@@ -12512,7 +12636,7 @@
 										},
 										{
 											"key": "assignmentId",
-											"value": ""
+											"value": "1ab170a0-bbdd-4441-a990-a6dbaf9ba134"
 										}
 									]
 								}
