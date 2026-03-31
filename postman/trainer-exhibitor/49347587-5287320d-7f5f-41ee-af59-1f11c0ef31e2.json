@@ -13603,10 +13603,10 @@
 							"id": "49347587-62f82113-c36e-41c1-bfa2-cb309c554111"
 						},
 						{
-							"name": "Show Stalls",
+							"name": "Show Stalls / RV / Paddock",
 							"item": [
 								{
-									"name": "List Available & Applied  Stalls",
+									"name": "List Available & Applied  Stalls / RV / Paddock",
 									"id": "49347587-661e821b-676e-41d3-b212-75ad2a7fa51b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -13636,7 +13636,7 @@
 									"response": [
 										{
 											"id": "49347587-eb11a53a-e54e-4b75-acdf-51262321da11",
-											"name": "List Available  Stalls",
+											"name": "List Available  Stalls / RV / Paddock",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
@@ -13751,7 +13751,7 @@
 									]
 								},
 								{
-									"name": "Update Stall / RV",
+									"name": "Update Stalls / RV / Paddock",
 									"event": [
 										{
 											"listen": "test",
@@ -13821,7 +13821,7 @@
 									"response": [
 										{
 											"id": "49347587-a17afab5-aa67-412e-ad6c-e048552137c9",
-											"name": "Update Stall / RV",
+											"name": "Update Stalls / RV / Paddock",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
