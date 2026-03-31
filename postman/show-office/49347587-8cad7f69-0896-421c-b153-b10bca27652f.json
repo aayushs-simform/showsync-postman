@@ -12005,7 +12005,20 @@
 				},
 				{
 					"name": "**Stall Assignment (View)",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "49347587-de693a7a-5c5e-4da9-97e2-8392c2502223",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "49347587-45ceafec-52bf-4c7c-b780-d1572e6e808d"
 				},
 				{
