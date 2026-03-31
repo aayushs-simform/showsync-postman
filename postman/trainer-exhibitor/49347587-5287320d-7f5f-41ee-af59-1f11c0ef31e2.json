@@ -4582,7 +4582,7 @@
 					"id": "49347587-2667326e-d783-4431-b46d-4125e6feccc4"
 				},
 				{
-					"name": "*Show History",
+					"name": "Show History",
 					"item": [
 						{
 							"name": "Show history",
@@ -4592,7 +4592,30 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/shows/:showId/my-horses/:id/show-history",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"my-horses",
+										":id",
+										"show-history"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
 							},
 							"response": []
 						}
