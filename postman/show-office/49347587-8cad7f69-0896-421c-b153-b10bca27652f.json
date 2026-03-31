@@ -12014,7 +12014,24 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/stall-assignments",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"stall-assignments"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										}
+									]
+								}
 							},
 							"response": []
 						}
