@@ -14292,8 +14292,17 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
+										"method": "POST",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"pump_out_type\": \"BLACK_WATER\", //BLACK_WATER, GRAY_WATER\n    \"day_of_week\": \"MONDAY\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/pump-out-requests",
 											"host": [
