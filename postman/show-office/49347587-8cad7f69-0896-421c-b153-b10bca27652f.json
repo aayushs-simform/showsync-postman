@@ -13040,7 +13040,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"ordered_entry_ids\": []\n}"
+									"raw": ""
 								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/schedule/classes/:classId/entries/:entryId/result",
