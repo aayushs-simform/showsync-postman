@@ -12042,7 +12042,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "PATCH",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -12071,7 +12071,7 @@
 										},
 										{
 											"key": "assignmentId",
-											"value": ""
+											"value": "1ab170a0-bbdd-4441-a990-a6dbaf9ba134"
 										}
 									]
 								}
