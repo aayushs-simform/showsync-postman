@@ -12148,14 +12148,61 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Get Pump Out Requests",
 							"id": "49347587-4455e916-adfe-4f9c-8ca1-631f2017100d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/pump-out-requests",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"pump-out-requests"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Complete Pump Out Requests",
+							"id": "49347587-3c086cc7-2647-4438-8383-89ccd0fa7bb4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/pump-out-requests/complete",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"pump-out-requests",
+										"complete"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										}
+									]
+								}
 							},
 							"response": []
 						}
