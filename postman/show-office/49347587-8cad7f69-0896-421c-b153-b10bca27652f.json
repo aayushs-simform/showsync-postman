@@ -12826,7 +12826,121 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-a6f715e1-c77c-444d-94be-0df0eec0376e",
+									"name": "Master Schedule",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_org}}/shows/:showId/master-schedule",
+											"host": [
+												"{{base_org}}"
+											],
+											"path": [
+												"shows",
+												":showId",
+												"master-schedule"
+											],
+											"variable": [
+												{
+													"key": "showId",
+													"value": "{{showId}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "742"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2e6-eTAoSTQsk6zTdIdz4pafNpLB8iE\""
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 31 Mar 2026 09:41:22 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Master schedule retrieved successfully\",\n    \"data\": [\n        {\n            \"class_date\": \"2026-03-15\",\n            \"divisions\": [\n                {\n                    \"id\": \"5e3b70c1-16da-4398-917a-1fb80301d477\",\n                    \"division_name\": \"Open Jumpers 4s\",\n                    \"classes\": [\n                        {\n                            \"id\": \"3227e4c7-0aba-4950-bb9d-11c44d09965c\",\n                            \"class_id\": \"J107\",\n                            \"class_name\": \"1.0m Open\",\n                            \"class_date\": \"2026-03-15\",\n                            \"class_time\": null,\n                            \"course_map_url\": null,\n                            \"entries\": [\n                                {\n                                    \"entry_id\": \"ca6f87b8-67da-45fb-aa60-40499c36fd14\",\n                                    \"entry_no\": \"ENT-TZVTCD\",\n                                    \"horse_name\": \"Water Lightning\",\n                                    \"rider_name\": \"Aayush Rider 2\",\n                                    \"ride_order\": null,\n                                    \"scheduled_time\": null,\n                                    \"result_status\": null\n                                }\n                            ]\n                        },\n                        {\n                            \"id\": \"2b2306e1-9264-496e-81cb-2ba7c9a14218\",\n                            \"class_id\": \"J108\",\n                            \"class_name\": \"2.0m Open\",\n                            \"class_date\": \"2026-03-15\",\n                            \"class_time\": null,\n                            \"course_map_url\": null,\n                            \"entries\": []\n                        }\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
 						},
 						{
 							"name": "Reorder Entries in Schedule",
@@ -12834,8 +12948,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "34e9b048-163b-4a33-af23-9b69dcc03a00",
 										"exec": [
 											"pm.test('Status code is 200', function () {",
 											"  pm.response.to.have.status(200);",
@@ -12845,7 +12958,10 @@
 											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -12898,8 +13014,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "5ebe0c6f-ab36-47ee-9156-5e183ad3fd12",
 										"exec": [
 											"pm.test('Status code is 200', function () {",
 											"  pm.response.to.have.status(200);",
@@ -12909,7 +13024,10 @@
 											"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
