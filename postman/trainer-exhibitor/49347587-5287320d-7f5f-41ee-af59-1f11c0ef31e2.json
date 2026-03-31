@@ -13759,6 +13759,15 @@
 									"request": {
 										"method": "PUT",
 										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{base_app}}/shows/enrollments/:enrollmentId/stall-request",
 											"host": [
