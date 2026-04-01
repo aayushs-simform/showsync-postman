@@ -9778,6 +9778,35 @@
 											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment completed successfully.\"\n}"
 										}
 									]
+								},
+								{
+									"name": "New Request",
+									"id": "49347587-01182b67-56ca-4bd5-967d-9801f0324416",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/enrollments/:enrollmentId",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"enrollments",
+												":enrollmentId"
+											],
+											"variable": [
+												{
+													"key": "enrollmentId",
+													"value": "{{enrollmentId}}"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
