@@ -3737,6 +3737,37 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Horse details fetched from USEF.\",\n    \"data\": {\n        \"usef_horse_id\": \"2000001\",\n        \"horse_name\": \"Thunderstrike\",\n        \"usef_number\": \"USEF-5001\",\n        \"breed\": \"Warmblood\",\n        \"breed_registration_no\": \"RHEIN-12345\",\n        \"gender\": \"GELDING\",\n        \"date_of_birth\": \"2018-04-15T00:00:00\",\n        \"color\": \"Bay\",\n        \"height\": \"16.2\",\n        \"measurement_card_no\": \"PO\",\n        \"hunter_green_status\": \"Annual\",\n        \"sire\": \"Thunderbolt\",\n        \"dam\": \"Silver Star\",\n        \"microchip_number\": \"900123000000001\",\n        \"owners\": [\n            {\n                \"id\": 1001,\n                \"name\": \"John Smith\",\n                \"is_leasee\": false,\n                \"start_date\": \"2020-01-01T00:00:00\",\n                \"end_date\": null\n            },\n            {\n                \"id\": 1002,\n                \"name\": \"Jane Doe\",\n                \"is_leasee\": true,\n                \"start_date\": \"2022-06-15T00:00:00\",\n                \"end_date\": \"2024-06-15T00:00:00\"\n            }\n        ]\n    }\n}"
 								}
 							]
+						},
+						{
+							"name": "Horses - Colors",
+							"id": "49347587-ff45d88a-8bcc-4bdf-a1a0-f97bb662b8b8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": 10002\n}"
+								},
+								"url": {
+									"raw": "{{usef_host}}/horse/colors",
+									"host": [
+										"{{usef_host}}"
+									],
+									"path": [
+										"horse",
+										"colors"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-89c09378-1282-40a0-aec8-b61efad2d771"
