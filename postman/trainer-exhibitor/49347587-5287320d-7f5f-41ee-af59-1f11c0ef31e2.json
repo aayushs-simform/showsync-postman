@@ -7123,7 +7123,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{base_app}}/shows/upcoming?division_types=JUMPER",
+									"raw": "{{base_app}}/shows/upcoming",
 									"host": [
 										"{{base_app}}"
 									],
@@ -7164,7 +7164,8 @@
 										},
 										{
 											"key": "division_types",
-											"value": "JUMPER"
+											"value": "HUNTER",
+											"disabled": true
 										}
 									]
 								}
