@@ -3757,9 +3757,9 @@
 									"raw": "{\n  \"Id\": 10002\n}"
 								},
 								"url": {
-									"raw": "{{usef_host}}/horse/colors",
+									"raw": "{{base_app}}/horse/colors",
 									"host": [
-										"{{usef_host}}"
+										"{{base_app}}"
 									],
 									"path": [
 										"horse",
