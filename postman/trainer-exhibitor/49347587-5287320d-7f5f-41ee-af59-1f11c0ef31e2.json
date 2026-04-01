@@ -7412,6 +7412,54 @@
 							]
 						},
 						{
+							"name": "History Shows",
+							"id": "49347587-cbd75e7b-6827-43cd-b48e-5266831e3c1e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"registration_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWF5dXNocy5zaW1mb3JtQGdtYWlsLmNvbSIsImp0aSI6ImZmZGMwNzk2LWYzOWQtNGU0YS1hNGMxLWVmOWVkYzNiODViOSIsImF1ZCI6ImFwcDpyZWdpc3RyYXRpb24iLCJpYXQiOjE3NzMyOTI2MDksImV4cCI6MTc3MzI5MzUwOX0.rSrCB4Aj1zoKLMfJLtnyn0i6YaztX3ong9qCYxrkH3w\",\n  \"usef_member_id\": \"12345678\"\n}"
+								},
+								"url": {
+									"raw": "{{base_app}}/shows/enrolled",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"shows",
+										"enrolled"
+									],
+									"query": [
+										{
+											"key": "horse_ids",
+											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b",
+											"disabled": true
+										},
+										{
+											"key": "venue_ids",
+											"value": "d9978052-b80f-4721-8ed2-d4046286948b",
+											"disabled": true
+										},
+										{
+											"key": "from_date",
+											"value": "2026-01-01",
+											"disabled": true
+										},
+										{
+											"key": "to_date",
+											"value": "2026-12-31",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Dropdown Horses",
 							"event": [
 								{
