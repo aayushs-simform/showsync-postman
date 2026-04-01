@@ -9806,7 +9806,121 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-7e89ef26-374c-45dd-bb49-06f584ac002a",
+											"name": "Enrollment Details",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"enrollments",
+														":enrollmentId"
+													],
+													"variable": [
+														{
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "2202"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"89a-F96ZSaFNx++Lnebuz4jyn1ivFhE\""
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 01 Apr 2026 18:10:52 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Enrollment fetched successfully.\",\n    \"data\": {\n        \"id\": \"1ab170a0-bbdd-4441-a990-a6dbaf9ba134\",\n        \"wizard_step\": \"COMPLETED\",\n        \"wizard_completed_at\": \"2026-03-30T10:47:18.075Z\",\n        \"owner_payout_percent\": \"100.00\",\n        \"rider_payout_percent\": \"0.00\",\n        \"trainer_payout_percent\": \"0.00\",\n        \"status\": \"ENTERED\",\n        \"horses\": [\n            {\n                \"id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n                \"entry_id\": \"ca6f87b8-67da-45fb-aa60-40499c36fd14\",\n                \"name\": \"Water Lightning\",\n                \"trainer\": {\n                    \"id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n                    \"name\": \"Aayush Solanki\"\n                },\n                \"invoice_payee\": {\n                    \"id\": \"0161d00b-719b-419d-a460-90a16b704d56\",\n                    \"name\": null\n                },\n                \"classes\": [\n                    {\n                        \"id\": \"3227e4c7-0aba-4950-bb9d-11c44d09965c\",\n                        \"rider\": {\n                            \"id\": \"de5a41fa-6039-4a79-9797-ac020fb7c723\",\n                            \"name\": null\n                        },\n                        \"class_id\": \"J107\",\n                        \"class_name\": \"1.0m Open\",\n                        \"entry_class_id\": \"1fd4b01b-a56e-42b3-9c7d-d97fecd8314f\"\n                    }\n                ],\n                \"health_documents\": [\n                    {\n                        \"id\": \"8d21ed03-3dfe-4411-b876-2f97cc5b88fd\",\n                        \"document_type\": \"RABIES\",\n                        \"verification_status\": \"PENDING\",\n                        \"compliance_status\": \"PENDING_VERIFICATION\",\n                        \"issued_date\": null,\n                        \"expiry_date\": null,\n                        \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/73f74948-ed4b-47f5-972d-68b741cf422b?sv=2026-02-06&spr=https&st=2026-04-01T17%3A57%3A55Z&se=2026-04-01T18%3A57%3A55Z&sr=b&sp=r&sig=EOaOgceFhILDlUCY0hRuB7pwhyhoDtNelEVfPKHb6Gc%3D\"\n                    },\n                    {\n                        \"id\": \"9cd66e07-9292-4540-91a9-8e8a7d5689af\",\n                        \"document_type\": \"COGGINS\",\n                        \"verification_status\": \"PENDING\",\n                        \"compliance_status\": \"PENDING_VERIFICATION\",\n                        \"issued_date\": null,\n                        \"expiry_date\": null,\n                        \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/75f433e4-cec5-4a21-948b-c55b92b68be3?sv=2026-02-06&spr=https&st=2026-04-01T17%3A57%3A55Z&se=2026-04-01T18%3A57%3A55Z&sr=b&sp=r&sig=jQNa7BbWhFOWeV81gbesWw%2FZ5NPaYleUT9d6TaXG4gI%3D\"\n                    },\n                    {\n                        \"id\": \"a43bbca2-c255-453d-b277-d60d499289f2\",\n                        \"document_type\": \"VACCINATION\",\n                        \"verification_status\": \"PENDING\",\n                        \"compliance_status\": \"PENDING_VERIFICATION\",\n                        \"issued_date\": null,\n                        \"expiry_date\": null,\n                        \"document_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/horse-documents/c4d0c6fe-6449-4013-9f95-aaf1edd777ad?sv=2026-02-06&spr=https&st=2026-04-01T17%3A57%3A55Z&se=2026-04-01T18%3A57%3A55Z&sr=b&sp=r&sig=Qxr3ywQjwz5m9Ognp%2BpoY9x8joQ0KTbG%2F4FkMcyBebU%3D\"\n                    }\n                ]\n            }\n        ]\n    }\n}"
+										}
+									]
 								}
 							],
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
