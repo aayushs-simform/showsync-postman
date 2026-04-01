@@ -7123,7 +7123,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{base_app}}/shows/upcoming?organizer_ids=fd9986c1-4c74-4e45-95ca-15dce5faa4a4",
+									"raw": "{{base_app}}/shows/upcoming",
 									"host": [
 										"{{base_app}}"
 									],
@@ -7154,7 +7154,18 @@
 										},
 										{
 											"key": "organizer_ids",
-											"value": "fd9986c1-4c74-4e45-95ca-15dce5faa4a4"
+											"value": "fd9986c1-4c74-4e45-95ca-15dce5faa4a4",
+											"disabled": true
+										},
+										{
+											"key": "cities",
+											"value": "New York",
+											"disabled": true
+										},
+										{
+											"key": "division_types",
+											"value": null,
+											"disabled": true
 										}
 									]
 								}
