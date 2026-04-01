@@ -9602,7 +9602,7 @@
 							"id": "49347587-e5ebdbde-7bb5-4368-87cc-3e1550899bdf"
 						},
 						{
-							"name": "Preflight",
+							"name": "Show Preflight",
 							"item": [
 								{
 									"name": "Pre Check Details",
@@ -17071,7 +17071,7 @@
 							"id": "49347587-ab629816-9d98-4736-b7e9-462bf679ca79"
 						},
 						{
-							"name": "Invoices",
+							"name": "Show Invoices",
 							"item": [],
 							"id": "49347587-2c797128-a314-4a1e-8440-0eceecb01718"
 						}
