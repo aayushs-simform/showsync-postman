@@ -15540,7 +15540,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"stalls\": [\n    { \"horse_id\": \"uuid\", \"stall_count\": 2 }\n  ],\n  \"paddocks\": [\n    { \"horse_id\": \"uuid\", \"paddock_count\": 1 }\n  ],\n  \"rv_count\": 2\n}",
+											"raw": "{\n  \"stalls\": [\n    { \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\", \"stall_count\": 2 }\n  ],\n  \"paddocks\": [\n    { \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\", \"paddock_count\": 1 }\n  ],\n  \"rv_count\": 2\n}",
 											"options": {
 												"raw": {
 													"language": "json"
