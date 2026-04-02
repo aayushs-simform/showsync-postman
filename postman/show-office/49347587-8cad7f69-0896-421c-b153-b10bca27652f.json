@@ -13657,8 +13657,56 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"arena_id\": \"6c84fb90-12c4-11e1-840d-7b25c5ee775a\",\n    \"show_day_date\": \"2026-07-15\",\n    \"start_time\": \"07:30\",\n    \"is_active\": true,\n    \"maintenance_windows\": [\n        {\n            \"start\": \"12:00\",\n            \"end\": \"13:00\",\n            \"label\": \"Lunch break — drag arena\"\n        }\n    ]  //Scheduled unavailability windows (e.g. drag breaks)\n}"
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/arena-configs/:configId",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"arena-configs",
+										":configId"
+									],
+									"query": [
+										{
+											"key": "horse_ids",
+											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b",
+											"disabled": true
+										},
+										{
+											"key": "venue_ids",
+											"value": "d9978052-b80f-4721-8ed2-d4046286948b",
+											"disabled": true
+										},
+										{
+											"key": "from_date",
+											"value": "2026-01-01",
+											"disabled": true
+										},
+										{
+											"key": "to_date",
+											"value": "2026-12-31",
+											"disabled": true
+										}
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "configId",
+											"value": ""
+										}
+									]
+								}
 							},
 							"response": []
 						}
