@@ -13952,6 +13952,18 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Publish the draft schedule",
+							"id": "49347587-e6839b58-7a05-493a-bd18-ea4fad8c2174",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-8432c522-7f69-44d7-9914-66702f8f3f16"
