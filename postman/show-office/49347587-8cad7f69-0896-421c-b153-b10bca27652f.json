@@ -13964,7 +13964,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"idempotency_key\": \"show-2026-06-15-publish-003\"\n}",
+									"raw": "{\n    \"idempotency_key\": \"show-2026-06-15-publish-003\",\n    \"expected_version\": 1\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13991,6 +13991,50 @@
 										{
 											"key": "showDayDate",
 											"value": "2026-07-15"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get the status of a schedule generation event",
+							"id": "49347587-ce9be101-1c36-4b4d-8e7c-3ae2a717046a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idempotency_key\": \"show-2026-06-15-publish-003\",\n    \"expected_version\": 1\n}"
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/schedules/:showDayDate/events/:eventId",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"schedules",
+										":showDayDate",
+										"events",
+										":eventId"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "showDayDate",
+											"value": "2026-07-15"
+										},
+										{
+											"key": "eventId",
+											"value": ""
 										}
 									]
 								}
