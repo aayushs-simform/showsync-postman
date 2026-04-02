@@ -5293,7 +5293,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_app}}/people/list?search=Aayushsfdsfs",
+							"raw": "{{base_app}}/people/list",
 							"host": [
 								"{{base_app}}"
 							],
@@ -5314,7 +5314,8 @@
 								},
 								{
 									"key": "search",
-									"value": "Aayushsfdsfs"
+									"value": "Searc",
+									"disabled": true
 								}
 							]
 						}
