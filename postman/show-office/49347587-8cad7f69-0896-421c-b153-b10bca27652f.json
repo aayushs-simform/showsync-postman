@@ -13726,7 +13726,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"\"\n}",
+									"raw": "{\n    \"class_id\": \"6c84fb90-12c4-11e1-840d-7b25c5ee775a\",\n    \"show_day_date\": \"2026-07-15\",\n    \"walk_start\": \"\",\n    \"walk_end\": \"\",\n    \"is_mandatory\": \"\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
