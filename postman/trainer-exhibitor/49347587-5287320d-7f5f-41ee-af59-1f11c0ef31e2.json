@@ -7285,7 +7285,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{base_app}}/shows/upcoming?organizer_ids=fd9986c1-4c74-4e45-95ca-15dce5faa4a4",
+									"raw": "{{base_app}}/shows/upcoming?organizer_ids=fd9986c1-4c74-4e45-95ca-15dce5faa4a4&page=1&limit=10",
 									"host": [
 										"{{base_app}}"
 									],
@@ -7327,6 +7327,14 @@
 											"key": "division_types",
 											"value": "HUNTER",
 											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
 										}
 									]
 								}
