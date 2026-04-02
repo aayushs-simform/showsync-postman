@@ -5293,7 +5293,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_app}}/people/list",
+							"raw": "{{base_app}}/people/list?search",
 							"host": [
 								"{{base_app}}"
 							],
@@ -5306,6 +5306,15 @@
 									"key": "category",
 									"value": "TRAINER",
 									"disabled": true
+								},
+								{
+									"key": "is_usef_verified",
+									"value": "false",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": null
 								}
 							]
 						}
