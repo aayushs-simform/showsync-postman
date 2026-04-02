@@ -18137,8 +18137,27 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_app}}/profile/verify-usef",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"profile",
+								"verify-usef"
+							]
+						}
 					},
 					"response": []
 				}
