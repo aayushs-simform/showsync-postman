@@ -13839,6 +13839,44 @@
 							},
 							"request": {
 								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"arena_id\": \"6c84fb90-12c4-11e1-840d-7b25c5ee775a\",\n    \"show_day_date\": \"2026-07-15\",\n    \"start_time\": \"07:30\",\n    \"is_active\": true,\n    \"maintenance_windows\": [\n        {\n            \"start\": \"12:00\",\n            \"end\": \"13:00\",\n            \"label\": \"Lunch break — drag arena\"\n        }\n    ]  //Scheduled unavailability windows (e.g. drag breaks)\n}"
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/schedules/:showDayDate",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"schedules",
+										":showDayDate"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "showDayDate",
+											"value": "2026-07-15"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "49347587-dfc02b62-b2a8-4727-a512-77c02c6d3b23",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
 								"header": []
 							},
 							"response": []
