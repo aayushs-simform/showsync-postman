@@ -11470,7 +11470,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "[\n    {\n        // \"horseId\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\" //optional\n        // \"payer_id\": \"0161d00b-719b-419d-a460-90a16b704d56\", //optional\n        // \"assistant_trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\", //optional\n        // \"rider_ids\": [ //optional\n        //     \"de5a41fa-6039-4a79-9797-ac020fb7c723\",\n        //     \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n        // ]\n    }\n]",
+											"raw": "[\n    {\n        \"horseId\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\", //optional\n        \"payer_id\": \"0161d00b-719b-419d-a460-90a16b704d56\", //optional\n        \"assistant_trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\", //optional\n        \"rider_ids\": [ //optional\n            \"de5a41fa-6039-4a79-9797-ac020fb7c723\",\n            \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n        ]\n    }\n]",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -14954,7 +14954,131 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "49347587-ef575a4b-a6f0-40a1-9934-4f1e92ee7bd2",
+											"name": "Assign Stall, Paddock, and RV Space",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"stalls\": [\n    { \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\", \"stall_count\": 2 }\n  ],\n  \"paddocks\": [\n    { \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\", \"paddock_count\": 1 }\n  ],\n  \"rv_count\": 2\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/enrollments/:enrollmentId/stall-paddock-rv-request",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"enrollments",
+														":enrollmentId",
+														"stall-paddock-rv-request"
+													],
+													"variable": [
+														{
+															"key": "enrollmentId",
+															"value": "{{enrollmentId}}"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "78"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"4e-t4tB+2X8b4CFWB79ky3yNrpe/RQ\""
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 02 Apr 2026 15:14:38 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Stall, paddock and RV requests saved successfully.\"\n}"
+										}
+									]
 								},
 								{
 									"name": "Request Pump Out",
