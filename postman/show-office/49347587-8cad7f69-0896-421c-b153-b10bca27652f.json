@@ -13591,7 +13591,7 @@
 					"name": "Scheduler",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Create arena configuration",
 							"id": "49347587-24218030-837a-4c2b-a22a-5344914890fb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -13647,6 +13647,18 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update arena configuration",
+							"id": "49347587-c851a005-1c91-4651-b1cf-f202c95fbb6e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
