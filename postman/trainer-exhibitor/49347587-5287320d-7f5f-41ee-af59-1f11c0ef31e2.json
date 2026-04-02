@@ -8693,6 +8693,18 @@
 									]
 								},
 								{
+									"name": "History Shows",
+									"id": "49347587-d6b71565-9396-4158-b423-4d182f745230",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								},
+								{
 									"name": "Dropdown Horses",
 									"event": [
 										{
