@@ -5284,6 +5284,18 @@
 					]
 				},
 				{
+					"name": "Dropdown People",
+					"id": "49347587-32e2bb10-a65c-47c4-9458-41eb8d281c3f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
 					"name": "View People",
 					"event": [
 						{
