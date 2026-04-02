@@ -13716,7 +13716,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Create a course walk window",
 							"id": "49347587-bc58d301-f379-420a-8e9e-f50c33d584f2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
