@@ -5291,7 +5291,23 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{base_app}}/people/list?category=TRAINER",
+							"host": [
+								"{{base_app}}"
+							],
+							"path": [
+								"people",
+								"list"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "TRAINER"
+								}
+							]
+						}
 					},
 					"response": []
 				},
