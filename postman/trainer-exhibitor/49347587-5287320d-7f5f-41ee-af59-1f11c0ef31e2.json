@@ -18128,6 +18128,24 @@
 			"id": "49347587-2f3df5cd-0223-4279-be7d-4258bfe89beb"
 		},
 		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Verify USEF",
+					"id": "49347587-081b25db-b1d5-4ec0-9f75-f8f52712b242",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "49347587-d591b2b4-7031-4a6f-b5d3-4ef6c118b5e7"
+		},
+		{
 			"name": "Health",
 			"event": [
 				{
