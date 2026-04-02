@@ -13915,7 +13915,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "PATCH",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -13946,7 +13946,7 @@
 										},
 										{
 											"key": "conflictId",
-											"value": ""
+											"value": "9638551f-52f1-4bcd-9e23-541b1b0d5a0c"
 										}
 									]
 								}
