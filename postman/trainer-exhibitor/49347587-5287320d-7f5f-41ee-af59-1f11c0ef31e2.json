@@ -5293,7 +5293,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_app}}/people/list?search",
+							"raw": "{{base_app}}/people/list?search=Aayushsfdsfs",
 							"host": [
 								"{{base_app}}"
 							],
@@ -5314,7 +5314,7 @@
 								},
 								{
 									"key": "search",
-									"value": null
+									"value": "Aayushsfdsfs"
 								}
 							]
 						}
