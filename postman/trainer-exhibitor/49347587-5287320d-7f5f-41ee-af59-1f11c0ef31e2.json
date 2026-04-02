@@ -11470,7 +11470,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "[\n    {\n        \"horseId\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\", //optional\n        \"payer_id\": \"0161d00b-719b-419d-a460-90a16b704d56\", //optional\n        \"assistant_trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\", //optional\n        \"rider_ids\": [ //optional\n            \"de5a41fa-6039-4a79-9797-ac020fb7c723\",\n            \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n        ]\n    }\n]",
+											"raw": "[\n    {\n        // \"horseId\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\" //optional\n        // \"payer_id\": \"0161d00b-719b-419d-a460-90a16b704d56\", //optional\n        // \"assistant_trainer_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\", //optional\n        // \"rider_ids\": [ //optional\n        //     \"de5a41fa-6039-4a79-9797-ac020fb7c723\",\n        //     \"cbf5eeba-0b2f-42db-8aae-07c3de4e5b8d\"\n        // ]\n    }\n]",
 											"options": {
 												"raw": {
 													"language": "json"
