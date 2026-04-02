@@ -14004,7 +14004,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "POST",
+								"method": "GET",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -14034,7 +14034,46 @@
 										},
 										{
 											"key": "eventId",
-											"value": ""
+											"value": "job-id-1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "49347587-aa7fca66-aeb0-49a3-8569-a3ace3e68c63",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idempotency_key\": \"show-2026-06-15-publish-003\",\n    \"expected_version\": 1\n}"
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/schedules/:showDayDate/overrides",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"schedules",
+										":showDayDate",
+										"overrides"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "showDayDate",
+											"value": "2026-07-15"
 										}
 									]
 								}
