@@ -8292,8 +8292,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"type": "text/javascript",
-												"packages": {},
+												"id": "8c8dfa0a-f4e9-4d99-a2dd-08858f6a3010",
 												"exec": [
 													"pm.test('Status code is 200', function () {",
 													"  pm.response.to.have.status(200);",
@@ -8303,7 +8302,10 @@
 													"  pm.expect(pm.response.responseTime).to.be.below(1000);",
 													"});",
 													""
-												]
+												],
+												"type": "text/javascript",
+												"packages": {},
+												"requests": {}
 											}
 										}
 									],
