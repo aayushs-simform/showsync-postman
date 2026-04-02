@@ -13909,14 +13909,47 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Acknowledge a schedule conflict",
 							"id": "49347587-8e5be6b0-a27e-4a24-8a48-15c57a123386",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"arena_id\": \"6c84fb90-12c4-11e1-840d-7b25c5ee775a\",\n    \"show_day_date\": \"2026-07-15\",\n    \"start_time\": \"07:30\",\n    \"is_active\": true,\n    \"maintenance_windows\": [\n        {\n            \"start\": \"12:00\",\n            \"end\": \"13:00\",\n            \"label\": \"Lunch break — drag arena\"\n        }\n    ]  //Scheduled unavailability windows (e.g. drag breaks)\n}"
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/schedules/:showDayDate/conflicts/:conflictId/acknowledge",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"schedules",
+										":showDayDate",
+										"conflicts",
+										":conflictId",
+										"acknowledge"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "showDayDate",
+											"value": "2026-07-15"
+										},
+										{
+											"key": "conflictId",
+											"value": ""
+										}
+									]
+								}
 							},
 							"response": []
 						}
