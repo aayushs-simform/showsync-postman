@@ -13588,8 +13588,21 @@
 					"id": "49347587-175c0642-ab0b-48e7-ab02-7ba824f7bdb6"
 				},
 				{
-					"name": "New Folder",
-					"item": [],
+					"name": "Scheduler",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "49347587-24218030-837a-4c2b-a22a-5344914890fb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "49347587-8432c522-7f69-44d7-9914-66702f8f3f16"
 				}
 			],
