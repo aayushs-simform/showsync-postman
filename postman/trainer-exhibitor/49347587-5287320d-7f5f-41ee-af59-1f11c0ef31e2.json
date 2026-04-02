@@ -8700,7 +8700,17 @@
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/history",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"history"
+											]
+										}
 									},
 									"response": []
 								},
