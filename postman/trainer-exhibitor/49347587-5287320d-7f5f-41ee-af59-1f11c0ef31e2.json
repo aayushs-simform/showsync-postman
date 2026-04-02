@@ -5322,7 +5322,7 @@
 					},
 					"response": [
 						{
-							"id": "49347587-79fe1441-1f87-4626-b3ff-fd6b7e80fe80",
+							"id": "49347587-9d8623ee-2010-4b2c-b0e7-95e05bbd3943",
 							"name": "New Request",
 							"originalRequest": {
 								"method": "GET",
@@ -5421,15 +5421,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "242"
+									"value": "140"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"f2-zS2cmllONaqxmkW2HbLYQ8M9ykE\""
+									"value": "W/\"8c-RGBghYlfMFoaMdGLY5nbXJN3zPQ\""
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 02 Apr 2026 15:24:32 GMT"
+									"value": "Thu, 02 Apr 2026 15:41:18 GMT"
 								},
 								{
 									"key": "Connection",
@@ -5442,7 +5442,7 @@
 							],
 							"cookie": [],
 							"responseTime": null,
-							"body": "{\n    \"status\": true,\n    \"message\": \"People fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n            \"created_at\": \"2026-03-20T13:43:04.978Z\",\n            \"full_name\": \"Aayush Solanki\",\n            \"category\": \"TRAINER\",\n            \"is_usef_verified\": true,\n            \"is_active\": true\n        }\n    ]\n}"
+							"body": "{\n    \"status\": true,\n    \"message\": \"People fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n            \"full_name\": \"Aayush Solanki\"\n        }\n    ]\n}"
 						}
 					]
 				},
