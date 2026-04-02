@@ -18141,7 +18141,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \n}",
+							"raw": "{\n    \"usef_member_id\": \"343434343\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
