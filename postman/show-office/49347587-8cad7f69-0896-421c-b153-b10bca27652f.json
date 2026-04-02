@@ -13591,6 +13591,11 @@
 					"name": "Scheduler",
 					"item": [
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "49347587-7d3ce90f-43be-477e-987e-426697d507c4"
+						},
+						{
 							"name": "Create arena configuration",
 							"id": "49347587-24218030-837a-4c2b-a22a-5344914890fb",
 							"protocolProfileBehavior": {
@@ -13707,6 +13712,18 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "49347587-bc58d301-f379-420a-8e9e-f50c33d584f2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
