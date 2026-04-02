@@ -13960,8 +13960,40 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idempotency_key\": \"show-2026-06-15-publish-003\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/:showId/schedules/:showDayDate/publish",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										":showId",
+										"schedules",
+										":showDayDate",
+										"publish"
+									],
+									"variable": [
+										{
+											"key": "showId",
+											"value": "{{showId}}"
+										},
+										{
+											"key": "showDayDate",
+											"value": "2026-07-15"
+										}
+									]
+								}
 							},
 							"response": []
 						}
