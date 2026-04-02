@@ -5314,13 +5314,137 @@
 								},
 								{
 									"key": "search",
-									"value": "Searc",
+									"value": "Search",
 									"disabled": true
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "49347587-79fe1441-1f87-4626-b3ff-fd6b7e80fe80",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/people/list",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"people",
+										"list"
+									],
+									"query": [
+										{
+											"key": "category",
+											"value": "TRAINER",
+											"disabled": true
+										},
+										{
+											"key": "is_usef_verified",
+											"value": "false",
+											"disabled": true
+										},
+										{
+											"key": "search",
+											"value": "Search",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "242"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f2-zS2cmllONaqxmkW2HbLYQ8M9ykE\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Apr 2026 15:24:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"status\": true,\n    \"message\": \"People fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\",\n            \"created_at\": \"2026-03-20T13:43:04.978Z\",\n            \"full_name\": \"Aayush Solanki\",\n            \"category\": \"TRAINER\",\n            \"is_usef_verified\": true,\n            \"is_active\": true\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "View People",
