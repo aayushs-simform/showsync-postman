@@ -7285,7 +7285,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "{{base_app}}/shows/upcoming",
+									"raw": "{{base_app}}/shows/upcoming?organizer_ids=fd9986c1-4c74-4e45-95ca-15dce5faa4a4",
 									"host": [
 										"{{base_app}}"
 									],
@@ -7316,8 +7316,7 @@
 										},
 										{
 											"key": "organizer_ids",
-											"value": "fd9986c1-4c74-4e45-95ca-15dce5faa4a4",
-											"disabled": true
+											"value": "fd9986c1-4c74-4e45-95ca-15dce5faa4a4"
 										},
 										{
 											"key": "cities",
