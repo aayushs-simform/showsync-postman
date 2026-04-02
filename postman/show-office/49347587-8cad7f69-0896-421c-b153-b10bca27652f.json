@@ -13591,11 +13591,6 @@
 					"name": "Scheduler",
 					"item": [
 						{
-							"name": "New Folder",
-							"item": [],
-							"id": "49347587-7d3ce90f-43be-477e-987e-426697d507c4"
-						},
-						{
 							"name": "Create arena configuration",
 							"id": "49347587-24218030-837a-4c2b-a22a-5344914890fb",
 							"protocolProfileBehavior": {
@@ -13726,7 +13721,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"class_id\": \"6c84fb90-12c4-11e1-840d-7b25c5ee775a\",\n    \"show_day_date\": \"2026-07-15\",\n    \"walk_start\": \"\",\n    \"walk_end\": \"\",\n    \"is_mandatory\": \"\"\n}",
+									"raw": "{\n    \"class_id\": \"6c84fb90-12c4-11e1-840d-7b25c5ee775a\",\n    \"show_day_date\": \"2026-07-15\",\n    \"walk_start\": \"07:00\",\n    \"walk_end\": \"07:30\",\n    \"is_mandatory\": false\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13772,6 +13767,18 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "49347587-e06ccc03-bbd4-4030-957a-faaf2760621f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
