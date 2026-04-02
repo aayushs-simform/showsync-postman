@@ -13597,11 +13597,16 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": ""
+									"raw": "{\n    \"arena_id\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
 								},
 								"url": {
 									"raw": "{{base_org}}/shows/:showId/arena-configs",
