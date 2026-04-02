@@ -5293,7 +5293,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_app}}/people/list?category=TRAINER",
+							"raw": "{{base_app}}/people/list",
 							"host": [
 								"{{base_app}}"
 							],
@@ -5304,7 +5304,8 @@
 							"query": [
 								{
 									"key": "category",
-									"value": "TRAINER"
+									"value": "TRAINER",
+									"disabled": true
 								}
 							]
 						}
