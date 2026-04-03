@@ -3891,6 +3891,18 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Show creation step updated successfully\"\n}"
 								}
 							]
+						},
+						{
+							"name": "Is Exist (Show Name)",
+							"id": "49347587-e86be1db-7d4d-4189-99a2-7d557746462b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-91f94e2e-eea9-462c-989c-3166ea08c91c"
