@@ -8283,14 +8283,10 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"override_type\": \"MOVE_CLASS\", //'MOVE_CLASS', 'FORCE_ORDER', 'FORCE_TIMING'\n  \"class_id\": \"6c84fb90-12c4-11e1-840d-7b25c5ee775a\",\n  \"override_payload\": { \"start_time\": \"10:30\", \"position\": 2 },\n  \"override_reason\": \"Trainer conflict resolved manually\",\n  \"idempotency_key\": \"override-2026-07-15-class-xyz-001\"\n}"
-								},
 								"url": {
-									"raw": "{{base_org}}/shows/cities",
+									"raw": "{{base_app}}/shows/cities",
 									"host": [
-										"{{base_org}}"
+										"{{base_app}}"
 									],
 									"path": [
 										"shows",
@@ -8298,7 +8294,114 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "49347587-29cd49c1-5a04-4c89-a467-6bd71c514402",
+									"name": "Show Cities",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_app}}/shows/cities",
+											"host": [
+												"{{base_app}}"
+											],
+											"path": [
+												"shows",
+												"cities"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Content-Security-Policy",
+											"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+										},
+										{
+											"key": "Cross-Origin-Opener-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Cross-Origin-Resource-Policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "Origin-Agent-Cluster",
+											"value": "?1"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-DNS-Prefetch-Control",
+											"value": "off"
+										},
+										{
+											"key": "X-Download-Options",
+											"value": "noopen"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "X-Permitted-Cross-Domain-Policies",
+											"value": "none"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "109"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"6d-tkvOrSaPi5ozIdURVGDeOS6OG/M\""
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 03 Apr 2026 04:10:40 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"status\": true,\n    \"message\": \"Cities fetched successfully.\",\n    \"data\": [\n        {\n            \"city\": \"New Yok\",\n            \"state\": \"North Carolina\"\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "49347587-9b7ee349-29c9-4705-be3b-01cf85f6df5c"
