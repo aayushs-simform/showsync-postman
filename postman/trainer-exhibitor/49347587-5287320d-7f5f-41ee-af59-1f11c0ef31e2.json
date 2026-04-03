@@ -8284,7 +8284,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_app}}/shows/cities?status=today",
+									"raw": "{{base_app}}/shows/cities",
 									"host": [
 										"{{base_app}}"
 									],
@@ -8295,7 +8295,9 @@
 									"query": [
 										{
 											"key": "status",
-											"value": "today"
+											"value": "today",
+											"description": "today, upcoming, history",
+											"disabled": true
 										}
 									]
 								}
