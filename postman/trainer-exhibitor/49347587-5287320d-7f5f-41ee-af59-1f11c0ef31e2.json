@@ -3033,8 +3033,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "837b532e-bf5b-4bf9-8b70-4e17d23256d2",
 										"exec": [
 											"pm.test('Status code is 200', function () {",
 											"  pm.response.to.have.status(200);",
@@ -3054,7 +3053,10 @@
 											"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -3067,7 +3069,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"horse_name\": \"Thunder's Lightning\",\n    \"date_of_birth\": \"2018-08-12\",\n    \"breed\": \"Thoroughbred\",\n    \"breed_registration_no\": \"TB-56789\",\n    \"color\": \"Chestnut\",\n    \"gender\": \"STALLION\", //STALLION, MARE, GELDING\n    \"height\": \"16.2\",\n    \"measurement_card_no\": \"MC-2023-0045\",\n    \"hunter_green_status\": \"Regular Hunter\",\n    \"sire\": \"Silver Spirit\",\n    \"dam\": \"Golden Grace\",\n    \"microchip_number\": \"23456886\"\n}",
+									"raw": "{\n    \"horse_name\": \"Water Lightning\",\n    \"date_of_birth\": \"2018-08-12\",\n    \"breed\": \"Thoroughbred\",\n    \"breed_registration_no\": \"TB-56789\",\n    \"color\": \"APPALOOSA\",\n    \"gender\": \"STALLION\", //STALLION, MARE, GELDING\n    \"height\": \"16.2\",\n    \"measurement_card_no\": \"MC-2023-0045\",\n    \"hunter_green_status\": \"REGULAR\",\n    \"sire\": \"Silver Spirit\",\n    \"dam\": \"Golden Grace\",\n    \"microchip_number\": \"23436886\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
