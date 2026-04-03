@@ -930,7 +930,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"email\": \"customercare@usef.org\"\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n}"
+							"raw": "{\n  \"email\": \"customercsare@usef.org\"\n//   \"phone_country_code\": \"+1\",\n//   \"phone_number\": \"5555550100\"\n}"
 						},
 						"url": {
 							"raw": "{{base_app}}/auth/register/send-otp",
