@@ -3900,7 +3900,27 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"My Roll\",\n    \"permissions\": [\n        \"dashboard:view\",\n        \"shows:view\"\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/exists?name=dfdf",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										"exists"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "dfdf"
+										}
+									]
+								}
 							},
 							"response": []
 						}
