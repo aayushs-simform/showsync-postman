@@ -8284,13 +8284,19 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_app}}/shows/cities",
+									"raw": "{{base_app}}/shows/cities?status=today",
 									"host": [
 										"{{base_app}}"
 									],
 									"path": [
 										"shows",
 										"cities"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "today"
+										}
 									]
 								}
 							},
