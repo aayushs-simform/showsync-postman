@@ -17032,7 +17032,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "[\n    {\n        \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"class_id\": \"71a04fb3-ff1c-4402-8293-1b2c7800a672\",\n        \"rider_id\": \"de5a41fa-6039-4a79-9797-ac020fb7c723\"\n    },\n    {\n        \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"class_id\": \"71a04fb3-ff1c-4402-8293-1b2c7800a672\",\n        \"rider_id\": \"d0f81f10-daad-4017-b5a7-9ccf22830943\"\n    }\n]",
+											"raw": "[\n    {\n        \"horse_id\": \"ea6e27a5-2d75-4eca-9af7-2ad5605d9767\",\n        \"class_id\": \"71a04fb3-ff1c-4402-8293-1b2c7800a672\",\n        \"rider_id\": \"de5a41fa-6039-4a79-9797-ac020fb7c723\"\n    }\n]",
 											"options": {
 												"raw": {
 													"language": "json"
