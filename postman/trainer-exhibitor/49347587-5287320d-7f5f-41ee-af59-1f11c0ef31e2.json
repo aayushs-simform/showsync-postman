@@ -8273,6 +8273,32 @@
 									"body": "{\n    \"status\": true,\n    \"message\": \"Organizer options fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"fd9986c1-4c74-4e45-95ca-15dce5faa4a4\",\n            \"organization_name\": \"News Brideg Stables2\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "Show Cities",
+							"id": "49347587-873782ed-59f1-4d1c-8a67-f37d191a54eb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"override_type\": \"MOVE_CLASS\", //'MOVE_CLASS', 'FORCE_ORDER', 'FORCE_TIMING'\n  \"class_id\": \"6c84fb90-12c4-11e1-840d-7b25c5ee775a\",\n  \"override_payload\": { \"start_time\": \"10:30\", \"position\": 2 },\n  \"override_reason\": \"Trainer conflict resolved manually\",\n  \"idempotency_key\": \"override-2026-07-15-class-xyz-001\"\n}"
+								},
+								"url": {
+									"raw": "{{base_org}}/shows/cities",
+									"host": [
+										"{{base_org}}"
+									],
+									"path": [
+										"shows",
+										"cities"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "49347587-9b7ee349-29c9-4705-be3b-01cf85f6df5c"
