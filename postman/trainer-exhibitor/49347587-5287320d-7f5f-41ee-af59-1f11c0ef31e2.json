@@ -4311,8 +4311,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"type": "text/javascript",
-										"packages": {},
+										"id": "0959f5dd-2cfb-4647-ad93-9322ea37245f",
 										"exec": [
 											"pm.test('Status code is 201', function () {",
 											"  pm.response.to.have.status(201);",
@@ -4342,7 +4341,10 @@
 											"  pm.expect(body.data).to.have.property('id');",
 											"});",
 											""
-										]
+										],
+										"type": "text/javascript",
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
