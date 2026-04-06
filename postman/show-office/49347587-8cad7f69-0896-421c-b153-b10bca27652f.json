@@ -940,8 +940,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
-								"packages": {},
+								"id": "9755a5c4-4eba-4d24-b8a8-2e42ea2e564f",
 								"exec": [
 									"pm.test('Status code is 200', function () {",
 									"  pm.response.to.have.status(200);",
@@ -971,7 +970,10 @@
 									"  pm.expect(body.data).to.have.property('id');",
 									"});",
 									""
-								]
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
@@ -984,7 +986,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"identifier\": \"aayushs.simforms@gmail.com\",\n    // \"phone_country_code\": \"+1\",\n    // \"phone_number\": \"125656456\",\n    \"password\": \"Strong@1!\"\n}",
+							"raw": "{\n    // \"identifier\": \"aayushs.simforms@gmail.com\",\n    // \"phone_country_code\": \"+1\",\n    // \"phone_number\": \"125656456\",\n    \"password\": \"Strong@1!\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
