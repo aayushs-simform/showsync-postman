@@ -15686,7 +15686,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"\",\n    \"address\": \"\"\n}",
+							"raw": "{\n    \"name\": \"San Francisco Equestrian Center\",\n    \"address\": \"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
