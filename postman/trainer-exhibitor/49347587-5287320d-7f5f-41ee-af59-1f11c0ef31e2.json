@@ -8772,6 +8772,116 @@
 											],
 											"responseTime": null,
 											"body": "{\n    \"status\": true,\n    \"message\": \"Today's shows fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"ad16ce88-bb0b-4b24-a4a5-cd66950a9914\",\n            \"show_name\": \"Summer Classic 2023\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"division_types\": [\n                \"JUMPER\",\n                \"HUNTER\"\n            ],\n            \"horses\": [],\n            \"start_date\": \"2026-04-01\",\n            \"end_date\": \"2026-07-15\",\n            \"registration_opening_date\": \"2026-05-01\",\n            \"is_enrolled\": false\n        }\n    ]\n}"
+										},
+										{
+											"id": "49347587-38abb684-bae1-4e77-834d-7176c626424e",
+											"name": "Today's Shows",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"blob_name\": \"horse-documents/6fe3952b-7341-4fff-bdbd-fd4396990e5a\"\n}"
+												},
+												"url": {
+													"raw": "{{base_app}}/shows/today",
+													"host": [
+														"{{base_app}}"
+													],
+													"path": [
+														"shows",
+														"today"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": null,
+											"header": [
+												{
+													"key": "Content-Security-Policy",
+													"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
+												},
+												{
+													"key": "Cross-Origin-Opener-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Cross-Origin-Resource-Policy",
+													"value": "same-origin"
+												},
+												{
+													"key": "Origin-Agent-Cluster",
+													"value": "?1"
+												},
+												{
+													"key": "Referrer-Policy",
+													"value": "no-referrer"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-DNS-Prefetch-Control",
+													"value": "off"
+												},
+												{
+													"key": "X-Download-Options",
+													"value": "noopen"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "SAMEORIGIN"
+												},
+												{
+													"key": "X-Permitted-Cross-Domain-Policies",
+													"value": "none"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "0"
+												},
+												{
+													"key": "Vary",
+													"value": "Origin"
+												},
+												{
+													"key": "Access-Control-Allow-Credentials",
+													"value": "true"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json; charset=utf-8"
+												},
+												{
+													"key": "Content-Length",
+													"value": "389"
+												},
+												{
+													"key": "ETag",
+													"value": "W/\"185-d9bkHpeNQvwqFlLF8WqU7DU4UpI\""
+												},
+												{
+													"key": "Date",
+													"value": "Mon, 06 Apr 2026 05:57:18 GMT"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=5"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"status\": true,\n    \"message\": \"Today's shows fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"ad16ce88-bb0b-4b24-a4a5-cd66950a9914\",\n            \"show_name\": \"Summer Classic 2023\",\n            \"venue_name\": null,\n            \"city\": null,\n            \"state\": null,\n            \"division_types\": [\n                \"JUMPER\",\n                \"HUNTER\"\n            ],\n            \"horses\": [],\n            \"start_date\": \"2026-04-01\",\n            \"end_date\": \"2026-07-15\",\n            \"registration_opening_date\": \"2026-05-01\",\n            \"is_enrolled\": false,\n            \"enrollment_status\": \"IN_PROGRESS\"\n        }\n    ]\n}"
 										}
 									]
 								},
