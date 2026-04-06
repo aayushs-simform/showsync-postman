@@ -986,7 +986,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    // \"identifier\": \"aayushs.simforms@gmail.com\",\n    \"phone_country_code\": \"+91\",\n    \"phone_number\": \"9399400758\",\n    \"password\": \"Strong@1!\"\n}",
+							"raw": "{\n    \"identifier\": \"aayushs.simforms@gmail.com\",\n    // \"phone_country_code\": \"+1\",\n    // \"phone_number\": \"125656456\",\n    \"password\": \"Strong@1!\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1621,8 +1621,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
-								"packages": {},
+								"id": "1529f5d2-cfab-4597-9003-db444f3c91b0",
 								"exec": [
 									"pm.test('Status code is 200', function () {",
 									"  pm.response.to.have.status(200);",
@@ -1642,7 +1641,10 @@
 									"  pm.expect(body.message).to.be.a('string').and.not.empty;",
 									"});",
 									""
-								]
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
