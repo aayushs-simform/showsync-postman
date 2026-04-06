@@ -3906,7 +3906,7 @@
 									"raw": "{\n    \"name\": \"My Roll\",\n    \"permissions\": [\n        \"dashboard:view\",\n        \"shows:view\"\n    ]\n}"
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/exists?name=dfdf",
+									"raw": "{{base_org}}/shows/exists?name=Summer Classic 2023",
 									"host": [
 										"{{base_org}}"
 									],
@@ -3917,7 +3917,7 @@
 									"query": [
 										{
 											"key": "name",
-											"value": "dfdf"
+											"value": "Summer Classic 2023"
 										}
 									]
 								}
