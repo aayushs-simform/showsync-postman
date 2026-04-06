@@ -3899,26 +3899,20 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"name\": \"My Roll\",\n    \"permissions\": [\n        \"dashboard:view\",\n        \"shows:view\"\n    ]\n}"
+									"raw": "{\n    \"name\": \"Summer Classic 2023\"\n}"
 								},
 								"url": {
-									"raw": "{{base_org}}/shows/exists?name=Summer Classic 2023",
+									"raw": "{{base_org}}/shows/exists",
 									"host": [
 										"{{base_org}}"
 									],
 									"path": [
 										"shows",
 										"exists"
-									],
-									"query": [
-										{
-											"key": "name",
-											"value": "Summer Classic 2023"
-										}
 									]
 								}
 							},
