@@ -7033,7 +7033,7 @@
 							},
 							"response": [
 								{
-									"id": "49347587-026a8844-b1ca-4834-9f49-5848a31795ea",
+									"id": "49347587-23aea45a-ea93-4438-9897-5270eab461c5",
 									"name": "Today's Shows",
 									"originalRequest": {
 										"method": "GET",
@@ -7080,6 +7080,38 @@
 									"_postman_previewlanguage": null,
 									"header": [
 										{
+											"key": "Date",
+											"value": "Mon, 06 Apr 2026 10:27:32 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1105"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"451-1GQ9+1vhdL/nh9eFnwyszmXpCqY\""
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-ms-middleware-request-id",
+											"value": "00000000-0000-0000-0000-000000000000"
+										},
+										{
 											"key": "Content-Security-Policy",
 											"value": "img-src 'self' data: https:;default-src 'self';script-src 'self';style-src 'self' 'unsafe-inline';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';upgrade-insecure-requests"
 										},
@@ -7098,10 +7130,6 @@
 										{
 											"key": "Referrer-Policy",
 											"value": "no-referrer"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains"
 										},
 										{
 											"key": "X-Content-Type-Options",
@@ -7128,41 +7156,21 @@
 											"value": "0"
 										},
 										{
-											"key": "Vary",
-											"value": "Origin"
+											"key": "x-azure-ref",
+											"value": "20260406T102732Z-16f85f59ff4jf7fhhC1MAA5z980000000awg0000000045df"
 										},
 										{
-											"key": "Access-Control-Allow-Credentials",
-											"value": "true"
+											"key": "X-Cache",
+											"value": "CONFIG_NOCACHE"
 										},
 										{
-											"key": "Content-Type",
-											"value": "application/json; charset=utf-8"
-										},
-										{
-											"key": "Content-Length",
-											"value": "726"
-										},
-										{
-											"key": "ETag",
-											"value": "W/\"2d6-uvFetGvHEDiqLBHc4rwRivJXF5U\""
-										},
-										{
-											"key": "Date",
-											"value": "Wed, 01 Apr 2026 05:40:01 GMT"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Keep-Alive",
-											"value": "timeout=5"
+											"key": "Accept-Ranges",
+											"value": "bytes"
 										}
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"status\": true,\n    \"message\": \"Today's shows fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"9638551f-52f1-4bcd-9e23-541b1b0d5a0c\",\n            \"show_name\": \"San Francisco Equestrian - 2026\",\n            \"venue_name\": \"San Francisco Equestrian Center\",\n            \"city\": \"New Yok\",\n            \"state\": \"North Carolina\",\n            \"division_types\": [\n                \"JUMPER\"\n            ],\n            \"horses\": [],\n            \"start_date\": \"31-03-2026\",\n            \"end_date\": \"29-05-2026\",\n            \"registration_opening_date\": \"14-03-2026\",\n            \"is_enrolled\": false\n        },\n        {\n            \"id\": \"ad16ce88-bb0b-4b24-a4a5-cd66950a9914\",\n            \"show_name\": \"Summer Classic 2023\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"division_types\": [\n                \"JUMPER\",\n                \"HUNTER\"\n            ],\n            \"horses\": [],\n            \"start_date\": \"31-03-2026\",\n            \"end_date\": \"14-07-2026\",\n            \"registration_opening_date\": \"30-04-2026\",\n            \"is_enrolled\": false\n        }\n    ]\n}"
+									"body": "{\n    \"status\": true,\n    \"message\": \"Today's shows fetched successfully.\",\n    \"data\": [\n        {\n            \"id\": \"6c81ae13-9769-4c08-9f6f-df09f608c3c7\",\n            \"show_name\": \"Royal Hooves Invitational\",\n            \"venue_name\": null,\n            \"city\": null,\n            \"state\": null,\n            \"division_types\": [\n                \"JUMPER\"\n            ],\n            \"horses\": [],\n            \"start_date\": \"2026-04-01\",\n            \"end_date\": \"2026-04-16\",\n            \"registration_opening_date\": \"2026-03-30\",\n            \"is_enrolled\": false,\n            \"enrollment_status\": \"NOT_ENROLLED\"\n        },\n        {\n            \"id\": \"154b8ecc-643b-4699-a0c1-5ca62186362e\",\n            \"show_name\": \"Royal groover Invitation\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"division_types\": [\n                \"JUMPER\"\n            ],\n            \"horses\": [],\n            \"start_date\": \"2026-04-03\",\n            \"end_date\": \"2026-04-23\",\n            \"registration_opening_date\": \"2026-03-30\",\n            \"is_enrolled\": false,\n            \"enrollment_status\": \"NOT_ENROLLED\"\n        },\n        {\n            \"id\": \"c9ea8e6c-4559-4798-9c0b-789565d8073c\",\n            \"show_name\": \"Blue Ribbon Grand Prix 2026\",\n            \"venue_name\": \"Golden Gate Equestrian Center\",\n            \"city\": null,\n            \"state\": \"North Carolina\",\n            \"division_types\": [\n                \"JUMPER\",\n                \"HUNTER\"\n            ],\n            \"horses\": [],\n            \"start_date\": \"2026-04-05\",\n            \"end_date\": \"2026-04-09\",\n            \"registration_opening_date\": \"2026-02-01\",\n            \"is_enrolled\": false,\n            \"enrollment_status\": \"NOT_ENROLLED\"\n        }\n    ]\n}"
 								}
 							]
 						},
