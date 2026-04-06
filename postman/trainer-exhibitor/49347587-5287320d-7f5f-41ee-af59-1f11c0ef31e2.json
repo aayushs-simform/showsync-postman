@@ -4738,8 +4738,30 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_app}}/horses/:id/documents/:documentId",
+									"host": [
+										"{{base_app}}"
+									],
+									"path": [
+										"horses",
+										":id",
+										"documents",
+										":documentId"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "dfad0293-1270-4dca-9a66-7290c1a2e02b"
+										},
+										{
+											"key": "documentId",
+											"value": "0d4d7e33-48bd-4eb6-9426-c5aaeebd56e9"
+										}
+									]
+								}
 							},
 							"response": []
 						}
