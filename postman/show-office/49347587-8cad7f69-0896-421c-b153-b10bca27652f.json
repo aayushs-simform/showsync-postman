@@ -15674,6 +15674,28 @@
 							"body": "{\n    \"status\": true,\n    \"message\": \"Venue facility map upload URL generated successfully\",\n    \"data\": {\n        \"upload_url\": \"https://devshowsyncstorage.blob.core.windows.net/showsync/venue-facility-maps/4fc321b6-1e90-4480-a560-95b228e230b0?sv=2026-02-06&spr=https&st=2026-03-25T05%3A11%3A18Z&se=2026-03-25T05%3A21%3A18Z&sr=b&sp=w&sig=t56WsG%2FzAukzM9S%2FG9CIX2aOP4%2BwsdTyKpfEpg%2BWFk8%3D&rsct=application%2Fpdf\",\n        \"blob_name\": \"venue-facility-maps/4fc321b6-1e90-4480-a560-95b228e230b0\",\n        \"expires_at\": \"2026-03-25T05:20:18.820Z\"\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "Check Is Exists Venue",
+					"id": "49347587-a7c2d0b6-f4df-48fe-8fa3-9fb1e4bd7137",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_org}}/venues/exists",
+							"host": [
+								"{{base_org}}"
+							],
+							"path": [
+								"venues",
+								"exists"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "49347587-e8bb43bf-5836-4122-b118-cde40ea71d8d"
